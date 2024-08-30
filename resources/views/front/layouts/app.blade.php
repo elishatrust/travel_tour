@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>{{ !empty($meta_title) ? Str::upper($meta_title) : "" }}</title>
+    <title>{{ !empty($page_title && $meta_title) ? Str::upper($page_title.' | '.$meta_title) : "" }}</title>
     <!-- Favicon -->
-    <link href="{{ asset('assets/frontend/img/favicon.ico') }}" rel="icon" />
+    <link href="{{ asset('assets/frontend/img/logo/logo.png') }}" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,78 +37,6 @@
     </script>
 </head>
 
-<style>
-    .preloader {
-        background-color: #f7f7f7;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 999999;
-        transition: .6s;
-        margin: 0 auto;
-    }
-
-    .preloader .preloader-circle {
-        width: 100px;
-        height: 100px;
-        position: relative;
-        border-style: solid;
-        border-width: 3px;
-        border-top-color: #014b85;
-        border-bottom-color: transparent;
-        border-left-color: transparent;
-        border-right-color: transparent;
-        z-index: 10;
-        border-radius: 50%;
-        box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
-        background-color: #ffffff;
-        animation: zoom 2000ms infinite ease;
-        transition: .6s;
-    }
-
-    .preloader .preloader-circle2 {
-        border-top-color: #0078ff;
-    }
-
-    .preloader .preloader-img {
-        position: absolute;
-        top: 50%;
-        z-index: 200;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        text-align: center;
-        display: inline-block;
-        transform: translateY(-50%);
-        padding-top: 6px;
-        transition: .6s;
-    }
-
-    .preloader .preloader-img img {
-        max-width: 55px;
-    }
-
-    .preloader .pere-text strong {
-        font-weight: 800;
-        color: #dca73a;
-        text-transform: uppercase;
-    }
-
-    @keyframes zoom {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-</style>
-
 <body>
     <!-- Spinner -->
     @include('front.layouts.spinner')
@@ -118,9 +46,6 @@
 
     <!-- Navbar -->
     @include('front.layouts.navbar')
-
-    <!-- Header -->
-    @include('front.layouts.header')
     
     <!-- Main -->
     @yield('content')

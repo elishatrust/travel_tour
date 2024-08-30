@@ -2,27 +2,46 @@
 @section('content')
 
 
+@include('front.layouts.header')
+
 <!-- Video Modal Start -->
 <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-    <div class="modal-content rounded-0">
-        <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- 16:9 aspect ratio -->
+                <div class="ratio ratio-16x9"ass="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item"
+                                src=""
+                                id="video"
+                                allowfullscreen
+                                allowscriptaccess="always"
+                                allow="autoplay">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>>
+                    <iframe class="embed-responsive-item"
+                        src=""
+                        id="video"
+                        allowfullscreen
+                        allowscriptaccess="always"
+                        allow="autoplay">
+                    </iframe>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-        <!-- 16:9 aspect ratio -->
-        <div class="ratio ratio-16x9">
-            <iframe class="embed-responsive-item"
-            src=""
-            id="video"
-            allowfullscreen
-            allowscriptaccess="always"
-            allow="autoplay"
-            ></iframe>
-        </div>
-        </div>
-    </div>
     </div>
 </div>
 <!-- Video Modal End -->
@@ -32,10 +51,10 @@
     <div class="container">
     <div class="row g-5">
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-        <p><span class="text-primary me-2">#</span>Welcome To Zoofari</p>
+        <p><span class="text-primary me-2">#</span>Welcome To GoTrip</p>
         <h1 class="display-5 mb-4">
             Why You Should Visit
-            <span class="text-primary">Zoofari</span> Park!
+            <span class="text-primary">GoTrip</span> Park!
         </h1>
         <p class="mb-4">
             Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No
@@ -122,7 +141,7 @@
         <p><span class="text-primary me-2">#</span>Our Services</p>
         <h1 class="display-5 mb-0">
             Special Services For
-            <span class="text-primary">Zoofari</span> Visitors
+            <span class="text-primary">GoTrip</span> Visitors
         </h1>
         </div>
         <div class="col-lg-6">
@@ -241,7 +260,7 @@
         <div class="col-lg-6">
         <p><span class="text-primary me-2">#</span>Our Animals</p>
         <h1 class="display-5 mb-0">
-            Let`s See Our <span class="text-primary">Zoofari</span> Awsome
+            Let`s See Our <span class="text-primary">GoTrip</span> Awsome
             Animals
         </h1>
         </div>
@@ -444,7 +463,7 @@
         <p><span class="text-primary me-2">#</span>Membership</p>
         <h1 class="display-5 mb-0">
             You Can Be A Proud Member Of
-            <span class="text-primary">Zoofari</span>
+            <span class="text-primary">GoTrip</span>
         </h1>
         </div>
         <div class="col-lg-6 text-lg-end">
