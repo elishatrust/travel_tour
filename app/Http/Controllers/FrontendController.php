@@ -69,4 +69,20 @@ class FrontendController extends Controller
             abort(404);
         }
     }
+
+    public function blog()
+    {
+        $meta_title = 'Travel & Tour';
+        $page_title = 'Blog';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('front.pages.blog', $data );
+
+        }else{
+            abort(404);
+        }
+    }
 }
