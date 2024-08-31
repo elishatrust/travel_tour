@@ -92,36 +92,32 @@
                   <label for="subject">Subject</label>
                 </div>
               </div>
-              <div class="col-12">
-                <div class="form-floating">
-                  <textarea
-                    class="form-control bg-light border-0"
-                    placeholder="Leave a message here"
-                    id="message"
-                    style="height: 100px"
-                  ></textarea>
-                  <label for="message">Message</label>
+                <div class="col-12">
+                    <div class="form-floating">
+                    <textarea
+                        class="form-control bg-light border-0"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style="height: 100px"
+                    ></textarea>
+                    <label for="message">Message</label>
+                    </div>
                 </div>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-primary w-100 py-3" type="submit">
-                  Send Message
-                </button>
-              </div>
+                <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3" type="submit">
+                        Send Message
+                    </button>
+                </div>
             </div>
           </form>
         </div>
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-          <div class="h-100" style="min-height: 400px">
-            <iframe
-              class="rounded w-100 h-100"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-              frameborder="0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe>
-          </div>
+            <div class="h-100" style="min-height: 400px">
+                <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4159371.9176977407!2d34.0069042239643!3d-3.3551450558754334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371dc27c5ddf5d%3A0xe14adf20d1bf3cb0!2sTourism%20and%20traveling!5e0!3m2!1sen!2stz!4v1725029985744!5m2!1sen!2stz"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
       </div>
     </div>

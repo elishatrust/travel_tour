@@ -4,7 +4,7 @@
             <div class="header-bg h-100 d-flex flex-column justify-content-center p-5">
                 <h1 class="display-4 text-light mb-5">Enjoy Wonderful Day With Your Family</h1>
                 <div class="d-flex align-items-center pt-4 animated slideInDown">
-                    <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">Read More</a>
+                    <a href="{{ route('about') }}" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">Read More</a>
                     <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                         <span></span>
                     </button>

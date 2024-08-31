@@ -1,3 +1,13 @@
+/*
+
+Yellow : #e28743
+Blue : #022a5b
+---------------
+Green : #022a5b
+
+*/
+
+
 body {
     -webkit-user-select: none; 
     -moz-user-select: none;    
@@ -222,8 +232,16 @@ body {
 /*** Header ***/
 .header-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url(../img/bg-1.jpg) center center no-repeat;
+        url(../img/bg-1.jpg) center center no-repeat;
     background-size: cover;
+}
+
+.include-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+        url(../img/homepage_safari_lions.webp) center center no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    /* background-attachment: fixed; */
 }
 
 .btn-play {
@@ -420,11 +438,20 @@ body {
 
 
 /*** Facts & Visiting Hours ***/
-.facts {
+/* .facts {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                 url(../img/bg-1.jpg) center center no-repeat;
     background-size: cover;
+} */
+
+.facts {
+    background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../img/Elephant_Selous.webp) center center no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
 
 .visiting-hours {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
@@ -602,7 +629,7 @@ body {
 /*** Footer ***/
 .footer {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url(../img/bg-2.jpg) center center no-repeat;
+                url(../img/Lion_Serengeti.webp) center center no-repeat;
     background-size: cover;
 }
 
