@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class FrontendController extends Controller
+class frontendController extends Controller
 {
     public function index()
     {
@@ -15,7 +15,7 @@ class FrontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('front.index', $data );
+            return view('frontend.index', $data );
 
         }else{
             abort(404);
@@ -31,7 +31,7 @@ class FrontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('front.pages.about', $data );
+            return view('frontend.pages.about', $data );
 
         }else{
             abort(404);
@@ -47,7 +47,7 @@ class FrontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('front.pages.services', $data );
+            return view('frontend.pages.services', $data );
 
         }else{
             abort(404);
@@ -63,7 +63,7 @@ class FrontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('front.pages.contact', $data );
+            return view('frontend.pages.contact', $data );
 
         }else{
             abort(404);
@@ -79,7 +79,7 @@ class FrontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('front.pages.blog', $data );
+            return view('frontend.pages.blog', $data );
 
         }else{
             abort(404);
