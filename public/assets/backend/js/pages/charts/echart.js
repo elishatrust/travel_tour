@@ -475,66 +475,66 @@ $(function() {
 });
 
 // Doughnut Chart
-// $(function() {
-//     "use strict";
-//     var doughnutChart = getChart("echart-doughnut");
-//     var app = {};
-//     var option = {};
+$(function() {
+    "use strict";
+    var doughnutChart = getChart("echart-doughnut");
+    var app = {};
+    var option = {};
 
-//     option = {
-//         grid: {
-//             left: '5%',
-//             right:'0%',
-//             top: '2%',
-//             bottom:'5%',
-//         },
+    option = {
+        grid: {
+            left: '5%',
+            right:'0%',
+            top: '2%',
+            bottom:'5%',
+        },
         
-//         legend: {
-//             orient: 'vertical',
-//             x: 'left',
-//             data:['Data1','Data2','Data3','Data4','Data5']
-//         },
-//         series: [
-//             {
-//                 name:'Access source',
-//                 type:'pie',
-//                 radius: ['50%', '70%'],
-//                 avoidLabelOverlap: false,
-//                 label: {
-//                     normal: {
-//                         show: false,
-//                         position: 'center'
-//                     },
-//                     emphasis: {
-//                         show: true,
-//                         textStyle: {
-//                             fontSize: '30',
-//                             fontWeight: 'bold'
-//                         }
-//                     }
-//                 },
-//                 labelLine: {
-//                     normal: {
-//                         show: false
-//                     }
-//                 },
-//                 data:[
-//                     {value:335, name:'Data1', itemStyle: {color: '#ffc323',}},
-//                     {value:310, name:'Data2', itemStyle: {color: '#ff758e',}},
-//                     {value:234, name:'Data3', itemStyle: {color: '#49c5b6',}},
-//                     {value:135, name:'Data4', itemStyle: {color: '#60bafd',}},
-//                     {value:1548, name:'Data5', itemStyle: {color: '#a27ce6',}}
-//                 ]
-//             }
-//         ]
-//     };
-//     if (option && typeof option === "object") {
-//         doughnutChart.setOption(option, true);
-//     }
-//     $(window).on('resize', function(){
-//         doughnutChart.resize();
-//     });
-// });
+        legend: {
+            orient: 'vertical',
+            x: 'left',
+            data:['Data1','Data2','Data3','Data4','Data5']
+        },
+        series: [
+            {
+                name:'Access source',
+                type:'pie',
+                radius: ['50%', '70%'],
+                avoidLabelOverlap: false,
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        show: true,
+                        textStyle: {
+                            fontSize: '30',
+                            fontWeight: 'bold'
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                data:[
+                    {value:335, name:'Data1', itemStyle: {color: '#ffc323',}},
+                    {value:310, name:'Data2', itemStyle: {color: '#ff758e',}},
+                    {value:234, name:'Data3', itemStyle: {color: '#49c5b6',}},
+                    {value:135, name:'Data4', itemStyle: {color: '#60bafd',}},
+                    {value:1548, name:'Data5', itemStyle: {color: '#a27ce6',}}
+                ]
+            }
+        ]
+    };
+    if (option && typeof option === "object") {
+        doughnutChart.setOption(option, true);
+    }
+    $(window).on('resize', function(){
+        doughnutChart.resize();
+    });
+});
 
 // Large scale area chart
 $(function() {

@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\ForgotPasswordMail;
-use App\Models\AdminModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
@@ -23,7 +21,7 @@ class AuthController extends Controller
         {
             if ($user->archive == 0)
             {
-                return redirect('admin/dashboard');
+                return redirect()->route('dashboard');
             }
         }else{
             return view('backend.auth.login', compact('data'));
@@ -31,26 +29,50 @@ class AuthController extends Controller
         return view('backend.auth.login', compact('data'));
     }
 
+
     public function login(Request $request)
     {
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'email' => 'required|email',
-            'password' => 'required|min:5|max:10',
+            'password' => 'required',
         ]);
 
-        if (Auth::attempt(['email' => $request->input('email'), 'password' => $request->input('password')])) {
-
-            if (Auth::user()->archive == 0) 
-            {
-                return redirect()->route('dashboard');
-            }else{
-                return redirect()->back()->with('error', 'Incorrect Email or Password');
-                // return back()->withErrors(['loginError' => 'Invalid username or password']);
-            }
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 422,
+                'errors' => $validator->errors()
+            ], 422);
         }
-        return redirect()->back()->with('error', 'Incorrect Email or Password');
-        // return back()->withErrors(['loginError' => 'Invalid username or password']);
+
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            return response()->json([
+                'status' => 200,
+                'message' => 'Login Successfully',
+                'redirect_url' => route('dashboard')
+            ]);
+        }
+
+        return response()->json([
+            'status' => 500,
+            'message' => 'Invalid Email or Password'
+        ]);
     }
+
+    // public function login(Request $request)
+    // {
+    //     $credentials = $request->validate([
+    //         'email' => 'required|email',
+    //         'password' => 'required|min:3',
+    //     ]);
+    
+    //     if (Auth::attempt($credentials) && Auth::user()->archive == 0) {
+    //         $request->session()->regenerate();
+    //         return response()->json(['redirect' => route('dashboard')], 200);
+    //     }
+    //     return response()->json(['errors' => ['loginError' => 'Invalid username or password.']], 422);
+    // }
 
     public function reset_password()
     {

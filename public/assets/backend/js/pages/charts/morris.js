@@ -174,7 +174,7 @@ function MorrisLineChart() {
         resize: true,
         data: [{
                 y: '2014 Q1',
-                item1: 4356
+                item1: 2356
             },
             {
                 y: '2015 Q2',

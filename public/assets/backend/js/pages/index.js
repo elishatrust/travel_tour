@@ -52,9 +52,9 @@ function MorrisArea() {
     Morris.Area({
         element: 'm_area_chart',
         data: [{
-                period: '2024',
-                Visit: 255,
-                Sales: 105                
+                period: '2011',
+                Visit: 45,
+                Sales: 75                
             }, {
                 period: '2012',
                 Visit: 130,
@@ -96,6 +96,7 @@ function MorrisArea() {
         resize: true
     });
 }
+
 //======
 $(window).on('scroll',function() {
     $('.card .sparkline').each(function() {
