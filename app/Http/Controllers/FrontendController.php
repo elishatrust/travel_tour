@@ -57,7 +57,7 @@ class frontendController extends Controller
     public function contact()
     {
         $meta_title = 'Travel & Tour';
-        $page_title = 'Contact';
+        $page_title = "Let's Talk";
 
         if(!empty($meta_title && $page_title))
         {
@@ -70,10 +70,10 @@ class frontendController extends Controller
         }
     }
 
-    public function blog()
+    public function latest_news()
     {
         $meta_title = 'Travel & Tour';
-        $page_title = 'Blog';
+        $page_title = 'Latest News';
 
         if(!empty($meta_title && $page_title))
         {

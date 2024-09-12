@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+<nav class="navbar shadow navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow123 fadeIn" data-wow123-delay="0.1s">
     <a href="{{ route('welcome') }}" class="navbar-brand p-0">
-        {{-- <img class="img-fluid me-3" src="{{ asset('assets/frontend/img/logo/logo.png') }}" alt="Icon" /> --}}
-        <h1 class="m-0 text-primary"><span style="color:#0059c5!important">Travel</span>Tour</h1>
+        <img class="img-fluid me-3" src="{{ asset('assets/frontend/img/more/logo2.png') }}" alt="Icon" />
+        {{-- <h1 class="m-0 text-primary h3"><span style="color:#0059c5!important">UPZONE</span>Safaris</h1> --}}
     </a>
     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" >
         <span class="navbar-toggler-icon"></span>
@@ -11,7 +11,7 @@
             <a href="{{ route('welcome') }}" class="nav-item nav-link active">Home</a>
             <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
             <a href="{{ route('services') }}" class="nav-item nav-link">Services</a>
-            <a href="{{ route('blog') }}" class="nav-item nav-link">Blog</a>
+            <a href="{{ route('latest-news') }}" class="nav-item nav-link">Latest News</a>
             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
         </div>
         <a href="#bookingModal" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-primary">Book Now<i class="fa fa-arrow-right ms-3"></i></a>

@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FrontendController::class, 'index'])->name('welcome');
 Route::get('/about', [FrontendController::class, 'about'])->name('about');
 Route::get('/services', [FrontendController::class, 'services'])->name('services');
-Route::get('/blog', [FrontendController::class, 'blog'])->name('blog');
+Route::get('/latest-news', [FrontendController::class, 'latest_news'])->name('latest-news');
 Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 
 
