@@ -158,7 +158,7 @@
 
 
 <!-- Animal Start -->
-<div class="container-xxl py-5">
+{{-- <div class="container-xxl py-5">
     <div class="container">
     <div class="row g-5 mb-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
         <div class="col-lg-6">
@@ -259,11 +259,11 @@
         </div>
     </div>
     </div>
-</div>
+</div> --}}
 <!-- Animal End -->
 
 <!-- Visiting Hours Start -->
-<div class="container-xxl bg-primary visiting-hours my-5 py-5 wow123 fadeInUp" data-wow123-delay="0.1s">
+{{-- <div class="container-xxl bg-primary visiting-hours my-5 py-5 wow123 fadeInUp" data-wow123-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-md-6 wow123 fadeIn" data-wow123-delay="0.3s">
@@ -330,7 +330,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Visiting Hours End -->
 
 <!-- Membership Start -->
@@ -338,8 +338,8 @@
     <div class="container">
         <div class="row g-5 mb-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
             <div class="col-lg-6">
-                <p><span class="text-primary me-2">#</span>Membership</p>
-                <h1 class="display-5 mb-0">You Can Be A Proud Member Of <span style="color:#0059c5!important">UPZONE</span><span class="text-primary">Safaris</span></h1>
+                {{-- <p><span class="text-primary me-2">#</span>Membership</p> --}}
+                <h1 class="display-5123 h4 mb-0">Special Packages <span style="color:#0059c5!important">UPZONE</span><span class="text-primary">Safaris</span></h1>
             </div>
             <div class="col-lg-6 text-lg-end">
                 <a class="btn btn-primary py-3 px-5" href="#">Special Pricing</a>
