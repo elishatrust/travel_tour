@@ -12,8 +12,14 @@
             <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
             <a href="{{ route('services') }}" class="nav-item nav-link">Services</a>
             <a href="{{ route('latest-news') }}" class="nav-item nav-link">Latest News</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle active123" data-bs-toggle="dropdown">More</a>
+                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                    <a href="animal.html" class="dropdown-item">FAQ</a>
+                </div>
+            </div>
             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
         </div>
-        <a href="#bookingModal" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-primary">Book Now<i class="fa fa-arrow-right ms-3"></i></a>
+        <a href="#bookingModal" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-primary text-uppercase">Plan a Trip</a>
     </div>
 </nav>

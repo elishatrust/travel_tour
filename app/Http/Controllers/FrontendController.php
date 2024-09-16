@@ -85,4 +85,5 @@ class frontendController extends Controller
             abort(404);
         }
     }
+    
 }

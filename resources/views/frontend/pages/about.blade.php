@@ -8,8 +8,8 @@
     <div class="container">
       <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-              {{-- <p><span class="text-primary me-2">#</span>Background To TravelTour</p> --}}
-              <h1 class="display-5 mb-4">
+              <p><span class="text-primary me-2">#</span>Our Background</p>
+              <h1 class="display-5123 h2 mb-4">
                 Experience The Best from <span class="text-primary"><span style="color:#0059c5!important">Travel</span>Tour</span>
               </h1>
               <p class="mb-4 text-justify-all">

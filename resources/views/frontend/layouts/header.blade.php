@@ -35,7 +35,7 @@
         <div class="row g-5 align-items-center  g-0 flex-column-reverse flex-lg-row" style="margin-top: 40px;margin-bottom:100px;">
             <div class="col-md-12 col-lg-7">
                 {{-- <h4 class="mb-3 text-dark">100% Travel & Tour</h4> --}}
-                <h1 class="mb-5 display-3 text-light text-end">Explore the Beauty of the Beautiful World</h1>
+                <h1 class="mb-5 display-3 text-light text-start">Explore the Beauty of the Beautiful World</h1>
                 <div class="position-relative mx-auto">
                     <a href="{{ route('about') }}" class="btn btn-primary border-secondary py-3 px-4 rounded-pill text-white">Explore Now</a>
                 </div>
@@ -44,15 +44,23 @@
                 <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active rounded" style="border-radius: 10px !important">
-                            <img src="{{ asset('assets/frontend/img/1.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
+                            <img src="{{ asset('assets/frontend/img/more/a.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
                             {{-- <a href="#" class="btn px-4 py-2 text-white rounded">Travel</a> --}}
                         </div>
                         <div class="carousel-item rounded" style="border-radius: 10px !important">
-                            <img src="{{ asset('assets/frontend/img/2.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                            <img src="{{ asset('assets/frontend/img/more/b.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 rounded" alt="Second slide">
                             {{-- <a href="#" class="btn px-4 py-2 text-white rounded">Tour</a> --}}
                         </div>
                         <div class="carousel-item rounded" style="border-radius: 10px !important">
-                            <img src="{{ asset('assets/frontend/img/3.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                            <img src="{{ asset('assets/frontend/img/more/c.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                            {{-- <a href="#" class="btn px-4 py-2 text-white rounded">Enjoy</a> --}}
+                        </div>
+                        <div class="carousel-item rounded" style="border-radius: 10px !important">
+                            <img src="{{ asset('assets/frontend/img/more/d.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                            {{-- <a href="#" class="btn px-4 py-2 text-white rounded">Enjoy</a> --}}
+                        </div>
+                        <div class="carousel-item rounded" style="border-radius: 10px !important">
+                            <img src="{{ asset('assets/frontend/img/more/e.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 rounded" alt="Second slide">
                             {{-- <a href="#" class="btn px-4 py-2 text-white rounded">Enjoy</a> --}}
                         </div>
                     </div>

@@ -4,7 +4,7 @@
 
 @include('frontend.layouts.header')
 
-<!-- Video Modal Start -->
+<!-- Video Modal -->
 <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content rounded-0">
@@ -44,14 +44,14 @@
         </div>
     </div>
 </div>
-<!-- Video Modal End -->
 
-<!-- About Start -->
-<div class="container-xxl pt-5">
+
+<!-- Welcome -->
+<div class="container-xxl py-5">
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-6 wow123 fadeInUp" data-wow123-delay="0.1s">
-                {{-- <p><span class="text-primary me-2">#</span>Welcome To TravelTour</p> --}}
+                <p><span class="text-primary me-2">#</span>Welcome To UpzoneSafaris</p>
                 <h1 class="display-5123 h2 mb-4">
                     Experience The Best<span class="text-primary"> Safaris</span>
                 </h1>
@@ -80,34 +80,33 @@
         </div>
     </div>
 </div>
-<!-- About End -->
 
 
-<!-- DNA Start -->
-<div class="container-xxl pb-5 pt-5">
+<!-- DNA -->
+<div class="container-xxl py-5">
     <div class="container">
         <div class="row gy-5 gx-4">
-            <div class="col-lg-4 col-md-4 col-sm-12 shadow wow123 fadeInUp" data-wow123-delay="0.1s">
-                <div class="p-3 bg-blend-lighten">
-                    <h5 class="mb-3">Vision</h5>
+            <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
+                <div class="card-card p-4 bg-blend-lighten shadow h-100">
+                    <h5 class="mb-3 text-center text-uppercase">Vision</h5>
                     <span>
                         To be the world’s most trusted and innovative travel company, 
                         inspiring people to explore and experience the beauty of the world.
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12  shadow wow123 fadeInUp" data-wow123-delay="0.3s">
-                <div class="p-3">
-                    <h5 class="mb-3">Mission</h5>
+            <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
+                <div class="card-card p-4 bg-blend-lighten shadow h-100">
+                    <h5 class="mb-3 text-center text-uppercase">Mission</h5>
                     <span>
                         We are committed to offering personalized service, reliable travel solutions, 
                         and unforgettable journeys that enrich lives and create lasting memories.
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12  shadow wow123 fadeInUp" data-wow123-delay="0.5s">
-                <div class="p-3">
-                    <h5 class="mb-3">Core Value</h5>
+            <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
+                <div class="card-card p-4 bg-blend-lighten shadow h-100">
+                    <h5 class="mb-3 text-center text-uppercase">Core Value</h5>
                     <span>
                         Our top priority is the satisfaction and happiness of our clients by 
                         conducting our business with the highest ethical standards, honesty, and transparency.
@@ -117,11 +116,11 @@
         </div>
     </div>
 </div>
-<!-- DNA End -->
 
-<!-- Facts Start -->
-<div class="container-fluid bg-primary facts my-5 py-5 wow123 fadeInUp" data-wow123-delay="0.1s">
-    <div class="container py-5">
+
+<!-- Facts -->
+<div class="container-xxl py-5 bg-primary facts wow123 fadeInUp" data-wow123-delay="0.1s">
+    <div class="container">
         <div class="row g-4">
             <div class="col-md-6 col-lg-3 text-center wow123 fadeIn"
                 data-wow123-delay="0.3s">
@@ -154,10 +153,9 @@
         </div>
     </div>
 </div>
-<!-- Facts End -->
 
 
-<!-- Animal Start -->
+<!-- Animal -->
 {{-- <div class="container-xxl py-5">
     <div class="container">
     <div class="row g-5 mb-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
@@ -260,14 +258,197 @@
     </div>
     </div>
 </div> --}}
-<!-- Animal End -->
 
-<!-- Visiting Hours Start -->
-{{-- <div class="container-xxl bg-primary visiting-hours my-5 py-5 wow123 fadeInUp" data-wow123-delay="0.1s">
+
+<!-- Packages -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 mb-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
+            <div class="col-lg-12 col-sm-12 text-center">
+                <p><span class="text-primary me-2">#</span>Packages</p>
+                <h1 class="display-5123 h2 mb-5">Special Offers & Discounts</h1>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
+                <div class="membership-item position-relative shadow">
+                    {{-- <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-1.jpg') }}" alt="" /> --}}
+                    <h1 class="display-1 fs-1">Basic</h1>
+                    <h4 class="text-dark mb-3">500,000 TZS</h4>
+                    <p><i class="fa fa-check text-primary me-3"></i>10% discount</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>2 adult and 2 child</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
+                    <a class="btn btn-outline-primary px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
+                <div class="membership-item position-relative shadow">
+                    {{-- <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-2.jpg') }}" alt="" /> --}}
+                    <h1 class="display-1 fs-1">Standard</h1>
+                    <h4 class="text-dark mb-3">1,500,000 TZS</h4>
+                    <p><i class="fa fa-check text-primary me-3"></i>15% discount</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>4 adult and 4 child </p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
+                    <a class="btn btn-outline-primary px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.7s">
+                <div class="membership-item position-relative shadow">
+                    {{-- <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="" /> --}}
+                    <h1 class="display-1 fs-1">Premium</h1>
+                    <h4 class="text-dark mb-3">3,000,000 TZS</h4>
+                    <p><i class="fa fa-check text-primary me-3"></i>20% discount</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>6 adult and 6 child</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
+                    <a class="btn btn-outline-primary px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.7s">
+                <div class="membership-item position-relative shadow">
+                    {{-- <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="" /> --}}
+                    <h1 class="display-1 fs-1">Platinum</h1>
+                    <h4 class="text-dark mb-3">5,000,000 TZS</h4>
+                    <p><i class="fa fa-check text-primary me-3"></i>20% discount</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>6 adult and 6 child</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
+                    <a class="btn btn-outline-primary px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-xxl py-5 our_department_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title text-center mb-55">
+                    <h3>Our Departments</h3>
+                    <p>Esteem spirit temper too say adieus who direct esteem. <br>
+                        It esteems luckily or picture placing drawing. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_department">
+                    <div class="department_thumb">
+                        <img src="img/department/1.png" alt="">
+                    </div>
+                    <div class="department_content">
+                        <h3><a href="#">Eye Care</a></h3>
+                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                        <a href="#" class="learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_department">
+                    <div class="department_thumb">
+                        <img src="img/department/2.png" alt="">
+                    </div>
+                    <div class="department_content">
+                        <h3><a href="#">Physical Therapy</a></h3>
+                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                        <a href="#" class="learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_department">
+                    <div class="department_thumb">
+                        <img src="img/department/3.png" alt="">
+                    </div>
+                    <div class="department_content">
+                        <h3><a href="#">Dental Care</a></h3>
+                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                        <a href="#" class="learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_department">
+                    <div class="department_thumb">
+                        <img src="img/department/4.png" alt="">
+                    </div>
+                    <div class="department_content">
+                        <h3><a href="#">Diagnostic Test</a></h3>
+                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                        <a href="#" class="learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_department">
+                    <div class="department_thumb">
+                        <img src="img/department/5.png" alt="">
+                    </div>
+                    <div class="department_content">
+                        <h3><a href="#">Skin Surgery</a></h3>
+                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                        <a href="#" class="learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_department">
+                    <div class="department_thumb">
+                        <img src="img/department/6.png" alt="">
+                    </div>
+                    <div class="department_content">
+                        <h3><a href="#">Surgery Service</a></h3>
+                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                        <a href="#" class="learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Proudness -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4 wow123 fadeInUp" data-wow123-delay="0.5s">
+                <div class="img-border123 h-100">
+                    <img class="img-fluid h-100" src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-8 wow123 fadeInUp" data-wow123-delay="0.1s">
+                <p><span class="text-primary me-2">#</span>Our Proudness</p>
+                <h1 class="display-5123 h2 mb-4">Why Choosing Us!</h1>
+                <p class="mb-3">
+                    <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Personalized Services: </span>
+                    We tailor your travel experiences based on your preferences.
+                </p>
+                <p class="mb-3">
+                    <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Expert Guidance: </span>
+                    Our experienced team offers insights and advice for the perfect trip.
+                </p>
+                <p class="mb-3">
+                    <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>24/7 Support: </span>
+                    We provide around-the-clock customer support, ensuring a worry-free experience.
+                </p>
+                <p class="mb-3">
+                    <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Sustainable Travel: </span>
+                    We promote eco-friendly tourism that respects the environment and local cultures.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Visiting Hours -->
+{{-- <div class="container-xxl bg-primary visiting-hours bg-light my-5 py-5 wow123 fadeInUp" data-wow123-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-md-6 wow123 fadeIn" data-wow123-delay="0.3s">
-                <h1 class="display-6 text-white mb-5">Visiting Hours</h1>
+                <h1 class="display-6123 h2 text-white mb-5">Visiting Hours</h1>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
                         <span>Monday</span>
@@ -300,7 +481,7 @@
                 </ul>
             </div>
             <div class="col-md-6 text-light wow123 fadeIn" data-wow123-delay="0.5s">
-                <h1 class="display-6 text-white mb-5">Contact Info</h1>
+                <h1 class="display-6123 h2 text-white mb-5">Contact Info</h1>
                 <table class="table">
                     <tbody>
                         <tr>
@@ -331,110 +512,58 @@
         </div>
     </div>
 </div> --}}
-<!-- Visiting Hours End -->
 
-<!-- Membership Start -->
+
+<!-- Testimonial -->
 <div class="container-xxl py-5">
     <div class="container">
         <div class="row g-5 mb-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
-            <div class="col-lg-6">
-                {{-- <p><span class="text-primary me-2">#</span>Membership</p> --}}
-                <h1 class="display-5123 h4 mb-0">Special Packages <span style="color:#0059c5!important">UPZONE</span><span class="text-primary">Safaris</span></h1>
-            </div>
-            <div class="col-lg-6 text-lg-end">
-                <a class="btn btn-primary py-3 px-5" href="#">Special Pricing</a>
+            <div class="col-lg-12 col-sm-12 text-center">
+                <p><span class="text-primary me-2">#</span>Testimonial</p>
+                <h1 class="display-5123 h2 text-center mb-5 wow123 fadeInUp" data-wow123-delay="0.1s">Our Travellers Say! </h1>
             </div>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow123 fadeInUp" data-wow123-delay="0.3s">
-                <div class="membership-item position-relative">
-                    <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-1.jpg') }}" alt="" />
-                    <h1 class="display-1 fs-1">Standard</h1>
-                    <h4 class="text-white mb-3">500,000 TZS</h4>
-                    <p><i class="fa fa-check text-primary me-3"></i>10% discount</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>2 adult and 2 child</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
-                    <a class="btn btn-outline-light px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow123 fadeInUp" data-wow123-delay="0.5s">
-                <div class="membership-item position-relative">
-                    <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-2.jpg') }}" alt="" />
-                    <h1 class="display-1 fs-1">Excutive</h1>
-                    <h4 class="text-white mb-3">1,000,000 TZS</h4>
-                    <p><i class="fa fa-check text-primary me-3"></i>15% discount</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>4 adult and 4 child </p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
-                    <a class="btn btn-outline-light px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow123 fadeInUp" data-wow123-delay="0.7s">
-                <div class="membership-item position-relative">
-                    <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="" />
-                    <h1 class="display-1 fs-1">Premium</h1>
-                    <h4 class="text-white mb-3">2,000,000 TZS</h4>
-                    <p><i class="fa fa-check text-primary me-3"></i>20% discount</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>6 adult and 6 child</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
-                    <a class="btn btn-outline-light px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Membership End -->
-
-<!-- Testimonial Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <h1 class="display-5 text-center mb-5 wow123 fadeInUp" data-wow123-delay="0.1s">Our Clients Say! </h1>
         <div class="owl-carousel testimonial-carousel wow123 fadeInUp" data-wow123-delay="0.1s">
             <div class="testimonial-item text-center">
-                <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="{{ asset('assets/frontend/img/testimonial-1.jpg') }}" style="width: 100px; height: 100px"/>
+                {{-- <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="{{ asset('assets/backend/avatar.jpg') }}" style="width: 100px; height: 100px"/> --}}
                 <div class="testimonial-text rounded text-center p-4">
                     <p>
-                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                        clita erat magna elitr erat sit sit erat at rebum justo sea
-                        clita.
+                        "The Company planned the perfect honeymoon for us. 
+                        We loved every moment and appreciated their attention to detail."
                     </p>
-                    <h5 class="mb-1">Patient Name</h5>
-                    <span class="fst-italic">Profession</span>
+                    <h5 class="mb-1">Justine & Caro</h5>
+                    <span class="fst-italic">Paris, FRANCE</span>
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="{{ asset('assets/frontend/img/testimonial-2.jpg') }}" style="width: 100px; height: 100px"/>
+                {{-- <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="{{ asset('assets/backend/avatar.jpg') }}" style="width: 100px; height: 100px"/> --}}
                 <div class="testimonial-text rounded text-center p-4">
                     <p>
-                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                        clita erat magna elitr erat sit sit erat at rebum justo sea
-                        clita.
+                        "We had the best safari experience, thanks to their knowledgeable 
+                        guides and well-organized itinerary. Highly recommend them!"
                     </p>
-                    <h5 class="mb-1">Patient Name</h5>
-                    <span class="fst-italic">Profession</span>
+                    <h5 class="mb-1">Victoria Paul</h5>
+                    <span class="fst-italic">New York, USA</span>
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="{{ asset('assets/frontend/img/testimonial-3.jpg') }}" style="width: 100px; height: 100px"/>
+                {{-- <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="{{ asset('assets/backend/avatar.jpg') }}" style="width: 100px; height: 100px"/> --}}
                 <div class="testimonial-text rounded text-center p-4">
                     <p>
-                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                        clita erat magna elitr erat sit sit erat at rebum justo sea
-                        clita.
+                        "I’ve been booking my corporate travels with them for the past five years. 
+                        They handle everything professionally and efficiently."
                     </p>
-                    <h5 class="mb-1">Patient Name</h5>
-                    <span class="fst-italic">Profession</span>
+                    <h5 class="mb-1">Adam Kwasa</h5>
+                    <span class="fst-italic">Cairo, EGYPT</span>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Testimonial End -->
 
-<!-- Media Start -->
-@include('frontend.layouts.social-media')
-<!--- Media End -->
+
+<!-- Media -->
+{{-- @include('frontend.layouts.social-media') --}}
+
 
 @endsection
