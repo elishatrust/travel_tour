@@ -4,48 +4,6 @@
 
 @include('frontend.layouts.header')
 
-<!-- Video Modal -->
-<div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content rounded-0">
-            <div class="modal-header">
-                <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- 16:9 aspect ratio -->
-                <div class="ratio ratio-16x9"ass="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- 16:9 aspect ratio -->
-                        <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item"
-                                src=""
-                                id="video"
-                                allowfullscreen
-                                allowscriptaccess="always"
-                                allow="autoplay">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-                    <iframe class="embed-responsive-item"
-                        src=""
-                        id="video"
-                        allowfullscreen
-                        allowscriptaccess="always"
-                        allow="autoplay">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 <!-- Welcome -->
 <div class="container-xxl py-5">
     <div class="container">
@@ -80,7 +38,6 @@
         </div>
     </div>
 </div>
-
 
 <!-- DNA -->
 <div class="container-xxl py-5">
@@ -117,7 +74,6 @@
     </div>
 </div>
 
-
 <!-- Facts -->
 <div class="container-xxl py-5 bg-primary facts wow123 fadeInUp" data-wow123-delay="0.1s">
     <div class="container">
@@ -153,112 +109,6 @@
         </div>
     </div>
 </div>
-
-
-<!-- Animal -->
-{{-- <div class="container-xxl py-5">
-    <div class="container">
-    <div class="row g-5 mb-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
-        <div class="col-lg-6">
-        <p><span class="text-primary me-2">#</span>Our Animals</p>Awes
-        <h1 class="display-5 mb-0">
-            Let`s See Our <span style="color:#0059c5!important">UPZONE</span><span class="text-primary">Safaris</span> Awesome
-            Animals
-        </h1>
-        </div>
-        <div class="col-lg-6 text-lg-end">
-        <a class="btn btn-primary py-3 px-5" href=""
-            >Explore More Animals</a
-        >
-        </div>
-    </div>
-    <div class="row g-4">
-        <div class="col-lg-4 col-md-6 wow123 fadeInUp" data-wow123-delay="0.1s">
-        <div class="row g-4">
-            <div class="col-12">
-            <a
-                class="animal-item"
-                href="{{ asset('assets/frontend/img/animal-md-1.jpg') }}"
-                data-lightbox="animal"
-            >
-                <div class="position-relative">
-                <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-md-1.jpg') }}" alt="" />
-                <div class="animal-text p-4">
-                    <p class="text-white small text-uppercase mb-0">Animal</p>
-                    <h5 class="text-white mb-0">Elephant</h5>
-                </div>
-                </div>
-            </a>
-            </div>
-            <div class="col-12">
-                <a class="animal-item" href="{{ asset('assets/frontend/img/animal-lg-1.jpg') }}" data-lightbox="animal">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-1.jpg') }}" alt="" />
-                        <div class="animal-text p-4">
-                            <p class="text-white small text-uppercase mb-0">Animal</p>
-                            <h5 class="text-white mb-0">Elephant</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 wow123 fadeInUp" data-wow123-delay="0.3s">
-        <div class="row g-4">
-            <div class="col-12">
-                <a class="animal-item" href="{{ asset('assets/frontend/img/animal-lg-2.jpg') }}" data-lightbox="animal">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-2.jpg') }}" alt="" />
-                        <div class="animal-text p-4">
-                            <p class="text-white small text-uppercase mb-0">Animal</p>
-                            <h5 class="text-white mb-0">Elephant</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12">
-                <a class="animal-item" href="{{ asset('assets/frontend/img/animal-md-2.jpg') }}" data-lightbox="animal">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-md-2.jpg') }}" alt="" />
-                        <div class="animal-text p-4">
-                            <p class="text-white small text-uppercase mb-0">Animal</p>
-                            <h5 class="text-white mb-0">Elephant</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 wow123 fadeInUp" data-wow123-delay="0.5s">
-            <div class="row g-4">
-                <div class="col-12">
-                    <a class="animal-item" href="{{ asset('assets/frontend/img/animal-md-3.jpg') }}" data-lightbox="animal">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-md-3.jpg') }}" alt="" />
-                            <div class="animal-text p-4">
-                                <p class="text-white small text-uppercase mb-0">Animal</p>
-                                <h5 class="text-white mb-0">Elephant</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-12">
-                    <a class="animal-item" href="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" data-lightbox="animal">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="" />
-                            <div class="animal-text p-4">
-                                <p class="text-white small text-uppercase mb-0">Animal</p>
-                                <h5 class="text-white mb-0">Elephant</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</div> --}}
-
 
 <!-- Packages -->
 <div class="container-xxl py-5">
@@ -318,97 +168,6 @@
     </div>
 </div>
 
-
-<div class="container-xxl py-5 our_department_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="section_title text-center mb-55">
-                    <h3>Our Departments</h3>
-                    <p>Esteem spirit temper too say adieus who direct esteem. <br>
-                        It esteems luckily or picture placing drawing. </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-4 col-md-6 col-lg-4">
-                <div class="single_department">
-                    <div class="department_thumb">
-                        <img src="img/department/1.png" alt="">
-                    </div>
-                    <div class="department_content">
-                        <h3><a href="#">Eye Care</a></h3>
-                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                        <a href="#" class="learn_more">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-lg-4">
-                <div class="single_department">
-                    <div class="department_thumb">
-                        <img src="img/department/2.png" alt="">
-                    </div>
-                    <div class="department_content">
-                        <h3><a href="#">Physical Therapy</a></h3>
-                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                        <a href="#" class="learn_more">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-lg-4">
-                <div class="single_department">
-                    <div class="department_thumb">
-                        <img src="img/department/3.png" alt="">
-                    </div>
-                    <div class="department_content">
-                        <h3><a href="#">Dental Care</a></h3>
-                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                        <a href="#" class="learn_more">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-lg-4">
-                <div class="single_department">
-                    <div class="department_thumb">
-                        <img src="img/department/4.png" alt="">
-                    </div>
-                    <div class="department_content">
-                        <h3><a href="#">Diagnostic Test</a></h3>
-                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                        <a href="#" class="learn_more">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-lg-4">
-                <div class="single_department">
-                    <div class="department_thumb">
-                        <img src="img/department/5.png" alt="">
-                    </div>
-                    <div class="department_content">
-                        <h3><a href="#">Skin Surgery</a></h3>
-                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                        <a href="#" class="learn_more">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-lg-4">
-                <div class="single_department">
-                    <div class="department_thumb">
-                        <img src="img/department/6.png" alt="">
-                    </div>
-                    <div class="department_content">
-                        <h3><a href="#">Surgery Service</a></h3>
-                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                        <a href="#" class="learn_more">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
 <!-- Proudness -->
 <div class="container-xxl py-5">
     <div class="container">
@@ -441,7 +200,6 @@
         </div>
     </div>
 </div>
-
 
 <!-- Visiting Hours -->
 {{-- <div class="container-xxl bg-primary visiting-hours bg-light my-5 py-5 wow123 fadeInUp" data-wow123-delay="0.1s">
@@ -561,9 +319,7 @@
     </div>
 </div>
 
-
 <!-- Media -->
 {{-- @include('frontend.layouts.social-media') --}}
-
 
 @endsection
