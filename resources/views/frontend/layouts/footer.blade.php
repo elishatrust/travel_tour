@@ -30,7 +30,7 @@
       <a class="btn btn-link" href="{{ route('contact') }}">Contact Us</a>
       <a class="btn btn-link" href="{{ route('services') }}">Our Services</a>
       <a class="btn btn-link" href="{{ route('blog') }}">Latest News</a>
-      <a class="btn btn-link" href="#">Terms & Condition</a>
+      <a class="btn btn-link" href="{{ route('terms-and-conditions') }}">Terms & Condition</a>
       <a class="btn btn-link" href="#">Support</a>
     </div>
     <div class="col-lg-3 col-md-6">

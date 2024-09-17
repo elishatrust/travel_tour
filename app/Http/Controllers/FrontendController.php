@@ -85,5 +85,22 @@ class frontendController extends Controller
             abort(404);
         }
     }
+
+    public function terms_and_conditions()
+    {
+        $meta_title = 'Travel & Tour';
+        $page_title = 'Terms & Conditions';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.terms-and-conditions', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
     
 }

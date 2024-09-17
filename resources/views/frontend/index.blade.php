@@ -88,7 +88,7 @@
         <div class="row gy-5 gx-4">
             <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
                 <div class="card-card p-4 bg-blend-lighten shadow h-100">
-                    <h5 class="mb-3 text-center text-uppercase">Vision</h5>
+                    <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Vision</h5>
                     <span>
                         To be the world’s most trusted and innovative travel company, 
                         inspiring people to explore and experience the beauty of the world.
@@ -97,7 +97,7 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
                 <div class="card-card p-4 bg-blend-lighten shadow h-100">
-                    <h5 class="mb-3 text-center text-uppercase">Mission</h5>
+                    <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Mission</h5>
                     <span>
                         We are committed to offering personalized service, reliable travel solutions, 
                         and unforgettable journeys that enrich lives and create lasting memories.
@@ -106,7 +106,7 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
                 <div class="card-card p-4 bg-blend-lighten shadow h-100">
-                    <h5 class="mb-3 text-center text-uppercase">Core Value</h5>
+                    <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Core Value</h5>
                     <span>
                         Our top priority is the satisfaction and happiness of our clients by 
                         conducting our business with the highest ethical standards, honesty, and transparency.

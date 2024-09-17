@@ -15,6 +15,7 @@ Route::get('/about', [FrontendController::class, 'about'])->name('about');
 Route::get('/services', [FrontendController::class, 'services'])->name('services');
 Route::get('/latest-news', [FrontendController::class, 'latest_news'])->name('latest-news');
 Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
+Route::get('/terms-and-conditions', [FrontendController::class, 'terms_and_conditions'])->name('terms-and-conditions');
 
 
 ## AUTHENTICATION
