@@ -22,6 +22,8 @@
     <link href="{{ asset('assets/frontend/lib/animate/animate.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet" />
+    {{-- <link href="{{ asset('assets/frontend/css/tiny-slider.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/frontend/css/aos.css') }}" rel="stylesheet" /> --}}
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ asset('assets/frontend/css/bootstrap.min.css') }}" rel="stylesheet" />
@@ -89,11 +91,20 @@
                                 <div class="form-group">
                                     <label for="accommodation">Accommodation <span class="text-danger">*</span> </label>
                                     <select class="form-select" id="accommodation" name="accommodation" required>
-                                        <option value="">~Select~</option>
+                                        <option value="">Select--</option>
                                         <option value="hotel">Hotel</option>
                                         <option value="resort">Resort</option>
                                         <option value="hostel">Hostel</option>
                                         <option value="guesthouse">Guesthouse</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 mb-3">
+                                <div class="form-group">
+                                    <label for="package">Packages <span class="text-danger">*</span> </label>
+                                    <select class="form-select" id="package" name="package" required>
+                                        <option value="">Select--</option>
+                                        <option value="hotel">Hotel</option>
                                     </select>
                                 </div>
                             </div>
@@ -121,6 +132,8 @@
     <!-- JavaScript Libraries -->
     <script src="{{ asset('assets/frontend/js/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ asset('assets/frontend/js/bootstrap.bundle.min.js') }}"></script>
+    {{-- <script src="{{ asset('assets/frontend/js/tiny-slider.js') }}"></script>
+    <script src="{{ asset('assets/frontend/js/aos.js') }}"></script> --}}
 
     
     <script>

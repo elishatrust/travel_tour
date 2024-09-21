@@ -21,7 +21,6 @@ Green : #217b5f;
     background-size: cover;
     background-position: center;
     background-attachment:scroll;
-    height: 100%;
 }
 
 .carousel-item {
@@ -600,10 +599,11 @@ body {
 
 .facts {
     background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(../img/Elephant_Selous.webp) center center no-repeat;
+        url(../img/more/3b.jpg) center center no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
+    width: 100%;
 }
 
 

@@ -1,7 +1,8 @@
 @extends('frontend.layouts.app')
+<style>
+
+</style>
 @section('content')
-
-
 @include('frontend.layouts.header')
 
 <!-- Welcome -->
@@ -52,7 +53,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
+            <div class="col-lg-4 col-md-4 sha col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
                 <div class="card-card p-4 bg-blend-lighten shadow h-100">
                     <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Mission</h5>
                     <span>
@@ -75,7 +76,7 @@
 </div>
 
 <!-- Facts -->
-<div class="container-xxl py-5 bg-primary facts wow123 fadeInUp" data-wow123-delay="0.1s">
+<div class="container-xxl bg-primary py-5 facts wow123 fadeInUp" data-wow123-delay="0.1s">
     <div class="container">
         <div class="row g-4">
             <div class="col-md-6 col-lg-3 text-center wow123 fadeIn"
