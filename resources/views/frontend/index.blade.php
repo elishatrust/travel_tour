@@ -1,7 +1,4 @@
 @extends('frontend.layouts.app')
-<style>
-
-</style>
 @section('content')
 @include('frontend.layouts.header')
 
@@ -10,15 +7,20 @@
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-6 wow123 fadeInUp" data-wow123-delay="0.1s">
-                <p><span class="text-primary me-2">#</span>Welcome To UpzoneSafaris</p>
+                <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Welcome To UpzoneSafaris</p>
                 <h1 class="display-5123 h2 mb-4">
                     Experience The Best<span class="text-primary"> Safaris</span>
                 </h1>
                 <p class="mb-4 text-justify-all">
-                    At TravelTour, we are passionate about creating unforgettable travel experiences that inspire, relax, and rejuvenate. Founded in 2000, our journey began with a vision to make travel accessible, affordable, and extraordinary for everyone.
+                    At UpzoneSafaris, we are passionate about creating unforgettable travel experiences that inspire, 
+                    relax, and rejuvenate. Founded in 2000, our journey began with a vision to make travel accessible, 
+                    affordable, and extraordinary for everyone.
                 </p>
                 <p class="mb-4 text-justify-all">
-                    At the heart of our business is a simple philosophy: Travel should be accessible, enriching, and above all, a joyful experience. We strive to offer more than just trips; we curate experiences that resonate on a personal level. Whether it’s a serene escape to a tropical paradise, a thrilling adventure in the mountains, or an immersive cultural journey, our goal is to craft memories that last a lifetime.
+                    At the heart of our business the company is accessible, enriching, 
+                    and above all, a joyful experience. We strive to offer more than just trips; we curate experiences 
+                    that resonate on a personal level. Whether it’s a serene escape to a tropical paradise, a thrilling 
+                    adventure in the mountains, or an immersive cultural journey, our goal is to craft memories that last a lifetime.
                 </p>
                 <h5 class="mb-3">
                     <i class="far fa-check-circle text-primary me-3"></i>World Best Animals
@@ -116,11 +118,11 @@
     <div class="container">
         <div class="row g-5 mb-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
             <div class="col-lg-12 col-sm-12 text-center">
-                <p><span class="text-primary me-2">#</span>Packages</p>
+                <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Packages</p>
                 <h1 class="display-5123 h2 mb-5">Special Offers & Discounts</h1>
             </div>
         </div>
-        <div class="row g-4">
+        <div class="row g-5">
             <div class="col-lg-3 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
                 <div class="membership-item position-relative shadow">
                     {{-- <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-1.jpg') }}" alt="" /> --}}
@@ -169,18 +171,21 @@
     </div>
 </div>
 
+<!-- Destination -->
+@include('frontend.layouts.destinations')
+
 <!-- Proudness -->
 <div class="container-xxl py-5">
     <div class="container">
         <div class="row g-5">
-            <div class="col-lg-4 wow123 fadeInUp" data-wow123-delay="0.5s">
+            <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
                 <div class="img-border123 h-100">
-                    <img class="img-fluid h-100" src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="" />
+                    <img class="img-fluid h-100 w-100" src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="" />
                 </div>
             </div>
-            <div class="col-lg-8 wow123 fadeInUp" data-wow123-delay="0.1s">
-                <p><span class="text-primary me-2">#</span>Our Proudness</p>
-                <h1 class="display-5123 h2 mb-4">Why Choosing Us!</h1>
+            <div class="col-lg-8 col-md-8 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
+                <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Our Proudness</p>
+                <h1 class="display-5123 h2 mb-5">Why Choosing Us!</h1>
                 <p class="mb-3">
                     <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Personalized Services: </span>
                     We tailor your travel experiences based on your preferences.
@@ -278,7 +283,7 @@
     <div class="container">
         <div class="row g-5 mb-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
             <div class="col-lg-12 col-sm-12 text-center">
-                <p><span class="text-primary me-2">#</span>Testimonial</p>
+                <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Testimonial</p>
                 <h1 class="display-5123 h2 text-center mb-5 wow123 fadeInUp" data-wow123-delay="0.1s">Our Travellers Say! </h1>
             </div>
         </div>

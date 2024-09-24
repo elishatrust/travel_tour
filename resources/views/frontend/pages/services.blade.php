@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row g-5 mb-5 wow123 fadeInUp" data-wow123-delay="0.1s">
             <div class="col-lg-12 col-sm-12 text-center">
-                <p><span class="text-primary me-2">#</span>What We Do</p>
+                <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>What We Do</p>
                 <h1 class="display-5123 h2 mb-3" style="">Special Services For <span style="color:#f1671e!important">Upzone</span><span class="text-dark">Safaris</span></h1>
             </div>
         </div>
@@ -104,6 +104,8 @@
     </div>
 </div>
 
+<!-- Destination -->
+@include('frontend.layouts.destinations')
 
 
 @endsection

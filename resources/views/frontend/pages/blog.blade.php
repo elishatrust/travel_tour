@@ -71,6 +71,9 @@
 {{-- @include('frontend.layouts.social-media') --}}
 <!--- Media End -->
 
+<!-- Destination -->
+@include('frontend.layouts.destinations')
+
 
 @endsection
 

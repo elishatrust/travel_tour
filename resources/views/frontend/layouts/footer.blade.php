@@ -1,4 +1,4 @@
-<div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow123 fadeIn" data-wow123-delay01234="0.1s">
+<div class="container-fluid bg-dark text-light footer py-5 wow123 fadeIn" data-wow123-delay01234="0.1s">
 <div class="container py-5">
   <div class="row g-5">
     <div class="col-lg-3 col-md-6">
@@ -37,7 +37,7 @@
       <h5 class="text-light mb-4">Popular Destination</h5>
       <a class="btn btn-link" href="#">Mount Meru</a>
       <a class="btn btn-link" href="#">Mount Kilimanjaro</a>
-      <a class="btn btn-link" href="#">Ngorengoro Crater</a>
+      <a class="btn btn-link" href="#">Ngorongoro Crater</a>
       <a class="btn btn-link" href="#">Arusha National Park</a>
       <a class="btn btn-link" href="#">Serengeti National Park</a>
       <a class="btn btn-link" href="#">Tarangire National Park</a>

@@ -21,6 +21,7 @@
     <!-- Libraries Stylesheet -->
     <link href="{{ asset('assets/frontend/lib/animate/animate.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/frontend/css/owl.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet" />
     {{-- <link href="{{ asset('assets/frontend/css/tiny-slider.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/css/aos.css') }}" rel="stylesheet" /> --}}
@@ -183,6 +184,7 @@
     <script src="{{ asset('assets/frontend/lib/counterup/counterup.min.js') }}"></script>
     <script src="{{ asset('assets/frontend/lib/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('assets/frontend/lib/lightbox/js/lightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/js/owl.js') }}"></script>
     <script src="{{ asset('assets/frontend/js/main.js') }}"></script>
     
 </body>
