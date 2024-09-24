@@ -393,7 +393,28 @@ body {
 .btn {
     font-weight: 500;
     transition: .5s;
-    border-radius: 20px;
+    border-radius: 5px; 
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    animation: bounce 0.5s ease 2;
+    /* color: #fff!important; */
+}
+@keyframes bounce {
+    0% {
+        transform: translateX(0); /* Starting point */
+    }
+    50% {
+        transform: translateX(-5px); /* Move left */
+    }
+    100% {
+        transform: translateX(5px); /* Move right */
+    }
 }
 
 .btn.btn-primary,

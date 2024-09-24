@@ -8,7 +8,7 @@ class frontendController extends Controller
 {
     public function index()
     {
-        $meta_title = 'Travel & Tour';
+        $meta_title = 'Upzone Safaris';
         $page_title = 'Welcome';
 
         if(!empty($meta_title && $page_title))
@@ -24,7 +24,7 @@ class frontendController extends Controller
 
     public function about()
     {
-        $meta_title = 'Travel & Tour';
+        $meta_title = 'Upzone Safaris';
         $page_title = 'About';
 
         if(!empty($meta_title && $page_title))
@@ -40,7 +40,7 @@ class frontendController extends Controller
 
     public function services()
     {
-        $meta_title = 'Travel & Tour';
+        $meta_title = 'Upzone Safaris';
         $page_title = 'Services';
 
         if(!empty($meta_title && $page_title))
@@ -56,7 +56,7 @@ class frontendController extends Controller
 
     public function contact()
     {
-        $meta_title = 'Travel & Tour';
+        $meta_title = 'Upzone Safaris';
         $page_title = "Let's Talk";
 
         if(!empty($meta_title && $page_title))
@@ -72,7 +72,7 @@ class frontendController extends Controller
 
     public function latest_news()
     {
-        $meta_title = 'Travel & Tour';
+        $meta_title = 'Upzone Safaris';
         $page_title = 'Latest News';
 
         if(!empty($meta_title && $page_title))
@@ -88,7 +88,7 @@ class frontendController extends Controller
 
     public function terms_and_conditions()
     {
-        $meta_title = 'Travel & Tour';
+        $meta_title = 'Upzone Safaris';
         $page_title = 'Terms & Conditions';
 
         if(!empty($meta_title && $page_title))

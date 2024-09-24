@@ -95,7 +95,7 @@ function closeModel(){
 }
 
 function deleteCategory(id){
-    var conf = confirm("Are you Sure you want to DELETE this Category ?");
+    var conf = confirm("Are you Sure you want to DELETE ?");
     if (!conf) {
         return;
     }

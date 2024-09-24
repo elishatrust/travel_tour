@@ -3,69 +3,73 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\BlogModel;
+use App\Models\PackageModel;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Auth;
 
-class BlogController extends Controller
+class PackageController extends Controller
 {
     public function list()
     {
         $data = [
                 'title' => 'Upzone Safaris',
-                'header' => 'Blog',
+                'header' => 'Package',
             ];
 
-        return view('backend.blog.list', compact('data'));
+        return view('backend.package.list', compact('data'));
     }
 
     public function listView()
     {
-        $data = BlogModel::getBlog();
-        return view('backend.blog.list_view', compact('data'));
+        $data = PackageModel::getPackage();
+        return view('backend.package.list_view', compact('data'));
     }
 
-    public function saveBlog(Request $request)
+    public function savePackage(Request $request)
     {
         try {
             DB::beginTransaction();
 
             $hidden_id = $request->input('hidden_id');
             $title = $request->input('title');
-            $content = $request->input('content');
+            $adult = $request->input('adult');
+            $child = $request->input('child');
+            $cost = $request->input('cost');
+            $more = $request->input('more');
+            $order_number = $request->input('order_number');
             $status = $request->input('aStatus');
             $user_id = Auth::user()->id;
-
-            $filePath = null;
-            if ($request->hasFile('file')) {
-                $file = $request->file('file');
-                $filePath = $file->store('uploads', 'public');
-            }
 
             if(empty($hidden_id)):
                 $saveData = [
                     'title' => $title,
-                    'content' => $content,
-                    'file_path' => $filePath,
-                    'author' => $user_id,
+                    'adult' => $adult,
+                    'child' => $child,
+                    'cost' => $cost,
+                    'more' => $more,
+                    'order_number' => $order_number,
+                    'status' => $status,
+                    'token' => rand(0,9999999999),
                     'created_by' => $user_id,
                     'updated_by' => $user_id,
                     'created_at' => now(),
                     'updated_at' => now(),
-                    'published_at' => now(),
                 ];
 
                 ## Save data
-                DB::table('blog')->insertGetId($saveData);
-                $message='Blog saved successfully';
+                DB::table('packages')->insertGetId($saveData);
+                $message='Package saved successfully';
 
             else:
 
                 $saveData = [
                     'title' => $title,
-                    'content' => $content,
-                    'file_path' => $filePath,
+                    'adult' => $adult,
+                    'child' => $child,
+                    'cost' => $cost,
+                    'more' => $more,
+                    'order_number' => $order_number,
                     'status' => $status,
                     'updated_by' => $user_id,
                 ];
@@ -76,8 +80,8 @@ class BlogController extends Controller
                 ];
 
                 ## Save data
-                DB::table('blog')->where($condition)->update($saveData);
-                $message='Blog updated successfully';
+                DB::table('packages')->where($condition)->update($saveData);
+                $message='User updated successfully';
 
             endif;
 
@@ -91,20 +95,19 @@ class BlogController extends Controller
         }
     }
 
-    public function editBlog($id)
+    public function editPackage($id)
     {
-        $data = BlogModel::findBlog($id);
-        // $password = dd($data->password);
+        $data = PackageModel::findPackage($id);
         return response()->json(['data'=>$data, 'id'=>Crypt::encrypt($id)]);
     }
 
-    public function deleteBlog($id)
+    public function deletePackage($id)
     {
         try {
-            $data = BlogModel::updateBlog($id);
+            $data = PackageModel::updatePackage($id);
             if($data)
             {
-                $message='Blog deleted successfully';
+                $message='Package deleted successfully';
                 return response()->json(['status' => 200, 'message' => $message]);
             }else{
                 $message='Something went wrong. Try again!';
@@ -115,5 +118,6 @@ class BlogController extends Controller
             return response()->json(['status' => 500, 'message' => $e->getMessage()]);
         }
     }
+
 
 }

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PackageController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
@@ -51,6 +52,13 @@ Route::middleware(['auth'])->group(function(){
         Route::post('/blog-save', [BlogController::class, 'saveBlog'])->name('blog-save');
         Route::get('/blog-edit/{id}', [BlogController::class, 'editBlog']);
         Route::get('/blog-delete/{id}', [BlogController::class, 'deleteBlog']);
+
+        ## Package
+        Route::get('/package', [PackageController::class, 'list'])->name('package');
+        Route::get('/package-view', [PackageController::class, 'listView'])->name('package-view');
+        Route::post('/package-save', [PackageController::class, 'savePackage'])->name('package-save');
+        Route::get('/package-edit/{id}', [PackageController::class, 'editPackage']);
+        Route::get('/package-delete/{id}', [PackageController::class, 'deletePackage']);
 
         ## Settings
         Route::get('/settings', [UserController::class,'index'])->name('settings');

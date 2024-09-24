@@ -106,7 +106,7 @@ function closeModel(){
 }
 
 function deleteWarehouse(id){
-    var conf = confirm("Are you Sure you want to DELETE this Warehouse ?");
+    var conf = confirm("Are you Sure you want to DELETE ?");
     if (!conf) {
         return;
     }

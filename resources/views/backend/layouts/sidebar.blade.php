@@ -61,6 +61,11 @@ if (!$user) {
                         <i class="zmdi zmdi-accounts-alt"></i><span>Users</span>
                     </a>
                 </li>
+                <li class=" @if (Request::segment(2) == 'package') active open @endif ">
+                    <a href="{{ route('package') }}">
+                        <i class="zmdi zmdi-apps"></i><span>Package</span>
+                    </a>
+                </li>
                 <li class=" @if (Request::segment(2) == 'blog') active open @endif ">
                     <a href="{{ route('blog') }}">
                         <i class="zmdi zmdi-apps"></i><span>Blog</span>

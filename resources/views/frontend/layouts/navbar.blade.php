@@ -20,6 +20,6 @@
             </div>
             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
         </div>
-        <a href="#bookingModal" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-primary text-uppercase">Plan a Trip</a>
+        <a href="#bookingModal" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-outline-primary text-uppercase btn-action">Plan a Trip</a>
     </div>
 </nav>

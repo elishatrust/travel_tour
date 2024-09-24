@@ -31,7 +31,7 @@
       <a class="btn btn-link" href="{{ route('services') }}">Our Services</a>
       <a class="btn btn-link" href="{{ route('blog') }}">Latest News</a>
       <a class="btn btn-link" href="{{ route('terms-and-conditions') }}">Terms & Condition</a>
-      <a class="btn btn-link" href="#">Support</a>
+      <a class="btn btn-link" href="{{ route('login') }}">Staff</a>
     </div>
     <div class="col-lg-3 col-md-6">
       <h5 class="text-light mb-4">Popular Destination</h5>
@@ -49,7 +49,7 @@
         <div class="position-relative mx-auto" style="max-width: 400px">
             <input class="form-control border-0 w-100 py-3 ps-4 pe-5"
               type="email" placeholder="Enter your email" required/>
-            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sent</button>
+            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Send</button>
         </div>
       </form>
     </div>

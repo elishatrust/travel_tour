@@ -12,7 +12,7 @@ class AuthController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Travel & Tour',
+            'title' => 'Upzone Safaris',
             'header' => 'Login'
         ];
         $user = Auth::user();

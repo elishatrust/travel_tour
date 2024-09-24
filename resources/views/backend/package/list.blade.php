@@ -25,62 +25,60 @@
     </div>
 </section>
 
+
+
 <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="title" id="largeModalLabel">User </h4><strong class="text-danger float-right">Required *</strong>
+                <h4 class="title" id="largeModalLabel">Package </h4><strong class="text-danger float-right">Required *</strong>
             </div>
             <div class="modal-body">
 
-                <form id="form" onsubmit="save(event)" enctype="form-data/multipart">
+                <form id="form" onsubmit="save(event)"  enctype="multipart/form-data">
                     @csrf
                     <input type="hidden" class="form-control" id="hidden_id" name="hidden_id" >
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
-                            <label for="">Name <span class="text-danger">*</span></label>
+                            <label for="">Package <span class="text-danger">*</span></label>
                             <div class="form-group">
-                                <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Enter full name" required>
+                                <input type="text" id="title" name="title" class="form-control" placeholder="Eg. Tanzanite" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <label for="">Phone <span class="text-danger">*</span></label>
+                            <label for="">Travelers (Adult)<span class="text-danger">*</span></label>
                             <div class="form-group">
-                                <input type="number" id="phone" name="phone" class="form-control" placeholder="Enter phone number" min="0" required>
+                                <input type="number" id="adult" name="adult" class="form-control" placeholder="Eg. 10" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <label for="">Email <span class="text-danger">*</span></label>
+                            <label for="">Travelers (Child)<span class="text-danger">*</span></label>
                             <div class="form-group">
-                                <input type="email" id="email" name="email" class="form-control" placeholder="Enter email" required>
+                                <input type="number" id="child" name="child" class="form-control" placeholder="Eg. 10" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <div class="row">
-                                <div class="col-8">
-                                    <label for="">Password <span class="text-danger">*</span></label>
-                                    <div class="form-group" id="show_hide_password">
-                                        <input type="password" id="password" name="password" class="form-control" placeholder="Enter password">
-                                    </div>
-                                </div>
-                                <div class="col-4 mt-5">
-                                    <div class="checkbox" id="show_hide_pwd">
-                                        <input id="checkbox" type="checkbox">
-                                        <label for="checkbox">Show</label>
-                                    </div>
-                                </div>
+                            <label for="">Cost <span class="text-danger">*</span></label>
+                            <div class="form-group">
+                                <input type="number" id="cost" name="cost" class="form-control" placeholder="Eg. 1300" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <label for="">Address <span class="text-danger">*</span></label>
+                            <label for="">Others (option)<span class="text-danger"></span></label>
                             <div class="form-group">
-                                <input type="text" id="address" name="address" class="form-control" placeholder="Enter address/location" required>
+                                <input type="text" id="more" name="more" class="form-control" placeholder="Eg. photos, exhibition" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Order No.<span class="text-danger">*</span></label>
+                            <div class="form-group">
+                                <input type="number" id="order_number" name="order_number" class="form-control" placeholder="Eg. 1" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="">Status <span class="text-danger">*</span></label>
                             <select name="aStatus" id="aStatus" class="form-control show-tick" required>
-                                <option>Select --</option>
+                                <option>Select--</option>
                                 <option value="0">Active</option>
                                 <option value="1">Inactive</option>
                             </select>
@@ -96,26 +94,17 @@
     </div>
 </div>
 
-
 <script>
 $(document).ready(function () {
     getView();
     closeModel();
 });
 
-$("#show_hide_pwd input").on('click', function (event) {
-    if ($('#show_hide_password input').attr("type") == "text") {
-        $('#show_hide_password input').attr('type', 'password');
-    } else if ($('#show_hide_password input').attr("type") == "password") {
-        $('#show_hide_password input').attr('type', 'text');
-    }
-});
-
 
 function getView() {
     jQuery.ajax({
         type: "GET",
-        url: "{{ route('user-view') }}",
+        url: "{{ route('package-view') }}",
         dataType: 'html',
         cache: false,
         success: function (data) {
@@ -134,31 +123,31 @@ function closeModel(){
     $('#largeModal').modal('hide');
 }
 
-function deleteUser(id){
+function deletePackage(id){
     var conf = confirm("Are you Sure you want to DELETE ?");
     if (!conf) {
         return;
     }
 
     jQuery.ajax({
-        type: "GET",
-        url: "/admin/user-delete/"+id,
-        dataType: 'json',
-        success: function (data) {
-            if (data.status == 200) {
-                showFlashMessage("success", data.message);
-                clear_input()
-            } else {
-                showFlashMessage("warning", data.message);
-            }
+            type: "GET",
+            url: "/admin/package/delete/"+id,
+            dataType: 'json',
+            success: function (data) {
+                if (data.status == 200) {
+                    showFlashMessage("success", data.message);
+                    clear_input()
+                } else {
+                    showFlashMessage("warning", data.message);
+                }
 
-            disableBtn("submitBtn", false);
-            $("#submitBtn").html("Save ")
-        }
+                disableBtn("submitBtn", false);
+                $("#submitBtn").html("Save ")
+            }
     });
 }
 
-function editUser(id){
+function editPackage(id){
     document.getElementById('form').reset();
     $("#hidden_id").val("")
 
@@ -167,19 +156,20 @@ function editUser(id){
 
     jQuery.ajax({
         type: "GET",
-        url: "/admin/user-edit/"+id,
+        url: "/admin/package/edit/"+id,
         dataType: 'json',
         success: function (data) {
             $("#hidden_id").val(data.id)
 
             var rowData=data.data;
 
-            $("#full_name").val(rowData.name);
+            $("#name").val(rowData.name);
             $("#phone").val(rowData.phone);
             $("#email").val(rowData.email);
-            $("#address").val(rowData.address);
-            $("#password").val(rowData.password);
-            $("#aStatus").val(rowData.status);
+            $("#location").val(rowData.location);
+            $("#user_id").val(rowData.manager);
+            $("#show_status").val(rowData.show_status);
+
             $("#submitBtn").html("Update");
         }
     });
@@ -194,7 +184,7 @@ function save(e) {
 
     jQuery.ajax({
         type: "POST",
-        url: "{{ route('user-save') }}",
+        url: "{{ route('package-save') }}",
         data: formData,
         dataType: 'json',
         processData: false,

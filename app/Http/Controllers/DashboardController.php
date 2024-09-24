@@ -16,7 +16,7 @@ class DashboardController extends Controller
         }
         
         $data = [
-                'title' => 'Travel & Tour',
+                'title' => 'Upzone Safaris',
                 'header' => 'Dashboard'
             ];
 

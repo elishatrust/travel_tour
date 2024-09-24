@@ -14,7 +14,7 @@ class UserController extends Controller
     public function list()
     {
         $data = [
-                'title' => 'Travel & Tour',
+                'title' => 'Upzone Safaris',
                 'header' => 'User',
             ];
 
