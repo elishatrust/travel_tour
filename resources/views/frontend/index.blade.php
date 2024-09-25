@@ -123,50 +123,19 @@
             </div>
         </div>
         <div class="row g-5">
+            @foreach ( $data as $item )
             <div class="col-lg-3 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
-                <div class="membership-item position-relative shadow">
+                <div class="membership-item position-relative shadow w-100 h-100">
                     {{-- <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-1.jpg') }}" alt="" /> --}}
-                    <h1 class="display-1 fs-1">Basic</h1>
-                    <h4 class="text-dark mb-3">500,000 TZS</h4>
+                    <h1 class="display-1 fs-1">{{ $item->title }}</h1>
+                    <h4 class="text-dark mb-3">$ {{ $item->cost }}</h4>
                     <p><i class="fa fa-check text-primary me-3"></i>10% discount</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>2 adult and 2 child</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>{{ $item->adult }} adult, {{ $item->child }} child</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>{{ $item->more }}</p>
                     <a class="btn btn-outline-primary px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
-                <div class="membership-item position-relative shadow">
-                    {{-- <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-2.jpg') }}" alt="" /> --}}
-                    <h1 class="display-1 fs-1">Standard</h1>
-                    <h4 class="text-dark mb-3">1,500,000 TZS</h4>
-                    <p><i class="fa fa-check text-primary me-3"></i>15% discount</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>4 adult and 4 child </p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
-                    <a class="btn btn-outline-primary px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.7s">
-                <div class="membership-item position-relative shadow">
-                    {{-- <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="" /> --}}
-                    <h1 class="display-1 fs-1">Premium</h1>
-                    <h4 class="text-dark mb-3">3,000,000 TZS</h4>
-                    <p><i class="fa fa-check text-primary me-3"></i>20% discount</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>6 adult and 6 child</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
-                    <a class="btn btn-outline-primary px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.7s">
-                <div class="membership-item position-relative shadow">
-                    {{-- <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="" /> --}}
-                    <h1 class="display-1 fs-1">Platinum</h1>
-                    <h4 class="text-dark mb-3">5,000,000 TZS</h4>
-                    <p><i class="fa fa-check text-primary me-3"></i>20% discount</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>6 adult and 6 child</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
-                    <a class="btn btn-outline-primary px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>

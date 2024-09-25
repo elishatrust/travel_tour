@@ -1,58 +1,47 @@
-
-<div class="table-responsive">
-    <table class="table table-hover m-b-0 c_list table-bordered table-striped table-hover js-basic-example dataTable" id="tableId">
-        <thead>
-            <tr>
-                <th style="width: 5px;">#</th>
-                <th style="width: 20px;">Title</th>
-                <th style="width: 35px;">Content</th>
-                <th style="width: 10px;">File</th>
-                <th style="width: 15px;">Publisher</th>
-                <th style="width: 10px;">Status</th>
-                <th style="width: 5px;">Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @php $n=1; @endphp
-            @foreach ($data as $item)
-            <tr>
-                <td>{{ $n }}</td>
-                <td>{{ $item->title }}</td>
-                <td>
-                    {{-- {{ $item->content }} --}}
-                    @php
-                        $content = $item->content;
-                        $words = explode(' ', $content);
-                        $firstTenWords = array_slice($words, 0, 10);
-                        echo implode(' ', $firstTenWords);
-                    @endphp
-                </td>
-                <td>
-                    @if ($item->file_path)
-                        <a href="{{ asset('storage/' . $item->file_path) }}" target="_blank">View File</a>
-                    @endif
-                </td>
-                <td>
-                    <span>{{ $item->author }}</span>
-                    <p class="mt-2">{{ \Carbon\Carbon::parse($item->published_at)->format('d-m-Y') }}</p>
-                </td>
-                <td>
-                    @if (!empty($item->status==0))
-                    <span class="badge badge-success m-l-10 hidden-sm-down">Active</span>
-                    @else
-                    <span class="badge badge-warning m-l-10 hidden-sm-down">Inactive</span>
-                    @endif
-                </td>
-                <td>
-                    <button title="Edit Action"  onclick="editWarehouse({{$item->id}})" class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-edit"></i></button>
-                    <button title="Delete Action" onclick="deleteWarehouse({{$item->id}})"  class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-delete"></i></button>
-                </td>
-            </tr>
-            @php $n++; @endphp
-            @endforeach
-        </tbody>
-    </table>
+@foreach ($data as $item)
+<div class="col-lg-4 col-md-6 col-sm-12 right-box">
+    <div class="card widget123 popular-post123">
+        <div class="body">
+            <div class="single_post">
+                <a href="javascript:(0)">
+                    <div class="img-post m-b-5">
+                        @if (!empty($item->file_path))
+                        <img src="{{ asset('assets/frontend/img/Lion_Serengeti.webp') }}" class="w-100 h-auto" alt="Awesome Image">                                                                                                    
+                        @else
+                        <img src="{{ asset('assets/frontend/img/Lion_Serengeti.webp') }}" class="w-100 h-auto" alt="Awesome Image">                                            
+                        @endif
+                    </div>
+                    <b class="text-dark py-3">{{ $item->title }}</b><hr>
+                    <p class="my-2 text-justify">
+                        {{ $item->content }}
+                        {{-- @php
+                            $content = $item->content;
+                            $words = explode(' ', $content);
+                            $firstTenWords = array_slice($words, 0, 50);
+                            echo implode(' ', $firstTenWords);
+                        @endphp --}}
+                    </p>
+                    <div style="justify-content:space-between; display:flex">
+                        <div class="">
+                            <small class="text-muted">{{ \Carbon\Carbon::parse($item->published_at)->format('M d, Y') }}</small><br>
+                            @if (!empty($item->status==0))
+                            <span class="badge badge-success hidden-sm-down">Active</span>
+                            @else
+                            <span class="badge badge-warning hidden-sm-down">Inactive</span>
+                            @endif
+                        </div>
+                        <div class="social_share">      
+                            <button title="Edit Action"  onclick="editBlog({{ $item->id }})" class="btn btn-icon btn-neutral btn-icon-mini btn-round"><i class="zmdi zmdi-edit"></i></button>
+                            <button title="Delete Action" onclick="deleteBlog({{ $item->id }})"  class="btn btn-icon btn-neutral btn-icon-mini btn-round"><i class="zmdi zmdi-delete"></i></button> 
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div> 
 </div>
+@endforeach
+
 
 @include('backend.dependences.datatable')
 

@@ -42,7 +42,13 @@
                         <div class="col-md-6 col-sm-12">
                             <label for="">Package <span class="text-danger">*</span></label>
                             <div class="form-group">
-                                <input type="text" id="title" name="title" class="form-control" placeholder="Eg. Tanzanite" required>
+                                <input type="text" id="package" name="package" class="form-control" placeholder="Eg. Tanzanite" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Cost <span class="text-danger">*</span></label>
+                            <div class="form-group">
+                                <input type="number" id="cost" name="cost" class="form-control" placeholder="Eg. 1300" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
@@ -55,12 +61,6 @@
                             <label for="">Travelers (Child)<span class="text-danger">*</span></label>
                             <div class="form-group">
                                 <input type="number" id="child" name="child" class="form-control" placeholder="Eg. 10" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <label for="">Cost <span class="text-danger">*</span></label>
-                            <div class="form-group">
-                                <input type="number" id="cost" name="cost" class="form-control" placeholder="Eg. 1300" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
@@ -131,7 +131,7 @@ function deletePackage(id){
 
     jQuery.ajax({
             type: "GET",
-            url: "/admin/package/delete/"+id,
+            url: "/admin/package-delete/"+id,
             dataType: 'json',
             success: function (data) {
                 if (data.status == 200) {
@@ -156,19 +156,21 @@ function editPackage(id){
 
     jQuery.ajax({
         type: "GET",
-        url: "/admin/package/edit/"+id,
+        url: "/admin/package-edit/"+id,
         dataType: 'json',
         success: function (data) {
             $("#hidden_id").val(data.id)
 
             var rowData=data.data;
 
-            $("#name").val(rowData.name);
-            $("#phone").val(rowData.phone);
-            $("#email").val(rowData.email);
-            $("#location").val(rowData.location);
-            $("#user_id").val(rowData.manager);
-            $("#show_status").val(rowData.show_status);
+            $("#package").val(rowData.title);
+            $("#adult").val(rowData.adult);
+            $("#child").val(rowData.child);
+            $("#cost").val(rowData.cost);
+            $("#more").val(rowData.more);
+            $("#order_number").val(rowData.order_number);
+            $("#more").val(rowData.more);
+            $("#aStatus").val(rowData.status);
 
             $("#submitBtn").html("Update");
         }

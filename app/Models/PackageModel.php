@@ -14,7 +14,7 @@ class PackageModel extends Model
 
     static public function getPackage()
     {
-        return DB::table('packages')->where('packages.archive', '=', 0)->orderBy('packages.id', 'desc')->get();
+        return DB::table('packages')->where('packages.archive', '=', 0)->orderBy('packages.order_number', 'asc')->get();
     }
 
     static public function findPackage($id)

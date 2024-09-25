@@ -32,7 +32,7 @@ class PackageController extends Controller
             DB::beginTransaction();
 
             $hidden_id = $request->input('hidden_id');
-            $title = $request->input('title');
+            $title = $request->input('package');
             $adult = $request->input('adult');
             $child = $request->input('child');
             $cost = $request->input('cost');

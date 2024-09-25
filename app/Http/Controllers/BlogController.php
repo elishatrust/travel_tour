@@ -32,7 +32,7 @@ class BlogController extends Controller
             DB::beginTransaction();
 
             $hidden_id = $request->input('hidden_id');
-            $title = $request->input('title');
+            $title = $request->input('_title');
             $content = $request->input('content');
             $status = $request->input('aStatus');
             $user_id = Auth::user()->id;

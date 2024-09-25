@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\PackageModel;
 
 class frontendController extends Controller
 {
@@ -11,10 +12,13 @@ class frontendController extends Controller
         $meta_title = 'Upzone Safaris';
         $page_title = 'Welcome';
 
+        // dd($data);
+
         if(!empty($meta_title && $page_title))
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
+            $data['data'] = PackageModel::getPackage();
             return view('frontend.index', $data );
 
         }else{

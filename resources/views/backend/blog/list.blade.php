@@ -4,27 +4,26 @@
 <link rel="stylesheet" href="{{ asset('assets/plugins/jquery-datatable/dataTables.bootstrap4.min.css')}}">
 @section('content')
 
-<section class="content contact">
-    <div class="container-fluid">
 
+
+<section class="content blog-page">   
+    <div class="container-fluid">
+        
+        
         @include('backend.layouts.header')
+
 
         <div class="row clearfix">
             <div class="col-lg-12 col-sm-12">
-                <div class="card">
-                    <div class="body">
-
-                        <div id="getView">
-                            <img src="{{ asset('assets/backend/loader.svg') }}" alt="">
-                        </div>
-
+                <div class="body">
+                    <div class="row" id="getView">
+                        <img src="{{ asset('assets/backend/loader.svg') }}" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 
 <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
@@ -42,7 +41,7 @@
                         <div class="col-md-12 col-sm-12">
                             <label for="">Title <span class="text-danger">*</span></label>
                             <div class="form-group">
-                                <input type="text" id="title" name="title" class="form-control" placeholder="Enter title" required>
+                                <input type="text" id="_title" name="_title" class="form-control" placeholder="Enter title" required>
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12">
@@ -105,7 +104,7 @@ function closeModel(){
     $('#largeModal').modal('hide');
 }
 
-function deleteWarehouse(id){
+function deleteBlog(id){
     var conf = confirm("Are you Sure you want to DELETE ?");
     if (!conf) {
         return;
@@ -113,12 +112,13 @@ function deleteWarehouse(id){
 
     jQuery.ajax({
             type: "GET",
-            url: "/admin/blog/delete/"+id,
+            url: "/admin/blog-delete/"+id,
             dataType: 'json',
             success: function (data) {
                 if (data.status == 200) {
                     showFlashMessage("success", data.message);
-                    clear_input()
+                    clear_input();
+                    closeModel();
                 } else {
                     showFlashMessage("warning", data.message);
                 }
@@ -129,7 +129,7 @@ function deleteWarehouse(id){
     });
 }
 
-function editWarehouse(id){
+function editBlog(id){
     document.getElementById('form').reset();
     $("#hidden_id").val("")
 
@@ -138,19 +138,16 @@ function editWarehouse(id){
 
     jQuery.ajax({
         type: "GET",
-        url: "/admin/blog/edit/"+id,
+        url: "/admin/blog-edit/"+id,
         dataType: 'json',
         success: function (data) {
             $("#hidden_id").val(data.id)
 
             var rowData=data.data;
 
-            $("#name").val(rowData.name);
-            $("#phone").val(rowData.phone);
-            $("#email").val(rowData.email);
-            $("#location").val(rowData.location);
-            $("#user_id").val(rowData.manager);
-            $("#show_status").val(rowData.show_status);
+            $("#_title").val(rowData.title);
+            $("#content").val(rowData.content);
+            $("#aStatus").val(rowData.status);
 
             $("#submitBtn").html("Update");
         }
@@ -175,7 +172,8 @@ function save(e) {
         success: function (data) {
             if (data.status == 200) {
                 showFlashMessage("success", data.message);
-                clear_input()
+                clear_input();
+                closeModel();
             } else {
                 showFlashMessage("warning", data.message);
             }
