@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>{{ !empty($page_title && $meta_title) ? Str::upper($page_title.' | '.$meta_title) : "" }}</title>
     
@@ -73,7 +74,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="form" id="form" action="javascript:void(0)">
+                    <form class="form" id="form" action="javascript:void(0)"  enctype="multipart/form-data">
+                        @csrf
+                        <input type="hidden" class="form-control" id="hidden_id" name="hidden_id" >
                         <div class="row">
                             <div class="col-md-6 col-sm-12 mb-3">
                                 <label class="fw-bold" for="name">Name <span class="text-danger">*</span></label>
@@ -171,26 +174,45 @@
         const today = new Date().toISOString().split('T')[0];
         document.getElementById('arrival_date').setAttribute('min', today);
         document.getElementById('departure_date').setAttribute('min', today);
-        
+        // $('.save-btn').prop('disabled', true);
 
         /*====== Save Trip  ======*/
         function save_trip(){
-
-            alert("Save trip");
-
-            $("form#form").submit(function(event){
-                event.preventDefault();
+            $("form#form").submit(function(e){
+                e.preventDefault();
+                
+                $.ajaxSetup({ headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }});
                 var formData = new FormData(document.getElementById("form"));
-
+                $('.save-btn').prop('disabled', true);
+                
                 $.ajax({
                     type: "POST",
-                    url: "save-trip",
+                    url: "/save-trip",
                     data: formData,
                     dataType: "json",
                     processData: false,
                     contentType: "application/json",
                     success: function(data){
-
+                        $('.save-btn').prop('disabled', false);
+                        if(data.status == 200){
+                            $("div#msg_notification").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>"+data.message+"</div>");
+                            setTimeout(function(){
+                                $("div#msg_notification").fadeOut("slow").html(""); 
+                                $("form#form")[0].reset(); 
+                            },3000);
+                        }else{
+                            $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>"+data.message+"</div>");
+                            setTimeout(function(){
+                                $("div#msg_notification").fadeOut("slow").html(""); 
+                            },3000);
+                        }
+                        // $("div#msg_notification").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>"+data.message+"</div>");
+                        // setTimeout(function(){
+                        // $("div#msg_notification").fadeOut("slow").html(""); 
+                        // $("form#form").trigger("reset"); 
+                        // },3000);
                     }
                 })
 
@@ -223,9 +245,9 @@
                         div += '<div class="input-group mt-4 mb-3"><label class="input-group-text" for="cost">Cost ($)</label><input type="text" class="form-control" id="cost" name="cost" value="' + parseFloat(data.cost).toLocaleString() + '" readonly></div>';
                         $("div#package_cost").html(div);
                     }, 1000);
-
-
-
+                },
+                error:function(data){
+                    console.log(data);
                 }
             })
         })

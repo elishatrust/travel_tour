@@ -18,6 +18,7 @@ Route::get('/latest-news', [FrontendController::class, 'latest_news'])->name('la
 Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 Route::get('/terms-and-conditions', [FrontendController::class, 'terms_and_conditions'])->name('terms-and-conditions');
 Route::get('/get-package', [FrontendController::class, 'get_package'])->name('get-package');
+Route::post('/save-trip', [FrontendController::class, 'save_trip'])->name('save-trip');
 
 
 ## AUTHENTICATION
