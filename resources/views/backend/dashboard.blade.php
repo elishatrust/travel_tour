@@ -126,9 +126,9 @@
                                         </td>
                                         <td>
                                             <ul class="list-unstyled team-info">
-                                                <li><img src="assets/images/xs/avatar1.jpg" alt="Avatar"></li>
-                                                <li><img src="assets/images/xs/avatar2.jpg" alt="Avatar"></li>
-                                                <li><img src="assets/images/xs/avatar3.jpg" alt="Avatar"></li>
+                                                <li><img src="{{ asset('assets/backend/images/xs/avatar1.jpg') }}" alt="Avatar"></li>
+                                                <li><img src="{{ asset('assets/backend/images/xs/avatar2.jpg') }}" alt="Avatar"></li>
+                                                <li><img src="{{ asset('assets/backend/images/xs/avatar3.jpg') }}" alt="Avatar"></li>
                                             </ul>
                                         </td>
                                         <td>
@@ -146,9 +146,9 @@
                                         </td>
                                         <td>
                                             <ul class="list-unstyled team-info">
-                                                <li><img src="assets/images/xs/avatar2.jpg" alt="Avatar"></li>
-                                                <li><img src="assets/images/xs/avatar3.jpg" alt="Avatar"></li>
-                                                <li><img src="assets/images/xs/avatar4.jpg" alt="Avatar"></li>
+                                                <li><img src="{{ asset('assets/backend/images/xs/avatar2.jpg') }}" alt="Avatar"></li>
+                                                <li><img src="{{ asset('assets/backend/images/xs/avatar3.jpg') }}" alt="Avatar"></li>
+                                                <li><img src="{{ asset('assets/backend/images/xs/avatar4.jpg') }}" alt="Avatar"></li>
                                             </ul>
                                         </td>
                                         <td>
@@ -166,8 +166,8 @@
                                         </td>
                                         <td>
                                             <ul class="list-unstyled team-info">
-                                                <li><img src="assets/images/xs/avatar4.jpg" alt="Avatar"></li>
-                                                <li><img src="assets/images/xs/avatar6.jpg" alt="Avatar"></li>
+                                                <li><img src="{{ asset('assets/backend/images/xs/avatar4.jpg') }}" alt="Avatar"></li>
+                                                <li><img src="{{ asset('assets/backend/images/xs/avatar6.jpg') }}" alt="Avatar"></li>
                                             </ul>
                                         </td>
                                         <td>
@@ -185,10 +185,10 @@
                                         </td>
                                         <td>
                                             <ul class="list-unstyled team-info">
-                                                <li><img src="assets/images/xs/avatar1.jpg" alt="Avatar"></li>
-                                                <li><img src="assets/images/xs/avatar3.jpg" alt="Avatar"></li>
-                                                <li><img src="assets/images/xs/avatar2.jpg" alt="Avatar"></li>
-                                                <li><img src="assets/images/xs/avatar9.jpg" alt="Avatar"></li>
+                                                <li><img src="{{ asset('assets/backend/images/xs/avatar1.jpg') }}" alt="Avatar"></li>
+                                                <li><img src="{{ asset('assets/backend/images/xs/avatar3.jpg') }}" alt="Avatar"></li>
+                                                <li><img src="{{ asset('assets/backend/images/xs/avatar2.jpg') }}" alt="Avatar"></li>
+                                                <li><img src="{{ asset('assets/backend/images/xs/avatar9.jpg') }}" alt="Avatar"></li>
                                             </ul>
                                         </td>
                                         <td>

@@ -23,8 +23,7 @@
     <link href="{{ asset('assets/frontend/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/css/owl.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet" />
-    {{-- <link href="{{ asset('assets/frontend/css/tiny-slider.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/frontend/css/aos.css') }}" rel="stylesheet" /> --}}
+    {{-- <link href="{{ asset('assets/frontend/css/aos.css') }}" rel="stylesheet" /> --}}
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ asset('assets/frontend/css/bootstrap.min.css') }}" rel="stylesheet" />
@@ -32,16 +31,24 @@
     <!-- Template Stylesheet -->
     <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" />
 
+    <!-- JavaScript Libraries -->
+    {{-- <script src="{{ asset('assets/frontend/js/bootstrap.bundle.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('assets/frontend/js/jquery-3.4.1.min.js') }}"></script> --}}
+
     <script>
-        $(document).ready(function () {
+        // $(document).ready(function () {
             document.addEventListener('contextmenu', event => event.preventDefault());
             document.addEventListener('selectstart', event => event.preventDefault());
             document.addEventListener('copy', event => event.preventDefault());
-        });
+        // });
     </script>
 </head>
 
 <body>
+    @php
+        use App\Models\PackageModel;
+        $packages = PackageModel::getPackage();
+    @endphp
     <!-- Spinner -->
     @include('frontend.layouts.spinner')
 
@@ -59,65 +66,87 @@
 
     <!-- Booking Modal Start -->
     <div class="modal fade" id="bookingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header bg-primary">
                     <h5 class="modal-title text-white text-uppercase" id="bookingModalLabel">Plan Your Journey</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="#" method="post">
+                    <form class="form" id="form" action="javascript:void(0)">
                         <div class="row">
                             <div class="col-md-6 col-sm-12 mb-3">
-                                <label for="name">Name <span class="text-danger">*</span></label>
+                                <label class="fw-bold" for="name">Name <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Full name" required>
                             </div>
                             <div class="col-md-6 col-sm-12 mb-3">
-                                <label for="phone">Phone <span class="text-danger">*</span></label>
+                                <label class="fw-bold" for="phone">Phone <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone number" required>
                             </div>
                             <div class="col-md-6 col-sm-12 mb-3">
-                                <label for="email">Email <span class="text-danger">*</span></label>
+                                <label class="fw-bold" for="email">Email <span class="text-danger">*</span></label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="E-mail address" required>
                             </div>
                             <div class="col-md-6 col-sm-12 mb-3">
-                                <label for="date">Departure Date <span class="text-danger">*</span></label>
-                                <input type="date" class="form-control" id="date" name="date" required>
+                                <label class="fw-bold" for="date">Arrival Date <span class="text-danger">*</span></label>
+                                <input type="date" class="form-control" id="arrival_date" name="arrival_date" required>
                             </div>
                             <div class="col-md-6 col-sm-12 mb-3">
-                                <label for="travelers">Travelers <span class="text-danger">*</span></label>
-                                <input type="number" class="form-control" id="travelers" name="travelers" min="1" placeholder="Number of travelers" required>
+                                <label class="fw-bold" for="date">Departure Date <span class="text-danger">*</span></label>
+                                <input type="date" class="form-control" id="departure_date" name="departure_date" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <label class="fw-bold" for="travelers">Travelers (Adult)<span class="text-danger">*</span></label>
+                                <input type="number" class="form-control" id="adults" name="adults" min="1" placeholder="Number of adults" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <label class="fw-bold" for="travelers">Travelers (Child)<span class="text-danger">*</span></label>
+                                <input type="number" class="form-control" id="children" name="children" min="0" placeholder="Number of children" required>
                             </div>
                             <div class="col-md-6 col-sm-12 mb-3">
                                 <div class="form-group">
-                                    <label for="accommodation">Accommodation <span class="text-danger">*</span> </label>
+                                    <label class="fw-bold" for="accommodation">Accommodation <span class="text-danger">*</span> </label>
                                     <select class="form-select" id="accommodation" name="accommodation" required>
                                         <option value="">Select--</option>
-                                        <option value="hotel">Hotel</option>
-                                        <option value="resort">Resort</option>
-                                        <option value="hostel">Hostel</option>
-                                        <option value="guesthouse">Guesthouse</option>
+                                        <option value="Hotel">Hotel</option>
+                                        <option value="Resort">Resort</option>
+                                        <option value="Guesthouse">Guesthouse</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-12 col-sm-12 mb-3">
+                            <div class="col-md-6 col-sm-12 mb-3">
                                 <div class="form-group">
-                                    <label for="package">Packages <span class="text-danger">*</span> </label>
+                                    <label class="fw-bold" for="package">Packages <span class="text-danger">*</span> </label>
                                     <select class="form-select" id="package" name="package" required>
                                         <option value="">Select--</option>
-                                        <option value="hotel">Hotel</option>
+                                        @if (!empty( $packages))
+                                            @foreach ($packages as $package)
+                                            <option value="{{ $package->id }}">{{ $package->title }}</option>                                                
+                                            @endforeach                                            
+                                        @else
+                                            <option value="">No option</option>                                            
+                                        @endif
                                     </select>
                                 </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-3" id="package_cost">
+                                <div class="form-group">
+                                    <label class="fw-bold" for="package">Cost ($)<span class="text-danger">*</span> </label>
+                                    <input type="text" class="form-control" name="cost" id="cost" value="" placeholder="Package cost" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 mb-3" id="loader">
+                                <img src="{{ asset('assets/backend/loader.svg') }}" alt="Loading.." class="">
                             </div>
                             <div class="col-md-12 col-sm-12 mb-3">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="agree" name="agree" required>
-                                    <label class="form-check-label" for="agree">I agree to the I agree to the <a href="#">terms and conditions</a>.</label>
+                                    <label class="form-check-label" for="agree">I agree to the I agree to the <a href="{{ route('terms-and-conditions') }}">terms and conditions</a>.</label>
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary save-btn" onclick="return save_trip()">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -131,18 +160,78 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
-    <script src="{{ asset('assets/frontend/js/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ asset('assets/frontend/js/bootstrap.bundle.min.js') }}"></script>
-    {{-- <script src="{{ asset('assets/frontend/js/tiny-slider.js') }}"></script>
-    <script src="{{ asset('assets/frontend/js/aos.js') }}"></script> --}}
+    <script src="{{ asset('assets/frontend/js/jquery-3.4.1.min.js') }}"></script>
+    {{-- <script src="{{ asset('assets/frontend/js/aos.js') }}"></script> --}}
 
-    
     <script>
-        //   Date picker
-        const today = new Date().toISOString().split('T')[0];
-        document.getElementById('date').setAttribute('min', today);
+            
 
-        //   Whatsapp chat widget
+        /*====== Date Picker ======*/
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('arrival_date').setAttribute('min', today);
+        document.getElementById('departure_date').setAttribute('min', today);
+        
+
+        /*====== Save Trip  ======*/
+        function save_trip(){
+
+            alert("Save trip");
+
+            $("form#form").submit(function(event){
+                event.preventDefault();
+                var formData = new FormData(document.getElementById("form"));
+
+                $.ajax({
+                    type: "POST",
+                    url: "save-trip",
+                    data: formData,
+                    dataType: "json",
+                    processData: false,
+                    contentType: "application/json",
+                    success: function(data){
+
+                    }
+                })
+
+            })
+        }
+        
+
+        /*====== Change Package ======*/
+        $("div#loader").hide();
+        $("div#package_cost").hide();
+        $("#package").change(function(event){
+            event.preventDefault();
+
+            var div = "";
+            var package = $(this).val();
+            $("div#package_cost").html("");
+            $.ajax({
+                type: "GET",
+                url: "{{ route('get-package') }}",
+                data: {package:package},
+                dataType: "json",
+                success: function(data) {
+                    setTimeout(() => {
+                        $("div#loader").show();
+                    }, 500);
+                    setTimeout(() => {
+                        $("div#loader").hide();
+                        $("div#package_cost").show();
+                        // div += '<div class="input-group mt-4 mb-3"><label class="input-group-text" for="cost">Cost ($)</label><input type="text" class="form-control" id="cost" name="cost" value="' + data.cost + '" readonly></div>';                       
+                        div += '<div class="input-group mt-4 mb-3"><label class="input-group-text" for="cost">Cost ($)</label><input type="text" class="form-control" id="cost" name="cost" value="' + parseFloat(data.cost).toLocaleString() + '" readonly></div>';
+                        $("div#package_cost").html(div);
+                    }, 1000);
+
+
+
+                }
+            })
+        })
+
+
+        /*====== Whatsapp chat widget ======*/
         var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?21528';
         var s = document.createElement('script');
         s.type = 'text/javascript';

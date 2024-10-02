@@ -388,12 +388,25 @@ body {
     }
 }
 
-
+/*--- Form ----*/
+.form .form-control, 
+.form .form-select{
+    padding: 7px 10px;
+    font-weight: 400!important;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+    font-size: 15px !important;
+}
+.form label{
+    font-weight: 300!important;
+    font-size: 18px !important;
+}
 /*---    Button ----*/
 .btn {
     font-weight: 500;
     transition: .5s;
-    border-radius: 5px; 
+    border-radius: 10px; 
+    /* border: 1px solid #2EB872 !important; */
     display: inline-block;
     padding: 10px 20px;
     text-align: center;
@@ -402,7 +415,7 @@ body {
     transition: background-color 0.3s ease;
 }
 .btn:hover {
-    animation: bounce 0.5s ease 2;
+    /* animation: bounce 0.5s ease 2; */
     /* color: #fff!important; */
 }
 @keyframes bounce {
@@ -605,7 +618,39 @@ body {
     background-attachment: fixed;
 }
 
-.include-bg {
+.inc_about {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+        url('../img/more/01.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+.inc_blog {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+        url('../img/more/01.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+.inc_contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+        url('../img/more/01.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+.inc_service {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+        url('../img/more/01.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+.inc_terms_condition {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
         url('../img/more/01.jpg') center center no-repeat;
     background-size: cover;

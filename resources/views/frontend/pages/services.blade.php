@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 @section('content')
 
-@include('frontend.layouts.include')
+@include('frontend.layouts.inc_service')
 
 
 <!-- Service -->

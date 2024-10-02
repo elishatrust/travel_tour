@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 @section('content')
 
-@include('frontend.layouts.include')
+@include('frontend.layouts.inc_blog')
 
 <div class="container-xxl py-5 blog">
     <div class="container">

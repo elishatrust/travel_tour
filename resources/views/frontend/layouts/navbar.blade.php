@@ -15,7 +15,7 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle active123" data-bs-toggle="dropdown">More</a>
                 <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="animal.html" class="dropdown-item">FAQ</a>
+                    <a href="#" class="dropdown-item">FAQ</a>
                 </div>
             </div>
             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>

@@ -122,16 +122,16 @@
                 <h1 class="display-5123 h2 mb-5">Special Offers & Discounts</h1>
             </div>
         </div>
-        <div class="row g-5">
+        <div class="row g-5" style="justify-content:center">
             @foreach ( $data as $item )
             <div class="col-lg-3 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
                 <div class="membership-item position-relative shadow w-100 h-100">
                     {{-- <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-1.jpg') }}" alt="" /> --}}
                     <h1 class="display-1 fs-1">{{ $item->title }}</h1>
                     <h4 class="text-dark mb-3">$ {{ $item->cost }}</h4>
-                    <p><i class="fa fa-check text-primary me-3"></i>10% discount</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>{{ $item->adult }} adult, {{ $item->child }} child</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>{{ $item->more }}</p>
+                    <p><i class="fa fa-check text-primary me-2"></i>10% discount</p>
+                    <p><i class="fa fa-check text-primary me-2"></i>{{ $item->adult }} adult, {{ $item->child }} child</p>
+                    <p><i class="fa fa-check text-primary me-2"></i>{{ $item->more }}</p>
                     <a class="btn btn-outline-primary px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
                 </div>
             </div>

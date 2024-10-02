@@ -9,7 +9,7 @@
 </style>
 @section('content')
 
-@include('frontend.layouts.include')
+@include('frontend.layouts.inc_about')
 
 
 <div class="container-xxl py-5">

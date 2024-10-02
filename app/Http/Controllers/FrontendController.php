@@ -12,8 +12,6 @@ class frontendController extends Controller
         $meta_title = 'Upzone Safaris';
         $page_title = 'Welcome';
 
-        // dd($data);
-
         if(!empty($meta_title && $page_title))
         {
             $data['meta_title'] = $meta_title;
@@ -104,6 +102,12 @@ class frontendController extends Controller
         }else{
             abort(404);
         }
+    }
+
+    public function get_package(Request $request)
+    {
+        $package = PackageModel::findPackage($request->all());
+        return response()->json($package);
     }
 
     

@@ -1,7 +1,7 @@
-<div class="container-fluid include-bg py-5 wow123 fadeIn" data-wow123-delay="0.1s">
+<div class="container-fluid inc_contact py-5 wow123 fadeIn" data-wow123-delay="0.1s">
     <div class="container py-5">
         <h1 class="display-4 h3 text-center text-white mb-3 animated slideInDown">{{ $page_title }}</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
+        {{-- <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item">
                     <a class="text-white fw-bold" href="{{ route('welcome') }}">Home</a>
@@ -10,6 +10,6 @@
                     {{ $page_title }}
                 </li>
             </ol>
-        </nav>
+        </nav> --}}
     </div>
 </div>

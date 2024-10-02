@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <title>{{ !empty(strtoupper($data['header']).' | '.strtoupper($data['title'])) ? strtoupper($data['header']).' | '.strtoupper($data['title']) : ''}}</title>
 
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 <link rel="stylesheet" href="{{ asset('assets/backend/plugins/bootstrap/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/backend/plugins/morrisjs/morris.css') }}" />
 <link rel="stylesheet" href="{{ asset('assets/backend/plugins/jvectormap/jquery-jvectormap-2.0.3.min.css') }}"/>
