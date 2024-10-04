@@ -14,7 +14,7 @@
           </div>
           <div class="ms-4">
             <p class="mb-2"><span class="text-primary me-2">#</span>Address</p>
-            <h5 class="mb-0">Moshi Town, Kilimanjaro, TZ</h5>
+            <h5 class="mb-0"><a href="javascript:(0)">Moshi Town, Kilimanjaro, TZ</a></h5>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
           </div>
           <div class="ms-4">
             <p class="mb-2"><span class="text-primary me-2">#</span>Call Now</p>
-            <h5 class="mb-0">+012 345 6789</h5>
+            <h5 class="mb-0"><a href="tel:+255687829070">+255 687 829 070</a></h5>
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@
           </div>
           <div class="ms-4">
             <p class="mb-2"><span class="text-primary me-2">#</span>Mail Now</p>
-            <h5 class="mb-0">info@upzonesafaris.com</h5>
+            <h5 class="mb-0"><a href="mailto:upzonesafaris@gmail.com">upzonesafaris@gmail.com</a></h5>
           </div>
         </div>
       </div>

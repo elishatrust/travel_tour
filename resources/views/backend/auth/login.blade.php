@@ -140,7 +140,7 @@
                             $('#' + key).after('<span class="error">' + value[0] + '</span>');
                         });
                     } else {
-                        alert('An error occurred. Please try again.');
+                        alert('Error occurred. Please try again.');
                     }
                 }
             });

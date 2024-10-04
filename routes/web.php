@@ -1,13 +1,17 @@
 <?php
 
-use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\PackageController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\PackageController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+
+
 
 
 ## FRONTEND
@@ -17,7 +21,7 @@ Route::get('/services', [FrontendController::class, 'services'])->name('services
 Route::get('/latest-news', [FrontendController::class, 'latest_news'])->name('latest-news');
 Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 Route::get('/terms-and-conditions', [FrontendController::class, 'terms_and_conditions'])->name('terms-and-conditions');
-Route::get('/get-package', [FrontendController::class, 'get_package'])->name('get-package');
+Route::post('/get-package', [FrontendController::class, 'get_package'])->name('get-package');
 Route::post('/save-trip', [FrontendController::class, 'save_trip'])->name('save-trip');
 
 
@@ -61,6 +65,16 @@ Route::middleware(['auth'])->group(function(){
         Route::post('/package-save', [PackageController::class, 'savePackage'])->name('package-save');
         Route::get('/package-edit/{id}', [PackageController::class, 'editPackage']);
         Route::get('/package-delete/{id}', [PackageController::class, 'deletePackage']);
+
+        ## Booking
+        Route::get('/booking', [BookingController::class, 'list'])->name('booking');
+        Route::get('/booking-view', [BookingController::class, 'listView'])->name('booking-view');
+        Route::get('/booking-delete/{id}', [BookingController::class, 'deleteBooking']);
+
+        ## Contacts
+        Route::get('/contacts', [ContactsController::class, 'list'])->name('contacts');
+        Route::get('/contacts-view', [ContactsController::class, 'listView'])->name('contacts-view');
+        Route::get('/contacts-delete/{id}', [ContactsController::class, 'deleteContacts']);
 
         ## Settings
         Route::get('/settings', [UserController::class,'index'])->name('settings');

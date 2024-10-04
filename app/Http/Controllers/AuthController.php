@@ -60,20 +60,6 @@ class AuthController extends Controller
         ]);
     }
 
-    // public function login(Request $request)
-    // {
-    //     $credentials = $request->validate([
-    //         'email' => 'required|email',
-    //         'password' => 'required|min:3',
-    //     ]);
-    
-    //     if (Auth::attempt($credentials) && Auth::user()->archive == 0) {
-    //         $request->session()->regenerate();
-    //         return response()->json(['redirect' => route('dashboard')], 200);
-    //     }
-    //     return response()->json(['errors' => ['loginError' => 'Invalid username or password.']], 422);
-    // }
-
     public function reset_password()
     {
         $data = [
@@ -111,16 +97,10 @@ class AuthController extends Controller
     public function profile()
     {
         $data = [
-            'title' => 'School Management System',
-            'header' => 'My Profile'
+            'title' => 'Upzone Safaris',
+            'header' => 'Profile'
         ];
         return view('profile.index', compact('data'));
     }
-
-    // public function userRole()
-    // {
-    //     $data = AdminModel::getUserRole();
-    //     return $data;
-    // }
     
 }

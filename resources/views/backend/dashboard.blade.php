@@ -47,42 +47,42 @@
         <div class="row clearfix">
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card">
-                    {{-- <a href="{{ route('product') }}"> --}}
+                    <a href="{{ route('user') }}">
                         <div class="body l-parpl text-center">
-                            {{-- <h3 class="m-b-0 text-white number count-to" data-from="0" data-to="{{  !empty($product) ? $product : 0 }}" data-speed="2000" data-fresh-interval="700">{{  !empty($product) ? $product : 0 }}</h3> --}}
-                            <span class="text-white">Product</span>
+                            <h3 class="m-b-0 text-white number count-to" data-from="0" data-to="{{  !empty($user) ? $user : 0 }}" data-speed="2000" data-fresh-interval="700">{{  !empty($user) ? $user : 0 }}</h3>
+                            <span class="text-white">Users</span>
                         </div>
-                    {{-- </a> --}}
+                    </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card">
-                    {{-- <a href="{{ route('sales') }}"> --}}
+                    <a href="{{ route('package') }}">
                         <div class="body l-seagreen text-center">
-                            {{-- <h3 class="m-b-0 text-white number count-to" data-from="0" data-to="0" data-speed="2000" data-fresh-interval="700">0</h3> --}}
-                            <span class="text-white">Sales</span>
+                            <h3 class="m-b-0 text-white number count-to" data-from="0" data-to="{{  !empty($package) ? $package : 0 }}" data-speed="2000" data-fresh-interval="700">{{  !empty($package) ? $package : 0 }}</h3>
+                            <span class="text-white">Packages</span>
                         </div>
-                    {{-- </a> --}}
+                    </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card">
-                    {{-- <a href="{{ route('category') }}"> --}}
+                    <a href="{{ route('blog') }}">
                         <div class="body l-amber text-center">
-                            {{-- <h3 class="m-b-0 text-white number count-to" data-from="0" data-to="{{ !empty($category) ? $category : 0 }}" data-speed="2000" data-fresh-interval="700">{{ !empty($category) ? $category : 0 }}</h3> --}}
-                            <span class="text-white">Category</span>
+                            <h3 class="m-b-0 text-white number count-to" data-from="0" data-to="{{  !empty($blog) ? $blog : 0 }}" data-speed="2000" data-fresh-interval="700">{{  !empty($blog) ? $blog : 0 }}</h3>
+                            <span class="text-white">Blogs</span>
                         </div>
-                    {{-- </a> --}}
+                    </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card">
-                    {{-- <a href="{{ route('warehouse') }}"> --}}
+                    <a href="{{ route('booking') }}">
                         <div class="body l-blue text-center">
-                            {{-- <h3 class="m-b-0 text-white number count-to" data-from="0" data-to="{{ !empty($warehouse) ? $warehouse : 0 }}" data-speed="2000" data-fresh-interval="700">{{ !empty($warehouse) ? $warehouse : 0 }}</h3> --}}
-                            <span class="text-white">Warehouse</span>
+                            <h3 class="m-b-0 text-white number count-to" data-from="0" data-to="{{ !empty($booking) ? $booking : 0 }}" data-speed="2000" data-fresh-interval="700">{{ !empty($booking) ? $booking : 0 }}</h3>
+                            <span class="text-white">Booking</span>
                         </div>
-                    {{-- </a> --}}
+                    </a>
                 </div>
             </div>
         </div>

@@ -35,7 +35,7 @@ class UserController extends Controller
             $hidden_id = $request->input('hidden_id');
             $name = $request->input('full_name');
             $phone = $request->input('phone');
-            $email = $request->input('email');
+            $email = $request->input('email_2');
             $address = $request->input('address');
             $password = $request->input('password');
             $status = $request->input('aStatus');
@@ -48,6 +48,7 @@ class UserController extends Controller
                     'email' => $email,
                     'address' => $address,
                     'password' => Hash::make($password),
+                    // 'password' => $password,
                     'status' => $status,
                     'remember_token' => rand(0,9999999999),
                     'created_by' => $user_id,
@@ -68,6 +69,7 @@ class UserController extends Controller
                     'phone' => $phone,
                     'email' => $email,
                     'address' => $address,
+                    'password' => Hash::make($password),
                     'status' => $status,
                     'updated_by' => $user_id,
                 ];
@@ -96,7 +98,6 @@ class UserController extends Controller
     public function editUser($id)
     {
         $data = UserModel::findUser($id);
-        // $password = dd($data->password);
         return response()->json(['data'=>$data, 'id'=>Crypt::encrypt($id)]);
     }
 

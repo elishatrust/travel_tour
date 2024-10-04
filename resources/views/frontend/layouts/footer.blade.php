@@ -10,18 +10,13 @@
         <i class="fa fa-phone-alt me-3"></i>+012 345 67890
       </p>
       <p class="mb-2">
-        <i class="fa fa-envelope me-3"></i>info@upzonesafaris.com
+        <i class="fa fa-envelope me-3"></i>upzonesafaris@gmail.com
       </p>
       <div class="d-flex pt-2">
         <a class="btn btn-outline-light btn-social" href="#" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a class="btn btn-outline-light btn-social" href="#" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-        {{-- <a class="btn btn-outline-light btn-social" href="#" title="Twitter" target="_blank">
-          <svg  style="fill: white; font-size: 20px; font-family:'Font Awesome 5 Brands';" xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 512 512">
-              <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
-          </svg>
-        </a> --}}
         <a class="btn btn-outline-light btn-social" href="#" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        {{-- <a class="btn btn-outline-light btn-social" href="#" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a> --}}
+        <a class="btn btn-outline-light btn-social" href="#" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
     <div class="col-lg-3 col-md-6">
@@ -59,7 +54,7 @@
   <div class="copyright">
     <div class="row">
       <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-        <a class="border-bottom" href="{{ route('welcome') }}">UPZONESafaris</a> &copy; {{ date('Y') }}, All Right Reserved.
+        <a class="border-bottom" href="{{ route('welcome') }}">UpzoneSafaris</a> &copy; {{ date('Y') }}, All Right Reserved.
       </div>
       <div class="col-md-6 text-center text-md-end">Designed By
         <a class="border-bottom" href="https://elishatrust.github.io/mysite/" target="_blank">ELISHATRUST</a>

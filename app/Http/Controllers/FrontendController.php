@@ -115,83 +115,141 @@ class frontendController extends Controller
         return response()->json($package);
     }
 
+    // public function save_trip(Request $request)
+    // {
+
+    //     // dd($request->all());
+    //     try {
+    //         DB::beginTransaction();
+                
+    //         $hidden_id = $request->input('hidden_id');
+    //         $name = $request->input('name');
+    //         $phone = $request->input('phone');
+    //         $email = $request->input('email');
+    //         $arrival_date = $request->input('arrival_date');
+    //         $departure_date = $request->input('departure_date');
+    //         $adults = $request->input('adults');
+    //         $children = $request->input('children');
+    //         $accommodation = $request->input('accommodation');
+    //         $package_id = $request->input('package');
+    //         $cost = $request->input('cost');
+
+    //         $validator = Validator::make($request->all(), [
+    //             'name' => 'required|string|max:255',
+    //             'phone' => 'required|string|max:20',
+    //             'email' => 'required|email',
+    //             'arrival_date' => 'required|date',
+    //             'departure_date' => 'required|date',
+    //             'adults' => 'required|integer|min:1',
+    //             'children' => 'required|integer|min:0',
+    //             'accommodation' => 'required|string',
+    //             'package' => 'required|integer',
+    //             'cost' => 'required|numeric',
+    //             'agree' => 'required',
+    //         ]);
+
+    //         if ($validator->fails()) {
+    //             return response()->json(['status' => 500, 'message' => 'Error occurred, Try Again failed',
+    //                 'errors' => $validator->errors()
+    //             ]);
+    //         }
+
+    //         $saveData = [
+    //             'name' => $name,
+    //             'phone' => $phone,
+    //             'email' => $email,
+    //             'arrival_date' => $arrival_date,
+    //             'departure_date' => $departure_date,
+    //             'adults' => $adults,
+    //             'children' => $children,
+    //             'accommodation' => $accommodation,
+    //             'package_id' => $package_id,
+    //             'cost' => $cost,
+    //             'status' => 0,
+    //             'archive' => 0,
+    //             'updated_by' => Auth::user()->id,
+    //             'created_by' => Auth::user()->id,
+    //         ];
+
+    //         DB::table('book_trip')->insertGetId($saveData);
+    //         $message='Trip save successfully';
+    //         DB::commit();
+
+    //         return response()->json(['status' => 200, 'message' => $message]);
+    //     } catch (\Exception $e) {
+    //         DB::rollback();
+
+    //         return response()->json(['status' => 500, 'message' => $e->getMessage()]);
+    //     }
+    // }
+
     public function save_trip(Request $request)
     {
-
-        dd($request->all());
         try {
             DB::beginTransaction();
-                
-            $hidden_id = $request->input('hidden_id');
-            $name = $request->input('name');
-            $phone = $request->input('phone');
-            $email = $request->input('email');
-            $arrival_date = $request->input('arrival_date');
-            $departure_date = $request->input('departure_date');
-            $adults = $request->input('adults');
-            $children = $request->input('children');
-            $accommodation = $request->input('accommodation');
-            $package_id = $request->input('package');
-            $cost = $request->input('cost');
 
-            // $validator = Validator::make($request->all(), [
-            //     'name' => 'required|string|max:255',
-            //     'phone' => 'required|string|max:20',
-            //     'email' => 'required|email',
-            //     'arrival_date' => 'required|date',
-            //     'departure_date' => 'required|date',
-            //     'adults' => 'required|integer|min:1',
-            //     'children' => 'required|integer|min:0',
-            //     'accommodation' => 'required|string',
-            //     'package' => 'required|integer',
-            //     'cost' => 'required|numeric',
-            //     'agree' => 'required',
-            // ]);
+            $validator = Validator::make($request->all(), [
+                'name' => 'required|string|max:255',
+                'phone' => 'required|string|max:20',
+                'email' => 'required|email',
+                'arrival_date' => 'required|date',
+                'departure_date' => 'required|date|after_or_equal:arrival_date',
+                'adults' => 'required|integer|min:1',
+                'children' => 'required|integer|min:0',
+                'accommodation' => 'required|string',
+                'package' => 'required|integer',
+                'cost' => 'required|numeric',
+                'agree' => 'required|in:on',
+            ]);
 
-            // if ($validator->fails()) {
-            //     return response()->json(['status' => 500, 'message' => 'Error occurred, Try Again failed',
-            //         'errors' => $validator->errors()
-            //     ]);
-            // }
-
-            $tripExists = TripModel::where('name', $name)
-                ->where('phone', $phone)
-                ->where('arrival_date', $arrival_date)
-                ->where('departure_date', $departure_date)
-                ->exists();
-
-            if ($tripExists) {
-                return response()->json(['status' => 500, 'message' => 'This trip has already been submitted.'
-                ]);
+            if ($validator->fails()) {
+                return response()->json([
+                    'status' => 500,
+                    'message' => 'Validation errors occurred, please fix them',
+                    'errors' => $validator->errors()
+                ], 422);
             }
 
+            $hidden_id = $request->input('hidden_id');
+
             $saveData = [
-                'name' => $name,
-                'phone' => $phone,
-                'email' => $email,
-                'arrival_date' => $arrival_date,
-                'departure_date' => $departure_date,
-                'adults' => $adults,
-                'children' => $children,
-                'accommodation' => $accommodation,
-                'package_id' => $package_id,
-                'cost' => $cost,
+                'name' => $request->input('name'),
+                'phone' => $request->input('phone'),
+                'email' => $request->input('email'),
+                'arrival_date' => $request->input('arrival_date'),
+                'departure_date' => $request->input('departure_date'),
+                'adults' => $request->input('adults'),
+                'children' => $request->input('children'),
+                'accommodation' => $request->input('accommodation'),
+                'package_id' => $request->input('package'),
+                'cost' => $request->input('cost'),
+                'status' => 'pending',
                 'archive' => 0,
                 'updated_by' => Auth::user()->id,
                 'created_by' => Auth::user()->id,
             ];
 
-            DB::table('book_trip')->insertGetId($saveData);
-            $message='Trip save successfully';
+            ## If hidden_id exists, update the record
+            if ($hidden_id) {               
+                DB::table('book_trip')->where('id', $hidden_id)->update($saveData);
+                $message = 'Trip updated successfully';
+            } else {
+                ## Otherwise, create a new record
+                DB::table('book_trip')->insertGetId($saveData);
+                $message = 'Trip saved successfully';
+            }
+
             DB::commit();
-
+            
             return response()->json(['status' => 200, 'message' => $message]);
-        } catch (\Exception $e) {
-            DB::rollback();
 
-            return response()->json(['status' => 500, 'message' => $e->getMessage()]);
+        } catch (\Exception $e) {
+            DB::rollBack();
+
+            return response()->json(['status' => 500, 'message' => 'Error: ' . $e->getMessage()]);
         }
     }
+
 
     
 }

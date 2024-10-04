@@ -74,6 +74,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <div id="msg_notification">
+                        <div class='alert alert-success text-center alert-dismissable w-100'>Elisha Bwilukiro</div>
+                    </div>
+
                     <form class="form" id="form" action="javascript:void(0)"  enctype="multipart/form-data">
                         @csrf
                         <input type="hidden" class="form-control" id="hidden_id" name="hidden_id" >
@@ -149,7 +153,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary save-btn" onclick="return save_trip()">Submit</button>
+                                <button type="submit" class="btn btn-primary save-btn">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -174,26 +178,31 @@
         const today = new Date().toISOString().split('T')[0];
         document.getElementById('arrival_date').setAttribute('min', today);
         document.getElementById('departure_date').setAttribute('min', today);
-        // $('.save-btn').prop('disabled', true);
+        $('.save-btn').prop('disabled', false);
+        $("div#msg_notification").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>Elisha Bwilukiro</div>");
 
         /*====== Save Trip  ======*/
-        function save_trip(){
+        // function save_trip(){
             $("form#form").submit(function(e){
                 e.preventDefault();
                 
                 $.ajaxSetup({ headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }});
-                var formData = new FormData(document.getElementById("form"));
+
+                let cost = $('#cost').val().replace(/,/g, '');
+                $('#cost').val(cost);
+                
+                let formData = new FormData(this);
                 $('.save-btn').prop('disabled', true);
                 
                 $.ajax({
                     type: "POST",
-                    url: "/save-trip",
+                    url: "{{ route('save-trip') }}",
                     data: formData,
                     dataType: "json",
+                    contentType: false,
                     processData: false,
-                    contentType: "application/json",
                     success: function(data){
                         $('.save-btn').prop('disabled', false);
                         if(data.status == 200){
@@ -208,16 +217,14 @@
                                 $("div#msg_notification").fadeOut("slow").html(""); 
                             },3000);
                         }
-                        // $("div#msg_notification").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>"+data.message+"</div>");
-                        // setTimeout(function(){
-                        // $("div#msg_notification").fadeOut("slow").html(""); 
-                        // $("form#form").trigger("reset"); 
-                        // },3000);
+                    },
+                    error: function(jqXHR, textStatus, errorThrown){
+                        console.log(errorThrown);
                     }
                 })
 
             })
-        }
+        // }
         
 
         /*====== Change Package ======*/
@@ -226,11 +233,15 @@
         $("#package").change(function(event){
             event.preventDefault();
 
+            $.ajaxSetup({ headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }});
+
             var div = "";
             var package = $(this).val();
             $("div#package_cost").html("");
             $.ajax({
-                type: "GET",
+                type: "POST",
                 url: "{{ route('get-package') }}",
                 data: {package:package},
                 dataType: "json",
@@ -241,7 +252,6 @@
                     setTimeout(() => {
                         $("div#loader").hide();
                         $("div#package_cost").show();
-                        // div += '<div class="input-group mt-4 mb-3"><label class="input-group-text" for="cost">Cost ($)</label><input type="text" class="form-control" id="cost" name="cost" value="' + data.cost + '" readonly></div>';                       
                         div += '<div class="input-group mt-4 mb-3"><label class="input-group-text" for="cost">Cost ($)</label><input type="text" class="form-control" id="cost" name="cost" value="' + parseFloat(data.cost).toLocaleString() + '" readonly></div>';
                         $("div#package_cost").html(div);
                     }, 1000);
@@ -263,7 +273,7 @@
             "enabled":true,
             "chatButtonSetting":{
                 "backgroundColor":"#4dc247",
-                "ctaText":"",
+                "ctaText":"WhatsApp",
                 "borderRadius":"25",
                 "marginRight":"0",
                 "marginBottom":"50",
@@ -271,16 +281,16 @@
                 "position":"left",
             },
             "brandSetting":{
-                "brandName":"GoTrip Company Limited",
+                "brandName":"UpzoneSafaris",
                 "brandSubTitle":"Typically replies within a day",
                 "brandImg":"{{ asset('assets/frontend/img/logo/logo.png') }}",
-                "welcomeText":"Hi there!\nWelcome to GoTrip Company Limited.\nHow can I help you?",
-                "messageText":"Hello GoTrip Company Limited,%0A I have a question about services",
+                "welcomeText":"Hi there!\nWelcome to UpzoneSafaris.\nHow can I help you?",
+                "messageText":"Hello UpzoneSafaris,%0A I have a question about services",
                 "backgroundColor":"#0a5f54",
                 "ctaText":"Start Chat",
                 "borderRadius":"25",
                 "autoShow":false,
-                "phoneNumber":"255653064129"
+                "phoneNumber":"255764367351"
             }
         };
         s.onload = function() {

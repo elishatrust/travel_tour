@@ -9,7 +9,7 @@
             <div class="col-lg-6 wow123 fadeInUp" data-wow123-delay="0.1s">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Welcome To UpzoneSafaris</p>
                 <h1 class="display-5123 h2 mb-4">
-                    Experience The Best<span class="text-primary"> Safaris</span>
+                    Experience The Best<span class="text-primary"> Safari</span>
                 </h1>
                 <p class="mb-4 text-justify-all">
                     At UpzoneSafaris, we are passionate about creating unforgettable travel experiences that inspire, 

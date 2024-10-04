@@ -15,7 +15,7 @@ if (!$user) {
         </li>
         <li><a href="javascript:" class="menu-sm"><i class="zmdi zmdi-swap"></i></a></li>
         <li class="notifications badgebit">
-            <a href="javascript:" title="Notification">
+            <a href="{{ route('contacts') }}" title="Notification">
                 <i class="zmdi zmdi-notifications"></i>
                 <div class="notify">
                     <span class="heartbit"></span>
@@ -23,13 +23,13 @@ if (!$user) {
                 </div>
             </a>
         </li>
-        <li><a href="javascript:" title="Inbox"><i class="zmdi zmdi-email"></i></a></li>
-        <li><a href="javascript:" title="Contact List"><i class="zmdi zmdi-account-box-phone"></i></a></li>
-        <li><a href="javascript:" title="Message"><i class="zmdi zmdi-comments"></i></a></li>
+        {{-- <li><a href="javascript:" title="Inbox"><i class="zmdi zmdi-email"></i></a></li> --}}
+        {{-- <li><a href="javascript:" title="Contact List"><i class="zmdi zmdi-account-box-phone"></i></a></li> --}}
+        {{-- <li><a href="javascript:" title="Message"><i class="zmdi zmdi-comments"></i></a></li> --}}
         <li><a href="javascript:" title="Full-screen" class="fullscreen" data-provide="fullscreen"><i class="zmdi zmdi-fullscreen"></i></a>
         </li>
         <li class="power">
-            <a href="{{ route('settings') }}" title="Settings" class="js-right-sidebar"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a>
+            <a href="{{ route('welcome') }}" title="Home" class="js-right-sidebar"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a>
             <a href="{{ route('logout') }}" title="Logout" class="mega-menu"><i class="zmdi zmdi-power"></i></a>
         </li>
     </ul>
@@ -58,7 +58,7 @@ if (!$user) {
                 </li>
                 <li class=" @if (Request::segment(2) == 'user') active open @endif ">
                     <a href="{{ route('user') }}">
-                        <i class="zmdi zmdi-accounts-alt"></i><span>Users</span>
+                        <i class="zmdi zmdi-apps"></i><span>Users</span>
                     </a>
                 </li>
                 <li class=" @if (Request::segment(2) == 'package') active open @endif ">
@@ -66,36 +66,21 @@ if (!$user) {
                         <i class="zmdi zmdi-apps"></i><span>Package</span>
                     </a>
                 </li>
+                <li class=" @if (Request::segment(2) == 'booking') active open @endif ">
+                    <a href="{{ route('booking') }}">
+                        <i class="zmdi zmdi-apps"></i><span>Booking</span>
+                    </a>
+                </li>
                 <li class=" @if (Request::segment(2) == 'blog') active open @endif ">
                     <a href="{{ route('blog') }}">
                         <i class="zmdi zmdi-apps"></i><span>Blog</span>
                     </a>
                 </li>
-                {{-- <li class=" @if (Request::segment(1) == 'category') active open @endif ">
-                    <a href="{{ route('category') }}">
-                        <i class="zmdi zmdi-layers"></i><span>Category</span>
+                <li class=" @if (Request::segment(2) == 'contacts') active open @endif ">
+                    <a href="{{ route('contacts') }}">
+                        <i class="zmdi zmdi-apps"></i><span>Contacts</span>
                     </a>
                 </li>
-                <li class=" @if (Request::segment(1) == 'product') active open @endif ">
-                    <a href="{{ route('product') }}">
-                        <i class="zmdi zmdi-chart"></i><span>Product</span>
-                    </a>
-                </li>
-                <li class=" @if (Request::segment(2) == 'shopping') active open @endif ">
-                    <a href="{{ url('shopping') }}">
-                        <i class="zmdi zmdi-shopping-cart"></i><span>Shopping</span>
-                    </a>
-                </li>
-                <li class=" @if (Request::segment(1) == 'sales') active open @endif ">
-                    <a href="{{ url('sales') }}">
-                        <i class="zmdi zmdi-swap-alt"></i><span>Sales</span>
-                    </a>
-                </li>
-                <li class=" @if (Request::segment(2) == 'orders') active open @endif ">
-                    <a href="{{ url('orders') }}">
-                        <i class="zmdi zmdi-swap-alt"></i><span>Orders</span>
-                    </a>
-                </li> --}}
             </ul>
         </div>
     </div>
