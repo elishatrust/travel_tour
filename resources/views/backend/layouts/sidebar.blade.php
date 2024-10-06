@@ -1,19 +1,21 @@
 @php
-
 $user = Auth::user();
 if (!$user) {
     return redirect()->route('login');
 }
-
 @endphp
 
 <aside id="minileftbar" class="minileftbar">
     <ul class="menu_list">
         <li>
-            <a href="javascript:" class="bars"></a>
-            <a class="navbar-brand" href="{{ route('dashboard') }}"><img src="{{ asset('assets/frontend/img/logo/logo.png') }}" style="width: 150px;" alt="GoTrip"></a>
+            <a href="javascript:(0)" class="bars"></a>
+            <a class="navbar-brand" href="{{ route('dashboard') }}">
+                <img src="{{ asset('assets/frontend/img/more/logo2.png')}}" alt="UpzoneSafaris" style="width: 150px; height:20px; border-radius: 30px; border-bottom: 2px solid wheat;">
+            </a>
         </li>
-        <li><a href="javascript:" class="menu-sm"><i class="zmdi zmdi-swap"></i></a></li>
+        <li><a href="javascript:(0)" class="menu-sm">
+            <i class="zmdi zmdi-swap"></i></a>
+        </li>
         <li class="notifications badgebit">
             <a href="{{ route('contacts') }}" title="Notification">
                 <i class="zmdi zmdi-notifications"></i>
@@ -23,10 +25,10 @@ if (!$user) {
                 </div>
             </a>
         </li>
-        {{-- <li><a href="javascript:" title="Inbox"><i class="zmdi zmdi-email"></i></a></li> --}}
-        {{-- <li><a href="javascript:" title="Contact List"><i class="zmdi zmdi-account-box-phone"></i></a></li> --}}
-        {{-- <li><a href="javascript:" title="Message"><i class="zmdi zmdi-comments"></i></a></li> --}}
-        <li><a href="javascript:" title="Full-screen" class="fullscreen" data-provide="fullscreen"><i class="zmdi zmdi-fullscreen"></i></a>
+        <li><a href="javascript:(0)" title="Inbox"><i class="zmdi zmdi-email"></i></a></li>
+        <li><a href="javascript:(0)" title="Contact List"><i class="zmdi zmdi-account-box-phone"></i></a></li>
+        <li><a href="javascript:(0)" title="Message"><i class="zmdi zmdi-comments"></i></a></li>
+        <li><a href="javascript:(0)" title="Full-screen" class="fullscreen" data-provide="fullscreen"><i class="zmdi zmdi-fullscreen"></i></a>
         </li>
         <li class="power">
             <a href="{{ route('welcome') }}" title="Home" class="js-right-sidebar"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a>

@@ -48,7 +48,7 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="company_detail">
                         <h4 class="logo mb-4" style="text-align: center">
-                            <img src="{{ asset('assets/frontend/img/logo/logo.png')}}" alt="#" style="width:160px;">
+                            <img src="{{ asset('assets/frontend/img/more/logo2.png')}}" alt="#" style="width: 200px; border-radius: 30px; border-bottom: 2px solid wheat;">
                         </h4>
                         <h5 style="text-align: center">{{ Str::upper($data['title']) }}</h5>
                         <p style="text-align: center"><span>Welcome to Your Account</span></p>

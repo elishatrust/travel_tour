@@ -615,12 +615,12 @@ body {
         url("../img/more/3b.jpg") center center no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 .inc_about {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
-        url('../img/more/01.jpg') center center no-repeat;
+        url('../img/more/00.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
@@ -628,7 +628,7 @@ body {
 
 .inc_blog {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
-        url('../img/more/01.jpg') center center no-repeat;
+        url('../img/more/3a.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
@@ -644,7 +644,7 @@ body {
 
 .inc_service {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
-        url('../img/more/01.jpg') center center no-repeat;
+        url('../img/more/20.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */

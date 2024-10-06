@@ -1,16 +1,16 @@
 
 <div class="row clearfix">
     <div class="col-md-12 col-lg-12">
+        <div class="panel-group" id="accordion_1" role="tablist" aria-multiselectable="true">
         @php $n=1; @endphp
         @if (!empty($data))
-            @foreach ($data as $item)
-            <div class="panel-group" id="accordion_{{ $item->id }}" role="tablist" aria-multiselectable="true">
+            @foreach ($data as $item)                
                 <div class="panel panel-primary">
                     <div class="panel-heading" role="tab" id="headingTwo_{{ $item->id }}">
                         <h4 class="panel-title"> 
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_{{ $item->id }}" href="#collapseTwo_{{ $item->id }}" aria-expanded="false" aria-controls="collapseTwo_{{ $item->id }}"> 
-                                <span class="badge badge-default m-l-10 hidden-md-down mr-1 p-2">{{ $item->name }}</span>  #{{ $n }}
-                                <span class="float-right text-primary mr-3">{{ \Carbon\Carbon::parse($item->created_at)->format('M d, Y | H:m') }}</span>                            
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapseTwo_{{ $item->id }}" aria-expanded="false" aria-controls="collapseTwo_{{ $item->id }}"> 
+                                #{{ $n }} <span class="badge badge-default m-l-10 hidden-md-down mr-1 p-2">{{ $item->name }}</span>
+                                <span class="float-right text-primary mr-3">{{ \Carbon\Carbon::parse($item->created_at)->format('d/m/Y | H:m') }}</span>                            
                             </a> 
                         </h4>
                     </div>
@@ -43,13 +43,13 @@
                             </div> 
                         </div>
                     </div>
-                </div>
-            </div>
+                </div>                
             @php $n++; @endphp
             @endforeach
         @else
             <p>No data available</p>
         @endif
+        </div>
     </div>
 </div>
 

@@ -12,7 +12,7 @@
     
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    {{-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> --}}
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"rel="stylesheet"/>
 
     <!-- Icon Font Stylesheet -->
@@ -38,9 +38,9 @@
 
     <script>
         // $(document).ready(function () {
-            document.addEventListener('contextmenu', event => event.preventDefault());
-            document.addEventListener('selectstart', event => event.preventDefault());
-            document.addEventListener('copy', event => event.preventDefault());
+            // document.addEventListener('contextmenu', event => event.preventDefault());
+            // document.addEventListener('selectstart', event => event.preventDefault());
+            // document.addEventListener('copy', event => event.preventDefault());
         // });
     </script>
 </head>
@@ -74,10 +74,6 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="msg_notification">
-                        <div class='alert alert-success text-center alert-dismissable w-100'>Elisha Bwilukiro</div>
-                    </div>
-
                     <form class="form" id="form" action="javascript:void(0)"  enctype="multipart/form-data">
                         @csrf
                         <input type="hidden" class="form-control" id="hidden_id" name="hidden_id" >
@@ -151,6 +147,7 @@
                                     <label class="form-check-label" for="agree">I agree to the I agree to the <a href="{{ route('terms-and-conditions') }}">terms and conditions</a>.</label>
                                 </div>
                             </div>
+                            <div class="col-md-12.col-sm-12" id="msg_notification"></div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 <button type="submit" class="btn btn-primary save-btn">Submit</button>
@@ -179,7 +176,6 @@
         document.getElementById('arrival_date').setAttribute('min', today);
         document.getElementById('departure_date').setAttribute('min', today);
         $('.save-btn').prop('disabled', false);
-        $("div#msg_notification").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>Elisha Bwilukiro</div>");
 
         /*====== Save Trip  ======*/
         // function save_trip(){
@@ -204,15 +200,20 @@
                     contentType: false,
                     processData: false,
                     success: function(data){
-                        $('.save-btn').prop('disabled', false);
+                        // $('.save-btn').prop('disabled', false);
                         if(data.status == 200){
                             $("div#msg_notification").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>"+data.message+"</div>");
                             setTimeout(function(){
                                 $("div#msg_notification").fadeOut("slow").html(""); 
                                 $("form#form")[0].reset(); 
                             },3000);
-                        }else{
+                        }else if(data.status == 500){
                             $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>"+data.message+"</div>");
+                            setTimeout(function(){
+                                $("div#msg_notification").fadeOut("slow").html(""); 
+                            },3000);
+                        }else if(data.errors){
+                            $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>Invalid data entered</div>");
                             setTimeout(function(){
                                 $("div#msg_notification").fadeOut("slow").html(""); 
                             },3000);
@@ -220,6 +221,10 @@
                     },
                     error: function(jqXHR, textStatus, errorThrown){
                         console.log(errorThrown);
+                        $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>"+errorThrown+"</div>");
+                        setTimeout(function(){
+                            $("div#msg_notification").fadeOut("slow").html(""); 
+                        },3000);
                     }
                 })
 
@@ -283,7 +288,7 @@
             "brandSetting":{
                 "brandName":"UpzoneSafaris",
                 "brandSubTitle":"Typically replies within a day",
-                "brandImg":"{{ asset('assets/frontend/img/logo/logo.png') }}",
+                "brandImg":"{{ asset('assets/frontend/img/more/20a.jpg') }}",
                 "welcomeText":"Hi there!\nWelcome to UpzoneSafaris.\nHow can I help you?",
                 "messageText":"Hello UpzoneSafaris,%0A I have a question about services",
                 "backgroundColor":"#0a5f54",

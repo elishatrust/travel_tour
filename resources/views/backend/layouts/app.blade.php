@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <title>{{ !empty(strtoupper($data['header']).' | '.strtoupper($data['title'])) ? strtoupper($data['header']).' | '.strtoupper($data['title']) : ''}}</title>
 
-<link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+<link rel="icon" href="{{ asset('assets/frontend/img/more/logo2.png')}}" type="image/x-icon">
 <link rel="stylesheet" href="{{ asset('assets/backend/plugins/bootstrap/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/backend/plugins/morrisjs/morris.css') }}" />
 <link rel="stylesheet" href="{{ asset('assets/backend/plugins/jvectormap/jquery-jvectormap-2.0.3.min.css') }}"/>
@@ -33,6 +33,12 @@
 <script src="{{ asset('assets/backend/plugins/bootstrap.bundle.min.js')}}"></script>
 <script src="{{ asset('assets/backend/plugins/jquery.min.js')}}"></script>
 </head>
+@php
+$user = Auth::user();
+if (!$user) {
+    return redirect()->route('login');
+}
+@endphp
 <body class="theme-black">       
 
 

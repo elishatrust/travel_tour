@@ -11,7 +11,7 @@
             <div class="col-lg-12">
                 <div class="owl-courses-item owl-carousel">
                     <div class="item">
-                        <img src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="Course One">
+                        <img src="{{ asset('assets/frontend/img/safari/23.jpg') }}" style="width: 100%;height:300px;"  alt="#UpzoneSafaris">
                         <div class="down-content">
                             <h4 class="text-uppercase">Mount Meru</h4>
                             <div class="info">
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="Course Two">
+                        <img src="{{ asset('assets/frontend/img/safari/37.jpg') }}" style="width: 100%;height:300px;"  alt="#UpzoneSafaris">
                         <div class="down-content">
                             <h4 class="text-uppercase">Ngorongoro Crater</h4>
                             <div class="info">
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="">
+                        <img src="{{ asset('assets/frontend/img/safari/24.jpg') }}" style="width: 100%;height:300px;"  alt="#UpzoneSafaris">
                         <div class="down-content">
                             <h4 class="text-uppercase">Mount Kilimanjaro</h4>
                             <div class="info">
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="">
+                        <img src="{{ asset('assets/frontend/img/safari/47.jpg') }}" style="width: 100%;height:300px;"  alt="#UpzoneSafaris">
                         <div class="down-content">
                             <h4 class="text-uppercase">Arusha National Park</h4>
                             <div class="info">
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="">
+                        <img src="{{ asset('assets/frontend/img/more/21.jpg') }}" style="width: 100%;height:300px;"  alt="#UpzoneSafaris">
                         <div class="down-content">
                             <h4 class="text-uppercase">Serengeti National Park</h4>
                             <div class="info">
@@ -118,7 +118,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="">
+                        <img src="{{ asset('assets/frontend/img/safari/52.jpg') }}" style="width: 100%;height:300px;"  alt="#UpzoneSafaris">
                         <div class="down-content">
                             <h4 class="text-uppercase">Tarangire National Park</h4>
                             <div class="info">

@@ -7,13 +7,13 @@
         <i class="fa fa-map-marker-alt me-3"></i>Moshi Town, Kilimanjaro, TZ
       </p>
       <p class="mb-2">
-        <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+        <i class="fa fa-phone-alt me-3"></i><a href="tel:+255687829070">+255 687 829 070</a>
       </p>
       <p class="mb-2">
-        <i class="fa fa-envelope me-3"></i>upzonesafaris@gmail.com
+        <i class="fa fa-envelope me-3"></i><a href="mailto:upzonesafaris@gmail.com">upzonesafaris@gmail.com</a>
       </p>
       <div class="d-flex pt-2">
-        <a class="btn btn-outline-light btn-social" href="#" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/profile.php?id=61566979761874" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a class="btn btn-outline-light btn-social" href="#" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
         <a class="btn btn-outline-light btn-social" href="#" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         <a class="btn btn-outline-light btn-social" href="#" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -24,7 +24,7 @@
       <a class="btn btn-link" href="{{ route('about') }}">About Us</a>
       <a class="btn btn-link" href="{{ route('contact') }}">Contact Us</a>
       <a class="btn btn-link" href="{{ route('services') }}">Our Services</a>
-      <a class="btn btn-link" href="{{ route('blog') }}">Latest News</a>
+      <a class="btn btn-link" href="{{ route('latest-news') }}">Latest News</a>
       <a class="btn btn-link" href="{{ route('terms-and-conditions') }}">Terms & Condition</a>
       <a class="btn btn-link" href="{{ route('login') }}">Staff</a>
     </div>

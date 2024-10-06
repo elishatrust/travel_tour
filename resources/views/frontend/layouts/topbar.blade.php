@@ -13,10 +13,10 @@
         <div class="col-lg-5 px-5 text-end">
             <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                 <small class="fa fa-phone-alt text-primary me-2"></small>
-                <small>+012 345 6789</small>
+                <small>+255 687 829 070</small>
             </div>
             <div class="h-100 d-inline-flex align-items-center">
-                <a class="btn btn-sm-square bg-white text-primary me-1" href="#" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-sm-square bg-white text-primary me-1" href="https://web.facebook.com/profile.php?id=61566979761874" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-sm-square bg-white text-primary me-1" href="#" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a class="btn btn-sm-square bg-white text-primary me-1" href="#" title="Twitter" target="_blank">
                     <svg  style="fill: #2EB872 !important; font-size: 20px; font-family:'Font Awesome 5 Brands';" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
