@@ -12,7 +12,7 @@
     
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    {{-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> --}}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"rel="stylesheet"/>
 
     <!-- Icon Font Stylesheet -->
@@ -113,7 +113,7 @@
                                         <option value="">Select--</option>
                                         <option value="Hotel">Hotel</option>
                                         <option value="Resort">Resort</option>
-                                        <option value="Guesthouse">Guesthouse</option>
+                                        <option value="GuestHouse">GuestHouse</option>
                                     </select>
                                 </div>
                             </div>
@@ -147,7 +147,9 @@
                                     <label class="form-check-label" for="agree">I agree to the I agree to the <a href="{{ route('terms-and-conditions') }}">terms and conditions</a>.</label>
                                 </div>
                             </div>
-                            <div class="col-md-12.col-sm-12" id="msg_notification"></div>
+                            <div id="msg_notification" class="col-md-12.col-sm-12 d-flex justify-content-center align-items-center" >
+                                <img src="{{ asset('assets/backend/loader.svg') }}" alt="Loading...">
+                            </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 <button type="submit" class="btn btn-primary save-btn">Submit</button>
@@ -178,58 +180,60 @@
         $('.save-btn').prop('disabled', false);
 
         /*====== Save Trip  ======*/
-        // function save_trip(){
-            $("form#form").submit(function(e){
-                e.preventDefault();
-                
-                $.ajaxSetup({ headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }});
+        $("div#msg_notification img").hide();
+        $("form#form").submit(function(e){
+            e.preventDefault();
+            
+            $.ajaxSetup({ headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }});
 
-                let cost = $('#cost').val().replace(/,/g, '');
-                $('#cost').val(cost);
-                
-                let formData = new FormData(this);
-                $('.save-btn').prop('disabled', true);
-                
-                $.ajax({
-                    type: "POST",
-                    url: "{{ route('save-trip') }}",
-                    data: formData,
-                    dataType: "json",
-                    contentType: false,
-                    processData: false,
-                    success: function(data){
-                        // $('.save-btn').prop('disabled', false);
-                        if(data.status == 200){
-                            $("div#msg_notification").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>"+data.message+"</div>");
-                            setTimeout(function(){
-                                $("div#msg_notification").fadeOut("slow").html(""); 
-                                $("form#form")[0].reset(); 
-                            },3000);
-                        }else if(data.status == 500){
-                            $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>"+data.message+"</div>");
-                            setTimeout(function(){
-                                $("div#msg_notification").fadeOut("slow").html(""); 
-                            },3000);
-                        }else if(data.errors){
-                            $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>Invalid data entered</div>");
-                            setTimeout(function(){
-                                $("div#msg_notification").fadeOut("slow").html(""); 
-                            },3000);
-                        }
-                    },
-                    error: function(jqXHR, textStatus, errorThrown){
-                        console.log(errorThrown);
-                        $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>"+errorThrown+"</div>");
+            let cost = $('#cost').val().replace(/,/g, '');
+            $('#cost').val(cost);
+            
+            let formData = new FormData(this);
+            $('.save-btn').prop('disabled', true);
+            $("div#msg_notification img").show();
+            
+            $.ajax({
+                type: "POST",
+                url: "{{ route('save-trip') }}",
+                data: formData,
+                dataType: "json",
+                contentType: false,
+                processData: false,
+                success: function(data){
+                    //$('.save-btn').prop('disabled', false);
+                    $("div#msg_notification img").hide();
+                    if(data.status == 200){
+                        $("div#msg_notification").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>"+data.message+"</div>");
+                        setTimeout(function(){
+                            $("div#msg_notification").fadeOut("slow").html(""); 
+                            $("form#form")[0].reset(); 
+                            $('#bookingModal').modal('hide');
+                        },3000);
+                    }else if(data.status == 500){
+                        $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>"+data.message+"</div>");
+                        setTimeout(function(){
+                            $("div#msg_notification").fadeOut("slow").html(""); 
+                        },3000);
+                    }else if(data.errors){
+                        $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>Invalid data entered</div>");
                         setTimeout(function(){
                             $("div#msg_notification").fadeOut("slow").html(""); 
                         },3000);
                     }
-                })
-
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    console.log(errorThrown);
+                    $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>"+errorThrown+"</div>");
+                    setTimeout(function(){
+                        $("div#msg_notification").fadeOut("slow").html(""); 
+                    },3000);
+                }
             })
-        // }
+
+        })
         
 
         /*====== Change Package ======*/
@@ -278,7 +282,7 @@
             "enabled":true,
             "chatButtonSetting":{
                 "backgroundColor":"#4dc247",
-                "ctaText":"WhatsApp",
+                "ctaText":"",
                 "borderRadius":"25",
                 "marginRight":"0",
                 "marginBottom":"50",

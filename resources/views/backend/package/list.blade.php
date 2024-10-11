@@ -15,7 +15,7 @@
                     <div class="body">
 
                         <div id="getView">
-                            <img src="{{ asset('assets/backend/loader.svg') }}" alt="">
+                            <img src="{{ asset('assets/backend/loader.svg') }}"  alt="Loading...">
                         </div>
 
                     </div>

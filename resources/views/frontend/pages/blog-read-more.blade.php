@@ -11,14 +11,15 @@
             </p>
         </div>
         <div class="row g-5 blog-row">
-            @foreach ($blogs as $blog)                
+            {{ dd($blogs) }}
+            @foreach ($blogs as $blog)   
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="blog-singe no-margin row">
                     <div class="col-sm-5 blog-img-tab">
                         @if($blog->file_path)
-                            <img src="{{ asset('storage/' . $blog->file_path) }}" class="w-100" style="border-radius:10px;" alt="#UpzoneSafaris">
+                            <img src="{{ asset('storage/' . $blog->file_path) }}" class="w-100" alt="#UpzoneSafaris">
                         @else
-                            <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius:10px;" alt="#UpzoneSafaris">
+                            <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" alt="#UpzoneSafaris">
                         @endif
                     </div>
                     <div class="col-sm-7 blog-content-tab">

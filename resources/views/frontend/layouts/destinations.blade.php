@@ -11,18 +11,18 @@
             <div class="col-lg-12">
                 <div class="owl-courses-item owl-carousel">
                     <div class="item">
-                        <img src="{{ asset('assets/frontend/img/safari/23.jpg') }}" style="width: 100%;height:300px;"  alt="#UpzoneSafaris">
+                        <img src="{{ asset('assets/frontend/img/MtMeru.webp') }}" style="width: 100%;height:300px;border-radius:10px"  alt="#UpzoneSafaris">
                         <div class="down-content">
-                            <h4 class="text-uppercase">Mount Meru</h4>
+                            <h4 class="text-center">Mount Meru</h4>
                             <div class="info">
                                 <div class="row">
                                     <div class="col-8">
                                         <ul>
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star" style="color: black!important"></i></li>
+                                            <li><i class="fa fa-star" style="color: black!important"></i></li>
+                                            <li><i class="fa fa-star" style="color: black!important"></i></li>
                                         </ul>
                                     </div>
                                     <div class="col-4">
@@ -33,59 +33,18 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="{{ asset('assets/frontend/img/safari/37.jpg') }}" style="width: 100%;height:300px;"  alt="#UpzoneSafaris">
+                        <img src="{{ asset('assets/frontend/img/a1.webp') }}" style="width: 100%;height:300px;border-radius:10px"  alt="#UpzoneSafaris">
                         <div class="down-content">
-                            <h4 class="text-uppercase">Ngorongoro Crater</h4>
+                            <h4 class="text-center">Arusha National Park</h4>
                             <div class="info">
                                 <div class="row">
                                     <div class="col-8">
                                         <ul>
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-4">
-                                        <span>1800</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="{{ asset('assets/frontend/img/safari/24.jpg') }}" style="width: 100%;height:300px;"  alt="#UpzoneSafaris">
-                        <div class="down-content">
-                            <h4 class="text-uppercase">Mount Kilimanjaro</h4>
-                            <div class="info">
-                                <div class="row">
-                                    <div class="col-8">
-                                        <ul>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-4">
-                                        <span>1400</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="{{ asset('assets/frontend/img/safari/47.jpg') }}" style="width: 100%;height:300px;"  alt="#UpzoneSafaris">
-                        <div class="down-content">
-                            <h4 class="text-uppercase">Arusha National Park</h4>
-                            <div class="info">
-                                <div class="row">
-                                    <div class="col-8">
-                                        <ul>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star" style="color: black!important"></i></li>
+                                            <li><i class="fa fa-star" style="color: black!important"></i></li>
+                                            <li><i class="fa fa-star" style="color: black!important"></i></li>
                                         </ul>
                                     </div>
                                     <div class="col-4">
@@ -96,9 +55,53 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="{{ asset('assets/frontend/img/more/21.jpg') }}" style="width: 100%;height:300px;"  alt="#UpzoneSafaris">
+                        <img src="{{ asset('assets/frontend/img/ngorongoro-crater.webp') }}" style="width: 100%;height:300px;border-radius:10px"  alt="#UpzoneSafaris">
                         <div class="down-content">
-                            <h4 class="text-uppercase">Serengeti National Park</h4>
+                            <h4 class="text-center">Ngorongoro Crater</h4>
+                            <div class="info">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star" style="color: black!important"></i></li>
+                                            <li><i class="fa fa-star" style="color: black!important"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <span>1800</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('assets/frontend/img/safari/49.jpg') }}" style="width: 100%;height:300px;border-radius:10px"  alt="#UpzoneSafaris">
+                        <div class="down-content">
+                            <h4 class="text-center">Mount Kilimanjaro</h4>
+                            <div class="info">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star" style="color: black!important"></i></li>
+                                            <li><i class="fa fa-star" style="color: black!important"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <span>1400</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('assets/frontend/img/t1.webp') }}" style="width:100%;height:300px;border-radius:10px"  alt="#UpzoneSafaris">
+                        <div class="down-content">
+                            <h4 class="text-center">Serengeti National Park</h4>
                             <div class="info">
                                 <div class="row">
                                     <div class="col-8">
@@ -107,7 +110,7 @@
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star" style="color: black!important"></i></li>
                                         </ul>
                                     </div>
                                     <div class="col-4">
@@ -118,9 +121,9 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="{{ asset('assets/frontend/img/safari/52.jpg') }}" style="width: 100%;height:300px;"  alt="#UpzoneSafaris">
+                        <img src="{{ asset('assets/frontend/img/t2.webp') }}" style="width: 100%;height:300px;border-radius:10px"  alt="#UpzoneSafaris">
                         <div class="down-content">
-                            <h4 class="text-uppercase">Tarangire National Park</h4>
+                            <h4 class="text-center">Tarangire National Park</h4>
                             <div class="info">
                                 <div class="row">
                                     <div class="col-8">
@@ -129,7 +132,7 @@
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star" style="color: black!important"></i></li>
                                         </ul>
                                     </div>
                                     <div class="col-4">

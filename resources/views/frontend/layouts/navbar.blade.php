@@ -11,13 +11,50 @@
             <a href="{{ route('welcome') }}" class="nav-item nav-link active">Home</a>
             <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
             <a href="{{ route('services') }}" class="nav-item nav-link">Services</a>
-            <a href="{{ route('latest-news') }}" class="nav-item nav-link">Latest News</a>
-            {{-- <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle active123" data-bs-toggle="dropdown">More</a>
-                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="#" class="dropdown-item">FAQ</a>
-                </div>
+            {{-- <div class="collapse navbar-collapse" id="navbarExampleOnHover">
+                <ul class="navbar-nav me-auto ps-lg-0" style="padding-left: 0.15rem">
+                    <li class="nav-item dropdown dropdown-hover position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-mdb-toggle="dropdown" aria-expanded="false">Trekking</a>
+                        <div class="dropdown-menu mt-0 me-0" style="width:30%;" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;border-top-right-radius: 0;"> 
+                        <div class="container">
+                            <div class="row my-2">
+                                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                                    <div class="list-group list-group-flush w-100">
+                                        <h6>Mount Kilimanjaro </h6>
+                                        <a href="" class="list-group-item list-group-item-action">5 Days UMBWE Route</a>
+                                        <a href="" class="list-group-item list-group-item-action">6 Days UMBWE Route</a>
+                                        <a href="" class="list-group-item list-group-item-action">5 Days MARANGU Route</a>
+                                        <a href="" class="list-group-item list-group-item-action">6 Days MARANGU Route</a>
+                                        <a href="" class="list-group-item list-group-item-action">6 Days MACHAME Route</a>
+                                        <a href="" class="list-group-item list-group-item-action">7 Days MACHAME Route</a>
+                                        <a href="" class="list-group-item list-group-item-action">9 Days NORTHERN Circuit Route</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                                    <div class="list-group list-group-flush w-100">
+                                        <h6>Mount Menu </h6>
+                                        <a href="" class="list-group-item list-group-item-action">Iste quaerato</a>
+                                        <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
+                                        <a href="" class="list-group-item list-group-item-action">Est iure</a>
+                                        <a href="" class="list-group-item list-group-item-action">Praesentium</a>
+                                        <a href="" class="list-group-item list-group-item-action">Laboriosam</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </li>
+                </ul>
             </div> --}}
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Trekking</a>
+                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                    <a href="{{ route('mt-meru-trek') }}" class="dropdown-item">Mount Meru</a>
+                    <a href="{{ route('mt-kilimanjaro-trek') }}" class="dropdown-item">Mount Kilimanjaro</a>
+                </div>
+            </div>
+            <a href="{{ route('latest-news') }}" class="nav-item nav-link">Latest News</a>
             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
         </div>
         <a href="#bookingModal" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-outline-primary text-uppercase btn-action">Plan a Trip</a>

@@ -268,6 +268,10 @@ line-height: 50px;
     .page-header {
         /* margin-top: 152px !important; */
     }
+    .hero-header .row{
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
 }
 
 @media (max-width: 992px) {
@@ -397,6 +401,14 @@ body {
     border: 1px solid var(--dark);
     font-size: 15px !important;
 }
+.form .form-control:hover, 
+.form .form-select:hover{
+    padding: 7px 10px;
+    font-weight: 400!important;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+    font-size: 15px !important;
+}
 .form label{
     font-weight: 300!important;
     font-size: 18px !important;
@@ -514,6 +526,28 @@ body {
     color: var(--primary);
 }
 
+.nav-item {
+    padding: 0.5rem 0xp;
+}
+
+.dropdown-hover:hover>.dropdown-menu {
+display: block;
+}
+
+.dropdown-hover>.dropdown-toggle:active {
+pointer-events: none;
+color: var(--primary)!important;
+}
+.nav-item .row h6{
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+}
+.nav-item .row .list-group-item {
+    font-size: 14px;
+}
+
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
@@ -610,16 +644,8 @@ body {
     
 
 /*---    Header ----*/
-.header-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-        url("../img/more/3b.jpg") center center no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* background-attachment: fixed; */
-}
-
 .inc_about {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
         url('../img/more/00.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
@@ -627,7 +653,7 @@ body {
 }
 
 .inc_blog {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
         url('../img/more/3a.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
@@ -635,7 +661,7 @@ body {
 }
 
 .inc_contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
         url('../img/more/01.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
@@ -643,16 +669,24 @@ body {
 }
 
 .inc_service {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
         url('../img/more/20.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
 }
 
+.inc_trekking {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('../img/safari/29.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
 .inc_terms_condition {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
-        url('../img/more/01.jpg') center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('../img/more/21.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
@@ -852,17 +886,11 @@ body {
 
 
 /*---    Facts & Visiting Hours ----*/
-/* .facts {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url(../img/bg-1.jpg) center center no-repeat;
-    background-size: cover;
-} */
-
 .facts {
     background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url(../img/more/3b.jpg) center center no-repeat;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
     width: 100%;
 }

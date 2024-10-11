@@ -62,6 +62,53 @@ class frontendController extends Controller
         }
     }
 
+    public function trekking()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Trekking';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.trekking', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function mt_meru_trek()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Mount Meru';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.mt-meru-trek', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function mt_kili_trek()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Mount Kilimanjaro';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.mt-kili-trek', $data );
+
+        }else{
+            abort(404);
+        }
+    }
     public function contact()
     {
         $meta_title = 'Upzone Safaris';
@@ -157,10 +204,13 @@ class frontendController extends Controller
                 'accommodation' => $request->input('accommodation'),
                 'package_id' => $request->input('package'),
                 'cost' => $request->input('cost'),
+                'tokens' => rand(1,9999999999),
                 'status' => 'pending',
                 'archive' => 0,
                 'updated_by' => Auth::user()->id,
                 'created_by' => Auth::user()->id,
+                'created_at' => now(),
+                'updated_at' => now(),
             ];
 
             ## If hidden_id exists, update the record
@@ -181,6 +231,24 @@ class frontendController extends Controller
             DB::rollBack();
 
             return response()->json(['status' => 500, 'message' => 'Error: ' . $e->getMessage()]);
+        }
+    }
+
+    public function read_more_news($id)
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Read More';
+        
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            $data['blogs'] = BlogModel::findBlog(Crypt::decrypt($id));
+            // $data['blog'] = BlogModel::find($request->input('id'));
+            return view('frontend.pages.blog-read-more', $data );
+
+        }else{
+            abort(404);
         }
     }
 

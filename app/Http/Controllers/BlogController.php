@@ -48,6 +48,7 @@ class BlogController extends Controller
                     'title' => $title,
                     'content' => $content,
                     'file_path' => $filePath,
+                    'tokens' => rand(1,9999999999),
                     'author' => $user_id,
                     'created_by' => $user_id,
                     'updated_by' => $user_id,

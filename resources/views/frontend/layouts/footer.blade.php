@@ -7,10 +7,10 @@
         <i class="fa fa-map-marker-alt me-3"></i>Moshi Town, Kilimanjaro, TZ
       </p>
       <p class="mb-2">
-        <i class="fa fa-phone-alt me-3"></i><a href="tel:+255687829070">+255 687 829 070</a>
+        <i class="fa fa-phone-alt me-3"></i>+255 687 829 070
       </p>
       <p class="mb-2">
-        <i class="fa fa-envelope me-3"></i><a href="mailto:upzonesafaris@gmail.com">upzonesafaris@gmail.com</a>
+        <i class="fa fa-envelope me-3"></i>upzonesafaris@gmail.com
       </p>
       <div class="d-flex pt-2">
         <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/profile.php?id=61566979761874" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -26,16 +26,16 @@
       <a class="btn btn-link" href="{{ route('services') }}">Our Services</a>
       <a class="btn btn-link" href="{{ route('latest-news') }}">Latest News</a>
       <a class="btn btn-link" href="{{ route('terms-and-conditions') }}">Terms & Condition</a>
-      <a class="btn btn-link" href="{{ route('login') }}">Staff</a>
+      <a class="btn btn-link" href="{{ route('login') }}" target="_blank">Staff</a>
     </div>
     <div class="col-lg-3 col-md-6">
       <h5 class="text-light mb-4">Popular Destination</h5>
-      <a class="btn btn-link" href="#">Mount Meru</a>
-      <a class="btn btn-link" href="#">Mount Kilimanjaro</a>
-      <a class="btn btn-link" href="#">Ngorongoro Crater</a>
-      <a class="btn btn-link" href="#">Arusha National Park</a>
-      <a class="btn btn-link" href="#">Serengeti National Park</a>
-      <a class="btn btn-link" href="#">Tarangire National Park</a>
+      <a class="btn btn-link" href="javascript:(0)">Mount Meru</a>
+      <a class="btn btn-link" href="javascript:(0)">Mount Kilimanjaro</a>
+      <a class="btn btn-link" href="javascript:(0)">Ngorongoro Crater</a>
+      <a class="btn btn-link" href="javascript:(0)">Arusha National Park</a>
+      <a class="btn btn-link" href="javascript:(0)">Serengeti National Park</a>
+      <a class="btn btn-link" href="javascript:(0)">Tarangire National Park</a>
     </div>
     <div class="col-lg-3 col-md-6">
       <h5 class="text-light mb-4">Newsletter</h5>

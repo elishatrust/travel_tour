@@ -17,7 +17,7 @@
             <div class="col-lg-12 col-sm-12">
                 <div class="body">
                     <div class="row" id="getView">
-                        <img src="{{ asset('assets/backend/loader.svg') }}" alt="">
+                        <img src="{{ asset('assets/backend/loader.svg') }}"  alt="Loading...">
                     </div>
                 </div>
             </div>

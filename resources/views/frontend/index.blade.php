@@ -35,7 +35,7 @@
             </div>
             <div class="col-lg-6 wow123 fadeInUp" data-wow123-delay="0.5s">
                 <div class="img-border">
-                    <img class="img-fluid" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="" />
+                    <img class="img-fluid" src="{{ asset('assets/frontend/img/safari/42.jpg') }}" alt="" />
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
 </div>
 
 <!-- Facts -->
-<div class="container-xxl bg-primary py-5 facts wow123 fadeInUp" data-wow123-delay="0.1s">
+<div class="container-xxl1234 bg-primary py-5 facts wow123 fadeInUp" data-wow123-delay="0.1s">
     <div class="container">
         <div class="row g-4">
             <div class="col-md-6 col-lg-3 text-center wow123 fadeIn"

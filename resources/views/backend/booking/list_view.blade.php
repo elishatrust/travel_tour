@@ -6,15 +6,15 @@
         @if (!empty($data))
             @foreach ($data as $item)                
                 <div class="panel panel-primary">
-                    <div class="panel-heading" role="tab" id="headingTwo_{{ $item->id }}">
+                    <div class="panel-heading" role="tab" id="headingTwo_{{ $item->tokens }}">
                         <h4 class="panel-title"> 
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapseTwo_{{ $item->id }}" aria-expanded="false" aria-controls="collapseTwo_{{ $item->id }}"> 
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapseTwo_{{ $item->tokens }}" aria-expanded="false" aria-controls="collapseTwo_{{ $item->tokens }}"> 
                                 #{{ $n }} <span class="badge badge-default m-l-10 hidden-md-down mr-1 p-2">{{ $item->name }}</span>
                                 <span class="float-right text-primary mr-3">{{ \Carbon\Carbon::parse($item->created_at)->format('d/m/Y | H:m') }}</span>                            
                             </a> 
                         </h4>
                     </div>
-                    <div id="collapseTwo_{{ $item->id }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo_{{ $item->id }}" style="">
+                    <div id="collapseTwo_{{ $item->tokens }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo_{{ $item->tokens }}" style="">
                         <div class="panel-body"> 
                             <div class="row">
                                 <div class="col-lg-3 col-md-6 col-sm-12">

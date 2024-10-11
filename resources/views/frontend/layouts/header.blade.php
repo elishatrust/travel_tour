@@ -30,12 +30,13 @@
 
 
 <!-- Hero Start -->
-<div class="container-fluid bg-dark p-0 mb-5 hero-header">
+<div class="container-fluid bg-dark p-0 hero-header">
     <div class="container py-5">
-        <div class="row g-5 align-items-center  g-0 flex-column-reverse flex-lg-row" style="margin-top: 40px;margin-bottom:100px;">
+        <div class="row g-5 align-items-center  g-0 flex-column-reverse flex-lg-row">
             <div class="col-md-12 col-lg-7">
-                {{-- <h4 class="mb-3 text-dark">100% Travel & Tour</h4> --}}
-                <h1 class="mb-5 display-3 text-light text-start">Explore the Beauty of the Beautiful World</h1>
+                <h4 class="mb-3 text-primary text-uppercase">100% Travel & Tour</h4>
+                <h1 class="mb-5 display-3 text-light text-start">Experience Mountain Trekking & Safaris</h1>
+                {{-- <h1 class="mb-5 display-3 text-light text-start">Explore the Beauty of the Beautiful World</h1> --}}
                 <div class="position-relative mx-auto">
                     <a href="{{ route('about') }}" class="btn btn-primary border-secondary py-3 px-4 rounded-pill text-white">Explore Now</a>
                 </div>

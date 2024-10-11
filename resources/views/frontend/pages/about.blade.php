@@ -49,7 +49,7 @@
           </div>
           <div class="col-lg-6 wow123 fadeInUp" data-wow123-delay="0.5s">
             <div class="img-border">
-              <img class="img-fluid" src="{{ asset('assets/frontend/img/more/support-img.jpg') }}" alt="" />
+              <img class="img-fluid" src="{{ asset('assets/frontend/img/safari/42.jpg') }}" style="border-radius:10px;" alt="" />
             </div>
           </div>
       </div>
