@@ -13,13 +13,11 @@
 
 
 <div class="container-xxl py-5">
-    <div class="container">
+    <div class="container pt-5">
       <div class="row g-5">
           <div class="col-lg-6 wow123 fadeInUp" data-wow123-delay="0.1s">
               <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Our Background</p>
-              <h1 class="display-5123 h2 mb-5">
-                We are Holiday Destination Support Company
-              </h1>
+              <h1 class="display-5123 h2 mb-5">We are Holiday Destination Support Company</h1>
               <p class="mb-4 text-justify-all">
                   At UpzoneSafaris, we believe that travel is more than just visiting new places it's 
                   about creating stories, connecting with different cultures, and discovering the wonders 
@@ -48,15 +46,16 @@
               </h5>
           </div>
           <div class="col-lg-6 wow123 fadeInUp" data-wow123-delay="0.5s">
-            <div class="img-border">
-              <img class="img-fluid" src="{{ asset('assets/frontend/img/safari/42.jpg') }}" style="border-radius:10px;" alt="" />
+            <div class="img-border h1-100">
+              <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:100%;" src="{{ asset('assets/frontend/img/safari/1008.jpg') }}" style="border-radius:10px;" alt="" />
             </div>
           </div>
       </div>
     </div>
 </div>
 
-<div class="container py-5 section-top-border">
+
+<div class="container section-top-border">
   <h3 class="mb-30">Innovation and Growth</h3>
   <div class="row">
     <div class="col-lg-12">
@@ -71,6 +70,41 @@
   </div>
 </div>
 
+
+<!-- DNA -->
+<div class="container-xxl pb-5">
+  <div class="container">
+      <div class="row g-5">
+          <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
+              <div class="card-card p-4 bg-blend-lighten shadow-sm w-100 h-100">
+                  <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Vision</h5>
+                  <span>
+                      To be the world’s most trusted and innovative travel company, 
+                      inspiring people to explore and experience the beauty of the world.
+                  </span>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-4 sha col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
+              <div class="card-card p-4 bg-blend-lighten shadow-sm w-100 h-100">
+                  <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Mission</h5>
+                  <span>
+                      We are committed to offering personalized service, reliable travel solutions, 
+                      and unforgettable journeys that enrich lives and create lasting memories.
+                  </span>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
+              <div class="card-card p-4 bg-blend-lighten shadow-sm w-100 h-100">
+                  <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Core Value</h5>
+                  <span>
+                      Our top priority is the satisfaction and happiness of our clients by 
+                      conducting our business with the highest ethical standards, honesty, and transparency.
+                  </span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 <!-- Destination -->
 @include('frontend.layouts.destinations')
 

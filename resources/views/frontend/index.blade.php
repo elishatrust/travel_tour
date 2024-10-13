@@ -6,11 +6,9 @@
 <div class="container-xxl py-5">
     <div class="container">
         <div class="row g-5">
-            <div class="col-lg-6 wow123 fadeInUp" data-wow123-delay="0.1s">
-                <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Welcome To UpzoneSafaris</p>
-                <h1 class="display-5123 h2 mb-4">
-                    Experience The Best<span class="text-primary"> Safari</span>
-                </h1>
+            <div class="col-lg-6 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
+                <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Welcome</p>
+                <h1 class="display-5123 h2 mb-5">Experience The Best Safari</h1>
                 <p class="mb-4 text-justify-all">
                     At UpzoneSafaris, we are passionate about creating unforgettable travel experiences that inspire, 
                     relax, and rejuvenate. Founded in 2000, our journey began with a vision to make travel accessible, 
@@ -33,21 +31,22 @@
                 </h5>
                 <a class="text-primary py-5" href="{{ route('about') }}">Read More..</a>
             </div>
-            <div class="col-lg-6 wow123 fadeInUp" data-wow123-delay="0.5s">
-                <div class="img-border">
-                    <img class="img-fluid" src="{{ asset('assets/frontend/img/safari/42.jpg') }}" alt="" />
+            <div class="col-lg-6 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
+                <div class="img-border h-100">
+                    <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:100%;" src="{{ asset('assets/frontend/img/safari/42.jpg') }}" alt="#About" />
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+
 <!-- DNA -->
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="row gy-5 gx-4">
+        <div class="row g-5">
             <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
-                <div class="card-card p-4 bg-blend-lighten shadow h-100">
+                <div class="card-card p-4 bg-blend-lighten shadow-sm w-100 h-100">
                     <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Vision</h5>
                     <span>
                         To be the world’s most trusted and innovative travel company, 
@@ -55,8 +54,8 @@
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 sha col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
-                <div class="card-card p-4 bg-blend-lighten shadow h-100">
+            <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
+                <div class="card-card p-4 bg-blend-lighten shadow-sm w-100 h-100">
                     <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Mission</h5>
                     <span>
                         We are committed to offering personalized service, reliable travel solutions, 
@@ -64,12 +63,12 @@
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
-                <div class="card-card p-4 bg-blend-lighten shadow h-100">
-                    <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Core Value</h5>
+            <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
+                <div class="card-card p-4 bg-blend-lighten shadow-sm w-100 h-100">
+                    <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Mission</h5>
                     <span>
-                        Our top priority is the satisfaction and happiness of our clients by 
-                        conducting our business with the highest ethical standards, honesty, and transparency.
+                        We are committed to offering personalized service, reliable travel solutions, 
+                        and unforgettable journeys that enrich lives and create lasting memories.
                     </span>
                 </div>
             </div>
@@ -78,8 +77,8 @@
 </div>
 
 <!-- Facts -->
-<div class="container-xxl1234 bg-primary py-5 facts wow123 fadeInUp" data-wow123-delay="0.1s">
-    <div class="container">
+<div class="container-xxl123 bg-primary py-5 facts wow123 fadeInUp" data-wow123-delay="0.1s">
+    <div class="container py-5">
         <div class="row g-4">
             <div class="col-md-6 col-lg-3 text-center wow123 fadeIn"
                 data-wow123-delay="0.3s">
@@ -115,8 +114,8 @@
 
 <!-- Packages -->
 <div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-5 mb-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Packages</p>
                 <h1 class="display-5123 h2 mb-5">Special Offers & Discounts</h1>
@@ -124,9 +123,9 @@
         </div>
         <div class="row g-5" style="justify-content:center">
             @foreach ( $data as $item )
-            <div class="col-lg-3 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
-                <div class="membership-item position-relative shadow w-100 h-100">
-                    {{-- <img class="img-fluid" src="{{ asset('assets/frontend/img/animal-lg-1.jpg') }}" alt="" /> --}}
+            <div class="col-lg-3 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s" style="border-radius: 10px;">
+                <div class="membership-item position-relative shadow-sm bg-light w-100 h-100">
+                    {{-- <img class="img-fluid" style="border-radius:10px; width:100%;height:100%;" src="{{ asset('assets/frontend/img/t2.webp') }}" alt="" /> --}}
                     <h1 class="display-1 fs-1">{{ $item->title }}</h1>
                     <h4 class="text-dark mb-3">$ {{ $item->cost }}</h4>
                     <p><i class="fa fa-check text-primary me-2"></i>10% discount</p>
@@ -145,14 +144,14 @@
 
 <!-- Proudness -->
 <div class="container-xxl py-5">
-    <div class="container">
+    <div class="container py-5">
         <div class="row g-5">
-            <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
+            <div class="col-lg-5 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
                 <div class="img-border123 h-100">
-                    <img class="img-fluid h-100 w-100" src="{{ asset('assets/frontend/img/animal-lg-3.jpg') }}" alt="" />
+                    <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/safari/1008.jpg') }}" alt="" />
                 </div>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
+            <div class="col-lg-7 col-md-6 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Our Proudness</p>
                 <h1 class="display-5123 h2 mb-5">Why Choosing Us!</h1>
                 <p class="mb-3">
@@ -171,89 +170,27 @@
                     <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Sustainable Travel: </span>
                     We promote eco-friendly tourism that respects the environment and local cultures.
                 </p>
+                <p class="mb-3">
+                    <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Customized Packages for Every Traveler: </span>
+                    Whether you’re traveling solo, with a partner, or in a group, we offer flexible packages that cater to all types of travelers. 
+                </p>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Visiting Hours -->
-{{-- <div class="container-xxl bg-primary visiting-hours bg-light my-5 py-5 wow123 fadeInUp" data-wow123-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-md-6 wow123 fadeIn" data-wow123-delay="0.3s">
-                <h1 class="display-6123 h2 text-white mb-5">Visiting Hours</h1>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <span>Monday</span>
-                        <span>9:00AM - 6:00PM</span>
-                    </li>
-                    <li class="list-group-item">
-                        <span>Tuesday</span>
-                        <span>9:00AM - 6:00PM</span>
-                    </li>
-                    <li class="list-group-item">
-                        <span>Wednesday</span>
-                        <span>9:00AM - 6:00PM</span>
-                    </li>
-                    <li class="list-group-item">
-                        <span>Thursday</span>
-                        <span>9:00AM - 6:00PM</span>
-                    </li>
-                    <li class="list-group-item">
-                        <span>Friday</span>
-                        <span>9:00AM - 6:00PM</span>
-                    </li>
-                    <li class="list-group-item">
-                        <span>Saturday</span>
-                        <span>9:00AM - 6:00PM</span>
-                    </li>
-                    <li class="list-group-item">
-                        <span>Sunday</span>
-                        <span>Closed</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-6 text-light wow123 fadeIn" data-wow123-delay="0.5s">
-                <h1 class="display-6123 h2 text-white mb-5">Contact Info</h1>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <td>Office</td>
-                            <td>123 Street, New York, USA</td>
-                        </tr>
-                        <tr>
-                            <td>Zoo</td>
-                            <td>123 Street, New York, USA</td>
-                        </tr>
-                        <tr>
-                            <td>Ticket</td>
-                            <td>
-                                <p class="mb-2">+012 345 6789</p>
-                                <p class="mb-0">ticket@example.com</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Support</td>
-                            <td>
-                                <p class="mb-2">+012 345 6789</p>
-                                <p class="mb-0">support@example.com</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div> --}}
 
+<div class="container-xxl">
+    <div class="container"><hr></div>
+</div>
 
 <!-- Testimonial -->
 <div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-5 mb-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Testimonial</p>
-                <h1 class="display-5123 h2 text-center mb-5 wow123 fadeInUp" data-wow123-delay="0.1s">Our Travellers Say! </h1>
+                <h1 class="display-5123 h2 mb-5 text-center wow123 fadeInUp" data-wow123-delay="0.1s">Our Travellers Say! </h1>
             </div>
         </div>
         <div class="owl-carousel testimonial-carousel wow123 fadeInUp" data-wow123-delay="0.1s">
@@ -280,7 +217,7 @@
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                {{-- <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="{{ asset('assets/backend/avatar.jpg') }}" style="width: 100px; height: 100px"/> --}}
+                {{-- <img class="img-fluid style="border-radius:10px; width:100%;height:250px;" rounded-circle border border-2 p-2 mx-auto mb-4" src="{{ asset('assets/backend/avatar.jpg') }}" style="width: 100px; height: 100px"/> --}}
                 <div class="testimonial-text rounded text-center p-4">
                     <p>
                         "I’ve been booking my corporate travels with them for the past five years. 

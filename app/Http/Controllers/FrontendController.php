@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\BlogModel;
 use App\Models\PackageModel;
+use App\Models\SiteVisitorModel;
 use App\Models\TripModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -128,7 +129,7 @@ class frontendController extends Controller
     public function latest_news()
     {
         $meta_title = 'Upzone Safaris';
-        $page_title = 'Latest News';
+        $page_title = 'Blog';
 
         if(!empty($meta_title && $page_title))
         {
@@ -236,15 +237,17 @@ class frontendController extends Controller
 
     public function read_more_news($id)
     {
+        $decryptId = Crypt::decrypt($id);
+
         $meta_title = 'Upzone Safaris';
-        $page_title = 'Read More';
+        $page_title = 'Read More';                  
         
         if(!empty($meta_title && $page_title))
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            $data['blogs'] = BlogModel::findBlog(Crypt::decrypt($id));
-            // $data['blog'] = BlogModel::find($request->input('id'));
+            $data['blogs'] = BlogModel::getBlog();
+            $data['token'] = BlogModel::findToken($decryptId);
             return view('frontend.pages.blog-read-more', $data );
 
         }else{
@@ -252,6 +255,22 @@ class frontendController extends Controller
         }
     }
 
+    public function log_visit(Request $request)
+    {
+        $ipAddress = $request->ip();
+        
+        SiteVisitorModel::create([
+            'ip_address' => $ipAddress,
+            'visited_at' => now(),
+        ]);
 
+        return response()->json(['success' => true]);
+    }
+
+    public function count_visitor()
+    {
+        $data = SiteVisitorModel::distinct('ip_address')->count('ip_address');        
+        return response()->json(['data' => $data]);
+    }
     
 }

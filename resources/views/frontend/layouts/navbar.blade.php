@@ -54,7 +54,7 @@
                     <a href="{{ route('mt-kilimanjaro-trek') }}" class="dropdown-item">Mount Kilimanjaro</a>
                 </div>
             </div>
-            <a href="{{ route('latest-news') }}" class="nav-item nav-link">Latest News</a>
+            <a href="{{ route('latest-news') }}" class="nav-item nav-link">Blog</a>
             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
         </div>
         <a href="#bookingModal" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-outline-primary text-uppercase btn-action">Plan a Trip</a>

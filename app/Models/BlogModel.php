@@ -22,6 +22,10 @@ class BlogModel extends Model
         return DB::table('blog')->where('id', '=', $id)->first();
     }
 
+    static public function findToken($id)
+    {
+        return DB::table('blog')->where('tokens', '=', $id)->first();
+    }
 
     static public function updateBlog($id)
     {

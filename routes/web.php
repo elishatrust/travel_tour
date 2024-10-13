@@ -27,7 +27,8 @@ Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 Route::get('/terms-and-conditions', [FrontendController::class, 'terms_and_conditions'])->name('terms-and-conditions');
 Route::post('/get-package', [FrontendController::class, 'get_package'])->name('get-package');
 Route::post('/save-trip', [FrontendController::class, 'save_trip'])->name('save-trip');
-
+Route::post('/log-visit', [FrontendController::class, 'log_visit'])->name('log-visit');
+Route::get('/visitor-count', [FrontendController::class, 'count_visitor'])->name('visitor-count');
 
 ## AUTHENTICATION
 Route::get('/login', [AuthController::class, 'index'])->name('login');

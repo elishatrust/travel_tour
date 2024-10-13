@@ -10,16 +10,34 @@
                 <span class="text-primary me-2">#</span>Travel News from all over the world
             </p>
         </div>
+        <div class="row g-5 p-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 blog-img-tab">
+                @if($token->file_path)
+                    <img src="{{ asset('storage/' . $token->file_path) }}" class="w-100" style="border-radius: 10px;" alt="#UpzoneSafaris">
+                @else
+                    <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius: 10px;" alt="#UpzoneSafaris">
+                @endif
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 blog-content-tab">
+                <h6 class="h3 mb-4">{{ $token->title }}</h6>
+                <p><i class="fas fa-user"><small>Admin</small></i>  <i class="fas fa-eye"><small>({{ rand(1,99) }})</small></i>  <i class="fas fa-comments"><small>({{ rand(0,9) }})</small></i></p>
+                <p class="blog-desic" style="font-size:20px;text-align:justify">
+                    {{ $token->content }}
+                </p>
+            </div>
+        </div>
+
+        <hr>
+        
         <div class="row g-5 blog-row">
-            {{ dd($blogs) }}
-            @foreach ($blogs as $blog)   
+            @foreach ($blogs as $blog)                
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="blog-singe no-margin row">
                     <div class="col-sm-5 blog-img-tab">
                         @if($blog->file_path)
-                            <img src="{{ asset('storage/' . $blog->file_path) }}" class="w-100" alt="#UpzoneSafaris">
+                            <img src="{{ asset('storage/' . $blog->file_path) }}" class="w-100" style="border-radius:10px;width:100%;height:250px;" alt="#UpzoneSafaris">
                         @else
-                            <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" alt="#UpzoneSafaris">
+                            <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius:10px;width:100%;height:250px;" alt="#UpzoneSafaris">
                         @endif
                     </div>
                     <div class="col-sm-7 blog-content-tab">
@@ -32,7 +50,6 @@
                                 $firstTenWords = array_slice($words, 0, 30);
                                 echo implode(' ', $firstTenWords);
                             @endphp 
-                            {{-- {{ $blog->content }} --}}
                         </p>
                         <a href="{{ url('read-more-news/'.Crypt::encrypt($blog->tokens)) }}">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>

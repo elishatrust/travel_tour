@@ -1,7 +1,7 @@
 
 <div class="container-xxl123 bg-light py-5 our-courses" id="courses">
-    <div class="container">
-        <div class="row g-5 mb-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5 align-items-end wow123 fadeInUp" data-wow123-delay="0.1s">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>The Best of Tanzania</p>
                 <h1 class="display-5123 h2 mb-5">Our Popular Destinations</h1>

@@ -6,9 +6,9 @@
                 <a href="javascript:(0)">
                     <div class="img-post m-b-5">
                         @if($item->file_path)
-                            <img src="{{ asset('storage/' . $item->file_path) }}" class="w-100" alt="#UpzoneSafaris">
+                            <img src="{{ asset('storage/' . $item->file_path) }}" class="w-100" style="border-radius:10px;width:100%;height:400px;"  alt="#UpzoneSafaris">
                         @else
-                            <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" alt="#UpzoneSafaris">
+                            <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius:10px;width:100%;height:400px;"  alt="#UpzoneSafaris">
                         @endif
                     </div>
                     <b class="text-dark py-3">{{ $item->title }}</b><hr>

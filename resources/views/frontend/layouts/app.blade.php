@@ -33,8 +33,8 @@
     <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" />
 
     <!-- JavaScript Libraries -->
-    {{-- <script src="{{ asset('assets/frontend/js/bootstrap.bundle.min.js') }}"></script> --}}
-    {{-- <script src="{{ asset('assets/frontend/js/jquery-3.4.1.min.js') }}"></script> --}}
+    <script src="{{ asset('assets/frontend/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/js/jquery-3.4.1.min.js') }}"></script>
 
     <script>
         // $(document).ready(function () {
@@ -172,6 +172,37 @@
 
     <script>
             
+        $(document).ready(function() {
+            log_visitor();
+            count_visitor();
+        });
+
+        function log_visitor(){            
+            $.ajax({
+                url: "{{ route('log-visit') }}",
+                type: "POST",
+                data: {
+                    _token: '{{ csrf_token() }}'
+                },
+                success: function(response) {
+                    console.log('Visit logged successfully.');
+                },
+                error: function(response) {
+                    console.log('Error logging visit.');
+                }
+            });
+        }
+
+        function count_visitor() {
+            jQuery.ajax({
+                type: "GET",
+                url: "{{ route('visitor-count') }}",
+                success: function(data) {
+                    var visit = data.data;
+                    $("#visit_no").html(visit);
+                }
+            });
+        }
 
         /*====== Date Picker ======*/
         const today = new Date().toISOString().split('T')[0];

@@ -3,13 +3,19 @@
     .accordion-item .accordion-button{
         cursor: pointer;
     }
+    .accordion-item .accordion-header{
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+    }
     .accordion-item .accordion-button:hover{
         background-color: var(--primary);
         color: white;
     }
 </style>
 @section('content')
-@include('frontend.layouts.inc_trekking')
+@include('frontend.layouts.inc_mt_kili')
 
 
 <div class="container-xxl py-5">
@@ -17,13 +23,11 @@
         <div class="row g-5 mb-3 wow123 fadeInUp" data-wow123-delay="0.1s">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Mount Kilimanjaro Routes</p>
-                {{-- <h1 class="display-5123 h2 mb-3" style="">Special <span style="color:#f1671e!important">Trekking</span></h1> --}}
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.7s">
-                <div class="accordion card shadow-sm" id="accordionExample">
+        <div class="row g-5">
+            <div class="col-lg-9 col-md-8 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.7s">
+                <div class="accordion shadow-sm" id="accordionExample">
                     
                     <div class="accordion-item">
                         <h1 class="accordion-header">
@@ -34,7 +38,7 @@
                         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="row p-4">
-                                    <div class="col-lg-8 col-md-6 col-sm-12">
+                                    <div class="col-lg-7 col-md-6 col-sm-12">
                                         <strong class="">Mount Kilimanjaro Ascent Routes</strong><br><br>
                                         <p>
                                             Kilimanjaro is the highest peak in Africa, It stands tall at an elevation of 5,895 meters 
@@ -43,15 +47,208 @@
                                             The northernmost part of the mountain range is called the Northern Circuit.
                                         </p>
                                         <p>
+                                            Mount visited yearly by over 50,000 trekkers who aspire to reach its summit, 
+                                            with the average summit success rate across all climbers and routes 
+                                            being 70-80%. However, summit success rate heavily depends upon the route, 
+                                            as routes vary considerably in 
+                                            terms of acclimatization profile and climb duration.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-5 col-md-6 col-sm-12">
+                                        <img class="img-fluid mb-3" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/MtKili.webp') }}" alt="Mount Kilimanjaro" />
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12">
+                                        <p>
                                             The Mountain has Seven main routes which lead to the summit, 
                                             Uhuru Peak, one of which starts on the Northern side of the mountain and 
-                                            the rest on the Southern side. <br>
+                                            the rest on the Southern side.
                                             The routes are Marangu, Machame, Lemosho, Shira, 
                                             Rongai, Northern Circuit and Umbwe.
                                         </p>
+                                        <p class="text-italic">
+                                            <i>
+                                                * Here now are descriptions of each of the
+                                                different Kilimanjaro ascent routes.
+                                            </i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" style="font-size: 20px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            7 Days <span class="mx-3">Lemosho Route</span>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row p-4">
+                                    <div class="col-lg-8 col-md-6 col-sm-12">
+                                        <strong style=";">Lemosho Route</strong> <br><br>
+                                        <p>
+                                            This route is often considered the most beautiful on Kilimanjaro and 
+                                            is one of the most popular. It starts on the mountain's western slopes, 
+                                            offering scenic views as it curves around the southern face of Kibo Peak. 
+                                            The descent follows the southeastern slopes, taking you down along the Mweka route.
+                                        </p>
+                                        <p>
+                                            <ul>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Duration : </strong> 7-8 days</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Distance : </strong> 56 Km</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Descent Route : </strong> Mweka</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Summit Success Rate : </strong> High </li>
+                                            </ul>
+                                        </p>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <img class="img-fluid mb-3" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtKili.webp') }}" alt="Mount Kilimanjaro" />
+                                        <img class="img-fluid mb-3" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0028.jpg') }}" alt="Lemosho Route" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" style="font-size: 20px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            7 Days <span class="mx-3">Machame Route</span>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row p-4">
+                                    <div class="col-lg-8 col-md-6 col-sm-12">
+                                        <strong style=";">Machame Route</strong> <br><br>
+                                        <p>
+                                            Machame is the highest peak in the Northern Circuit, and this route is 
+                                            the most scenic and popular on Kilimanjaro. It starts at the highest point 
+                                            of the circuit and descends along the southeastern slopes, taking you down 
+                                            along the Mweka route.
+                                        </p>
+                                        <p>
+                                            <ul>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Duration : </strong> 7 days</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Distance : </strong> 49 Km</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Descent Route : </strong> Mweka</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img class="img-fluid mb-3" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/41.jpg') }}" alt="Machame Route" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" style="font-size: 20px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            6 Days <span class="mx-3">Marangu Route</span>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row p-4">
+                                    <div class="col-lg-8 col-md-6 col-sm-12">
+                                        <strong style=";">Marangu Route</strong> <br><br>
+                                        <p>
+                                            Marangu is the highest peak in the Northern Circuit and this route is the most 
+                                            scenic and popular on Kilimanjaro. It starts at the highest point of the circuit 
+                                            and descends along the southeastern slopes, taking you down along the Mweka route.
+                                        </p>
+                                        <p>
+                                            This is the only route on Kilimanjaro that provides hut accommodations, 
+                                            making it especially popular with budget-conscious tour operators and trekkers. 
+                                            The trail ascends along the eastern slope, with the descent following the same path.
+                                        </p>
+                                        <p>
+                                            <ul>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Duration : </strong> 6 days</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Distance : </strong> 64 Km</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Descent Route : </strong> Mweka</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img class="img-fluid mb-3" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0022.jpg') }}" alt="Marangu Route" />
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" style="font-size: 20px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            6 Days <span class="mx-3">Rongai Route</span>
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row p-4">
+                                    <div class="col-lg-8 col-md-6 col-sm-12">
+                                        <strong>Rongai Route</strong> <br><br>
+                                        <p>
+                                            Rongai is the highest peak in the Northern Circuit and this route is the most 
+                                            scenic and popular on Kilimanjaro. It starts at the highest point of the circuit 
+                                            and descends along the southeastern slopes, taking you down along the Mweka route.
+                                        </p>
+                                        <p>
+                                            Rongai is a popular route for families and solo travelers who want to explore the 
+                                            peaks, but it is a less frequented route. Some fine views, wild, and least scenic, 
+                                            camping.
+                                        </p>
+                                        <p>
+                                            <ul>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Duration : </strong> 5-6 days</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Distance : </strong> 65 Km</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Descent Route : </strong> Mweka</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img class="img-fluid mb-3" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0020.jpg') }}" alt="Rongai Route" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" style="font-size: 20px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            7 Days <span class="mx-3">Shira Route</span>
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row p-4">
+                                    <div class="col-lg-8 col-md-6 col-sm-12">
+                                        <strong>Shira Route</strong> <br><br>
+                                        <p>
+                                            Rongai is the highest peak in the Northern Circuit and this route is the most 
+                                            scenic and popular on Kilimanjaro. It starts at the highest point of the circuit 
+                                            and descends along the southeastern slopes, taking you down along the Mweka route.
+                                        </p>
+                                        <p>
+                                            Rongai is a popular route for families and solo travelers who want to explore the 
+                                            peaks, but it is a less frequented route. Some fine views, wild, and least scenic, 
+                                            camping.
+                                        </p>
+                                        <p>
+                                            <ul>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Duration : </strong> 6 days</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Distance : </strong> 56 Km</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Descent Route : </strong> Mweka</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img class="img-fluid mb-3" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/31.jpg') }}" alt="Shira Route" />
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +258,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" style="font-size: 20px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            1. Northern Circuit Route
+                            9 Days <span class="mx-3">Northern Circuit Route</span>
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -82,107 +279,9 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <img class="img-fluid mb-3" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/NorthernCircuit.jpg') }}" alt="Northern Circuit Route" />
+                                        <img class="img-fluid mb-3" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/Umbwe_route.avif') }}" alt="Northern Circuit Route" />
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" style="font-size: 20px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            2. Lemosho Route
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div class="row p-4">
-                                    <div class="col-lg-8 col-md-6 col-sm-12">
-                                        <strong>Lemosho Route</strong> <br><br>
-                                        <p>
-                                            This route is often considered the most beautiful on Kilimanjaro and 
-                                            is one of the most popular. It starts on the mountain's western slopes, 
-                                            offering scenic views as it curves around the southern face of Kibo Peak. 
-                                            The descent follows the southeastern slopes, taking you down along the Mweka route.
-                                        </p>
-                                        <p>
-                                            <ul>
-                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Duration : </strong> 8 days</li>
-                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Distance : </strong> 56 Km</li>
-                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Descent Route : </strong> Mweka</li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <img class="img-fluid mb-3" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/Lemosho.jpg') }}" alt="Lemosho Route" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" style="font-size: 20px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            3. Machame Route
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div class="row p-4">
-                                    <div class="col-lg-8 col-md-6 col-sm-12">
-                                        <strong>Machame Route</strong> <br><br>
-                                        <p>
-                                            Machame is the highest peak in the Northern Circuit, and this route is 
-                                            the most scenic and popular on Kilimanjaro. It starts at the highest point 
-                                            of the circuit and descends along the southeastern slopes, taking you down 
-                                            along the Mweka route.
-                                        </p>
-                                        <p>
-                                            <ul>
-                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Duration : </strong> 7 days</li>
-                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Distance : </strong> 49 Km</li>
-                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Descent Route : </strong> Mweka</li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <img class="img-fluid mb-3" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/Machame.jpg') }}" alt="Machame Route" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" style="font-size: 20px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Marangu Route
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Marangu Route: Most popular route, gentle gradients, and long sections above 4,700m. Not very scenic, comfortable huts.
-                                Duration: 6 days
-                                Distance: 64 km
-                                Descent Route: Mweka
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" style="font-size: 20px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            Rongai Route
-                            </button>
-                        </h2>
-                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Rongai Route: Long access drive, remote, and less frequented. Some fine views, wild, and least scenic, camping.
-                                Duration: 5-6 days
-                                Distance: 65 km
-                                Descent Route: Mweka
                             </div>
                         </div>
                     </div>
@@ -190,50 +289,73 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" style="font-size: 20px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                            Umbwe Route
+                            6 Days <span class="mx-3">Umbwe Route</span>
                             </button>
                         </h2>
                         <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Umbwe Route: Shortest and steepest route, very physically demanding and requires serious endurance.
-                                Duration: 6 days
-                                Distance: 37 km
-                                Descent Route: Mweka
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" style="font-size: 20px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                            Lemosho Route
-                            </button>
-                        </h2>
-                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Shira Route: Included for completeness, though it’s now a road for emergency vehicles.
-                                Duration: N/A
-                                Distance: N/A
-                                Descent Route: N/A 
+                                <div class="row p-3">
+                                    <div class="col-lg-8 col-md-6 col-sm-12">
+                                        <strong>Umbwe Route</strong> <br><br>
+                                        <p>
+                                            Umbwe is the highest peak in the Northern Circuit and this route is the most 
+                                            scenic and popular on Kilimanjaro. It starts at the highest point of the circuit 
+                                            and descends along the southeastern slopes, taking you down along the Mweka route.
+                                        </p>
+                                        <p>
+                                            Umbwe is one of the most popular routes on Kilimanjaro for those looking for a 
+                                            scenic and steep descent. It's also a great place for families to enjoy the view of the 
+                                            entire mountain range.
+                                        </p>
+                                        <p>
+                                            <ul>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Duration : </strong> 6 days</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Distance : </strong> 37 Km</li>
+                                                <li><i class="far fa-check-circle text-primary me-2"></i> <strong>Descent Route : </strong> Mweka</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <img class="img-fluid mb-3" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/Umbwe-6-Days.png') }}" alt="Umbwe Route" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="tour">
+                    <div class="header123">
+                        <h5 class="title123 py-3 text-uppercase" style="font-size: 20px!important;">Tour Highlights</h5><hr>
+                    </div>
+                    <div class="body123">
+                        <li class="mb-2"><strong>Day 0 :</strong> Arrival (Pick up) from Kilimanjaro International Airport – Moshi.</li>
+                        <li class="mb-2"><strong>Day 1 :</strong> Moshi – Marangu Gate.</li>
+                        <li class="mb-2"><strong>Day 2 :</strong> Marangu Gate – Mandara Hut.<li class="mb-2">
+                        <li class="mb-2"><strong>Day 3 :</strong> Mandara Hut – Horombo Hut.</li>
+                        <li class="mb-2"><strong>Day 4 :</strong> Horombo Hut – Kibo Hut.</li>
+                        <li class="mb-2"><strong>Day 5 :</strong> Uhuru Peak – Horombo Hut.</li>
+                        <li class="mb-2"><strong>Day 6 :</strong> Horombo Hut – Marangu Gate.</li>
+                        <li class="mb-2"><strong>Day 7 :</strong> Finish – </li>                      
+                    </div>
+                </div>       
             </div>
         </div>
     </div>
 </div>
 
+
 <div class="container-xxl">
-    <div class="container">
-        <div class="row g-5">
+    <div class="container py-5">
+        <div class="row g-5">       
             <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
                 <div class="img-border123 h-100">
-                    <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/more/0.jpg') }}" alt="#" />
+                    <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/KilimanjaroMapRotes2.png') }}" alt="#" />
                 </div>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
-                <h1 class="display-5123 h4 mb-3">Features & Key Considerations</h1>
+                <h1 class="display-5123 h2 mb-5">Features & Key Considerations</h1>
                 <p class="mb-3">
                     <span class="fw-bold">
                         <i class="far fa-check-circle text-primary me-3"></i>Acclimatization days : 
@@ -260,38 +382,106 @@
                     </span>
                     Routes like Lemosho, Machame, and Rongai involve camping, while Marangu has huts.
                 </p>
-            </div>            
+                <p class="mb-3">
+                    <span class="fw-bold">
+                        <i class="far fa-check-circle text-primary me-3"></i>Success rate : 
+                    </span>
+                    70-80% average, depending on route and individual factors
+                </p>
+            </div>   
         </div>
     </div>
 </div>
 
-<!-- Service -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-5 mb-5 wow123 fadeInUp" data-wow123-delay="0.1s">
-            <div class="col-lg-12 col-sm-12 text-center">
-                <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>What We Do</p>
-                <h1 class="display-5123 h2 mb-3" style="">Special Services For <span style="color:#f1671e!important">Upzone</span><span class="text-dark">Safaris</span></h1>
-            </div>
-        </div>
-        <div class="row gy-5 gx-4">
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.7s">
-                <img class="img-fluid mb-3 w-100" style="border-radius:15px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/8.jpg') }}" alt="Icon" />
-                <div class="p-3">
-                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Rest House</h5>
-                    <span style="text-align: justify">
-                        Booking accommodations ranging from budget hotels to luxury resorts worldwide.
-                    </span>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.1s">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/1.jpg') }}" alt="Icon" />
-                <div>
-                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Group Tours</h5>
-                    <span style="text-align: justify">
-                        Organized group tours for families, friends, and special interest groups
-                    </span>
-                </div>
+
+<div class="container-xxl">
+    <div class="container py-5">
+        <div class="row py-3">
+            <div class="col-lg-12 col-md-12 col-sm-12 justify-center">
+                <ul class="list-group">
+                    <li class="list-group-item active text-start h4 py-3" aria-current="true">
+                        Summary of Routes
+                    </li>
+                    <li class="list-group-item">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Route Name</th>
+                                        <th>Descriptions</th>
+                                        <th>Duration</th>
+                                        <th>Distance</th>
+                                        <th>Descent Route</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Rongai Route</td>
+                                        <td>
+                                            Long access drive, remote, less frequented, some fine, wild, least scenic,
+                                            Good for acclimatization.
+                                        </td>
+                                        <td>5-6 days</td>
+                                        <td>65 Km (40 mi)</td>
+                                        <td>Mweka</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shira Route</td>
+                                        <td>
+                                            This route has the highest starting elevation. 
+                                            It begins on the western slope and then skirts around the south of Kibo Peak. 
+                                        </td>
+                                        <td>6 days</td>
+                                        <td>56 Km (47 mi)</td>
+                                        <td>Mweka</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Northern Circuit Route</td>
+                                        <td>
+                                            Newest route on Kilimanjaro. Very low traffic due to very long time on the mountain, 
+                                            traverses nearly the entire mountain including the north side. 
+                                            Long route with great views.
+                                        </td>
+                                        <td>9 days</td>
+                                        <td>90 Km (56 mi)</td>
+                                        <td>Mweka</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Machame Route</td>
+                                        <td>
+                                            Second most popular route. Forested traverse to Barafu.
+                                            This route has the highest starting elevation. 
+                                            It begins on the western slope and then skirts around the south of Kibo Peak. 
+                                        </td>
+                                        <td>7 days</td>
+                                        <td>49 Km (30 mi)</td>
+                                        <td>Mweka</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lemosho Route</td>
+                                        <td>
+                                            Long access drive, remote, less frequented, fine, wild, least scenic,
+                                            Good for acclimatization.
+                                        </td>
+                                        <td>5-6 days</td>
+                                        <td>65 Km (40 mi)</td>
+                                        <td>Mweka</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Umbwe Route</td>
+                                        <td>
+                                            Shortest and steepest route, 
+                                            very physically taxing and requires serious endurance. Dangerous route.
+                                        </td>
+                                        <td>6 days</td>
+                                        <td>37 Km (23 mi)</td>
+                                        <td>Mweka</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

@@ -10,7 +10,7 @@
                         <h4 class="panel-title"> 
                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapseTwo_{{ $item->tokens }}" aria-expanded="false" aria-controls="collapseTwo_{{ $item->tokens }}"> 
                                 #{{ $n }} <span class="badge badge-default m-l-10 hidden-md-down mr-1 p-2">{{ $item->name }}</span>
-                                <span class="float-right text-primary mr-3">{{ \Carbon\Carbon::parse($item->created_at)->format('d/m/Y | H:m') }}</span>                            
+                                <span class="float-right text-primary mr-3">{{ \Carbon\Carbon::parse($item->created_at)->format('d/m/Y | H:m') }}</span>   
                             </a> 
                         </h4>
                     </div>

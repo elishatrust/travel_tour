@@ -10,18 +10,10 @@
         <div class="row g-5 mb-5 wow123 fadeInUp" data-wow123-delay="0.1s">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>What We Do</p>
-                <h1 class="display-5123 h2 mb-3" style="">Special Services For <span style="color:#f1671e!important">Upzone</span><span class="text-dark">Safaris</span></h1>
+                <h1 class="display-5123 h2 mb-3" style="">Your Special Services </h1>
             </div>
         </div>
         <div class="row gy-5 gx-4">
-            {{-- <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.1s">
-                <img class="img-fluid mb-3" src="{{ asset('assets/frontend/img/icon/icon-2.png') }}" alt="Icon" />
-                <h5 class="mb-3" style="color:#f1671e!important">Car Parking</h5>
-                <span style="text-align: justify">
-                    Safe and secure car parking services for travelers at hotels, 
-                    attractions, and event venues.
-                </span>
-            </div> --}}
             <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.7s">
                 <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/8.jpg') }}" alt="Icon" />
                 <div class="p-3">

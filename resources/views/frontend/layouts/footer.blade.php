@@ -7,10 +7,10 @@
         <i class="fa fa-map-marker-alt me-3"></i>Moshi Town, Kilimanjaro, TZ
       </p>
       <p class="mb-2">
-        <i class="fa fa-phone-alt me-3"></i>+255 687 829 070
+        <i class="fa fa-phone-alt me-3"></i><a href="tel:+255 687 829 070" class="text-white">+255 687 829 070</a>
       </p>
       <p class="mb-2">
-        <i class="fa fa-envelope me-3"></i>upzonesafaris@gmail.com
+        <i class="fa fa-envelope me-3"></i><a href="mailto:upzonesafaris@gmail.com" class="text-white">upzonesafaris@gmail.com</a>
       </p>
       <div class="d-flex pt-2">
         <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/profile.php?id=61566979761874" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -41,12 +41,12 @@
       <h5 class="text-light mb-4">Newsletter</h5>
       <p>Provide your email for updates.</p>
       <form action="#" method="post">
-        <div class="position-relative mx-auto" style="max-width: 400px">
-            <input class="form-control border-0 w-100 py-3 ps-4 pe-5"
-              type="email" placeholder="Enter your email" required/>
+        <div class="position-relative mx-auto" style="max-width: 400px;">
+            <input class="form-control w-100 py-3 ps-4 pe-5" style="border-radius: 10px;border: 1px solid var(--dark);" type="email" placeholder="Enter your email" required/>
             <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Send</button>
         </div>
       </form>
+      <p class="text-uppercase text-white mt-4">Number of Visitors  :  (<span id="visit_no"></span>)</p>
     </div>
   </div>
 </div>
