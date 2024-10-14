@@ -48,7 +48,7 @@
                 </ul>
             </div> --}}
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Trekking</a>
+                <a href="javascript:" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Trekking</a>
                 <div class="dropdown-menu rounded-0 rounded-bottom m-0">
                     <a href="{{ route('mt-meru-trek') }}" class="dropdown-item">Mount Meru</a>
                     <a href="{{ route('mt-kilimanjaro-trek') }}" class="dropdown-item">Mount Kilimanjaro</a>

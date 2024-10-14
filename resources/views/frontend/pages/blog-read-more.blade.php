@@ -1,6 +1,5 @@
 @extends('frontend.layouts.app')
 @section('content')
-
 @include('frontend.layouts.inc_blog')
 
 <div class="container-xxl py-5 blog">
@@ -17,6 +16,13 @@
                 @else
                     <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius: 10px;" alt="#UpzoneSafaris">
                 @endif
+                <p class="my-4">
+                    <i class="fas fa-calendar-alt">
+                        <small class="p-3">
+                        {{ \Carbon\Carbon::parse($token->created_at)->format('M d, Y') }}
+                        </small>
+                    </i> 
+                </p>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 blog-content-tab">
                 <h6 class="h3 mb-4">{{ $token->title }}</h6>
@@ -35,7 +41,7 @@
                 <div class="blog-singe no-margin row">
                     <div class="col-sm-5 blog-img-tab">
                         @if($blog->file_path)
-                            <img src="{{ asset('storage/' . $blog->file_path) }}" class="w-100" style="border-radius:10px;width:100%;height:250px;" alt="#UpzoneSafaris">
+                            <img src="{{ asset('storage/'.$blog->file_path) }}" class="w-100" style="border-radius:10px;width:100%;height:250px;" alt="#UpzoneSafaris">
                         @else
                             <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius:10px;width:100%;height:250px;" alt="#UpzoneSafaris">
                         @endif

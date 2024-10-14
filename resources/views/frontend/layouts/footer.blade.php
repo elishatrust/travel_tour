@@ -30,12 +30,12 @@
     </div>
     <div class="col-lg-3 col-md-6">
       <h5 class="text-light mb-4">Popular Destination</h5>
-      <a class="btn btn-link" href="javascript:(0)">Mount Meru</a>
-      <a class="btn btn-link" href="javascript:(0)">Mount Kilimanjaro</a>
-      <a class="btn btn-link" href="javascript:(0)">Ngorongoro Crater</a>
-      <a class="btn btn-link" href="javascript:(0)">Arusha National Park</a>
-      <a class="btn btn-link" href="javascript:(0)">Serengeti National Park</a>
-      <a class="btn btn-link" href="javascript:(0)">Tarangire National Park</a>
+      <a class="btn btn-link" href="javascript:">Mount Meru</a>
+      <a class="btn btn-link" href="javascript:">Mount Kilimanjaro</a>
+      <a class="btn btn-link" href="javascript:">Ngorongoro Crater</a>
+      <a class="btn btn-link" href="javascript:">Arusha National Park</a>
+      <a class="btn btn-link" href="javascript:">Serengeti National Park</a>
+      <a class="btn btn-link" href="javascript:">Tarangire National Park</a>
     </div>
     <div class="col-lg-3 col-md-6">
       <h5 class="text-light mb-4">Newsletter</h5>

@@ -31,17 +31,12 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" />
-
-    <!-- JavaScript Libraries -->
-    <script src="{{ asset('assets/frontend/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/js/jquery-3.4.1.min.js') }}"></script>
-
     <script>
-        // $(document).ready(function () {
-            // document.addEventListener('contextmenu', event => event.preventDefault());
-            // document.addEventListener('selectstart', event => event.preventDefault());
-            // document.addEventListener('copy', event => event.preventDefault());
-        // });
+        $(document).ready(function () {
+        //     document.addEventListener('contextmenu', event => event.preventDefault());
+        //     document.addEventListener('selectstart', event => event.preventDefault());
+        //     document.addEventListener('copy', event => event.preventDefault());
+        });
     </script>
 </head>
 
@@ -172,11 +167,22 @@
 
     <script>
             
+
         $(document).ready(function() {
             log_visitor();
             count_visitor();
         });
 
+        /*====== FAQ ======*/
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('open');
+            });
+        });
+
+        
+        /*====== Countdown Timer ======*/
         function log_visitor(){            
             $.ajax({
                 url: "{{ route('log-visit') }}",
@@ -193,6 +199,7 @@
             });
         }
 
+        /*====== Visitor Count ======*/
         function count_visitor() {
             jQuery.ajax({
                 type: "GET",
