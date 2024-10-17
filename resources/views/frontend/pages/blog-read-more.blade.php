@@ -16,19 +16,23 @@
                 @else
                     <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius: 10px;" alt="#UpzoneSafaris">
                 @endif
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 blog-content-tab">
+                <h6 class="h3 mb-5">{{ $token->title }}</h6>
+                <p>
+                    <i class="fas fa-user"><small>Admin</small></i>  
+                    <i class="fas fa-eye"><small>({{ rand(1,99) }})</small></i>  
+                    <i class="fas fa-comments"><small>({{ rand(0,9) }})</small></i>
+                </p><br>
+                <p class="blog-desic" style="font-size:20px;text-align:justify">
+                    {{ $token->content }}
+                </p>
                 <p class="my-4">
                     <i class="fas fa-calendar-alt">
                         <small class="p-3">
                         {{ \Carbon\Carbon::parse($token->created_at)->format('M d, Y') }}
                         </small>
                     </i> 
-                </p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 blog-content-tab">
-                <h6 class="h3 mb-4">{{ $token->title }}</h6>
-                <p><i class="fas fa-user"><small>Admin</small></i>  <i class="fas fa-eye"><small>({{ rand(1,99) }})</small></i>  <i class="fas fa-comments"><small>({{ rand(0,9) }})</small></i></p>
-                <p class="blog-desic" style="font-size:20px;text-align:justify">
-                    {{ $token->content }}
                 </p>
             </div>
         </div>

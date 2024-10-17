@@ -9,10 +9,8 @@
     
     <!-- Favicon -->
     <link href="{{ asset('assets/frontend/img/logo/favicon.png') }}" rel="icon" />
-    
+
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"rel="stylesheet"/>
 
     <!-- Icon Font Stylesheet -->
@@ -32,11 +30,11 @@
     <!-- Template Stylesheet -->
     <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" />
     <script>
-        $(document).ready(function () {
+        // $(document).ready(function () {
         //     document.addEventListener('contextmenu', event => event.preventDefault());
         //     document.addEventListener('selectstart', event => event.preventDefault());
         //     document.addEventListener('copy', event => event.preventDefault());
-        });
+        // });
     </script>
 </head>
 
@@ -230,7 +228,7 @@
             $('#cost').val(cost);
             
             let formData = new FormData(this);
-            $('.save-btn').prop('disabled', true);
+            // $('.save-btn').prop('disabled', true);
             $("div#msg_notification img").show();
             
             $.ajax({
@@ -243,31 +241,40 @@
                 success: function(data){
                     //$('.save-btn').prop('disabled', false);
                     $("div#msg_notification img").hide();
-                    if(data.status == 200){
+                    if(data.status === 200){
                         $("div#msg_notification").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>"+data.message+"</div>");
                         setTimeout(function(){
                             $("div#msg_notification").fadeOut("slow").html(""); 
                             $("form#form")[0].reset(); 
                             $('#bookingModal').modal('hide');
-                        },3000);
-                    }else if(data.status == 500){
+                        },5000);
+                    }else if(data.status === 500){
                         $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>"+data.message+"</div>");
                         setTimeout(function(){
                             $("div#msg_notification").fadeOut("slow").html(""); 
-                        },3000);
-                    }else if(data.errors){
-                        $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>Invalid data entered</div>");
+                        },5000);
+                    }else{
+                        $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>Error validation occurred. Please try again</div>");
                         setTimeout(function(){
                             $("div#msg_notification").fadeOut("slow").html(""); 
-                        },3000);
+                        },5000);
                     }
                 },
-                error: function(jqXHR, textStatus, errorThrown){
-                    console.log(errorThrown);
-                    $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>"+errorThrown+"</div>");
-                    setTimeout(function(){
-                        $("div#msg_notification").fadeOut("slow").html(""); 
-                    },3000);
+                error: function(response) {
+                    if (response.status === 500) {
+                        var errors = response.responseJSON.errors;
+                        var errorHtml = '<ul>';
+
+                        $.each(errors, function(key, value) {
+                            errorHtml += '<li>' + value[0] + '</li>'; 
+                        });
+
+                        errorHtml += '</ul>';
+                        $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>"+errorHtml+"</div>");
+                        setTimeout(function(){
+                            $("div#msg_notification").fadeOut("slow").html(""); 
+                        },5000);
+                    }
                 }
             })
 

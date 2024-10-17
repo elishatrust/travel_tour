@@ -21,8 +21,8 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.7s">
+        <div class="row g-5">
+            <div class="col-md-9 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.7s">
                 <div class="accordion" id="accordionExample">                    
                     <div class="accordion-item">
                         <h2 class="accordion-header">
@@ -90,6 +90,98 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-3">
+                <div class="tour">
+                    <div class="header123">
+                        <h5 class="title123 py-3 text-uppercase" style="font-size: 20px!important;">Tour Highlights</h5><hr>
+                    </div>
+                    <div class="body123">
+                        <li class="mb-2"><strong>Day 0 :</strong> Arrival (Pick up) from Kilimanjaro International Airport – Moshi.</li>
+                        <li class="mb-2"><strong>Day 1 :</strong> Moshi – Marangu Gate.</li>
+                        <li class="mb-2"><strong>Day 2 :</strong> Marangu Gate – Mandara Hut.<li class="mb-2">
+                        <li class="mb-2"><strong>Day 3 :</strong> Mandara Hut – Horombo Hut.</li>
+                        <li class="mb-2"><strong>Day 4 :</strong> Horombo Hut – Kibo Hut.</li>
+                        <li class="mb-2"><strong>Day 5 :</strong> Uhuru Peak – Horombo Hut.</li>
+                        <li class="mb-2"><strong>Day 6 :</strong> Horombo Hut – Marangu Gate.</li>
+                        <li class="mb-2"><strong>Day 7 :</strong> Finish – </li>                      
+                    </div>
+                </div>
+                <div class="start_cost py-4">
+                    <div class="start_ text-center px-5 py-3" style="background:#47a0ff;color:white">
+                        <h6 class="text-center text-white">Starting from</h6>
+                    </div>
+                    <div class="cost_ text-center px-5 py-3 " style="background:#f1671e; color:white">
+                        <span class="fs-4 me-3">&#128540;</span>
+                        <strong class="h4 text-white">$1,500.00</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12">
+                <div class="container pt-5">
+                    <div class="row ">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/400x200" alt="7 Days Rongai Route">
+                                <div class="card-body">
+                                    <h5 class="card-title">7 Days Rongai Route</h5>
+                                    <p class="card-text">
+                                        This is a 7 days Rongai route itinerary variation with an extra day for acclimatization. Gradually sloping towards the summit.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    Start from <span class="text-danger ms-2">$1,650.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/400x200" alt="9 Days Crater Camp via Lemosho Route">
+                                <div class="card-body">
+                                    <h5 class="card-title">9 Days Lemosho Route</h5>
+                                    <p class="card-text">
+                                        This 9-day crater camp trek combined with the 8-day Lemosho route climb is a unique and ultimate Kilimanjaro experience.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    Start from <span class="text-danger ms-2">$1,650.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/400x200" alt="7 Days Lemosho Route">
+                                <div class="card-body">
+                                    <h5 class="card-title">7 Days Lemosho Route</h5>
+                                    <p class="card-text">
+                                        The shorter 7-day Lemosho route variant does not include the extra acclimatization day as the 8-day Lemosho route itinerary.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    Start from <span class="text-danger ms-2">$1,650.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/400x200" alt="6 Days Machame Route">
+                                <div class="card-body">
+                                    <h5 class="card-title">6 Days Machame Route</h5>
+                                    <p class="card-text">
+                                        For mountain climbers with prior expertise and the capacity to acclimate more quickly, the 6-day Machame route is advised.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    Start from <span class="text-danger ms-2">$1,650.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            
         </div>
     </div>
 </div>

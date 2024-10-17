@@ -14,47 +14,6 @@
         color: white;
     }
 </style>
-<style>
-    /* Custom Styles */
-    /* .card {
-        border: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-    }
-    .card img {
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        height: 200px;
-        object-fit: cover;
-    }
-    .price-tag {
-        background-color: #007bff;
-        color: white;
-        font-size: 1.25rem;
-        font-weight: bold;
-        padding: 5px 15px;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        border-radius: 8px;
-    }
-    .card-body {
-        position: relative;
-        padding-top: 20px;
-    }
-    .card-footer {
-        background-color: #f8f9fa;
-        border-top: none;
-    }
-    .more-info {
-        text-align: center;
-        color: #007bff;
-        font-size: 1.2rem;
-    }
-    .more-info:hover {
-        text-decoration: underline;
-    } */
-</style>
 @section('content')
 @include('frontend.layouts.inc_mt_kili')
 
@@ -381,7 +340,16 @@
                         <li class="mb-2"><strong>Day 6 :</strong> Horombo Hut – Marangu Gate.</li>
                         <li class="mb-2"><strong>Day 7 :</strong> Finish – </li>                      
                     </div>
-                </div>       
+                </div>
+                <div class="start_cost py-4">
+                    <div class="start_ text-center px-5 py-3" style="background:#47a0ff;color:white">
+                        <h6 class="text-center text-white">Starting from</h6>
+                    </div>
+                    <div class="cost_ text-center px-5 py-3 " style="background:#f1671e; color:white">
+                        <span class="fs-4 me-3">&#128540;</span>
+                        <strong class="h4 text-white">$2,300.00</strong>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -438,70 +406,8 @@
     </div>
 </div>
 
-<div class="container-xxl">
-    <div class="container pt-5">
-        <div class="row g-4">
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="7 Days Rongai Route">
-                    <div class="card-body">
-                        <h5 class="card-title">7 Days Rongai Route</h5>
-                        <p class="card-text">
-                            This is a 7 days Rongai route itinerary variation with an extra day for acclimatization. Gradually sloping towards the summit.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        Start from <span class="text-danger ms-2">$1,650.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="9 Days Crater Camp via Lemosho Route">
-                    <div class="card-body">
-                        <h5 class="card-title">9 Days Lemosho Route</h5>
-                        <p class="card-text">
-                            This 9-day crater camp trek combined with the 8-day Lemosho route climb is a unique and ultimate Kilimanjaro experience.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        Start from <span class="text-danger ms-2">$1,650.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="7 Days Lemosho Route">
-                    <div class="card-body">
-                        <h5 class="card-title">7 Days Lemosho Route</h5>
-                        <p class="card-text">
-                            The shorter 7-day Lemosho route variant does not include the extra acclimatization day as the 8-day Lemosho route itinerary.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        Start from <span class="text-danger ms-2">$1,650.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="6 Days Machame Route">
-                    <div class="card-body">
-                        <h5 class="card-title">6 Days Machame Route</h5>
-                        <p class="card-text">
-                            For mountain climbers with prior expertise and the capacity to acclimate more quickly, the 6-day Machame route is advised.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        Start from <span class="text-danger ms-2">$1,650.00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
+{{-- PWD : Xufo7SqCiL | USER : if0_37219502 --}}
+{{-- PWD : pt0Fv54tbVW | USER : if0_37506881 --}}
 
 
 <div class="container-xxl">
@@ -597,8 +503,177 @@
     </div>
 </div>
 
+
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" alt="7 Days Rongai Route">
+                    <div class="card-body">
+                        <h5 class="card-title">7 Days Rongai Route</h5>
+                        <p class="card-text">
+                            This is a 7 days Rongai route itinerary variation with an extra day for acclimatization. Gradually sloping towards the summit.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <i class="bi bi-bookmark-star-fill me-2 fs-5 text-default" style="color:#f5a425"></i>
+                        Start from <span class="fw-bold ms-2">$2,000.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" alt="9 Days Crater Camp via Lemosho Route">
+                    <div class="card-body">
+                        <h5 class="card-title">9 Days Lemosho Route</h5>
+                        <p class="card-text">
+                            This 9-day crater camp trek combined with the 8-day Lemosho route climb is a unique and ultimate Kilimanjaro experience.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <i class="bi bi-bookmark-star-fill me-2 fs-5 text-default" style="color:#f5a425"></i>
+                        Start from <span class="fw-bold ms-2">$2,300.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" alt="7 Days Lemosho Route">
+                    <div class="card-body">
+                        <h5 class="card-title">7 Days Lemosho Route</h5>
+                        <p class="card-text">
+                            The shorter 7-day Lemosho route variant does not include the extra acclimatization day as the 8-day Lemosho route itinerary.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <i class="bi bi-bookmark-star-fill me-2 fs-5 text-default" style="color:#f5a425"></i>
+                        Start from <span class="fw-bold ms-2">$1,950.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" alt="6 Days Machame Route">
+                    <div class="card-body">
+                        <h5 class="card-title">6 Days Machame Route</h5>
+                        <p class="card-text">
+                            For mountain climbers with prior expertise and the capacity to acclimate more quickly, the 6-day Machame route is advised.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <i class="bi bi-bookmark-star-fill me-2 fs-5 text-default" style="color:#f5a425"></i>
+                        Start from <span class="fw-bold ms-2">$1,650.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 <!-- Destination -->
 @include('frontend.layouts.destinations')
+
+<div class="container-xxl">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-12 col-sm-12 justify-center">
+                <ul class="list-group">
+                    <li class="list-group-item bg-light text-start h4 py-3" aria-current="true">
+                        Best Time to Trek Mount Kilimanjaro
+                    </li>
+                    <li class="list-group-item">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Trekking Conditions</th>
+                                        <th>Recommended or Not?</th>
+                                        <th>Comments</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>January</td>
+                                        <td>Dry season, clear skies, warmer temperatures</td>
+                                        <td class="text-success">✅ Highly Recommended</td>
+                                        <td>Excellent conditions, good visibility, popular month for trekking</td>
+                                    </tr>
+                                    <tr>
+                                        <td>February</td>
+                                        <td>Dry season, clear skies, warmer temperatures</td>
+                                        <td class="text-success">✅ Highly Recommended</td>
+                                        <td>Similar to January, great for trekking</td>
+                                    </tr>
+                                    <tr>
+                                        <td>March</td>
+                                        <td>Transition to the wet season, increasing rain</td>
+                                        <td class="text-warning">⚠️ Possible, but not ideal</td>
+                                        <td>The start of the rainy season, trails may get muddy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>April</td>
+                                        <td>Long rains, wet and slippery trails</td>
+                                        <td class="text-danger">❌ Not Recommended</td>
+                                        <td>Heavy rains make trekking difficult, lower visibility</td>
+                                    </tr>
+                                    <tr>
+                                        <td>May</td>
+                                        <td>Long rains, wet and slippery trails</td>
+                                        <td class="text-danger">❌ Not Recommended</td>
+                                        <td>Persistent rains, very challenging conditions</td>
+                                    </tr>
+                                    <tr>
+                                        <td>June</td>
+                                        <td>Beginning of the dry season, cooler temperatures</td>
+                                        <td class="text-success">✅ Recommended</td>
+                                        <td>Fewer crowds, starting to dry out, good time for acclimatization</td>
+                                    </tr>
+                                    <tr>
+                                        <td>July</td>
+                                        <td>Dry season, cool temperatures</td>
+                                        <td class="text-success">✅ Highly Recommended</td>
+                                        <td>Cool and dry, perfect trekking conditions, but popular and can be busy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>August</td>
+                                        <td>Dry season, cool temperatures</td>
+                                        <td class="text-success">✅ Highly Recommended</td>
+                                        <td>Similar to July, very popular, book in advance</td>
+                                    </tr>
+                                    <tr>
+                                        <td>September</td>
+                                        <td>Dry season, cool temperatures</td>
+                                        <td class="text-success">✅ Highly Recommended</td>
+                                        <td>Still a great time to trek, clear skies, good conditions</td>
+                                    </tr>
+                                    <tr>
+                                        <td>October</td>
+                                        <td>End of dry season, start of short rains</td>
+                                        <td class="text-warning">⚠️ Possible, but be cautious</td>
+                                        <td>Transitioning to the short rainy season, conditions may vary</td>
+                                    </tr>
+                                    <tr>
+                                        <td>November</td>
+                                        <td>Short rains, unpredictable weather</td>
+                                        <td class="text-danger">❌ Not Recommended</td>
+                                        <td>Unpredictable showers, slippery trails</td>
+                                    </tr>
+                                    <tr>
+                                        <td>December</td>
+                                        <td>Short rains ending, transitioning to dry season</td>
+                                        <td class="text-warning">⚠️ Possible, but be cautious</td>
+                                        <td>Late December sees better conditions as the rains subside</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 @endsection

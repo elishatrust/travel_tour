@@ -4,7 +4,7 @@
 @include('frontend.layouts.inc_blog')
 
 <div class="container-xxl py-5 blog">
-    <div class="container">
+    <div class="container py-5">
         <div class="row g-5 wow123 fadeInUp" data-wow123-delay="0.1s">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase">
@@ -15,7 +15,7 @@
         </div>
         <div class="row g-5 blog-row">
             @foreach ($blogs as $blog)                
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12">
                 <div class="blog-singe no-margin row">
                     <div class="col-sm-5 blog-img-tab">
                         @if($blog->file_path)

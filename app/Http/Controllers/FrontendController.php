@@ -187,9 +187,9 @@ class frontendController extends Controller
             if ($validator->fails()) {
                 return response()->json([
                     'status' => 500,
-                    'message' => 'Validation errors occurred, please fix them',
+                    'message' => 'Error validation occurred. Please fix them',
                     'errors' => $validator->errors()
-                ], 422);
+                ], 500);
             }
 
             $hidden_id = $request->input('hidden_id');
