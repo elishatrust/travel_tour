@@ -502,6 +502,7 @@ body {
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
+    background: #e4e4e4!important;
 }
 
 .navbar .navbar-brand {
@@ -542,7 +543,7 @@ body {
 }
 
 .dropdown-hover:hover>.dropdown-menu {
-display: block;
+    display: block;
 }
 
 .dropdown-hover>.dropdown-toggle:active {
@@ -556,6 +557,18 @@ color: var(--primary)!important;
 }
 .nav-item .row .list-group-item {
     font-size: 14px;
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    columns: 3;
+    top: 100%;
+    visibility: visible;
+    transition: .5s;
+    opacity: 1;
+    left: -80%;
+    background: #c6d3e3!important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -592,7 +605,14 @@ color: var(--primary)!important;
         transition: .5s;
         opacity: 1;
     }
+}  
+
+@media (max-width: 576px) {
+    .dropdown-menu {
+        columns: 1;
+    }
 }
+
 
 
 /** packages section **/
@@ -656,59 +676,59 @@ color: var(--primary)!important;
 
 /*======  Header  ======*/
 .inc_about {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
         url('../img/more/00.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: scroll;
 }
 
 .inc_contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
         url('../img/more/3a.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: scroll;
 }
 
 .inc_mt_kili {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), 
         url('../img/more/01.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: scroll;
 }
 
 .inc_service {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
         url('../img/more/20.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: scroll;
 }
 
 .inc_blog {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), 
         url('../img/safari/29.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
-}
+    background-attachment: scroll;
+}    
 
 .inc_mt_meru {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
         url('../img/MtMeru.webp') center center no-repeat;
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: scroll;
 }
 
 .inc_terms_condition {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
         url('../img/more/21.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: scroll;
 }
 
 .btn-play {

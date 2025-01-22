@@ -172,7 +172,7 @@
         </div>
         <div class="owl-carousel testimonial-carousel wow123 fadeInUp" data-wow123-delay="0.1s">
             <div class="testimonial-item text-center">
-                {{-- <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="{{ asset('assets/backend/avatar.jpg') }}" style="width: 100px; height: 100px"/> --}}
+                <img class="img-fluid rounded-circle border border-2 p-1 mx-auto mb-2" src="{{ asset('assets/backend/avatar2.png') }}" style="width: 50px; height: 50px;border:2px solid #f1671e!important;"/>
                 <div class="testimonial-text rounded text-center p-4">
                     <p>
                         "The Company planned the perfect honeymoon for us. 
@@ -183,7 +183,7 @@
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                {{-- <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="{{ asset('assets/backend/avatar.jpg') }}" style="width: 100px; height: 100px"/> --}}
+                <img class="img-fluid rounded-circle border border-2 p-1 mx-auto mb-2" src="{{ asset('assets/backend/avatar2.png') }}" style="width: 50px; height: 50px;border:2px solid #f1671e!important;"/>
                 <div class="testimonial-text rounded text-center p-4">
                     <p>
                         "We had the best safari experience, thanks to their knowledgeable 
@@ -194,7 +194,7 @@
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                {{-- <img class="img-fluid style="border-radius:10px; width:100%;height:250px;" rounded-circle border border-2 p-2 mx-auto mb-4" src="{{ asset('assets/backend/avatar.jpg') }}" style="width: 100px; height: 100px"/> --}}
+                <img class="img-fluid rounded-circle border border-2 p-1 mx-auto mb-2" src="{{ asset('assets/backend/avatar2.png') }}" style="width: 50px; height: 50px;border:2px solid #f1671e!important;"/>
                 <div class="testimonial-text rounded text-center p-4">
                     <p>
                         "I’ve been booking my corporate travels with them for the past five years. 

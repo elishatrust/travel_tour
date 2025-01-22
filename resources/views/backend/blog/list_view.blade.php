@@ -5,10 +5,10 @@
             <div class="single_post">
                 <a href="javascript:(0)">
                     <div class="img-post m-b-5">
-                        @if($item->file_path)
-                            <img src="{{ asset('storage/' . $item->file_path) }}" class="w-100" style="border-radius:10px;width:100%;height:400px;"  alt="#UpzoneSafaris">
+                        @if ($item->file_path && file_exists(public_path($item->file_path)))
+                            <img src="{{ asset($item->file_path) }}" class="w-100" style="border-radius:10px; height:400px; object-fit:cover;" alt="Blog Image">
                         @else
-                            <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius:10px;width:100%;height:400px;"  alt="#UpzoneSafaris">
+                            <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius:10px; height:400px; object-fit:cover;" alt="Fallback Image">
                         @endif
                     </div>
                     <b class="text-dark py-3">{{ $item->title }}</b><hr>
@@ -40,7 +40,7 @@
         </div>
     </div> 
 </div>
-@endforeach
+@endforeach 
 
 
 @include('backend.dependences.datatable')

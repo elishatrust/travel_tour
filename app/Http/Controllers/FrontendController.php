@@ -95,6 +95,230 @@ class frontendController extends Controller
         }
     }
 
+    public function _3_days_mt_meru()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '3 Days Mount Meru Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.3-days-mt-meru', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _4_days_mt_meru()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '4 Days Mount Meru Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.4-days-mt-meru', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _5_days_marangu()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '5 Days Marangu Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.5-days-marangu', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _6_days_marangu()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '6 Days Marangu Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.6-days-marangu', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _5_days_umbwe()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '5 Days Umbwe Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.5-days-umbwe', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _6_days_umbwe()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '6 Days Umbwe Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.6-days-umbwe', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _6_days_machame()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '6 Days Machame Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.6-days-machame', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _7_days_machame()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '7 Ddays Machame Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.7-days-machame', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _6_days_rongai()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '6 Days Rongai Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.6-days-rongai', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _7_days_rongai()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '7 Days Rongai Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.7-days-rongai', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _7_days_lemosho()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '7 Days Lemosho Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.7-days-lemosho', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _8_days_lemosho()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '8 Days Lemosho Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.8-days-lemosho', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _8_days_northern_circuit()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '8 Days Northern Circuit Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.8-days-northern-circuit', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function _9_days_northern_circuit()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '9 Days Northern Circuit Trek';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.9-days-northern-circuit', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
     public function mt_kili_trek()
     {
         $meta_title = 'Upzone Safaris';
@@ -110,6 +334,7 @@ class frontendController extends Controller
             abort(404);
         }
     }
+
     public function contact()
     {
         $meta_title = 'Upzone Safaris';

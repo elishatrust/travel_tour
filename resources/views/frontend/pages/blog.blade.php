@@ -17,17 +17,25 @@
             @foreach ($blogs as $blog)                
             <div class="col-md-6 col-sm-12">
                 <div class="blog-singe no-margin row">
-                    <div class="col-sm-5 blog-img-tab">
-                        @if($blog->file_path)
-                            <img src="{{ asset('storage/' . $blog->file_path) }}" class="w-100" style="border-radius:10px;width:100%;height:250px;" alt="#UpzoneSafaris">
+                    <div class="col-md-5 col-sm-12 blog-img-tab">
+                        @if ($blog->file_path)
+                            <img src="{{ asset('storage/'.$blog->file_path) }}" class="w-100" style="border-radius:5px; width:100%;height:200px; object-fit:cover;"  alt="Blog Image">
                         @else
-                            <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius:10px;width:100%;height:250px;" alt="#UpzoneSafaris">
+                            <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius:5px; width:100%;height:200px; object-fit:cover;"  alt="Fallback Image">
                         @endif
                     </div>
-                    <div class="col-sm-7 blog-content-tab">
+                    <div class="col-md-7 col-sm-12 blog-content-tab">
                         <h6>{{ $blog->title }}</h6>
-                        <p><i class="fas fa-user"><small>Admin</small></i>  <i class="fas fa-eye"><small>({{ rand(1,99) }})</small></i>  <i class="fas fa-comments"><small>({{ rand(0,9) }})</small></i></p>
-                        <p class="blog-desic">
+                        {{-- <p><i class="fas fa-user"><small>Admin</small></i>  <i class="fas fa-eye"><small>({{ rand(1,99) }})</small></i>  <i class="fas fa-comments"><small>({{ rand(0,9) }})</small></i></p> --}}
+                        <hr>
+                        <p class="">
+                            <i class="fas fa-calendar-alt">
+                                <small class="p-3">
+                                {{ \Carbon\Carbon::parse($blog->created_at)->format('M d, Y') }}
+                                </small>
+                            </i> 
+                        </p>
+                        <p class="blog-desic" style="text-align:justify">
                             @php
                                 $text = $blog->content;
                                 $words = explode(' ', $text);

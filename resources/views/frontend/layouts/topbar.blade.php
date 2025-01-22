@@ -7,7 +7,7 @@
             </div>
             <div class="h-100 d-inline-flex align-items-center py-3">
                 <small class="far fa-clock text-primary me-2"></small>
-                <small>Mon - Fri : 09.00 AM - 18.00 PM</small>
+                <small>Mon - Sun : Always Open</small>
             </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
