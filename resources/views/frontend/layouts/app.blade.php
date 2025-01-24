@@ -18,13 +18,11 @@
     <link href="{{ asset('assets/frontend/css/bootstrap.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" />
     <script>
-        /*
         $(document).ready(function () {
             document.addEventListener('contextmenu', event => event.preventDefault());
             document.addEventListener('selectstart', event => event.preventDefault());
             document.addEventListener('copy', event => event.preventDefault());
         });
-        */
     </script>
 </head>
 <body>
@@ -152,13 +150,26 @@
     <script src="{{ asset('assets/frontend/js/jquery-3.4.1.min.js') }}"></script>
     {{-- <script src="{{ asset('assets/frontend/js/aos.js') }}"></script> --}}
 
-    <script>
-            
+    <script type="text/javascript">
+
 
         $(document).ready(function() {
             log_visitor();
             count_visitor();
         });
+
+
+        /*====== START OF (Tawk.to) SCRIPT ======*/
+        // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        // (function(){
+        //     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        //     s1.async=true;
+        //     s1.src='https://embed.tawk.to/66cdfec550c10f7a00a0fa80/1i6aamdk7';
+        //     s1.charset='UTF-8';
+        //     s1.setAttribute('crossorigin','*');
+        //     s0.parentNode.insertBefore(s1,s0);
+        // })();
+
 
         /*====== FAQ ======*/
         document.querySelectorAll('.faq-item h3').forEach(item => {

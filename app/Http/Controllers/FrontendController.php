@@ -390,13 +390,30 @@ class frontendController extends Controller
         return response()->json($package);
     }
 
+    public function plan_trip()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Plan Your Trip Today';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.booking', $data );
+
+        }else{
+            abort(404);
+        }
+
+    }
+    
     public function save_trip(Request $request)
     {
         try {
             DB::beginTransaction();
 
             $validator = Validator::make($request->all(), [
-                'name' => 'required|string|max:255',
+                'fullname' => 'required|string|max:255',
                 'phone' => 'required|string|max:20',
                 'email' => 'required|email',
                 'arrival_date' => 'required|date',
@@ -420,7 +437,7 @@ class frontendController extends Controller
             $hidden_id = $request->input('hidden_id');
 
             $saveData = [
-                'name' => $request->input('name'),
+                'name' => $request->input('fullname'),
                 'phone' => $request->input('phone'),
                 'email' => $request->input('email'),
                 'arrival_date' => $request->input('arrival_date'),
