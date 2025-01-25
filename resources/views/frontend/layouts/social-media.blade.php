@@ -1,14 +1,14 @@
 
 <div class="container-xxl py-5">
     <div class="container">
-		<div class="text-center mx-auto wow123 fadeInUp" data-wow123-delay="0.1s">
+		<div class="text-center mx-autoUp">
 
 			<div class="row">
-				<div class="col-lg-12 col-sm-12  wow123 fadeInUp" data-wow123-delay="0.3s">
+				<div class="col-lg-12 col-sm-12 Up" data-wow123-delay="0.3s">
 					<hr class=" border-bottom border-primary"><h4 class="text-start">Follow <strong>@UpzoneSafaris</strong> on Social Media </h4><hr class=" border-bottom border-primary">
 				</div>
 
-				<div class="col-md-3 wow123 fadeInUp" data-wow123-delay="0.7s">
+				<div class="col-md-3Up" data-wow123-delay="0.7s">
 					<span class="text-center text-dark fw-bold mb-3">Facebook</span>
 					<div class="bg-white" style="margin:5px!important;overflow-y: auto;overflow-x: auto; height:300px;border:1px dotted #3c2313;">
 
@@ -18,7 +18,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-3 wow123 fadeInUp" data-wow123-delay="0.5s">
+				<div class="col-md-3Up" data-wow123-delay="0.5s">
 					<span class="text-center text-dark fw-bold mb-3">Instagram</span>
 					<div class="bg-white" style="margin:5px!important;overflow-y: auto;overflow-x: auto; height:300px;border:1px dotted #3c2313;">
 
@@ -34,7 +34,7 @@
 					</div>
 				</div>
 				
-				<div class="col-md-3 wow123 fadeInUp" data-wow123-delay="0.9s">
+				<div class="col-md-3Up" data-wow123-delay="0.9s">
 					<span class="text-center text-dark fw-bold mb-3"> X (Formerly Twitter)</span>
 					<div class="bg-white" style="margin:5px!important;height:100px;overflow-y: auto;overflow-x: auto; height:300px;border:1px dotted #3c2313;">
 						<blockquote class="twitter-tweet" style="overflow-y: hidden;overflow-x: auto; height:300px;"><p lang="en" dir="ltr">
@@ -47,7 +47,7 @@
 					</div>
 				</div>				
 				
-				<div class="col-md-3 wow123 fadeInUp" data-wow123-delay="1.2s">
+				<div class="col-md-3Up" data-wow123-delay="1.2s">
 					<span class="text-center text-dark fw-bold mb-3">Linkedin</span>
 					<div class="bg-white" style="margin:5px!important;overflow-y: hidden;overflow-x: auto; height:300px;border:1px dotted #3c2313;">
 

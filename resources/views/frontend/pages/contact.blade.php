@@ -9,7 +9,7 @@
     <div class="row g-4">
       <div class="col-lg-5 col-md-7 col-sm-12 ">
         <div class="row g-3">
-          <div class="col-lg-12 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
+          <div class="col-lg-12 col-sm-12">
             <div class="h-100 shadow-sm bg-light123 d-flex align-items-center px-3 py-4">
               <div class="btn-lg-square bg-light flex-shrink-0">
                 <i class="fa fa-map-marker-alt text-primary"></i>
@@ -20,7 +20,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-12 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
+          <div class="col-lg-12 col-sm-12">
             <div class="h-100 shadow-sm bg-light123 d-flex align-items-center px-3 py-4">
               <div class="btn-lg-square bg-light flex-shrink-0">
                 <i class="fa fa-phone-alt text-primary"></i>
@@ -31,7 +31,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-12 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
+          <div class="col-lg-12 col-sm-12">
             <div class="h-100 shadow-sm bg-light123 d-flex align-items-center px-3 py-4">
               <div class="btn-lg-square bg-light flex-shrink-0">
                 <i class="fa fa-envelope-open text-primary"></i>
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="col-md-12 col-sm-12">
-                <button class="btn btn-primary w-100 py-3" type="submit">
+                <button class="btn btn-outline-primary text-uppercase w-100 py-3" type="submit">
                     Send Message
                 </button>
             </div>
@@ -93,7 +93,7 @@
 
 <div class="google-map">
   <div class="row">
-    <div class="col-lg-12 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
+    <div class="col-lg-12 col-sm-12Up">
         <div class="h-100" style="min-height: 600px">
             {{-- <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4159371.9176977407!2d34.0069042239643!3d-3.3551450558754334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371dc27c5ddf5d%3A0xe14adf20d1bf3cb0!2sTourism%20and%20traveling!5e0!3m2!1sen!2stz!4v1725029985744!5m2!1sen!2stz"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
@@ -103,12 +103,5 @@
     </div>
   </div>
 </div>
-
-
-
-
-<!-- Media Start -->
-{{-- @include('frontend.layouts.social-media') --}}
-<!--- Media End -->
 
 @endsection

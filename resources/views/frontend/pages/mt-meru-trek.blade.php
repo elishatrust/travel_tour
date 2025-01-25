@@ -14,7 +14,7 @@
 
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="row g-5 mb-3 wow123 fadeInUp" data-wow123-delay="0.1s">
+        <div class="row g-5 mb-3Up">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Mount Meru Routes</p>
                 {{-- <h1 class="display-5123 h2 mb-3" style="">Special <span style="color:#f1671e!important">Trekking</span></h1> --}}
@@ -22,7 +22,7 @@
         </div>
 
         <div class="row g-5">
-            <div class="col-md-9 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.7s">
+            <div class="col-md-9 col-sm-12Up">
                 <div class="accordion" id="accordionExample">                    
                     <div class="accordion-item">
                         <h2 class="accordion-header">
@@ -36,9 +36,10 @@
                                     <div class="col-lg-7 col-md-6 col-sm-12">
                                         <strong class="">Mount Meru Ascent Routes</strong><br><br>
                                         <p>
-                                            Mount Meru is the highest peak in Tanzania, It stands tall at an elevation of 4,966 meters 
-                                            (15,505 feet) above sea level, making it the highest peak in Africa and the highest single 
-                                            free-standing mountain above sea level in the world. 
+                                            
+                                            Mount Meru is Tanzania's second-highest mountain, located within the Arusha National Park.
+                                            The trek offers stunning scenery, thrilling wildlife encounters, and breathtaking views of Mount Kilimanjaro. Perfect for adventurers and climbers!
+                                        
                                         </p>
                                         <p>
                                             Mount Meru, located east of the Great Rift Valley and approximately 40 km southwest of 
@@ -46,13 +47,6 @@
                                             second-highest mountain in Tanzania. It is also considered by some to be the fourth-highest 
                                             mountain in Africa, after Kilimanjaro, 
                                             Mount Kenya, and the Rwenzori Mountains (also known as the Mountains of the Moon).
-                                        </p>
-                                        <p>
-                                            Around 500,000 years ago, a massive eruption reshaped Mount Meru, 
-                                            destroying its original cone and creating a horseshoe-shaped crater 
-                                            with its eastern side blown away. The mountain’s summit now lies on 
-                                            the western side, and its inner walls soar more than 1,500 meters above the crater floor, 
-                                            making them among the tallest cliffs in Africa.
                                         </p>
                                     </div>
                                     <div class="col-lg-5 col-md-6 col-sm-12">
@@ -190,7 +184,7 @@
 <!-- Service -->
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="row g-5 mb-5 wow123 fadeInUp" data-wow123-delay="0.1s">
+        <div class="row g-5 mb-5Up">
             <div class="col-lg-10 col-md-10 col-sm-12 justify-center">
                 <ul class="list-group">
                     <li class="list-group-item active text-start" aria-current="true">An active item</li>

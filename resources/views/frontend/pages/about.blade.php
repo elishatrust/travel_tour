@@ -5,9 +5,9 @@
 
 
 <div class="container-xxl py-5">
-    <div class="container py-5">
+    <div class="container pt-5">
         <div class="row g-5">
-            <div class="col-lg-6 wow123 fadeInUp" data-wow123-delay="0.1s">
+            <div class="col-lg-6 col-sm-12">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Our Background</p>
                 <h1 class="display-5123 h2 mb-5">We are Holiday Destination Support Company</h1>
                 <p class="mb-4 text-justify-all">
@@ -24,7 +24,14 @@
                     Today, we are proud to serve thousands of travelers for tour each year, offering everything from bespoke 
                     travel itineraries to guided tours across some of the world’s most breathtaking destinations.
                 </p>
-                <p class="mb-4 text-justify-all">
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="img-border123 h1-100">
+                    <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:100%;" src="{{ asset('assets/frontend/img/safari/0022.jpg') }}" style="border-radius:10px;" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-12 col-sm-12">
+                <p class=" text-justify-all">
                     At the heart of our business is a simple philosophy: Travel should be accessible, enriching, and above all, a joyful experience. We strive to offer more than just trips; we curate experiences that resonate on a personal level. Whether it’s a serene escape to a tropical paradise, a thrilling adventure in the mountains, or an immersive cultural journey, our goal is to craft memories that last a lifetime.
                 </p>
                 <h5 class="mb-3">
@@ -36,11 +43,6 @@
                 <h5 class="mb-3">
                     <i class="far fa-check-circle text-primary me-3"></i>World Best Animals
                 </h5>
-            </div>
-            <div class="col-lg-6 wow123 fadeInUp" data-wow123-delay="0.5s">
-                <div class="img-border h1-100">
-                <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:100%;" src="{{ asset('assets/frontend/img/safari/1008.jpg') }}" style="border-radius:10px;" alt="" />
-                </div>
             </div>
         </div>
     </div>
@@ -67,27 +69,27 @@
 <div class="container-xxl pb-5">
     <div class="container">
         <div class="row g-5">
-            <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
-                <div class="card-card p-4 bg-blend-lighten shadow-sm w-100 h-100">
-                    <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important;">Vision</h5>
+            <div class="col-lg-4 col-sm-12">
+                <div class="card-card123 p-4 shadow-sm w-100 h-100" style="background: #f3f4f5!important; border-bottom:2px solid red; border-radius:5px;">
+                    <h5 class="mb-3 text-center text-uppercase animated-underline123">Vision</h5>
                     <span>
                         To be the world’s most trusted and innovative travel company, 
                         inspiring people to explore and experience the beauty of the world.
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 sha col-sm-12 wow123 fadeInUp" data-wow123-delay="0.3s">
-                <div class="card-card p-4 bg-blend-lighten shadow-sm w-100 h-100">
-                    <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Mission</h5>
+            <div class="col-lg-4 col-sm-12">
+                <div class="card-card123 p-4 shadow-sm w-100 h-100" style="background: #f3f4f5!important; border-bottom:2px solid blue; border-radius:5px;">
+                    <h5 class="mb-3 text-center text-uppercase animated-underline123">Mission</h5>
                     <span>
                         We are committed to offering personalized service, reliable travel solutions, 
                         and unforgettable journeys that enrich lives and create lasting memories.
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
-                <div class="card-card p-4 bg-blend-lighten shadow-sm w-100 h-100">
-                    <h5 class="mb-3 text-center text-uppercase" style="color:#f1671e!important">Core Value</h5>
+            <div class="col-lg-4 col-sm-12">
+                <div class="card-card123 p-4 shadow-sm w-100 h-100" style="background: #f3f4f5!important; border-bottom:2px solid green; border-radius:5px;">
+                    <h5 class="mb-3 text-center text-uppercase animated-underline123">Core Value</h5>
                     <span>
                         Our top priority is the satisfaction and happiness of our clients by 
                         conducting our business with the highest ethical standards, honesty, and transparency.
@@ -97,6 +99,8 @@
         </div>
     </div>
 </div>
+
+
 <!-- Destination -->
 @include('frontend.layouts.destinations')
 

@@ -14,7 +14,7 @@
 
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="row g-5 mb-3 wow123 fadeInUp" data-wow123-delay="0.1s">
+        <div class="row g-5 mb-3">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Tanzania Safaris</p>
                 {{-- <h1 class="display-5123 h2 mb-3" style="">Special <span style="color:#f1671e!important">Trekking</span></h1> --}}
@@ -22,7 +22,7 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.7s">
+            <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="accordion" id="accordionExample">
                     
                     <div class="accordion-item">
@@ -73,14 +73,14 @@
 <!-- Service -->
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="row g-5 mb-5 wow123 fadeInUp" data-wow123-delay="0.1s">
+        <div class="row g-5 mb-5Up">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>What We Do</p>
                 <h1 class="display-5123 h2 mb-3" style="">Special Services For <span style="color:#f1671e!important">Upzone</span><span class="text-dark">Safaris</span></h1>
             </div>
         </div>
         <div class="row gy-5 gx-4">
-            {{-- <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.1s">
+            {{-- <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3Up">
                 <img class="img-fluid mb-3" src="{{ asset('assets/frontend/img/icon/icon-2.png') }}" alt="Icon" />
                 <h5 class="mb-3" style="color:#f1671e!important">Car Parking</h5>
                 <span style="text-align: justify">
@@ -88,7 +88,7 @@
                     attractions, and event venues.
                 </span>
             </div> --}}
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.7s">
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
                 <img class="img-fluid mb-3 w-100" style="border-radius:15px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/8.jpg') }}" alt="Icon" />
                 <div class="p-3">
                     <h5 class="mb-3 text-center" style="color:#f1671e!important">Rest House</h5>
@@ -97,7 +97,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.1s">
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
                 <img class="img-fluid mb-3 w-100" style="border-radius:15px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/1.jpg') }}" alt="Icon" />
                 <div>
                     <h5 class="mb-3 text-center" style="color:#f1671e!important">Group Tours</h5>
@@ -106,7 +106,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.3s">
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
                 <img class="img-fluid mb-3 w-100" style="border-radius:15px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/2.jpg') }}" alt="Icon" />
                 <div>
                     <h5 class="mb-3 text-center" style="color:#f1671e!important">Animal Photos</h5>
@@ -116,7 +116,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.3s">
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
                 <img class="img-fluid mb-3 w-100" style="border-radius:15px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/6.jpg') }}" alt="Icon" />
                 <div>
                     <h5 class="mb-3 text-center" style="color:#f1671e!important">Free High Speed Wi-Fi</h5>
@@ -126,7 +126,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.7s">
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
                 <img class="img-fluid mb-3 w-100" style="border-radius:15px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/7.jpg') }}" alt="Icon" />
                 <div>
                     <h5 class="mb-3 text-center" style="color:#f1671e!important">Food & Beverages</h5>
@@ -136,7 +136,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.5s">
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
                 <img class="img-fluid mb-3 w-100" style="border-radius:15px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/5.jpg') }}" alt="Icon" />
                 <div>
                     <h5 class="mb-3 text-center" style="color:#f1671e!important">Guide Services</h5>
@@ -146,7 +146,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.1s">
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
                 <img class="img-fluid mb-3 w-100" style="border-radius:15px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/11.jpg') }}" alt="Icon" />
                 <div>
                     <h5 class="mb-3 text-center" style="color:#f1671e!important">Zoo Shopping</h5>
@@ -156,7 +156,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3 wow123 fadeInUp" data-wow123-delay="0.5s">
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
                 <img class="img-fluid mb-3 w-100" style="border-radius:15px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/9.jpg') }}" alt="Icon" />
                 <div>
                     <h5 class="mb-3 text-center" style="color:#f1671e!important">Playground Facilities</h5>

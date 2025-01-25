@@ -5,7 +5,7 @@
 
 <div class="container-xxl py-5 blog">
     <div class="container py-5">
-        <div class="row g-5 wow123 fadeInUp" data-wow123-delay="0.1s">
+        <div class="row g-5Up">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase">
                     <span class="text-primary me-2">#</span>Latest News
@@ -15,16 +15,16 @@
         </div>
         <div class="row g-5 blog-row">
             @foreach ($blogs as $blog)                
-            <div class="col-md-6 col-sm-12">
+            <div class="col-lg-6 col-sm-12">
                 <div class="blog-singe no-margin row">
-                    <div class="col-md-5 col-sm-12 blog-img-tab">
+                    <div class="col-lg-5 col-sm-12 blog-img-tab">
                         @if ($blog->file_path)
                             <img src="{{ asset('storage/'.$blog->file_path) }}" class="w-100" style="border-radius:5px; width:100%;height:200px; object-fit:cover;"  alt="Blog Image">
                         @else
                             <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius:5px; width:100%;height:200px; object-fit:cover;"  alt="Fallback Image">
                         @endif
                     </div>
-                    <div class="col-md-7 col-sm-12 blog-content-tab">
+                    <div class="col-lg-7 col-sm-12 blog-content-tab">
                         <h6>{{ $blog->title }}</h6>
                         {{-- <p><i class="fas fa-user"><small>Admin</small></i>  <i class="fas fa-eye"><small>({{ rand(1,99) }})</small></i>  <i class="fas fa-comments"><small>({{ rand(0,9) }})</small></i></p> --}}
                         <hr>

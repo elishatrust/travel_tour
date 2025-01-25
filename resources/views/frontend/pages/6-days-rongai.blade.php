@@ -20,14 +20,14 @@
 
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="row g-5 mb-3 wow123 fadeInUp" data-wow123-delay="0.1s">
+        <div class="row g-5 mb-3Up">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Mount Kilimanjaro Routes</p>
                 <h1 class="display-5123 h2 mb-3" style="">Mount Kilimanjaro Climbing Tours</h1>
             </div>
         </div>
         <div class="row g-5">
-            <div class="col-md-9 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.7s">
+            <div class="col-md-9 col-sm-12Up" data-wow123-delay="0.7s">
                 <div class="accordion shadow-sm" id="accordionExample">
                     
                     <div class="accordion-item">
@@ -359,7 +359,7 @@
 <div class="container-xxl">
     <div class="container pt-5">
         <div class="row g-5">       
-            <div class="col-md-4 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.5s">
+            <div class="col-md-4 col-sm-12Up">
                 <div class="img-border123 h-100">
                     <a target="_blank" href="https://earth.google.com/web/@-3.09344655,37.38195524,4627.36994853a,50242.59166852d,35y,0h,60t,0r/data=CgRCAggBOgMKATBKDQj___________8BEAA">
                         <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/KilimanjaroMapRotes2.png') }}" alt="#" />
@@ -367,7 +367,7 @@
                     <p class="mt-2"><i>Click the image above to explore Kilimanjaro in Google Earth</i></p>
                 </div>
             </div>
-            <div class="col-md-8 col-sm-12 wow123 fadeInUp" data-wow123-delay="0.1s">
+            <div class="col-md-8 col-sm-12Up">
                 <h1 class="display-5123 h2 mb-5">Features & Key Considerations</h1>
                 <p class="mb-3">
                     <span class="fw-bold">

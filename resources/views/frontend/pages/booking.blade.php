@@ -10,13 +10,13 @@ $packages = PackageModel::getPackage();
 
 
 <div class="container-xxl py-5">
-    <div class="container">
+    <div class="container py-5">
         <div class="row">
             <div class="col-lg-12 col-sm-12">
                 <h1 class="h2 mb-3">{{ $page_title }}</h1>
                 <hr>
             </div>
-            <div class="col-md-8 col-sm-12">                
+            <div class="col-lg-8 col-sm-12">                
                 <div class="form shadow-sm p-3">
                     <form class="form" id="form" action="javascript:void(0)"  enctype="multipart/form-data">
                         @csrf
@@ -95,7 +95,7 @@ $packages = PackageModel::getPackage();
                                 <img src="{{ asset('assets/backend/loader.svg') }}" alt="Loading...">
                             </div>
                             <div class="">
-                                <button type="submit" class="btn btn-primary px-5">Save</button>
+                                <button type="submit" class="btn btn-outline-primary text-uppercase px-5">Save</button>
                             </div>
                         </div>
                     </form>

@@ -399,6 +399,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
+            $data['data'] = PackageModel::getPackage();
             return view('frontend.pages.booking', $data );
 
         }else{
