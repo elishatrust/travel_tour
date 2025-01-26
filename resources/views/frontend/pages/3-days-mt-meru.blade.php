@@ -26,7 +26,7 @@
             <div class="col-lg-3 col-sm-12">
                 <div class="start-cost py-4">
                     <h6 class="my-3 text-primary">Starting from</h6>
-                    <p class="h3 animated-underline">$500.00</p>
+                    <p class="h3 animated-underline">$700.00</p>
                 </div>
                 <a href="#" class="btn btn-outline-primary px-5 text-uppercase">Book Now<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
@@ -41,31 +41,32 @@
             <div class="col-lg-8 col-sm-12">
                 <div class="row">
                     <div class="col-lg-6 col-sm-12 shadow-sm p-3">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/5.jpg') }}" alt="me-2" />
+                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0028.jpg') }}" alt="me-2" />
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">Day 1: Momella Gate to Miriakamba Hut</h5>
                             <span style="text-align: justify">
-                                Offering professional guide services to ensure travelers have knowledgeable
-                                experts to help them explore destinations.
+                                Transfer from your hotel to Momella Gate. Trek through lush forest and cross the 
+                                Ngare Nanyuki River to reach Miriakamba Hut for an overnight camp.
                             </span>
                             <ul class="list-unstyled mt-3">
                                 <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~10 km (~6 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 4–6 hours</li>
+                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 4–6 Hours</li>
                                 <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 1,500m to 2,514m</li>
                                 <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Wildlife encounters, lush forests, Miriakamba Hut.</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 shadow-sm p-3">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/1.jpg') }}" alt="me-2" />
+                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" />
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">Day 2: Miriakamba Hut to Saddle Hut</h5>
                             <span style="text-align: justify">
-                                Organized group tours for families, friends, and special interest groups
+                                Ascend through scenic forest and giant heather to Saddle Hut. 
+                                Optional hike to Little Meru for stunning views. Overnight at Saddle Hut.
                             </span>
                             <ul class="list-unstyled mt-3">
                                 <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~8 km (~5 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 3–5 hours</li>
+                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 3–5 Hours</li>
                                 <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 2,514m to 3,570m</li>
                                 <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Elephant Ridge views, Little Meru sunset hike.</li>
                             </ul>
@@ -76,20 +77,20 @@
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">Day 3: Saddle Hut to Summit and Descent</h5>
                             <span style="text-align: justify">
-                                Capture beautiful memories with wildlife through professional 
-                                animal photography services.
+                                Start early for Rhino Point and continue to Mount Meru’s summit. 
+                                Descend to Momella Gate and transfer back to your hotel for dinner and rest.
                             </span>
                             <ul class="list-unstyled mt-3">
                                 <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~19 km (~12 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 10–12 hours</li>
+                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 10–12 Hours</li>
                                 <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,570m to 4,566m to 1,500m</li>
                                 <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Summit sunrise, scenic descent, wildlife sightings.</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 shadow-sm p-3">
-                        <div>
-                            <h5 class="mb-3 text-muted">Best Time to Trek</h5>
+                        <div class="p-5">
+                            <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Trek</h5>
                             <div class="">
                                 <p  style="text-align: justify">
                                     The dry season (June–October and January–February) offers clear skies and stable weather, making it the best time to hike.
@@ -104,7 +105,7 @@
             <div class="col-lg-4 col-sm-12">
                 <div class="tour-hightligh mb-4">
                     <div class="">
-                        <h5 class="h6 text-muted py-3 text-uppercase">Tour Highlights</h5>
+                        <h5 class="h6 text-muted py-3 text-uppercase">Trek Highlights</h5>
                     </div>
                     <div class="">
                         <li class="mb-2"><strong>Day 0 :</strong> Arrival (Pick up) from Kilimanjaro International Airport – Moshi.</li>

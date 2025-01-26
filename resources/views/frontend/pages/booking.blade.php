@@ -10,14 +10,14 @@ $packages = PackageModel::getPackage();
 
 
 <div class="container-xxl py-5">
-    <div class="container py-5">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12 col-sm-12">
                 <h1 class="h2 mb-3">{{ $page_title }}</h1>
                 <hr>
             </div>
             <div class="col-lg-8 col-sm-12">                
-                <div class="form shadow-sm p-3">
+                <div class="form p-5" style="background: #f3f4f5!important; border-radius:5px;">
                     <form class="form" id="form" action="javascript:void(0)"  enctype="multipart/form-data">
                         @csrf
                         <input type="hidden" class="form-control" id="hidden_id" name="hidden_id" >

@@ -328,7 +328,7 @@
             <div class="col-md-3 col-sm-12">
                 <div class="tour">
                     <div class="header123">
-                        <h5 class="title123 py-3 text-uppercase" style="font-size: 20px!important;">Tour Highlights</h5><hr>
+                        <h5 class="title123 py-3 text-uppercase" style="font-size: 20px!important;">Trek Highlights</h5><hr>
                     </div>
                     <div class="body123">
                         <li class="mb-2"><strong>Day 0 :</strong> Arrival (Pick up) from Kilimanjaro International Airport – Moshi.</li>
