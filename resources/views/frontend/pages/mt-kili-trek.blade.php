@@ -406,10 +406,6 @@
     </div>
 </div>
 
-{{-- PWD : Xufo7SqCiL | USER : if0_37219502 --}}
-{{-- PWD : pt0Fv54tbVW | USER : if0_37506881 --}}
-
-
 <div class="container-xxl">
     <div class="container py-5">
         <div class="row g-5">
@@ -502,72 +498,6 @@
         </div>
     </div>
 </div>
-
-
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="7 Days Rongai Route">
-                    <div class="card-body">
-                        <h5 class="card-title">7 Days Rongai Route</h5>
-                        <p class="card-text">
-                            This is a 7 days Rongai route itinerary variation with an extra day for acclimatization. Gradually sloping towards the summit.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <i class="bi bi-bookmark-star-fill me-2 fs-5 text-default" style="color:#f5a425"></i>
-                        Start from <span class="fw-bold ms-2">$2,000.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="9 Days Crater Camp via Lemosho Route">
-                    <div class="card-body">
-                        <h5 class="card-title">9 Days Lemosho Route</h5>
-                        <p class="card-text">
-                            This 9-day crater camp trek combined with the 8-day Lemosho route climb is a unique and ultimate Kilimanjaro experience.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <i class="bi bi-bookmark-star-fill me-2 fs-5 text-default" style="color:#f5a425"></i>
-                        Start from <span class="fw-bold ms-2">$2,300.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="7 Days Lemosho Route">
-                    <div class="card-body">
-                        <h5 class="card-title">7 Days Lemosho Route</h5>
-                        <p class="card-text">
-                            The shorter 7-day Lemosho route variant does not include the extra acclimatization day as the 8-day Lemosho route itinerary.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <i class="bi bi-bookmark-star-fill me-2 fs-5 text-default" style="color:#f5a425"></i>
-                        Start from <span class="fw-bold ms-2">$1,950.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="6 Days Machame Route">
-                    <div class="card-body">
-                        <h5 class="card-title">6 Days Machame Route</h5>
-                        <p class="card-text">
-                            For mountain climbers with prior expertise and the capacity to acclimate more quickly, the 6-day Machame route is advised.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <i class="bi bi-bookmark-star-fill me-2 fs-5 text-default" style="color:#f5a425"></i>
-                        Start from <span class="fw-bold ms-2">$1,650.00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 <!-- Destination -->

@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Contracts\Encryption\DecryptException;
 
 class frontendController extends Controller
 {
@@ -480,6 +481,12 @@ class frontendController extends Controller
 
     public function read_more_news($id)
     {
+        try {
+            $decryptId = Crypt::decrypt($id);
+        } catch (DecryptException $e) {
+            abort(404, 'Invalid Token');
+        }
+
         $decryptId = Crypt::decrypt($id);
 
         $meta_title = 'Upzone Safaris';

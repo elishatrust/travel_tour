@@ -50,9 +50,9 @@
     <!-- Booking Modal Start -->
     <div class="modal fade" id="bookingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-primary">
-                    <h5 class="modal-title text-white text-uppercase" id="bookingModalLabel">Plan Your Journey</h5>
+            <div class="modal-content p-3" style="background: #f3f4f5!important; border-radius:5px;">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark text-uppercase" id="bookingModalLabel">Plan Your Journey</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -60,35 +60,35 @@
                         @csrf
                         <input type="hidden" class="form-control" id="hidden_id" name="hidden_id" >
                         <div class="row">
-                            <div class="col-md-6 col-sm-12 mb-3">
+                            <div class="col-lg-6 col-sm-12 mb-3">
                                 <label class="fw-bold" for="name">Name <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Full name" required>
                             </div>
-                            <div class="col-md-6 col-sm-12 mb-3">
+                            <div class="col-lg-6 col-sm-12 mb-3">
                                 <label class="fw-bold" for="phone">Phone <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone number" required>
                             </div>
-                            <div class="col-md-6 col-sm-12 mb-3">
+                            <div class="col-lg-6 col-sm-12 mb-3">
                                 <label class="fw-bold" for="email">Email <span class="text-danger">*</span></label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="E-mail address" required>
                             </div>
-                            <div class="col-md-6 col-sm-12 mb-3">
+                            <div class="col-lg-6 col-sm-12 mb-3">
                                 <label class="fw-bold" for="date">Arrival Date <span class="text-danger">*</span></label>
                                 <input type="date" class="form-control" id="arrival_date" name="arrival_date" required>
                             </div>
-                            <div class="col-md-6 col-sm-12 mb-3">
+                            <div class="col-lg-6 col-sm-12 mb-3">
                                 <label class="fw-bold" for="date">Departure Date <span class="text-danger">*</span></label>
                                 <input type="date" class="form-control" id="departure_date" name="departure_date" required>
                             </div>
-                            <div class="col-md-6 col-sm-12 mb-3">
+                            <div class="col-lg-6 col-sm-12 mb-3">
                                 <label class="fw-bold" for="travelers">Travelers (Adult)<span class="text-danger">*</span></label>
                                 <input type="number" class="form-control" id="adults" name="adults" min="1" placeholder="Number of adults" required>
                             </div>
-                            <div class="col-md-6 col-sm-12 mb-3">
+                            <div class="col-lg-6 col-sm-12 mb-3">
                                 <label class="fw-bold" for="travelers">Travelers (Child)<span class="text-danger">*</span></label>
                                 <input type="number" class="form-control" id="children" name="children" min="0" placeholder="Number of children" required>
                             </div>
-                            <div class="col-md-6 col-sm-12 mb-3">
+                            <div class="col-lg-6 col-sm-12 mb-3">
                                 <div class="form-group">
                                     <label class="fw-bold" for="accommodation">Accommodation <span class="text-danger">*</span> </label>
                                     <select class="form-select" id="accommodation" name="accommodation" required>
@@ -99,7 +99,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-12 mb-3">
+                            <div class="col-lg-6 col-sm-12 mb-3">
                                 <div class="form-group">
                                     <label class="fw-bold" for="package">Packages <span class="text-danger">*</span> </label>
                                     <select class="form-select" id="package" name="package" required>
@@ -114,16 +114,16 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-12 mb-3" id="package_cost">
+                            <div class="col-lg-6 col-sm-12 mb-3" id="package_cost">
                                 <div class="form-group">
                                     <label class="fw-bold" for="package">Cost ($)<span class="text-danger">*</span> </label>
                                     <input type="text" class="form-control" name="cost" id="cost" value="" placeholder="Package cost" readonly>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-12 mb-3" id="loader">
+                            <div class="col-lg-3 col-sm-12 mb-3" id="loader">
                                 <img src="{{ asset('assets/backend/loader.svg') }}" alt="Loading.." class="">
                             </div>
-                            <div class="col-md-12 col-sm-12 mb-3">
+                            <div class="col-lg-12 col-sm-12 mb-3">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="agree" name="agree" required>
                                     <label class="form-check-label" for="agree">I agree to the I agree to the <a href="{{ route('terms-and-conditions') }}">terms and conditions</a>.</label>
@@ -133,7 +133,7 @@
                                 <img src="{{ asset('assets/backend/loader.svg') }}" alt="Loading...">
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" onclick="closeModel()" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 <button type="submit" class="btn btn-primary save-btn">Submit</button>
                             </div>
                         </div>
@@ -158,6 +158,7 @@
         $(document).ready(function() {
             log_visitor();
             count_visitor();
+            closeModel();
         });
 
 
@@ -216,6 +217,12 @@
         document.getElementById('arrival_date').setAttribute('min', today);
         document.getElementById('departure_date').setAttribute('min', today);
         $('.save-btn').prop('disabled', false);
+
+        /*====== Close Modal, Clear Form  ======*/
+        function closeModel(){
+            $('form#form')[0].reset();
+            $('#bookingModal').modal('hide');
+        }
 
         /*====== Save Trip  ======*/
         $("div#msg_notification img").hide();

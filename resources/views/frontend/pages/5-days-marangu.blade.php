@@ -9,18 +9,17 @@
                 <hr>
             </div>
             <div class="col-lg-9 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
-                <h4 class="mb-3" style="color: #f1671e">Overview</h4>
+                <h4 class="mb-3" style="color:#f1671e">Overview</h4>
                 <p class="">
-                    At 4,566 meters (14,979 feet), Mount Meru is Tanzania's second-highest peak, 
-                    often overshadowed by Kilimanjaro. However, it offers an incredible trekking 
-                    experience with wildlife-filled forests, scenic grasslands, and a thrilling ridge walk to the summit.
-                </p>'%3 '
-                <p class="">
-                    Mount Meru, located east of the Great Rift Valley and approximately 40 km southwest of 
-                    Kilimanjaro in northern Tanzania's Arusha National Park, is an active volcano and the 
-                    second-highest mountain in Tanzania. It is also considered by some to be the fourth-highest 
-                    mountain in Africa, after Kilimanjaro, 
-                    Mount Kenya, and the Rwenzori Mountains (also known as the Mountains of the Moon).
+                    The Marangu Route, known as the "Coca-Cola Route," is the oldest and 
+                    most popular trail on Mount Kilimanjaro. With its gradual ascent and 
+                    dormitory-style hut accommodations, it is considered the easiest and 
+                    most comfortable route. However, it is also the most crowded, as both 
+                    ascent and descent follow the same path.
+                </p>
+                <p class=""> 
+                    An additional acclimatization day is highly recommended to increase summit success. While the route 
+                    is less scenic compared to others, it is a good choice during the rainy season due to the sheltered huts.
                 </p>
             </div>
             <div class="col-lg-3 col-sm-12">
@@ -28,108 +27,134 @@
                     <h6 class="my-3 text-primary">Starting from</h6>
                     <p class="h3 animated-underline">$1000.00</p>
                 </div>
-                <a href="#" class="btn btn-outline-primary px-5 text-uppercase">Book Now<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                    Book Now
+                    <i class="fa fa-arrow-right ms-3"></i>
+                </a>
             </div>
         </div>
 
-        <h4 class="mt-5 mb-3">
-            <i class="fa fa-list me-2"></i>
-            <span class="" style="color: #f1671e">Trekking Itinerary</span>
-        </h4>
-
         <div class="row">
-            <div class="col-lg-8 col-sm-12">
-                <div class="row">
-                    <div class="col-lg-6 col-sm-12 shadow-sm p-3">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0037.jpg') }}" alt="me-2" />
-                        <div>
-                            <h5 class="mb-3" style="color:#f1671e!important">
-                                Day 1: Momella Gate to Miriakamba Hut
-                            </h5>
-                            <span style="text-align: justify">
-                                Start with a transfer to Arusha National Park, where registration at Momella Gate is completed. 
-                                Trek through lush forests with opportunities to spot wildlife like buffalo, 
-                                and admire the scenic beauty of strangler figs and forest clearings. 
-                                End the day at Miriakamba Hut for dinner and overnight stay.
-                            </span>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~14 km (~9 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 5–6 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 1,600m to 2,514m</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Wildlife encounters, lush forests, Miriakamba Hut.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-12 shadow-sm p-3">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" />
-                        <div>
-                            <h5 class="mb-3" style="color:#f1671e!important">
-                                Day 2: Miriakamba Huts to Saddle Hut
-                            </h5>
-                            <span style="text-align: justify">
-                                Begin the ascent through forest trails, transitioning into alpine desert as you reach Saddle Hut by midday. 
-                                After lunch, enjoy a hike to Little Meru’s summit for panoramic views before returning to Saddle Hut for dinner.
-                            </span>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~8 km (~5 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 4–5 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 2,514m to 3,570m</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Transition to alpine desert, views of Meru Crater, optional hike to Little Meru</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-12 shadow-sm p-3">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="me-2" />
-                        <div>
-                            <h5 class="mb-3" style="color:#f1671e!important">
-                                Day 3: Miriakamba Hut
-                            </h5>
-                            <span style="text-align: justify">
-                                Rise early to witness a breathtaking sunrise and clear views of Kilimanjaro. 
-                                Descend to Saddle Hut for brunch, then continue down to Miriakamba Hut for a relaxed evening and dinner.
-                            </span>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~6.5 km (~4 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 4–5 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,570m to 1,500m</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Summit sunrise, scenic descent, wildlife sightings.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-12 shadow-sm p-3">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" />
-                        <div>
-                            <h5 class="mb-3" style="color:#f1671e!important">
-                                Day 4: Descend to Momella Gate
-                            </h5>
-                            <span style="text-align: justify">
-                                Complete the trek descent to Momella Gate. 
-                                Bid farewell to your trekking crew, enjoy a short picnic lunch, and possibly a 
-                                game drive before returning to Arusha or Moshi for a refreshing shower and well-deserved rest.
-                            </span>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~6.5 km (~4 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 4–5 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,570m to 1,600m</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Final descent, picnic lunch, and optional game drive in Arusha National Park.</li>
-                            </ul>
-                        </div>
-                    </div>        
+            <div class="col-lg-12 col-sm-12">
+                <h4 class="mt-4">
+                    <i class="fa fa-list me-2"></i>
+                    <span class="" style="color: #f1671e">Trekking Itinerary</span>
+                </h4>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0037.jpg') }}" alt="me-2" />
+                <div>
+                    <h5 class="mb-3" style="color:#f1671e!important">
+                        Day 1: Marangu Gate to Mandara Hut
+                    </h5>
+                    <span style="text-align: justify">
+                        Your trek begins after breakfast with a transfer to Marangu Gate for registration. From here, you’ll hike through a dense rainforest, home to unique plants and wildlife like colobus monkeys. 
+                        The lush greenery and fresh air make this part of the trek serene and enjoyable.
+                    </span>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> 8.3 km (5.2 mi)</li>
+                        <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~5 Hours</li>
+                        <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 1,860m (6,102 ft) to 2,700m (8,858 ft)</li>
+                        <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Lush rainforest teeming with wildlife and unique vegetation.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12 pl-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" />
+                <div>
+                    <h5 class="mb-3" style="color:#f1671e!important">
+                        Day 2: Mandara Hut to Horombo Hut
+                    </h5>
+                    <span style="text-align: justify">
+                        This day starts with a hearty breakfast before entering 
+                        the heath and moorland zone. The scenery changes dramatically, 
+                        with rolling hills, heather shrubs, and open landscapes replacing 
+                        the forest. The trail is moderate but longer than Day 1.
+                    </span>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> 12.5 km (7.8 mi)</li>
+                        <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~9 Hours</li>
+                        <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 2,700m (8,858 ft) to 3,700m (12,139 ft)</li>
+                        <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Panoramic views of Mawenzi Peak, Kibo, and the Masai steppe.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="me-2" />
+                <div>
+                    <h5 class="mb-3" style="color:#f1671e!important">
+                        Day 3: Horombo Hut to Kibo Hut
+                    </h5>
+                    <span style="text-align: justify">
+                        This section is more challenging, leading to the Kibo Hut, 
+                        located at the base of Kilimanjaro’s crater wall. You’ll pass 
+                        the “Last Water Point” and traverse the barren, rocky Saddle, 
+                        a high-altitude plateau with minimal vegetation.
+                    </span>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> 9.5 km (5.9 mi)</li>
+                        <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~7 Hours</li>
+                        <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,700m (12,139 ft) to 4,700m (15,419 ft)</li>
+                        <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Crossing the Saddle, a barren yet striking alpine desert.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" />
+                <div>
+                    <h5 class="mb-3" style="color:#f1671e!important">
+                        Day 4: Kibo Hut to Uhuru Peak and Back to Horombo Hut
+                    </h5>
+                    <span style="text-align: justify">
+                        This is the most demanding day of the trek, starting 
+                        around midnight for the final ascent. The trail is steep and rocky, 
+                        with the cold and thin air adding to the difficulty. 
+                    </span>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~6.5 km (~4 miles)</li>
+                        <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 12–15 Hours</li>
+                        <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 4,700m (15,419 ft) to 5,895m (19,341 ft), then back to 3,700m (12,139 ft)</li>
+                        <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Sunrise at Uhuru Peak, Kilimanjaro’s highest point, with breathtaking views.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" />
+                <div>
+                    <h5 class="mb-3" style="color:#f1671e!important">
+                        Day 5: Horombo Hut to Marangu Gate
+                    </h5>
+                    <span style="text-align: justify">
+                        The final descent leads back to Marangu Gate through 
+                        the heath and rainforest zones. This is an easier day with gentler slopes, 
+                        offering a chance to reflect on your accomplishment.
+                    </span>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> 20.8 km (12.9 mi)</li>
+                        <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~8 Hours</li>
+                        <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,700m (12,139 ft) to 1,860m (6,102 ft)</li>
+                        <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Descent through heath and rainforest zones.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
                 <div class="tour-hightligh mb-4">
                     <div class="">
                         <h5 class="h6 text-muted py-3 text-uppercase">Trek Highlights</h5>
                     </div>
                     <div class="">
                         <li class="mb-2"><strong>Day 0 :</strong> Arrival (Pick up) from Kilimanjaro International Airport – Moshi.</li>
-                        <li class="mb-2"><strong>Day 1 :</strong> Moshi – Miriakamba Hut.</li>
-                        <li class="mb-2"><strong>Day 2 :</strong> Saddle Hut</li>
-                        <li class="mb-2"><strong>Day 3 :</strong> Miriakamba</li>                      
-                        <li class="mb-2"><strong>Day 4 :</strong> Descend to Momella Gate</li>                      
+                        <li class="mb-2"><strong>Day 1 :</strong> Moshi – Marangu Gate – Mandara Hut</li>
+                        <li class="mb-2"><strong>Day 2 :</strong> Marangu Gate – Mandara Hut</li>
+                        <li class="mb-2"><strong>Day 3 :</strong> Mandara Hut – Horombo Hut</li>                      
+                        <li class="mb-2"><strong>Day 4 :</strong> Horombo Hut – Kibo Hut</li>                      
+                        <li class="mb-2"><strong>Day 5 :</strong> Uhuru Peak – Marangu gate</li>                      
                     </div>
                 </div>
+            </div> 
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="include-pack mb-4">
                     <div class="">
                         <h5 class="h6 text-muted py-3 text-uppercase">Included Packages</h5>
@@ -164,26 +189,30 @@
                             Fair wages for the mountain crew
                         </li> 
                     </div>
-                </div>
+                </div>          
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="exclude-packs mb-4">
                     <div class="">
                         <h5 class="h6 text-muted py-3 text-uppercase">Excluded Packages</h5>
                     </div>
                     <div class="">
                         <li class="mb-2">
-                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            <i class="far fa-times-circle text-primary me-1"></i> 
                             International flights
                         </li>                   
                         <li class="mb-2">
-                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            <i class="far fa-times-circle text-primary me-1"></i> 
                             Insurance fees
                         </li>                     
                         <li class="mb-2">
-                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            <i class="far fa-times-circle text-primary me-1"></i> 
                             Cost of Visas.
                         </li>                      
                     </div>
-                </div>
+                </div>          
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="packing-list mb-4">
                     <div class="">
                         <h5 class="h6 text-muted py-3 text-uppercase">Packing List</h5>
@@ -202,19 +231,7 @@
                             Sunscreen, first-aid kit, snacks.
                         </li>                      
                     </div>
-                </div>   
-                <div class="best-time mb-4">
-                    <div class="">
-                        <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Trek</h5>
-                        <div class="">
-                            <p  style="text-align: justify">
-                                The dry season (June–October and January–February) offers clear skies and stable weather, making it the best time to hike.
-                                Avoid the rainy season (March–May and November–December).
-                            </p> 
-                            <p class="">Ensure you're fully equipped for the adventure. Key items include:</p>
-                        </div>
-                    </div>
-                </div>                
+                </div>           
             </div>
         </div>
     </div>

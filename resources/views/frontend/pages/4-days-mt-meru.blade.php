@@ -28,7 +28,10 @@
                     <h6 class="my-3 text-primary">Starting from</h6>
                     <p class="h3 animated-underline">$900.00</p>
                 </div>
-                <a href="#" class="btn btn-outline-primary px-5 text-uppercase">Book Now<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                    Book Now
+                    <i class="fa fa-arrow-right ms-3"></i>
+                </a>
             </div>
         </div>
 
@@ -40,8 +43,8 @@
         <div class="row">
             <div class="col-lg-8 col-sm-12">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12 shadow-sm p-3">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0037.jpg') }}" alt="me-2" />
+                    <div class="col-lg-6 col-sm-12 shadow-sm p-4">
+                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" />
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 Day 1: Momella Gate to Miriakamba Hut
@@ -60,8 +63,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 shadow-sm p-3">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" />
+                    <div class="col-lg-6 col-sm-12 shadow-sm p-4">
+                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="me-2" />
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 Day 2: Miriakamba Huts to Saddle Hut
@@ -78,7 +81,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 shadow-sm p-3">
+                    <div class="col-lg-6 col-sm-12 shadow-sm p-4">
                         <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="me-2" />
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
@@ -96,7 +99,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 shadow-sm p-3">
+                    <div class="col-lg-6 col-sm-12 shadow-sm p-4">
                         <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" />
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
@@ -171,15 +174,15 @@
                     </div>
                     <div class="">
                         <li class="mb-2">
-                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            <i class="far fa-times-circle text-primary me-1"></i> 
                             International flights
                         </li>                   
                         <li class="mb-2">
-                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            <i class="far fa-times-circle text-primary me-1"></i> 
                             Insurance fees
                         </li>                     
                         <li class="mb-2">
-                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            <i class="far fa-times-circle text-primary me-1"></i> 
                             Cost of Visas.
                         </li>                      
                     </div>

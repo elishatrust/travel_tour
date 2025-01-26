@@ -13,41 +13,44 @@
                 <h1 class="display-5123 h2 mb-3" style="">Latest Travel News </h1>
             </div>
         </div>
-        <div class="row g-5 blog-row">
-            @foreach ($blogs as $blog)                
-            <div class="col-lg-6 col-sm-12">
-                <div class="blog-singe no-margin row">
-                    <div class="col-lg-5 col-sm-12 blog-img-tab">
-                        @if ($blog->file_path)
-                            <img src="{{ asset('storage/'.$blog->file_path) }}" class="w-100" style="border-radius:5px; width:100%;height:200px; object-fit:cover;"  alt="Blog Image">
-                        @else
-                            <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="w-100" style="border-radius:5px; width:100%;height:200px; object-fit:cover;"  alt="Fallback Image">
-                        @endif
-                    </div>
-                    <div class="col-lg-7 col-sm-12 blog-content-tab">
-                        <h6>{{ $blog->title }}</h6>
-                        {{-- <p><i class="fas fa-user"><small>Admin</small></i>  <i class="fas fa-eye"><small>({{ rand(1,99) }})</small></i>  <i class="fas fa-comments"><small>({{ rand(0,9) }})</small></i></p> --}}
-                        <hr>
-                        <p class="">
-                            <i class="fas fa-calendar-alt">
-                                <small class="p-3">
-                                {{ \Carbon\Carbon::parse($blog->created_at)->format('M d, Y') }}
-                                </small>
-                            </i> 
-                        </p>
-                        <p class="blog-desic" style="text-align:justify">
+        <div class="row">
+
+            @foreach ($blogs as $blog)
+                <div class="col-lg-6 col-sm-12 shadow-sm p-4">
+                    @if ($blog->file_path)
+                        <img src="{{ asset('storage/'.$blog->file_path) }}" class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:350px; object-fit:cover;"  alt="Blog Image">
+                    @else
+                        <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:350px; object-fit:cover;"  alt="Fallback Image">
+                    @endif
+
+                    <div>
+                        <h5 class="mb-3 text-muted">
+                            {{ $blog->title }}
+                        </h5><hr>
+                        <span style="text-align: justify">
                             @php
                                 $text = $blog->content;
                                 $words = explode(' ', $text);
                                 $firstTenWords = array_slice($words, 0, 30);
                                 echo implode(' ', $firstTenWords);
                             @endphp 
-                        </p>
-                        <a href="{{ url('read-more-news/'.Crypt::encrypt($blog->tokens)) }}">Read More <i class="fas fa-arrow-right"></i></a>
+                        </span>
+                        <div class="d-flex mt-4 justify-content-between">
+                            <span class="float-left">
+                                <i class="fas fa-1x fa-calendar-alt">
+                                    <small class="p-3">
+                                    {{ \Carbon\Carbon::parse($blog->created_at)->format('M d, Y') }}
+                                    </small>
+                                </i> 
+                            </span>
+                            <a href="{{ url('read-more-news/'.Crypt::encrypt($blog->tokens)) }}" class="float-right">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </div>                
             @endforeach
+            <div class="col-lg-12 col-sm-12 mt-5 d-flex justify-content-center">
+                {{ $blogs->links() }}
+            </div>
         </div>
     </div>
 </div>

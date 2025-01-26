@@ -14,7 +14,7 @@ class BlogModel extends Model
 
     static public function getBlog()
     {
-        return DB::table('blog')->where('blog.archive', '=', 0)->orderBy('blog.id', 'desc')->get();
+        return DB::table('blog')->where('blog.archive', '=', 0)->orderBy('blog.id', 'desc')->paginate(4);
     }
 
     static public function findBlog($id)

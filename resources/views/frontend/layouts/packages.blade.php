@@ -16,7 +16,7 @@
                     <p><i class="fa fa-check text-primary me-2"></i>10% discount</p>
                     <p><i class="fa fa-check text-primary me-2"></i>{{ $item->adult }} adult, {{ $item->child }} child</p>
                     <p><i class="fa fa-check text-primary me-2"></i>{{ $item->more }}</p>
-                    <a class="btn btn-outline-primary px-4 mt-3" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">Get Started</a>
+                    <a href="{{ route('plan-trip') }}" class="btn btn-outline-primary px-4 mt-3">Get Started</a>
                 </div>
             </div>
             @endforeach

@@ -3,27 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>404</title>
-    
+    <title>404 | ERROR</title>
     <!-- Favicon -->
     <link href="{{ asset('assets/frontend/img/logo/logo.png') }}" rel="icon" />
-    
-    <!-- Google Web Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Libraries Stylesheet -->
-    <link href="{{ asset('assets/frontend/lib/animate/animate.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/frontend/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/frontend/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ asset('assets/frontend/css/bootstrap.min.css') }}" rel="stylesheet" />
-
-    <!-- Template Stylesheet -->
     <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" />
 
     <script>
@@ -34,29 +20,37 @@
         });
     </script>
 </head>
-
 <body>
 
+<!-- Spinner -->
+{{-- @include('frontend.layouts.spinner') --}}
 
-@include('frontend.layouts.include')
+<!-- Topbar -->
+@include('frontend.layouts.topbar')
+
+<!-- Navbar -->
+@include('frontend.layouts.navbar')
 
 
-<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container text-center">
+<div class="container-xxl py-5">
+    <div class="container py-5 text-center">
         <div class="row justify-content-center">
-        <div class="col-lg-6">
-            <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
-            <h1 class="display-1">404</h1>
-            <h1 class="mb-4">Page Not Found</h1>
-            <p class="mb-4">
-                We’re sorry, the page you have looked for does not exist in our
-                website! Maybe go to our home page or try to use a search?
-            </p>
-            <a class="btn btn-primary py-3 px-5" href="{{ route('welcome') }}">Go Back To Home</a>
-        </div>
+            <div class="col-lg-6 col-sm-12">
+                <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
+                <h1 class="display-1">404</h1>
+                <h1 class="mb-4">Page Not Found</h1>
+                <p class="mb-4">
+                    We’re sorry, the page you have looked for does not exist in our
+                    website! Maybe go to our home page?
+                </p>
+                <a class="btn btn-outline-primary px-5" href="{{ route('welcome') }}">Go Back To Home</a>
+            </div>
         </div>
     </div>
 </div>
+
+<!-- Footer -->
+@include('frontend.layouts.footer')
 
 <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -66,9 +60,6 @@
 
 
 <script>
-    //   Date picker
-    const today = new Date().toISOString().split('T')[0];
-    document.getElementById('date').setAttribute('min', today);
 
     //   Whatsapp chat widget
     var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?21528';
@@ -105,14 +96,6 @@
     };
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
-</script> 
-<script src="{{ asset('assets/frontend/lib/wow/wow.min.js') }}"></script>
-<script src="{{ asset('assets/frontend/lib/easing/easing.min.js') }}"></script>
-<script src="{{ asset('assets/frontend/lib/waypoints/waypoints.min.js') }}"></script>
-<script src="{{ asset('assets/frontend/lib/counterup/counterup.min.js') }}"></script>
-<script src="{{ asset('assets/frontend/lib/owlcarousel/owl.carousel.min.js') }}"></script>
-<script src="{{ asset('assets/frontend/lib/lightbox/js/lightbox.min.js') }}"></script>
-<script src="{{ asset('assets/frontend/js/main.js') }}"></script>
-    
+</script>     
 </body>
 </html>
