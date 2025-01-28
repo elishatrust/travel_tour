@@ -42,7 +42,7 @@
                 </h4>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0037.jpg') }}" alt="me-2" />
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtKili.webp') }}" alt="me-2" />
                 <div>
                     <h5 class="mb-3" style="color:#f1671e!important">
                         Day 1: Marangu Gate to Mandara Hut
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="me-2" />
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/41.jpg') }}" alt="me-2" />
                 <div>
                     <h5 class="mb-3" style="color:#f1671e!important">
                         Day 3: Horombo Hut to Kibo Hut
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" />
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/31.jpg') }}" alt="me-2" />
                 <div>
                     <h5 class="mb-3" style="color:#f1671e!important">
                         Day 4: Kibo Hut to Uhuru Peak and Back to Horombo Hut
@@ -119,7 +119,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" />
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/49.jpg') }}" alt="me-2" />
                 <div>
                     <h5 class="mb-3" style="color:#f1671e!important">
                         Day 5: Horombo Hut to Marangu Gate
@@ -233,6 +233,56 @@
                     </div>
                 </div>           
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-xxl">
+    <div class="container py-4">
+        <div class="row g-5">       
+            <div class="col-lg-5 col-sm-12">
+                <div class="img-border123 h-100">
+                    <a target="_blank" href="https://earth.google.com/web/@-3.09344655,37.38195524,4627.36994853a,50242.59166852d,35y,0h,60t,0r/data=CgRCAggBOgMKATBKDQj___________8BEAA">
+                        <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/KilimanjaroMapRotes2.png') }}" alt="#" />
+                    </a>
+                    <p class="mt-2"><i>Click the image above to explore Kilimanjaro in Google Earth</i></p>
+                </div>
+            </div>
+            <div class="col-lg-7 col-sm-12">
+                <h1 class="h2 mb-4">Features & Key Considerations</h1>
+                <p class="mb-3">
+                    <span class="fw-bold">
+                        <i class="far fa-check-circle text-primary me-3"></i>Acclimatization days : 
+                    </span>
+                    Longer routes offer more opportunities for acclimatization, 
+                    increasing the chances of reaching the summit.
+                </p>
+                <p class="mb-3">
+                    <span class="fw-bold">
+                        <i class="far fa-check-circle text-primary me-3"></i>Scenic views : 
+                    </span>
+                    Routes like Northern Circuit, Lemosho, and Machame offer more scenic views, 
+                    while Rongai and Umbwe are less scenic.
+                </p>
+                <p class="mb-3">
+                    <span class="fw-bold">
+                        <i class="far fa-check-circle text-primary me-3"></i>Traffic : 
+                    </span>
+                    Northern Circuit and Lemosho are less crowded, while Marangu and Machame are more popular.
+                </p>
+                <p class="mb-3">
+                    <span class="fw-bold">
+                        <i class="far fa-check-circle text-primary me-3"></i>Camping vs Huts : 
+                    </span>
+                    Routes like Lemosho, Machame, and Rongai involve camping, while Marangu has huts.
+                </p>
+                <p class="mb-3">
+                    <span class="fw-bold">
+                        <i class="far fa-check-circle text-primary me-3"></i>Success rate : 
+                    </span>
+                    70-80% average, depending on route and individual factors
+                </p>
+            </div>   
         </div>
     </div>
 </div>
