@@ -95,16 +95,16 @@ class frontendController extends Controller
         }
     }
 
-    public function mt_meru_trek()
+    public function culture_experience()
     {
         $meta_title = 'Upzone Safaris';
-        $page_title = 'Mount Meru';
+        $page_title = 'Cultural Experience';
 
         if(!empty($meta_title && $page_title))
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.mt-meru-trek', $data );
+            return view('frontend.pages.maasai-culture', $data );
 
         }else{
             abort(404);
@@ -505,7 +505,7 @@ class frontendController extends Controller
         $decryptId = Crypt::decrypt($id);
 
         $meta_title = 'Upzone Safaris';
-        $page_title = 'Read More';                  
+        $page_title = 'Latest News';                  
         
         if(!empty($meta_title && $page_title))
         {

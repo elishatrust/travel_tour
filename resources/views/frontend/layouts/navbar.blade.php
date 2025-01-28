@@ -54,27 +54,14 @@
                 </li>
                 <li class="nav-item dropdown position-static123">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Trekking
+                        Features
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <div class="row g-3">
                             <div class="col-md-12 col-sm-12">                                
-                                <a class="dropdown-item" href="{{ route('mt-meru-trek') }}">Mount Meru</a>
-                                <a class="dropdown-item" href="{{ route('mt-kilimanjaro-trek') }}">Mount Kilimanjaro</a>
-                            </div>
-                        </div>
-                    </div>
-                </li> 
-                <li class="nav-item dropdown position-static123">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Culture
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <div class="row g-3">
-                            <div class="col-md-12 col-sm-12">
-                                <a class="dropdown-item wide-item" href="#">7 Days Tanzania Safari</a>
-                                <a class="dropdown-item wide-item" href="#">4 Days Tanzania Big Five Safari</a>
-                                <a class="dropdown-item wide-item" href="#">4 Days Wildebeest Migration Safari</a>
+                                <a class="dropdown-item" href="{{ route('culture') }}">Culture</a>
+                                <a class="dropdown-item" href="{{ route('terms-and-conditions') }}">Terms & Conditions</a>
+                                <a class="dropdown-item" href="{{ route('faqs') }}">FAQs</a>
                             </div>
                         </div>
                     </div>
