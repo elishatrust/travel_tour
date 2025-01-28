@@ -44,9 +44,9 @@
 
 <!-- KEY FEATURES -->
 {{-- <div class="container-xxl">
-    <div class="container py-4">
-        <div class="row g-5">       
-            <div class="col-lg-5 col-sm-12">
+    <div class="container my-5">
+        <div class="row g-5 flex-column-reverse123">       
+            <div class="col-lg-4 col-sm-12">
                 <div class="img-border123 h-100">
                     <a target="_blank" href="https://earth.google.com/web/@-3.09344655,37.38195524,4627.36994853a,50242.59166852d,35y,0h,60t,0r/data=CgRCAggBOgMKATBKDQj___________8BEAA">
                         <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/KilimanjaroMapRotes2.png') }}" alt="#" />
@@ -54,7 +54,7 @@
                     <p class="mt-2"><i>Click the image above to explore Kilimanjaro in Google Earth</i></p>
                 </div>
             </div>
-            <div class="col-lg-7 col-sm-12">
+            <div class="col-lg-8 col-sm-12">
                 <h1 class="h2 mb-4">Features & Key Considerations</h1>
                 <p class="mb-3">
                     <span class="fw-bold">
@@ -95,7 +95,7 @@
 
 
 <!-- Facts -->
-<div class="container-xxl123 bg-primary py-5 facts">
+<div class="container-xxl123 py-5 bg-primary facts">
     <div class="container py-5">
         <div class="row g-4">
             <div class="col-lg-3 col-md-6 col-sm-12 text-center"
@@ -177,10 +177,7 @@
     </div>
 </div>
 
-
-<div class="container-xxl">
-    <div class="container"><hr></div>
-</div>
+<div class="container section-top-border"></div>
 
 <!-- Testimonial -->
 <div class="container-xxl py-5">

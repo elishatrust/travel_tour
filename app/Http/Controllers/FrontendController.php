@@ -64,6 +64,21 @@ class frontendController extends Controller
         }
     }
 
+    public function faqs()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Frequently Asked Questions';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.faq', $data );
+
+        }else{
+            abort(404);
+        }
+    }
     public function trekking()
     {
         $meta_title = 'Upzone Safaris';

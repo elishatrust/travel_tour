@@ -1,4 +1,4 @@
-<div class="container-fluid bg-dark text-light footer py-5 wow123 fadeIn" data-wow123-delay01234="0.1s">
+<div class="container-fluid bg-dark text-light footer py-5">
 <div class="container py-5">
   <div class="row g-5">
     <div class="col-lg-3 col-md-6">
@@ -26,6 +26,7 @@
       <a class="btn btn-link" href="{{ route('services') }}">Our Services</a>
       <a class="btn btn-link" href="{{ route('latest-news') }}">Latest News</a>
       <a class="btn btn-link" href="{{ route('terms-and-conditions') }}">Terms & Condition</a>
+      <a class="btn btn-link" href="{{ route('faqs') }}">FAQs</a>
       <a class="btn btn-link" href="{{ route('login') }}" target="_blank">Staff</a>
     </div>
     <div class="col-lg-3 col-md-6">
@@ -41,7 +42,7 @@
       <h5 class="text-light mb-4">Newsletter</h5>
       <p>Provide your email for updates.</p>
       <form action="#" method="post">
-        <div class="position-relative mx-auto" style="max-width: 400px;">
+        <div class="position-relative mx-auto" style="max-width:100%;">
             <input class="form-control w-100 py-3 ps-4 pe-5" style="border-radius: 10px;border: 1px solid var(--dark);" type="email" placeholder="Enter your email" required/>
             <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Send</button>
         </div>

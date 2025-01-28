@@ -1,22 +1,20 @@
 @extends('frontend.layouts.app')
 @section('content')
 
-@include('frontend.layouts.inc_terms_condition')
-
-
-
 <div class="container-xxl py-5">
     <div class="container">
+
         <div class="row">
-            <div class="col-lg-12 col-sm-12 text-center">
-                <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Agreements</p>
-                <h1 class="display-5123 h2 mb-3" style=""></h1>
+            <div class="col-lg-12 col-sm-12">
+                <h1 class="h2">{{ $page_title }}</h1>
+                <hr>
             </div>
         </div>
-        <div class="row g-5">
-            <div class="col-md-10 offset-1 col-sm-12">
-                <div class="shadow-sm p-5">
-                    {{-- <h1>Read And Understand Terms and Conditions</h1> --}}
+
+        <div class="row">
+            <div class="col-lg-10 col-sm-12 justify-content-center">              
+                <div class="terms-container">
+
                     <p class="mb-3"><strong>Last Updated:</strong> [{{ date('Y') }}]</p>
 
                     <div id="booking-payments" class="pb-3">

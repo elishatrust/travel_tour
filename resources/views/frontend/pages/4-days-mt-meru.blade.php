@@ -60,6 +60,7 @@
                                 <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 5–6 Hours</li>
                                 <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 1,600m to 2,514m</li>
                                 <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Wildlife encounters, lush forests, Miriakamba Hut.</li>
+                                <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                             </ul>
                         </div>
                     </div>
@@ -78,6 +79,7 @@
                                 <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 4–5 Hours</li>
                                 <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 2,514m to 3,570m</li>
                                 <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Transition to alpine desert, views of Meru Crater, optional hike to Little Meru</li>
+                                <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                             </ul>
                         </div>
                     </div>
@@ -96,6 +98,7 @@
                                 <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 4–5 Hours</li>
                                 <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,570m to 1,500m</li>
                                 <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Summit sunrise, scenic descent, wildlife sightings.</li>
+                                <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                             </ul>
                         </div>
                     </div>
@@ -115,6 +118,7 @@
                                 <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 4–5 Hours</li>
                                 <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,570m to 1,600m</li>
                                 <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Final descent, picnic lunch, and optional game drive in Arusha National Park.</li>
+                                <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                             </ul>
                         </div>
                     </div>        
@@ -126,8 +130,8 @@
                         <h5 class="h6 text-muted py-3 text-uppercase">Trek Highlights</h5>
                     </div>
                     <div class="">
-                        <li class="mb-2"><strong>Day 0 :</strong> Arrival (Pick up) from Kilimanjaro International Airport – Moshi.</li>
-                        <li class="mb-2"><strong>Day 1 :</strong> Moshi – Miriakamba Hut.</li>
+                        <li class="mb-2"><strong>Day 0 :</strong> Arrival (Pick up) from Kilimanjaro International Airport → Moshi.</li>
+                        <li class="mb-2"><strong>Day 1 :</strong> Moshi → Miriakamba Hut.</li>
                         <li class="mb-2"><strong>Day 2 :</strong> Saddle Hut</li>
                         <li class="mb-2"><strong>Day 3 :</strong> Miriakamba</li>                      
                         <li class="mb-2"><strong>Day 4 :</strong> Descend to Momella Gate</li>                      

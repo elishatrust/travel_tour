@@ -437,7 +437,7 @@ body {
     transform: scale(1.05);
 }
 .section-top-border {
-    padding: 30px 0;
+    /* padding: 30px 0; */
     border-top: 5px dotted #eee
 }
 .generic-blockquote{
@@ -459,10 +459,10 @@ body {
 }
 
 .navbar .navbar-brand img {
-    margin-bottom:3px;
+    margin-bottom:5px;
     border-radius: 30px; 
     height: 80px!important;
-    width: 100%!important; 
+    width: 200px!important; 
     border-bottom: 5px solid var(--primary); 
 }
 
@@ -902,7 +902,58 @@ body {
     color: var(--light);
 }
 
-
+/*======  FAQs & Terms_Conditions  ======*/
+.faq-container, 
+.terms-container {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: #f3f4f5!important; 
+    border-radius:5px;
+}
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 6px;
+}
+.faq-item h3 {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    background-color: #f3f4f5;
+    border-radius: 4px;
+}
+.faq-item p {
+    display: none;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+    padding: 0 10px;
+}
+.faq-item h3:after {
+    content: "+";
+    float: right;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.faq-item.open h3:after {
+    content: "-";
+}
+.faq-item.open p {
+    display: block;
+}
+@media (max-width: 768px) {
+    .faq-item h3 {
+        font-size: 18px;
+    }
+    .faq-item p {
+        font-size: 14px;
+    }
+}
 /*======  Img Border  ======*/
 .img-border {
     position: relative;
@@ -938,6 +989,7 @@ body {
     /* background-attachment: fixed; */
     background-size: cover;
     width: 100%;
+    opacity: 0.7;
 }
 
 

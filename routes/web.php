@@ -25,6 +25,7 @@ Route::get('/latest-news', [FrontendController::class, 'latest_news'])->name('la
 Route::get('/read-more-news/{id}', [FrontendController::class, 'read_more_news'])->name('read-more-news');
 Route::get('/contact-us', [FrontendController::class, 'contact'])->name('contact');
 Route::get('/terms-and-conditions', [FrontendController::class, 'terms_and_conditions'])->name('terms-and-conditions');
+Route::get('/frequently-asked-questions', [FrontendController::class, 'faqs'])->name('faqs');
 Route::post('/get-package', [FrontendController::class, 'get_package'])->name('get-package');
 Route::get('/plan-trip', [FrontendController::class, 'plan_trip'])->name('plan-trip');
 Route::post('/save-trip', [FrontendController::class, 'save_trip'])->name('save-trip');

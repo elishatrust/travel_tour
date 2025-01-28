@@ -42,7 +42,7 @@
                 </h4>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtKili.webp') }}" alt="me-2" />
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/52.jpg') }}" alt="me-2" />
                 <div>
                     <h5 class="mb-3" style="color:#f1671e!important">
                         Day 1: Marangu Gate to Mandara Hut
@@ -56,6 +56,7 @@
                         <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~5 Hours</li>
                         <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 1,860m (6,102 ft) to 2,700m (8,858 ft)</li>
                         <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Lush rainforest teeming with wildlife and unique vegetation.</li>
+                        <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                     </ul>
                 </div>
             </div>
@@ -76,6 +77,7 @@
                         <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~9 Hours</li>
                         <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 2,700m (8,858 ft) to 3,700m (12,139 ft)</li>
                         <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Panoramic views of Mawenzi Peak, Kibo, and the Masai steppe.</li>
+                        <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                     </ul>
                 </div>
             </div>
@@ -96,6 +98,7 @@
                         <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~7 Hours</li>
                         <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,700m (12,139 ft) to 4,700m (15,419 ft)</li>
                         <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Crossing the Saddle, a barren yet striking alpine desert.</li>
+                        <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                     </ul>
                 </div>
             </div>
@@ -115,6 +118,7 @@
                         <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 12–15 Hours</li>
                         <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 4,700m (15,419 ft) to 5,895m (19,341 ft), then back to 3,700m (12,139 ft)</li>
                         <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Sunrise at Uhuru Peak, Kilimanjaro’s highest point, with breathtaking views.</li>
+                        <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                     </ul>
                 </div>
             </div>
@@ -134,6 +138,7 @@
                         <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~8 Hours</li>
                         <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,700m (12,139 ft) to 1,860m (6,102 ft)</li>
                         <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Descent through heath and rainforest zones.</li>
+                        <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                     </ul>
                 </div>
             </div>
@@ -143,12 +148,12 @@
                         <h5 class="h6 text-muted py-3 text-uppercase">Trek Highlights</h5>
                     </div>
                     <div class="">
-                        <li class="mb-2"><strong>Day 0 :</strong> Arrival (Pick up) from Kilimanjaro International Airport – Moshi.</li>
-                        <li class="mb-2"><strong>Day 1 :</strong> Moshi – Marangu Gate – Mandara Hut</li>
-                        <li class="mb-2"><strong>Day 2 :</strong> Marangu Gate – Mandara Hut</li>
-                        <li class="mb-2"><strong>Day 3 :</strong> Mandara Hut – Horombo Hut</li>                      
-                        <li class="mb-2"><strong>Day 4 :</strong> Horombo Hut – Kibo Hut</li>                      
-                        <li class="mb-2"><strong>Day 5 :</strong> Uhuru Peak – Marangu gate</li>                      
+                        <li class="mb-2"><strong>Day 0 :</strong> Arrival (Pick up) from Kilimanjaro International Airport → Moshi.</li>
+                        <li class="mb-2"><strong>Day 1 :</strong> Moshi → Marangu Gate → Mandara Hut</li>
+                        <li class="mb-2"><strong>Day 2 :</strong> Marangu Gate → Mandara Hut</li>
+                        <li class="mb-2"><strong>Day 3 :</strong> Mandara Hut → Horombo Hut</li>                      
+                        <li class="mb-2"><strong>Day 4 :</strong> Horombo Hut → Kibo Hut</li>                      
+                        <li class="mb-2"><strong>Day 5 :</strong> Uhuru Peak → Marangu gate</li>                      
                     </div>
                 </div>
             </div> 
@@ -237,8 +242,11 @@
     </div>
 </div>
 
-<div class="container-xxl">
-    <div class="container py-4">
+
+<div class="container section-top-border"></div>
+
+<div class="container-xxl py-3">
+    <div class="container py-3">
         <div class="row g-5">       
             <div class="col-lg-5 col-sm-12">
                 <div class="img-border123 h-100">
