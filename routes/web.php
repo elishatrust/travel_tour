@@ -28,6 +28,7 @@ Route::get('/terms-and-conditions', [FrontendController::class, 'terms_and_condi
 Route::get('/frequently-asked-questions', [FrontendController::class, 'faqs'])->name('faqs');
 Route::post('/get-package', [FrontendController::class, 'get_package'])->name('get-package');
 Route::get('/plan-trip', [FrontendController::class, 'plan_trip'])->name('plan-trip');
+Route::post('/save-bookings', [FrontendController::class, 'save_bookings'])->name('save-bookings');
 Route::post('/save-trip', [FrontendController::class, 'save_trip'])->name('save-trip');
 Route::post('/log-visit', [FrontendController::class, 'log_visit'])->name('log-visit');
 Route::get('/visitor-count', [FrontendController::class, 'count_visitor'])->name('visitor-count');

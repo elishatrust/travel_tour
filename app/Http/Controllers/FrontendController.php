@@ -423,6 +423,66 @@ class frontendController extends Controller
         }
 
     }
+
+    public function save_bookings(Request $request)
+    {
+        try {
+            DB::beginTransaction();
+
+            $validator = Validator::make($request->all(), [
+                'fullname' => 'required|string|max:255',
+                'phone' => 'required|string|max:20',
+                'email' => 'required|email',
+                'arrival_date' => 'required|date',
+                'booking_tour' => 'required|string|max:255',
+                'number_travelers' => 'required|integer|min:1',
+                'message' => 'required|text',
+                ]);
+
+            if ($validator->fails()) {
+                return response()->json([
+                    'status' => 500,
+                    'message' => 'Error validation occurred. Please fix them',
+                    'errors' => $validator->errors()
+                ], 500);
+            }
+
+            $saveData = [
+                'name' => $request->input('fullname'),
+                'phone' => $request->input('phone'),
+                'email' => $request->input('email'),
+                'arrival_date' => $request->input('arrival_date'),
+                'adults' => $request->input('number_travelers'),
+                'message' => $request->input('message'),
+                'departure_date' => null,
+                'children' => 0,
+                'accommodation' => null,
+                'package_id' => null,
+                'cost' => 0,
+                'tokens' => rand(1,9999999999),
+                'status' => 'pending',
+                'archive' => 0,
+                'updated_by' => Auth::user()->id,
+                'created_by' => Auth::user()->id,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+                
+            # Create a new record
+            DB::table('book_trip')->insertGetId($saveData);
+            $message = 'Your trip saved successfully';
+
+            DB::commit();
+            
+            return response()->json(['status' => 200, 'message' => $message]);
+
+        } catch (\Exception $e) {
+            DB::rollBack();
+
+            return response()->json(['status' => 500, 'message' => 'Error: ' . $e->getMessage()]);
+        }
+
+    }
     
     public function save_trip(Request $request)
     {

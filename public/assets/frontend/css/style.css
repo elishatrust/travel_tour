@@ -15,24 +15,24 @@
 }
 
 .our-courses .item .down-content {
-background-color: #fff;
+    background-color: #fff;
 }
 
 .our-courses .item .down-content h4 {
-padding: 25px;
-font-size: 18px;
-color: #1f272b;
-text-align: center; 
-border-bottom: 1px solid #eee;
+    padding: 25px;
+    font-size: 18px;
+    color: #1f272b;
+    text-align: center; 
+    border-bottom: 1px solid #eee;
 }
 
 .our-courses .item .down-content .info {
-padding: 25px;
+    padding: 25px;
 }
 
 .our-courses .item .down-content .info ul li {
-display: inline-block;
-margin-right: 1px;
+    display: inline-block;
+    margin-right: 1px;
 }
 
 .our-courses .item .down-content .info ul li i {
@@ -65,50 +65,50 @@ margin-right: 1px;
 }
 
 .our-courses .owl-dots .owl-dot {
-transition: all .5s;
-width: 7px;
-height: 7px;
-background-color: #fff;
-margin: 0px 5px;
-border-radius: 50%;
-outline: none;
+    transition: all .5s;
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    margin: 0px 5px;
+    border-radius: 50%;
+    outline: none;
 }
 
 .our-courses .owl-dots .active {
-width: 24px;
-height: 8px;
-border-radius: 4px;
+    width: 24px;
+    height: 8px;
+    border-radius: 4px;
 }
 
 .our-courses .owl-nav .owl-prev{
-margin-right: 10px;
-outline: none;
-position: absolute;
-left: -80px;
+    margin-right: 10px;
+    outline: none;
+    position: absolute;
+    left: -80px;
 }
 
 .our-courses .owl-nav .owl-prev span,
 .our-courses .owl-nav .owl-next span {
-opacity: 0;
+    opacity: 0;
 }
 
 .our-courses .owl-nav .owl-prev:before {
-display: inline-block;
-font-family: 'FontAwesome';
-color: #1e1e1e;
-font-size: 25px;
-font-weight: 700;
-content: '\f104';
-background-color: #fff;
-width: 50px;
-height: 50px;
-border-radius: 50%;
-line-height: 50px;
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #1e1e1e;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f104';
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
 }
 
 .our-courses .owl-nav .owl-prev {
-opacity: 1;
-transition: all .5s;
+    opacity: 1;
+    transition: all .5s;
 }
 
 .our-courses .owl-nav .owl-prev:hover {
@@ -205,6 +205,7 @@ transition: all .5s;
         display: none;
     }
 }  
+
 /*======  Hero Header  ======*/
 .hero-header {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
@@ -260,21 +261,13 @@ transition: all .5s;
 @media (min-width: 992px) {
     .hero-header,
     .page-header {
-        /* margin-top: 152px !important; */
+        margin-top: 0px !important;
     }
     .hero-header .row{
         margin-top: 20px !important;
         margin-bottom: 20px !important;
     }
 }
-
-@media (max-width: 992px) {
-    .hero-header,
-    .page-header {
-        /* margin-top: 97px !important; */
-    }
-}
-
 
 /*======  Hero Header end  ======*/
 
@@ -384,14 +377,7 @@ body {
     border: 1px solid var(--dark);
     font-size: 15px !important;
 }
-.form .form-control:hover, 
-.form .form-select:hover{
-    padding: 7px 10px;
-    font-weight: 400!important;
-    border-radius: 5px;
-    border: 1px solid var(--dark);
-    font-size: 15px !important;
-}
+
 .form label{
     font-weight: 300!important;
     font-size: 18px !important;
@@ -461,14 +447,14 @@ body {
 .navbar .navbar-brand img {
     margin-bottom:5px;
     border-radius: 30px; 
-    height: 80px!important;
-    width: 200px!important; 
+    height: 70px!important;
+    width: 170px!important; 
     border-bottom: 5px solid var(--primary); 
 }
 
 .mega-menu {
-    width: 50%;
-    left: 30%;
+    width: 60%;
+    left: 20%;
     visibility: visible;
     transition: .5s;
     opacity: 1;
@@ -495,7 +481,7 @@ body {
 }
 
 .mega-menu h6 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     color: #333;
     text-decoration: underline;
@@ -631,7 +617,7 @@ body {
 
 
 
-/* @media (max-width: 1300px) {
+ @media (max-width: 1300px) {
     .mega-menu {
         width: 60%;
     }
@@ -666,7 +652,7 @@ body {
         width: 100%;
     }
 } 
- */
+ 
 
 
 
@@ -723,6 +709,7 @@ body {
         /* padding: 0px 10px;  */
     } 
 }
+
 @media screen and (max-width: 1199px) {
     .blog .container {
     max-width: 100%; } }
@@ -790,7 +777,7 @@ body {
 
 .inc_mt_kili {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), 
-        url('../img/more/bg-top-.png') center center no-repeat;
+        url("../img/more/bg-top-.png") center center no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -806,7 +793,7 @@ body {
 
 .inc_blog {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), 
-        url('../img/safari/29.jpg') center center no-repeat;
+        url("../img/safari/29.jpg") center center no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -814,7 +801,7 @@ body {
 
 .inc_mt_meru {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
-        url('../img/MtMeru.webp') center center no-repeat;
+        url("../img/MtMeru.webp") center center no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -822,7 +809,7 @@ body {
 
 .inc_terms_condition {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
-        url('../img/more/21.jpg') center center no-repeat;
+        url("../img/more/21.jpg") center center no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -954,6 +941,7 @@ body {
         font-size: 14px;
     }
 }
+
 /*======  Img Border  ======*/
 .img-border {
     position: relative;
@@ -980,25 +968,16 @@ body {
     object-fit: cover;
 }
 
-
 /*======  Facts & Visiting Hours  ======*/
 .facts {
     background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url("../img/safari_lion.webp") center center no-repeat;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: scroll;
     background-size: cover;
     width: 100%;
-    opacity: 0.7;
+    opacity: 0.4;
 }
-
-
-.visiting-hours123 {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-        url("../img/bg-1.jpg") center center no-repeat;
-    background-size: cover;
-}
-
 
 .visiting-hours .list-group-item {
     display: flex;
@@ -1054,7 +1033,6 @@ body {
 .membership-item {
     padding: 45px 30px;
     color: var(--primary);
-    /* background: rgba(0, 0, 0, .7); */
 }
 
 .membership-item img {
@@ -1169,7 +1147,7 @@ body {
 /*======  Footer  ======*/
 .footer {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-        url(../img/Lion_Serengeti.webp) center center no-repeat;
+        url("../img/Lion_Serengeti.webp") center center no-repeat;
     background-size: cover;
 }
 

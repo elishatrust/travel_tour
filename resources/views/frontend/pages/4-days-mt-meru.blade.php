@@ -9,7 +9,7 @@
                 <hr>
             </div>
             <div class="col-lg-9 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
-                <h4 class="mb-3" style="color: #f1671e">Overview</h4>
+                <h4 class="mb-3" style="color: #f1671e">Trekking Overview</h4>
                 <p class="">
                     At 4,566 meters (14,979 feet), Mount Meru is Tanzania's second-highest peak, 
                     often overshadowed by Kilimanjaro. However, it offers an incredible trekking 
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <h4 class="mt-5 mb-3">
+        <h4 class="mt-5 mb-3 h2">
             <i class="fa fa-list me-2"></i>
             <span class="" style="color: #f1671e">Trekking Itinerary</span>
         </h4>
@@ -43,11 +43,11 @@
         <div class="row">
             <div class="col-lg-8 col-sm-12">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" />
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" /> --}}
                         <div>
-                            <h5 class="mb-3" style="color:#f1671e!important">
-                                Day 1: Momella Gate to Miriakamba Hut
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                                <i class="fa fa-calendar-day me-2"></i>Day 1: Momella Gate to Miriakamba Hut
                             </h5>
                             <span style="text-align: justify">
                                 Start with a transfer to Arusha National Park, where registration at Momella Gate is completed. 
@@ -64,11 +64,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="me-2" />
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="me-2" /> --}}
                         <div>
-                            <h5 class="mb-3" style="color:#f1671e!important">
-                                Day 2: Miriakamba Huts to Saddle Hut
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                                <i class="fa fa-calendar-day me-2"></i>Day 2: Miriakamba Huts to Saddle Hut
                             </h5>
                             <span style="text-align: justify">
                                 Begin the ascent through forest trails, transitioning into alpine desert as you reach Saddle Hut by midday. 
@@ -83,11 +83,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="me-2" />
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="me-2" /> --}}
                         <div>
-                            <h5 class="mb-3" style="color:#f1671e!important">
-                                Day 3: Miriakamba Hut
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                                <i class="fa fa-calendar-day me-2"></i>Day 3: Miriakamba Hut
                             </h5>
                             <span style="text-align: justify">
                                 Rise early to witness a breathtaking sunrise and clear views of Kilimanjaro. 
@@ -102,11 +102,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" />
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
-                            <h5 class="mb-3" style="color:#f1671e!important">
-                                Day 4: Descend to Momella Gate
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                                <i class="fa fa-calendar-day me-2"></i>Day 4: Descend to Momella Gate
                             </h5>
                             <span style="text-align: justify">
                                 Complete the trek descent to Momella Gate. 

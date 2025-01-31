@@ -20,18 +20,15 @@
     <link href="{{ asset('assets/frontend/css/bootstrap.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" />
     <script>
-        $(document).ready(function () {
-            document.addEventListener('contextmenu', event => event.preventDefault());
-            document.addEventListener('selectstart', event => event.preventDefault());
-            document.addEventListener('copy', event => event.preventDefault());
-        });
+        // $(document).ready(function () {
+        //     document.addEventListener('contextmenu', event => event.preventDefault());
+        //     document.addEventListener('selectstart', event => event.preventDefault());
+        //     document.addEventListener('copy', event => event.preventDefault());
+        // });
     </script>
 </head>
 <body>
-    @php
-        use App\Models\PackageModel;
-        $packages = PackageModel::getPackage();
-    @endphp
+
     <!-- Spinner -->
     @include('frontend.layouts.spinner')
 
@@ -56,85 +53,38 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="form" id="form" action="javascript:void(0)"  enctype="multipart/form-data">
+                    <form class="form" id="booking_form" action="javascript:void(0)"  enctype="multipart/form-data">
                         @csrf
-                        <input type="hidden" class="form-control" id="hidden_id" name="hidden_id" >
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 mb-3">
-                                <label class="fw-bold" for="name">Name <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Full name" required>
+                                <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Full Name" required>
                             </div>
                             <div class="col-lg-6 col-sm-12 mb-3">
-                                <label class="fw-bold" for="phone">Phone <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone number" required>
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
                             </div>
                             <div class="col-lg-6 col-sm-12 mb-3">
-                                <label class="fw-bold" for="email">Email <span class="text-danger">*</span></label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="E-mail address" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="E-mail Address" required>
                             </div>
                             <div class="col-lg-6 col-sm-12 mb-3">
-                                <label class="fw-bold" for="date">Arrival Date <span class="text-danger">*</span></label>
-                                <input type="date" class="form-control" id="arrival_date" name="arrival_date" required>
+                                <input type="text" class="form-control" id="booking_tour" name="booking_tour" placeholder="Booking Tour Name" required>
                             </div>
                             <div class="col-lg-6 col-sm-12 mb-3">
-                                <label class="fw-bold" for="date">Departure Date <span class="text-danger">*</span></label>
-                                <input type="date" class="form-control" id="departure_date" name="departure_date" required>
+                                <input type="date" class="form-control" id="arrival_date" name="arrival_date" placeholder="Arrival Date" required>
                             </div>
                             <div class="col-lg-6 col-sm-12 mb-3">
-                                <label class="fw-bold" for="travelers">Travelers (Adult)<span class="text-danger">*</span></label>
-                                <input type="number" class="form-control" id="adults" name="adults" min="1" placeholder="Number of adults" required>
-                            </div>
-                            <div class="col-lg-6 col-sm-12 mb-3">
-                                <label class="fw-bold" for="travelers">Travelers (Child)<span class="text-danger">*</span></label>
-                                <input type="number" class="form-control" id="children" name="children" min="0" placeholder="Number of children" required>
-                            </div>
-                            <div class="col-lg-6 col-sm-12 mb-3">
-                                <div class="form-group">
-                                    <label class="fw-bold" for="accommodation">Accommodation <span class="text-danger">*</span> </label>
-                                    <select class="form-select" id="accommodation" name="accommodation" required>
-                                        <option value="">Select--</option>
-                                        <option value="Hotel">Hotel</option>
-                                        <option value="Resort">Resort</option>
-                                        <option value="GuestHouse">GuestHouse</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-12 mb-3">
-                                <div class="form-group">
-                                    <label class="fw-bold" for="package">Packages <span class="text-danger">*</span> </label>
-                                    <select class="form-select" id="package" name="package" required>
-                                        <option value="">Select--</option>
-                                        @if (!empty( $packages))
-                                            @foreach ($packages as $package)
-                                            <option value="{{ $package->id }}">{{ $package->title }}</option>                                                
-                                            @endforeach                                            
-                                        @else
-                                            <option value="">No option</option>                                            
-                                        @endif
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-12 mb-3" id="package_cost">
-                                <div class="form-group">
-                                    <label class="fw-bold" for="package">Cost ($)<span class="text-danger">*</span> </label>
-                                    <input type="text" class="form-control" name="cost" id="cost" value="" placeholder="Package cost" readonly>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-12 mb-3" id="loader">
-                                <img src="{{ asset('assets/backend/loader.svg') }}" alt="Loading.." class="">
+                                <input type="number" class="form-control" id="number_travelers" name="number_travelers" min="1" placeholder="Number of Travellers" required>
                             </div>
                             <div class="col-lg-12 col-sm-12 mb-3">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="agree" name="agree" required>
-                                    <label class="form-check-label" for="agree">I agree to the I agree to the <a href="{{ route('terms-and-conditions') }}">terms and conditions</a>.</label>
+                                <div class="form-group">
+                                    <textarea name="message" id="message" class="form-control" placeholder="Enter Message.." cols="30" rows="4"></textarea>
                                 </div>
                             </div>
-                            <div id="msg_notification" class="col-md-12.col-sm-12 d-flex justify-content-center align-items-center" >
+                            <div id="msg_notification" class="col-md-12.col-sm-12 d-flex justify-content-center align-items-center d-none" >
                                 <img src="{{ asset('assets/backend/loader.svg') }}" alt="Loading...">
                             </div>
                             <div class="modal-footer">
-                                <button type="button" onclick="closeModel()" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary save-btn">Submit</button>
+                                <button type="button" onclick="closeModel()" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-outline-primary save-btn">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -215,14 +165,63 @@
         /*====== Date Picker ======*/
         const today = new Date().toISOString().split('T')[0];
         document.getElementById('arrival_date').setAttribute('min', today);
-        document.getElementById('departure_date').setAttribute('min', today);
+        // document.getElementById('departure_date').setAttribute('min', today);
         $('.save-btn').prop('disabled', false);
 
         /*====== Close Modal, Clear Form  ======*/
         function closeModel(){
-            $('form#form')[0].reset();
+            // $('form#form')[0].reset();
             $('#bookingModal').modal('hide');
         }
+
+
+        /*====== Save Booking  ======*/
+        $("div#msg_notification img").hide();
+        $("form#booking_form").submit(function(e){
+            e.preventDefault();
+            
+            $.ajaxSetup({ headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }});
+            
+            // let formData = new FormData(this);
+            let formData = document.getElementById("booking_form");
+            // $('.save-btn').prop('disabled', true);
+            $("div#msg_notification img").show();
+            
+            $.ajax({
+                type: "POST",
+                url: "{{ route('save-bookings') }}",
+                data: formData,
+                dataType: "json",
+                contentType: false,
+                processData: false,
+                success: function(data){
+                    // $('.save-btn').prop('disabled', false);
+                    $("div#msg_notification img").hide();
+                    if(data.status === 200){
+                        $("div#msg_notification").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>"+data.message+"</div>");
+                        setTimeout(function(){
+                            $("div#msg_notification").fadeOut("slow").html(""); 
+                            $("form#booking_form")[0].reset(); 
+                            $('#bookingModal').modal('hide');
+                        },5000);
+                    }else if(data.status === 500){
+                        $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>"+data.message+"</div>");
+                        setTimeout(function(){
+                            $("div#msg_notification").fadeOut("slow").html(""); 
+                        },5000);
+                    }else{
+                        $("div#msg_notification").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>Error validation occurred. Please try again</div>");
+                        setTimeout(function(){
+                            $("div#msg_notification").fadeOut("slow").html(""); 
+                        },5000);
+                    }
+                }
+            })
+
+        })
+        
 
         /*====== Save Trip  ======*/
         $("div#msg_notification img").hide();
@@ -287,8 +286,8 @@
                 }
             })
 
-        })
-        
+        });
+
 
         /*====== Change Package ======*/
         $("div#loader").hide();
@@ -323,7 +322,7 @@
                     console.log(data);
                 }
             })
-        })
+        });
 
 
         /*====== Whatsapp chat widget ======*/

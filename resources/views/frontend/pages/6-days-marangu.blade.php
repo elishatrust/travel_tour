@@ -9,16 +9,12 @@
                 <hr>
             </div>
             <div class="col-lg-9 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
-                <h4 class="mb-3" style="color: #f1671e">Overview</h4>
+                <h4 class="mb-3" style="color: #f1671e">Trekking Overview</h4>
                 <p class="">
-                    The Marangu Route is the oldest and most established route on Mount Kilimanjaro. 
-                    It is often referred to as the "Coca-Cola Route" because it is considered one of 
-                    the easiest due to its gradual slope. However, it has a low success rate due to 
-                    poor acclimatization since climbers ascend and descend using the same route.
+                    The Marangu Route, also known as the “Coca-Cola Route,” is the easiest and most popular path to Mount Kilimanjaro's summit. It is the only route featuring comfortable mountain huts equipped with solar lighting and beds, offering a more convenient and social trekking experience. The shared dining huts foster an engaging atmosphere among climbers from around the world.
                 </p>
                 <p class="">
-                    The 6-day Marangu Route itinerary allows for better acclimatization compared to 
-                    the 5-day option, increasing your chances of reaching the summit.
+                    While typically completed in five days, an extra day is recommended for better acclimatization, increasing summit success rates. The route is also the most budget-friendly option and provides access to basic amenities, including running water and latrines at lower camps.
                 </p>
             </div>
             <div class="col-lg-3 col-sm-12">
@@ -45,19 +41,16 @@
                         {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
-                                Day 1: Momella Gate to Miriakamba Hut
+                                <i class="fa fa-calendar-day me-2"></i>Day :1 Marangu Gate (1860m) to Mandara Hut (2700m)
                             </h5>
                             <span style="text-align: justify">
-                                Start with a transfer to Arusha National Park, where registration at Momella Gate is completed. 
-                                Trek through lush forests with opportunities to spot wildlife like buffalo, 
-                                and admire the scenic beauty of strangler figs and forest clearings. 
-                                End the day at Miriakamba Hut for dinner and overnight stay.
+                                The trek begins at Marangu Gate, where climbers complete registration formalities before starting the ascent through the lush rainforest. This 5-hour hike is relatively gentle, leading through towering trees, dense foliage, and a variety of wildlife, including blue monkeys and colobus monkeys. 
                             </span>
                             <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~14 km (~9 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 5–6 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 1,600m to 2,514m</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Wildlife encounters, lush forests, Miriakamba Hut.</li>
+                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~8.3 km (~5.2 mi)</li>
+                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~5 Hours</li>
+                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 1,860m to 2,700m</li>
+                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Rainforest trek, possible sightings of primates, optional Maundi Crater visit for panoramic views.</li>
                                 <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                             </ul>
                         </div>
@@ -66,17 +59,16 @@
                         {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
-                                Day 2: Miriakamba Huts to Saddle Hut
+                                <i class="fa fa-calendar-day me-2"></i>Day 2: Mandara Hut (2700m) to Horombo Hut (3700m)
                             </h5>
                             <span style="text-align: justify">
-                                Begin the ascent through forest trails, transitioning into alpine desert as you reach Saddle Hut by midday. 
-                                After lunch, enjoy a hike to Little Meru’s summit for panoramic views before returning to Saddle Hut for dinner.
+                                Leaving Mandara Hut, the landscape transitions from rainforest to heath and moorland. Trekkers will notice the shrinking tree cover, replaced by giant heathers and Senecio plants. The climb is gradual yet demanding, taking approximately 9 hours, with incredible views of Mawenzi and Kibo peaks. 
                             </span>
                             <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~8 km (~5 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 4–5 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 2,514m to 3,570m</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Transition to alpine desert, views of Meru Crater, optional hike to Little Meru</li>
+                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~12.5 km (~7.8 mi)</li>
+                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~9 Hours</li>
+                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 2,700m to 3,700m</li>
+                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Transition from rainforest to moorland, breathtaking views of Mawenzi & Kibo peaks.</li>
                                 <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                             </ul>
                         </div>
@@ -85,17 +77,16 @@
                         {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
-                                Day 3: Miriakamba Hut
+                                <i class="fa fa-calendar-day me-2"></i>Day 3: Acclimatization Day – Horombo Hut → Zebra Rocks → Return  to Horombo Hut
                             </h5>
                             <span style="text-align: justify">
-                                Rise early to witness a breathtaking sunrise and clear views of Kilimanjaro. 
-                                Descend to Saddle Hut for brunch, then continue down to Miriakamba Hut for a relaxed evening and dinner.
+                                This acclimatization day is crucial for adjusting to the altitude and increasing summit success rates. A short trek to Zebra Rocks (4,020m) helps trekkers adapt while offering an opportunity to explore unique striped rock formations formed by lava deposits. The return to Horombo Hut allows for a hot lunch and relaxation, ensuring climbers are well-rested before ascending further. 
                             </span>
                             <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~6.5 km (~4 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 4–5 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,570m to 1,500m</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Summit sunrise, scenic descent, wildlife sightings.</li>
+                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~5 km (~3.1 mi)</li>
+                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~4 Hours</li>
+                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,700m to 4,020m</li>
+                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Acclimatization trek to Zebra Rocks, crucial for summit success.</li>
                                 <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                             </ul>
                         </div>
@@ -104,18 +95,52 @@
                         {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
-                                Day 4: Descend to Momella Gate
+                                <i class="fa fa-calendar-day me-2"></i>Day 4: Horombo Hut (3700m) to Kibo Hut (4700m)
                             </h5>
                             <span style="text-align: justify">
-                                Complete the trek descent to Momella Gate. 
-                                Bid farewell to your trekking crew, enjoy a short picnic lunch, and possibly a 
-                                game drive before returning to Arusha or Moshi for a refreshing shower and well-deserved rest.
+                                This is a challenging trekking day, as climbers ascend through the alpine desert zone. The trail crosses the “Last Water Point”, marking the final natural water source before the summit. The path leads through the Saddle, a vast, barren plateau between Mawenzi and Kibo peaks, with strong winds and extreme temperature fluctuations. The 7-hour trek ends at Kibo Hut, where trekkers have an early dinner before resting. 
                             </span>
                             <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~6.5 km (~4 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 4–5 Hours</li>
+                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~10 km (~6.2 mi)</li>
+                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~7 Hours</li>
+                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,700m to 4,700m</li>
+                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Trek across the saddle plateau, a barren landscape between Mawenzi and Kibo.</li>
+                                <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
+                        <div>
+                            <h5 class="mb-3" style="color:#f1671e!important">
+                                <i class="fa fa-calendar-day me-2"></i>Day 5: Kibo Hut (4,700m) to Uhuru Peak (5,895m) to Descend to Horombo Hut (3,700m)
+                            </h5>
+                            <span style="text-align: justify">
+                                Summit day begins at midnight, as climbers embark on the most demanding section of the trek. The steep ascent leads past Hans Meyer Cave (5,220m) before reaching Gillman’s Point (5,681m) at sunrise. The final push to Uhuru Peak (5,895m) takes 1–2 additional hours, offering breathtaking sunrise views over glaciers and the African plains. After celebrating at the summit, climbers descend back to Kibo Hut for a short rest, then continue down to Horombo Hut, experiencing warmer air and increasing oxygen levels
+                            </span>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~22 km (~13.7 mi)</li>
+                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 12–15 Hours</li>
+                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 4,700m → 5,895m → 3,700m</li>
+                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Summit push at midnight, reaching Gillman’s Point (5,681m) at sunrise, final ascent to Uhuru Peak for breathtaking views.</li>
+                                <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
+                        <div>
+                            <h5 class="mb-3" style="color:#f1671e!important">
+                                <i class="fa fa-calendar-day me-2"></i>Day 6: Horombo Hut to Marangu Gate
+                            </h5>
+                            <span style="text-align: justify">
+                                The final descent retraces the moorland and rainforest paths, providing trekkers with a last chance to enjoy Kilimanjaro’s stunning scenery. A stop at Mandara Hut for lunch allows time to reflect on the journey before the final stretch back to Marangu Gate. Here, climbers receive summit certificates before being transferred back to Moshi, where they can enjoy a hot shower and well-earned celebration.
+                            </span>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~20.8 km (~12.9 mi) </li>
+                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~6 Hours</li>
                                 <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 3,570m to 1,600m</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Final descent, picnic lunch, and optional game drive in Arusha National Park.</li>
+                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Rainforest descent, summit certificates, return to Moshi.</li>
                                 <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
                             </ul>
                         </div>
@@ -129,10 +154,12 @@
                     </div>
                     <div class="">
                         <li class="mb-2"><strong>Day 0 :</strong> Arrival (Pick up) from Kilimanjaro International Airport → Moshi.</li>
-                        <li class="mb-2"><strong>Day 1 :</strong> Moshi → Miriakamba Hut.</li>
-                        <li class="mb-2"><strong>Day 2 :</strong> Saddle Hut</li>
-                        <li class="mb-2"><strong>Day 3 :</strong> Miriakamba</li>                      
-                        <li class="mb-2"><strong>Day 4 :</strong> Descend to Momella Gate</li>                      
+                        <li class="mb-2"><strong>Day 1 :</strong> Moshi → Marangu Gate → Mandara Hut.</li>
+                        <li class="mb-2"><strong>Day 2 :</strong> Mandara Hut → Horombo Hut</li>
+                        <li class="mb-2"><strong>Day 3 :</strong> Horombo Hut → Zebra Rocks → Return</li>                      
+                        <li class="mb-2"><strong>Day 4 :</strong> Horombo Hut → Kibo Hut</li>                      
+                        <li class="mb-2"><strong>Day 5 :</strong> Kibo Hut → Uhuru Peak → Descend to Horombo Hut</li>                      
+                        <li class="mb-2"><strong>Day 6 :</strong> Horombo Hut → Marangu Gate</li>                      
                     </div>
                 </div>
                 <div class="include-pack mb-4">
@@ -181,7 +208,7 @@
                         </li>                   
                         <li class="mb-2">
                             <i class="far fa-times-circle text-primary me-1"></i> 
-                            Insurance fees
+                            Travel insurance
                         </li>                     
                         <li class="mb-2">
                             <i class="far fa-times-circle text-primary me-1"></i> 
@@ -207,16 +234,34 @@
                             Sunscreen, first-aid kit, snacks.
                         </li>                      
                     </div>
+                </div> 
+                <div class="Acclimatization-list mb-4">
+                    <div class="">
+                        <h5 class="h6 text-muted py-3 text-uppercase">Acclimatization & Precautions</h5>
+                    </div>
+                    <div class="">
+                        <li class="mb-2">
+                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            Extra day at Horombo Hut recommended
+                        </li>                   
+                        <li class="mb-2">
+                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            Hydration, slow ascent, and recognizing altitude sickness symptoms are crucial
+                        </li>                      
+                    </div>
                 </div>   
                 <div class="best-time mb-4">
                     <div class="">
                         <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Trek</h5>
-                        <div class="">
-                            <p  style="text-align: justify">
-                                The dry season (June–October and January–February) offers clear skies and stable weather, making it the best time to hike.
-                                Avoid the rainy season (March–May and November–December).
-                            </p> 
-                            <p class="">Ensure you're fully equipped for the adventure. Key items include:</p>
+                        <div class="">                  
+                            <li class="mb-2">
+                                <i class="far fa-check-circle text-primary me-1"></i> 
+                                January–March, June–October (Stable weather, better summit success)
+                            </li>                     
+                            <li class="mb-2">
+                                <i class="far fa-check-circle text-primary me-1"></i> 
+                                Ensure you're fully equipped for the adventure. Key items include
+                            </li>  
                         </div>
                     </div>
                 </div>                
