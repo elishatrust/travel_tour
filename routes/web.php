@@ -51,6 +51,32 @@ Route::get('/8-days-lemosho-trek', [FrontendController::class, '_8_days_lemosho'
 Route::get('/8-days-northern-circuit-trek', [FrontendController::class, '_8_days_northern_circuit'])->name('8-days-northern-circuit-trek');
 Route::get('/9-days-northern-circuit-trek', [FrontendController::class, '_9_days_northern_circuit'])->name('9-days-northern-circuit-trek');
 
+# LODGING SAFARI
+// Route::get('4-days-tanzania-big-five-safari', [FrontendController::class, FrontendController::class, 'big_5_safari'])->name('big-five-safari');
+// Route::get('4-days-wildebeest-migration-safari', [FrontendController::class, FrontendController::class, 'wildebeest_migration'])->name('wildebeest-migration-safari');
+// Route::get('4-days-tanzania-safari', [FrontendController::class, FrontendController::class, '_4_days_safari_'])->name('4-days-safari');
+// Route::get('5-days-tanzania-safari', [FrontendController::class, FrontendController::class, '_5_days_safari_'])->name('5-days-safari');
+// Route::get('7-days-tanzania-safari', [FrontendController::class, FrontendController::class, '_7_days_safari_'])->name('7-days-safari');
+
+// # CAMPING SAFARI
+// Route::get('4-days-tanzania-big-five-safari', [FrontendController::class, FrontendController::class, 'big_5_safari'])->name('big-five-safari');
+// Route::get('4-days-wildebeest-migration-safari', [FrontendController::class, FrontendController::class, 'wildebeest_migration'])->name('wildebeest-migration-safari');
+// Route::get('4-days-tanzania-safari', [FrontendController::class, FrontendController::class, '_4_days_safari_'])->name('4-days-safari');
+// Route::get('5-days-tanzania-safari', [FrontendController::class, FrontendController::class, '_5_days_safari_'])->name('5-days-safari');
+// Route::get('7-days-tanzania-safari', [FrontendController::class, FrontendController::class, '_7_days_safari_'])->name('7-days-safari');
+
+# DAY TRIP
+Route::get('day-trip-tour', [FrontendController::class, 'day_trip_tour'])->name('day-tour');
+Route::get('cultural-tour', [FrontendController::class, 'cultural_tour'])->name('cultural-tour');
+
+# DESTINATION
+Route::get('mount-meru', [FrontendController::class, 'mount_meru'])->name('mount-meru');    
+Route::get('mount-kilimanjaro', [FrontendController::class, 'mount_kilimanjaro'])->name('mount-kilimanjaro');
+Route::get('arusha-national-park', [FrontendController::class, 'arusha_national_park'])->name('arusha-national-park');
+Route::get('serengeti-national-park', [FrontendController::class, 'serengeti_national_park'])->name('serengeti-national-park');
+Route::get('tarangire-national-park', [FrontendController::class, 'tarangire_national_park'])->name('tarangire-national-park');
+Route::get('ngorongoro-crater', [FrontendController::class, FrontendController::class, FrontendController::class, 'ngorongoro_crater'])->name('ngorongoro-crater');
+
 #  AUTHENTICATION
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::post('/login',[AuthController::class, 'login'])->name('login');

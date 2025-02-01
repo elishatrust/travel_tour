@@ -111,6 +111,37 @@ class frontendController extends Controller
         }
     }
 
+    public function day_trip_tour()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Day Trips in Northern Tanzania';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.day-trip', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function cultural_tour()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Tanzania Cultural Tour';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.Ol-doinyo-lengai', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    
     public function _3_days_mt_meru()
     {
         $meta_title = 'Upzone Safaris';

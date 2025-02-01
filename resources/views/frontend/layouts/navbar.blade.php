@@ -20,17 +20,24 @@
                     </a>
                     <div class="dropdown-menu mega-menu">
                         <div class="row g-3">
-                            <div class="col-lg-4 col-md-6">
-                                <h6 class="dropdown-header">Mount Kilimanjaro-Short Trek</h6>
-                                <a class="dropdown-item wide-item" href="{{ route('5-days-umbwe-trek') }}">5 Days Umbwe Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('6-days-umbwe-trek') }}">6 Days Umbwe Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('5-days-marangu-trek') }}">5 Days Marangu Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('6-days-marangu-trek') }}">6 Days Marangu Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('6-days-machame-trek') }}">6 Days Machame Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('6-days-rongai-trek') }}">6 Days Rongai Route</a>
+                            <div class="col-lg-6 col-sm-12">
+                                <h6 class="dropdown-header">Accommodation Safari:</h6>
+                                <a class="dropdown-item wide-item" href="{{ route('5-days-umbwe-trek') }}">4 Days Tanzania Safari</a>
+                                <a class="dropdown-item wide-item" href="{{ route('6-days-umbwe-trek') }}">4 Days Tanzania Big Five Safari</a>
+                                <a class="dropdown-item wide-item" href="{{ route('5-days-marangu-trek') }}">4 Days Wildebeest Migration Safari</a>
+                                <a class="dropdown-item wide-item" href="{{ route('6-days-marangu-trek') }}">5 Days Tanzania Safari</a>
+                                <a class="dropdown-item wide-item" href="{{ route('6-days-machame-trek') }}">7 Days Tanzania Safari</a>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <h6 class="dropdown-header">Mount Kilimanjaro-Long Trek</h6>
+                            <div class="col-lg-6 col-sm-12">
+                                <h6 class="dropdown-header">Camping Safari:</h6>
+                                <a class="dropdown-item wide-item" href="{{ route('5-days-umbwe-trek') }}">4 Days Tanzania Safari</a>
+                                <a class="dropdown-item wide-item" href="{{ route('6-days-umbwe-trek') }}">4 Days Tanzania Big Five Safari</a>
+                                <a class="dropdown-item wide-item" href="{{ route('5-days-marangu-trek') }}">4 Days Wildebeest Migration Safari</a>
+                                <a class="dropdown-item wide-item" href="{{ route('6-days-marangu-trek') }}">5 Days Tanzania Safari</a>
+                                <a class="dropdown-item wide-item" href="{{ route('6-days-machame-trek') }}">7 Days Tanzania Safari</a>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <h6 class="dropdown-header">Short Safaris</h6>
                                 <a class="dropdown-item wide-item" href="{{ route('7-days-machame-trek') }}">7 Days Machame Route</a>
                                 <a class="dropdown-item wide-item" href="{{ route('7-days-rongai-trek') }}">7 Days Rongai Route</a>
                                 <a class="dropdown-item wide-item" href="{{ route('7-days-lemosho-trek') }}">7 Days Lemosho Route</a>
@@ -38,13 +45,14 @@
                                 <a class="dropdown-item wide-item" href="{{ route('8-days-northern-circuit-trek') }}">8 Days Northern Circuit Route</a>
                                 <a class="dropdown-item wide-item" href="{{ route('9-days-northern-circuit-trek') }}">9 Days Northern Circuit Route</a>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <h6 class="dropdown-header">Mount Meru Trek</h6>
-                                <a class="dropdown-item wide-item" href="{{ route('3-days-mount-meru-trek') }}">3 Days Mount Meru</a>
-                                <a class="dropdown-item wide-item" href="{{ route('4-days-mount-meru-trek') }}">4 Days Mount Meru</a>
-                                <div class="p-2">
-                                    <img src="{{ asset('assets/frontend/img/more/Menu.jpg') }}" style="width:50%;border-radius:5px;" alt="#UpzoneSafari">
-                                </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <h6 class="dropdown-header">Destinations</h6>
+                                <a class="dropdown-item wide-item" href="{{ route('3-days-mount-meru-trek') }}">Mount Meru</a>
+                                <a class="dropdown-item wide-item" href="{{ route('3-days-mount-meru-trek') }}">Moun Kilimanjaro</a>
+                                <a class="dropdown-item wide-item" href="{{ route('3-days-mount-meru-trek') }}">Arusha National Park</a>
+                                <a class="dropdown-item wide-item" href="{{ route('3-days-mount-meru-trek') }}">Serengeti National Park</a>
+                                <a class="dropdown-item wide-item" href="{{ route('3-days-mount-meru-trek') }}">Tarangire National Park</a>
+                                <a class="dropdown-item wide-item" href="{{ route('3-days-mount-meru-trek') }}">Ngorongoro Crater</a>
                             </div>
                         </div>
                     </div>
@@ -77,45 +85,26 @@
                                 <h6 class="dropdown-header">Mount Meru Trek</h6>
                                 <a class="dropdown-item wide-item" href="{{ route('3-days-mount-meru-trek') }}">3 Days Mount Meru</a>
                                 <a class="dropdown-item wide-item" href="{{ route('4-days-mount-meru-trek') }}">4 Days Mount Meru</a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item dropdown position-static">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Day Tour
-                    </a>
-                    <div class="dropdown-menu mega-menu">
-                        <div class="row g-3">
-                            <div class="col-lg-4 col-md-6">
-                                <h6 class="dropdown-header">Mount Kilimanjaro-Short Trek</h6>
-                                <a class="dropdown-item wide-item" href="{{ route('5-days-umbwe-trek') }}">5 Days Umbwe Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('6-days-umbwe-trek') }}">6 Days Umbwe Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('5-days-marangu-trek') }}">5 Days Marangu Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('6-days-marangu-trek') }}">6 Days Marangu Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('6-days-machame-trek') }}">6 Days Machame Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('6-days-rongai-trek') }}">6 Days Rongai Route</a>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <h6 class="dropdown-header">Mount Kilimanjaro-Long Trek</h6>
-                                <a class="dropdown-item wide-item" href="{{ route('7-days-machame-trek') }}">7 Days Machame Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('7-days-rongai-trek') }}">7 Days Rongai Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('7-days-lemosho-trek') }}">7 Days Lemosho Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('8-days-lemosho-trek') }}">8 Days Lemosho Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('8-days-northern-circuit-trek') }}">8 Days Northern Circuit Route</a>
-                                <a class="dropdown-item wide-item" href="{{ route('9-days-northern-circuit-trek') }}">9 Days Northern Circuit Route</a>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <h6 class="dropdown-header">Mount Meru Trek</h6>
-                                <a class="dropdown-item wide-item" href="{{ route('3-days-mount-meru-trek') }}">3 Days Mount Meru</a>
-                                <a class="dropdown-item wide-item" href="{{ route('4-days-mount-meru-trek') }}">4 Days Mount Meru</a>
                                 <div class="p-2">
-                                    <img src="{{ asset('assets/frontend/img/more/Menu.jpg') }}" style="width:50%;border-radius:5px;" alt="#UpzoneSafari">
+                                    <img src="{{ asset('assets/frontend/img/safari/50.jpg') }}" style="width:100%;border-radius:10px;" alt="#UpzoneSafari">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </li>
+                <li class="nav-item dropdown position-static123">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Day Tour
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="row g-3">
+                            <div class="col-md-12 col-sm-12">                                
+                                <a class="dropdown-item" href="{{ route('day-tour') }}">Day Trip  Packages</a>
+                                <a class="dropdown-item" href="{{ route('cultural-tour') }}">Cultural Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </li> 
                 <li class="nav-item dropdown position-static123">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Features
@@ -154,6 +143,7 @@ Lodging Safari:
 4 Days Tanzania Safari
 5 Days Tanzania Safari
 7 Days Tanzania Safari
+
 Camping Safaris:
 4 Days Tanzania Big Five Safari
 4 Days Serengeti Ngorongoro Wildebeest migration safari
@@ -181,4 +171,28 @@ Northern Circuit
 7 Days Wildlife Safari
 8 Days Wildlife Safari
 9 Days Wildlife Safari
+
+Southern Circuit
+2 Days Mikumi National Park
+2 Days Ruaha National Park
+3 Days Mikumi National Park
+3 Days Ruaha National Park
+3 Days Udzungwa and Mikumi National Park
+3 Days Selous Game Reserve
+4 Days Selous & Mikumi National Park
+5 Days Mikumi & Ruaha National Park
+6 Days Selous, Mikumi and Ruaha National Park
+10 Days Selous, Mikumi, Ruaha & Udzungwa
+14 Days Ruaha National Park
+
+
+
+
+Ngorongoro Conservation Area
+Lake Manyara National Park
+Tarangire National Park
+Arusha National Park
+Ruaha National Park
+Selous Game Reserve
+
  --}}
