@@ -31,12 +31,12 @@
     </div>
     <div class="col-lg-3 col-md-6">
       <h5 class="text-light mb-4">Popular Destination</h5>
-      <a class="btn btn-link" href="javascript:">Mount Meru</a>
-      <a class="btn btn-link" href="javascript:">Mount Kilimanjaro</a>
-      <a class="btn btn-link" href="javascript:">Ngorongoro Crater</a>
-      <a class="btn btn-link" href="javascript:">Arusha National Park</a>
-      <a class="btn btn-link" href="javascript:">Serengeti National Park</a>
-      <a class="btn btn-link" href="javascript:">Tarangire National Park</a>
+      <a class="btn btn-link" href="{{ route('mount-meru') }}">Mount Meru</a>
+      <a class="btn btn-link" href="{{ route('mount-kilimanjaro') }}">Mount Kilimanjaro</a>
+      <a class="btn btn-link" href="{{ route('ngorongoro-crater') }}">Ngorongoro Crater</a>
+      <a class="btn btn-link" href="{{ route('arusha-national-park') }}">Arusha National Park</a>
+      <a class="btn btn-link" href="{{ route('serengeti-national-park') }}">Serengeti National Park</a>
+      <a class="btn btn-link" href="{{ route('tarangire-national-park') }}">Tarangire National Park</a>
     </div>
     <div class="col-lg-3 col-md-6">
       <h5 class="text-light mb-4">Newsletter</h5>

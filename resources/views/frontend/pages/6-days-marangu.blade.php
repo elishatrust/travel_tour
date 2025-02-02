@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <h4 class="mt-5 mb-3">
+        <h4 class="mt-5 mb-3 h2">
             <i class="fa fa-list me-2"></i>
             <span class="" style="color: #f1671e">Trekking Itinerary</span>
         </h4>

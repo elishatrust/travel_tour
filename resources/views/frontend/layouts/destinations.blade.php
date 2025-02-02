@@ -108,7 +108,7 @@
                     </div>
                     <div class="item">
                         <a href="{{ route('serengeti-national-park') }}">
-                            <img src="{{ asset('assets/frontend/img/t1.webp') }}" style="width:100%;height:300px;border-radius:10px"  alt="#UpzoneSafaris">
+                            <img src="{{ asset('assets/frontend/img/wildlife/wild-2a.webp') }}" style="width:100%;height:300px;border-radius:10px"  alt="#UpzoneSafaris">
                             <div class="down-content">
                                 <h4 class="text-center">Serengeti National Park</h4>
                                 <div class="info">

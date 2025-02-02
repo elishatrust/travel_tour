@@ -142,6 +142,222 @@ class frontendController extends Controller
         }
     }
     
+    public function _2_days_safari_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '2 Days Wildlife Safari in Tanzania';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.n-safari.2-days-safari', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _3_days_safari_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '3 Days Wildlife Safari in Tanzania';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.n-safari.3-days-safari', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _4_days_safari_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '4 Days Wildlife Safari in Tanzania';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.n-safari.4-days-safari', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _5_days_safari_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '5 Days Wildlife Safari in Tanzania';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.n-safari.5-days-safari', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _6_days_safari_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '6 Days Wildlife Safari in Tanzania';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.n-safari.6-days-safari', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _7_days_safari_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '7 Days Wildlife Safari in Tanzania';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.n-safari.7-days-safari', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _8_days_safari_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '8 Days Wildlife Safari in Tanzania';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.n-safari.8-days-safari', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _9_days_safari_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '9 Days Wildlife Safari in Tanzania';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.n-safari.9-days-safari', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function mount_meru()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Mount Meru';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.mount-meru', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function mount_kilimanjaro()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Mount Kilimanjaro';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.mount-kili', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function arusha_national_park()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Arusha National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.arusha-national-park', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function serengeti_national_park()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Serengeti National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.serengeti-national-park', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function tarangire_national_park()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Tarangire National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.tarangire-national-park', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
+    public function ngorongoro_crater()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = 'Ngorongoro Crater';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.pages.ngorongoro-crater', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    
     public function _3_days_mt_meru()
     {
         $meta_title = 'Upzone Safaris';

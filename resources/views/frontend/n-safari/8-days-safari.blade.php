@@ -41,7 +41,7 @@
                         {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                                <i class="fa fa-calendar-day me-2"></i>Day 1: Machame Gate to Machame Camp
+                                Day 1: Machame Gate to Machame Camp
                             </h5>
                             <span style="text-align: justify">
                                 The trek begins at Machame Gate (1,800m), where registration is completed before entering Kilimanjaro National Park. The trail starts with a gradual ascent through the dense rainforest, where trekkers may encounter blue monkeys and colobus monkeys. The path can be muddy and slippery, so trekking poles and proper footwear are recommended. After 5 to 7 hours of trekking, climbers arrive at Machame Camp (2,835m) for the first night in tents.
@@ -59,7 +59,7 @@
                         {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                                <i class="fa fa-calendar-day me-2"></i>Day 2: Miriakamba Huts to Saddle Hut
+                                Day 2: Miriakamba Huts to Saddle Hut
                             </h5>
                             <span style="text-align: justify">
                                 The day begins with a steep ascent as the rainforest transitions into the moorland zone, where the vegetation becomes more sparse. Trekkers climb over rocky ridges and volcanic formations, offering spectacular views of Mount Meru and the Shira Plateau. By midday, the group reaches Shira Camp (3,750m), an open space with breathtaking views of Kilimanjaro’s peaks. The afternoon is spent resting and acclimatizing to the higher altitude.
@@ -77,7 +77,7 @@
                         {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                                <i class="fa fa-calendar-day me-2"></i>Day 3: Shira Camp to Lava Tower, then to Barranco Camp
+                                Day 3: Shira Camp to Lava Tower, then to Barranco Camp
                             </h5>
                             <span style="text-align: justify">
                                 This day follows the “climb high, sleep low” acclimatization strategy. The trail ascends towards Lava Tower (4,630m), a volcanic rock formation where trekkers rest and enjoy lunch. This high-altitude exposure helps the body adjust to lower oxygen levels. After spending time at Lava Tower, the trail descends into the beautiful Barranco Valley (3,900m), passing through unique Senecio plants. Trekkers arrive at Barranco Camp, known for its stunning sunset views and towering cliffs.
@@ -95,7 +95,7 @@
                         {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                                <i class="fa fa-calendar-day me-2"></i>Day 4: From Barranco Camp to Karanga Camp to Barafu Camp
+                                Day 4: From Barranco Camp to Karanga Camp to Barafu Camp
                             </h5>
                             <span style="text-align: justify">
                                 After breakfast, the journey begins with a steep climb up the Barranco Wall, requiring some light rock scrambling. The trail continues through the Karanga Valley, where a short break is taken. Moving onward, the trek connects with the Mweka Trail and ascends towards Barafu Camp (15,000ft). This marks the completion of the Southern Circuit, providing panoramic views of Mawenzi and Kibo Peaks. At Barafu, climbers rest, eat, and prepare for the final summit attempt.
@@ -113,7 +113,7 @@
                         {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                                <i class="fa fa-calendar-day me-2"></i>Day 5: Barafu Camp to Uhuru Peak, then down to Mweka Camp
+                                Day 5: Barafu Camp to Uhuru Peak, then down to Mweka Camp
                             </h5>
                             <span style="text-align: justify">
                                 This is the most challenging and rewarding day of the trek. The summit push begins at midnight, climbing in the dark under freezing temperatures. The trail passes Stella Point (5,756m) before reaching Uhuru Peak (5,895m), the highest point in Africa. Witnessing the sunrise over the glaciers is a truly unforgettable moment. After celebrating and taking photos, trekkers descend to Barafu Camp for a short rest before continuing down to Mweka Camp (3,100m) for the night.
@@ -131,7 +131,7 @@
                         {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                                <i class="fa fa-calendar-day me-2"></i>Day 6: Mweka Camp to Mweka Gate
+                                Day 6: Mweka Camp to Mweka Gate
                             </h5>
                             <span style="text-align: justify">
                                 The final day is a gradual descent through the tropical rainforest, where trekkers may spot colobus monkeys and exotic birds. Upon reaching Mweka Gate (1,640m), climbers receive summit certificates before being transported back to Moshi, where they can enjoy a hot shower and well-deserved rest.
