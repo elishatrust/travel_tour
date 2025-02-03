@@ -38,7 +38,7 @@
             <div class="col-lg-7 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:450px;" src="{{ asset('assets/frontend/img/wildlife/wild-2b.webp') }}" alt="me-2" /> --}}
+                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/wildlife/wild-2b.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                               <i class="fa fa-calendar-day me-2"></i>Day 1: Arusha/Moshi – Tarangire National Park
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:450px;" src="{{ asset('assets/frontend/img/wildlife/wild-2.webp') }}" alt="me-2" />
+                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/wildlife/wild-2.webp') }}" alt="me-2" />
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                               <i class="fa fa-calendar-day me-2"></i>Day 2: Ngorongoro Crater – Arusha/Moshi
