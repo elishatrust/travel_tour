@@ -23,13 +23,21 @@
                             <div class="col-lg-4 col-sm-12">
                                 <h6 class="dropdown-header text-uppercase">Northern Circuit</h6>
                                 <a class="dropdown-item wide-item" href="{{ route('2-days-safari') }}">2 Days Wildlife Safari</a>
-                                <a class="dropdown-item wide-item" href="{{ route('3-days-safari') }}">3 Days Wildlife Safari</a>
+                                <a class="dropdown-item wide-item" href="3#">3 Days Wildlife Safari</a>
+                                <a class="dropdown-item wide-item" href="4#">4 Days Wildlife Safari</a>
+                                <a class="dropdown-item wide-item" href="5#">5 Days Wildlife Safari</a>
+                                <a class="dropdown-item wide-item" href="6#">6 Days Wildlife Safari</a>
+                                <a class="dropdown-item wide-item" href="7#">7 Days Wildlife Safari</a>
+                                <a class="dropdown-item wide-item" href="8#">8 Days Wildlife Safari</a>
+                                <a class="dropdown-item wide-item" href="9#">9 Days Wildlife Safari</a>
+
+                                {{-- <a class="dropdown-item wide-item" href="{{ route('3-days-safari') }}">3 Days Wildlife Safari</a>
                                 <a class="dropdown-item wide-item" href="{{ route('4-days-safari') }}">4 Days Wildlife Safari</a>
                                 <a class="dropdown-item wide-item" href="{{ route('5-days-safari') }}">5 Days Wildlife Safari</a>
                                 <a class="dropdown-item wide-item" href="{{ route('6-days-safari') }}">6 Days Wildlife Safari</a>
                                 <a class="dropdown-item wide-item" href="{{ route('7-days-safari') }}">7 Days Wildlife Safari</a>
                                 <a class="dropdown-item wide-item" href="{{ route('8-days-safari') }}">8 Days Wildlife Safari</a>
-                                <a class="dropdown-item wide-item" href="{{ route('9-days-safari') }}">9 Days Wildlife Safari</a>
+                                <a class="dropdown-item wide-item" href="{{ route('9-days-safari') }}">9 Days Wildlife Safari</a> --}}
                             </div>
                             <div class="col-lg-4 col-sm-12">
                                 <h6 class="dropdown-header text-uppercase">Southern Circuit</h6>
@@ -67,8 +75,8 @@
                                 <h6 class="dropdown-header text-uppercase">Mount Kilimanjaro-Short Trek</h6>
                                 <a class="dropdown-item wide-item" href="{{ route('5-days-umbwe-trek') }}">5 Days Umbwe Route</a>
                                 <a class="dropdown-item wide-item" href="{{ route('6-days-umbwe-trek') }}">6 Days Umbwe Route</a>
-                                <a class#">5 Days Marangu Route</a>
-                                <a class#{ route('6-days-marangu-trek') }}">6 Days Marangu Route</a>
+                                <a class="dropdown-item wide-item" href="{{ route('5-days-marangu-trek') }}">5 Days Marangu Route</a>
+                                <a class="dropdown-item wide-item" href="{{ route('6-days-marangu-trek') }}">6 Days Marangu Route</a>
                                 <a class="dropdown-item wide-item" href="{{ route('6-days-machame-trek') }}">6 Days Machame Route</a>
                                 <a class="dropdown-item wide-item" href="{{ route('6-days-rongai-trek') }}">6 Days Rongai Route</a>
                             </div>
