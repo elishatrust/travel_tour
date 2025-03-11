@@ -1,6 +1,6 @@
 <nav class="navbar card shadow navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5">
     <div class="container">
-        <a href="{{ route('welcome') }}" class="navbar-brand p-0">
+        <a href="{{ route('welcome') }}" class="navbar-brand p-0" title="UpzoneSafari Co Ltd.">
             <img class="img-fluid me-3" src="{{ asset('assets/frontend/img/more/logo2.png') }}" alt="UpzoneSafari" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,17 +41,17 @@
                             </div>
                             <div class="col-lg-4 col-sm-12">
                                 <h6 class="dropdown-header text-uppercase">Southern Circuit</h6>
-                                <a class="dropdown-item wide-item" href="#">2 Days Mikumi National Park</a>
-                                <a class="dropdown-item wide-item" href="#">2 Days Ruaha National Park</a>
-                                <a class="dropdown-item wide-item" href="#">3 Days Mikumi National Park</a>
-                                <a class="dropdown-item wide-item" href="#">3 Days Ruaha National Park</a>
-                                <a class="dropdown-item wide-item" href="#">3 Days Selous Game Reserve</a>
-                                <a class="dropdown-item wide-item" href="#">3 Days Udzungwa and Mikumi National Park</a>
-                                <a class="dropdown-item wide-item" href="#">4 Days Selous & Mikumi National Park</a>
-                                <a class="dropdown-item wide-item" href="#">5 Days Mikumi & Ruaha National Park</a>
-                                <a class="dropdown-item wide-item" href="#">6 Days Selous, Mikumi & Ruaha National Park</a>
-                                <a class="dropdown-item wide-item" href="#">10 Days Selous, Mikumi, Ruaha & Udzungwa</a>
-                                <a class="dropdown-item wide-item" href="#">14 Days Ruaha National Park</a>
+                                <a class="dropdown-item wide-item" href="{{ route('2-days-mikumi-national-park') }}">2 Days Mikumi National Park</a>
+                                <a class="dropdown-item wide-item" href="{{ route('2-days-ruaha-national-park') }}">2 Days Ruaha National Park</a>
+                                <a class="dropdown-item wide-item" href="{{ route('3-days-mikumi-national-park') }}">3 Days Mikumi National Park</a>
+                                <a class="dropdown-item wide-item" href="{{ route('3-days-ruaha-national-park') }}">3 Days Ruaha National Park</a>
+                                <a class="dropdown-item wide-item" href="{{ route('3-days-selous-game-reserve') }}">3 Days Selous Game Reserve</a>
+                                <a class="dropdown-item wide-item" href="{{ route('3-days-udzungwa-mikumi-national-park') }}">3 Days Udzungwa & Mikumi National Park</a>
+                                <a class="dropdown-item wide-item" href="{{ route('4-days-selous-mikumi-national-park') }}">4 Days Selous & Mikumi National Park</a>
+                                <a class="dropdown-item wide-item" href="{{ route('5-days-mikumi-ruaha-national-park') }}">5 Days Mikumi & Ruaha National Park</a>
+                                <a class="dropdown-item wide-item" href="{{ route('6-days-selous-mikumi-ruaha-national-park') }}">6 Days Selous, Mikumi & Ruaha National Park</a>
+                                <a class="dropdown-item wide-item" href="{{ route('10-days-selous-mikumi-ruaha-udzungwa-national-park') }}">10 Days Selous, Mikumi, Ruaha & Udzungwa</a>
+                                <a class="dropdown-item wide-item" href="{{ route('14-days-ruaha-national-park') }}">14 Days Ruaha National Park</a>
                             </div>
                             <div class="col-lg-4 col-sm-12">
                                 <h6 class="dropdown-header text-uppercase">Destinations</h6>
@@ -138,66 +138,3 @@
         </div>
     </div>
 </nav>
-
-
-
-{{-- 
-Lodging Safari:
-4 Days Tanzania Big Five Safari
-4 Days Wildebeest Migration safari
-4 Days Tanzania Safari
-5 Days Tanzania Safari
-7 Days Tanzania Safari
-
-Camping Safaris:
-4 Days Tanzania Big Five Safari
-4 Days Serengeti Ngorongoro Wildebeest migration safari
-4 Days Tanzania Safari In Serengeti tarangire and Ngorongoro
-5 Days Ngorongoro crater, Empakai crater,accacia camp and Lake Natron
-6 Days Lake Manyara, Serengeti,Ngorongoro crater and Tarangire
-Short Safaris:
-2 Days Tanzania Lake Manyara and Tarangire budget wildlife safari
-2 Days Tanzania Budget Safari in Tarangire and Ngorongoro crater
-3 Days Serengeti Ngorongoro Migration Safari
-3 Days Tanzania Safari in Tarangire, Ngorongoro and lake Manyara
-Combo Safaris:
-14 Days Kilimanjaro Trekking and Tanzania wildlife safaris
-
-1. Safari - Wanyama tu, 
-2. Trek - Milima, Watu
-
-
-Northern Circuit
-2 Days Wildlife Safaris
-3 Days Wildlife Safari
-4 Days Wildlife Safaris
-5 Days Wildlife Safaris
-6 Days Wildlife Safaris
-7 Days Wildlife Safari
-8 Days Wildlife Safari
-9 Days Wildlife Safari
-
-Southern Circuit
-2 Days Mikumi National Park
-2 Days Ruaha National Park
-3 Days Mikumi National Park
-3 Days Ruaha National Park
-3 Days Udzungwa and Mikumi National Park
-3 Days Selous Game Reserve
-4 Days Selous & Mikumi National Park
-5 Days Mikumi & Ruaha National Park
-6 Days Selous, Mikumi & Ruaha National Park
-10 Days Selous, Mikumi, Ruaha & Udzungwa
-14 Days Ruaha National Park
-
-
-
-
-Ngorongoro Conservation Area
-Lake Manyara National Park
-Tarangire National Park
-Arusha National Park
-Ruaha National Park
-Selous Game Reserve
-
- --}}

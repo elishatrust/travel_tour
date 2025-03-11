@@ -34,11 +34,10 @@
             <span class="" style="color: #f1671e">Trekking Itinerary</span>
         </h4>
 
-        <div class="row">
+        <div class="row g-4">
             <div class="col-lg-8 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 Day 1: Machame Gate to Machame Camp
@@ -56,7 +55,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 Day 2: Miriakamba Huts to Saddle Hut
@@ -74,7 +72,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 Day 3: Shira Camp to Lava Tower, then to Barranco Camp
@@ -92,7 +89,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 Day 4: From Barranco Camp to Karanga Camp to Barafu Camp
@@ -110,7 +106,6 @@
                         </div>
                     </div>  
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 Day 5: Barafu Camp to Uhuru Peak, then down to Mweka Camp
@@ -128,7 +123,6 @@
                         </div>
                     </div>  
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 Day 6: Mweka Camp to Mweka Gate

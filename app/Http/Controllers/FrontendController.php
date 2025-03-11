@@ -247,6 +247,172 @@ class frontendController extends Controller
             abort(404);
         }
     }
+    public function _2_days_mikumi_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '2 Days Mikumi National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.park.2-days-mikumi', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _2_days_ruaha_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '2 Days Ruaha National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.park.2-days-ruaha', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _3_days_mikumi_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '3 Days Mikumi National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.park.3-days-mikumi', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _3_days_ruaha_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '3 Days Ruaha National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.park.3-days-ruaha', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _3_days_selous_game_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '3 Days Selous Game Reserve';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.park.3-days-selous-game', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _3_days_udzungwa_mikumi_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '3 Days Udzungwa & Mikumi National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.park.3-days-udzungwa-mikumi', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _4_days_selous_mikumi_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '4 Days Selous & Mikumi National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.park.4-days-selous-mikumi', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _5_days_mikumi_ruaha_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '5 Days Mikumi & Ruaha National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.park.5-days-mikumi-ruaha', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _6_days_selous_mikumi_ruaha_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '6 Days Selous, Mikumi & Ruaha National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.park.6-days-selous-mikumi-ruaha', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _10_days_selous_mikumi_ruaha_udzungwa()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '10 Days Selous, Mikumi, Ruaha & Udzungwa National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.park.10-days-selous-mikumi-ruaha-udzungwa', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+    public function _14_days_ruaha_()
+    {
+        $meta_title = 'Upzone Safaris';
+        $page_title = '14 Days Ruaha National Park';
+
+        if(!empty($meta_title && $page_title))
+        {
+            $data['meta_title'] = $meta_title;
+            $data['page_title'] = $page_title;
+            return view('frontend.park.14-days-ruaha', $data );
+
+        }else{
+            abort(404);
+        }
+    }
+
     public function _9_days_safari_()
     {
         $meta_title = 'Upzone Safaris';
