@@ -34,7 +34,7 @@
             <span class="" style="color: #f1671e">Trekking Itinerary</span>
         </h4>
 
-        <div class="row">
+        <div class="row g-4">
             <div class="col-lg-8 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">

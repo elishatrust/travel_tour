@@ -61,6 +61,19 @@ Route::get('7-days-wildlife-safari', [FrontendController::class, '_7_days_safari
 Route::get('8-days-wildlife-safari', [FrontendController::class, '_8_days_safari_'])->name('8-days-safari');
 Route::get('9-days-wildlife-safari', [FrontendController::class, '_9_days_safari_'])->name('9-days-safari');
 
+# NATIONAL PARKS
+Route::get('2-days-mikumi-national-park', [FrontendController::class, '_2_days_mikumi_'])->name('2-days-mikumi-national-park');
+Route::get('2-days-ruaha-national-park', [FrontendController::class, '_2_days_ruaha_'])->name('2-days-ruaha-national-park');
+Route::get('3-days-mikumi-national-park', [FrontendController::class, '_3_days_mikumi_'])->name('3-days-mikumi-national-park');
+Route::get('3-days-ruaha-national-park', [FrontendController::class, '_3_days_ruaha_'])->name('3-days-ruaha-national-park');
+Route::get('3-days-selous-game-reserve', [FrontendController::class, '_3_days_selous_game_'])->name('3-days-selous-game-reserve');
+Route::get('3-days-udzungwa-mikumi-national-park', [FrontendController::class, '_3_days_udzungwa_mikumi_'])->name('3-days-udzungwa-mikumi-national-park');
+Route::get('4-days-selous-mikumi-national-park', [FrontendController::class, '_4_days_selous_mikumi_'])->name('4-days-selous-mikumi-national-park');
+Route::get('5-days-mikumi-ruaha-national-park', [FrontendController::class, '_5_days_mikumi_ruaha_'])->name('5-days-mikumi-ruaha-national-park');
+Route::get('6-days-selous-mikumi-ruaha-national-park', [FrontendController::class, '_6_days_selous_mikumi_ruaha_'])->name('6-days-selous-mikumi-ruaha-national-park');
+Route::get('10-days-selous-mikumi-ruaha-udzungwa-national-park', [FrontendController::class, '_10_days_selous_mikumi_ruaha_udzungwa'])->name('10-days-selous-mikumi-ruaha-udzungwa-national-park');
+Route::get('14-days-ruaha-national-park', [FrontendController::class, '_14_days_ruaha_'])->name('14-days-ruaha-national-park');
+
 
 // # CAMPING SAFARI
 // Route::get('4-days-tanzania-big-five-safari', [FrontendController::class, FrontendController::class, 'big_5_safari'])->name('big-five-safari');
