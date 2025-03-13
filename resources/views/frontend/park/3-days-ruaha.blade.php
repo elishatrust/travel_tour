@@ -1,26 +1,4 @@
 @extends('frontend.layouts.app') 
-<style>
-    /* body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        background-color: #f4f4f4;
-        text-align: center;
-    } */
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 20px;
-    }
-    .gallery-item {
-        background: white;
-        border-radius: 10px;
-    }
-    .gallery img {
-        width: 100%;
-        height: 100%;
-        border-radius: 8px;
-    }
-</style>
 @section('content')
 
 <div class="container-xxl py-5">
@@ -33,16 +11,16 @@
             <div class="col-lg-12 col-sm-12 mb-4">
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="https://tse2.mm.bing.net/th?id=OIP.o2jmc_FtGC80RFY_ERnuKQHaFj&pid=Api" alt="Visit Mikumi National Park">
+                        <img src="{{ asset('assets/frontend/img/park/2a.jpeg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.qbNfHE1IGOYJkvYkwElrYgHaE8&pid=Api" alt="Mikumi National Park">
+                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://tse4.mm.bing.net/th?id=OIP.H8ZrdFGq-H5QLqHpEjimiQHaE6&pid=Api" alt="Best Time to Visit Mikumi National Park">
+                        <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt=" Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://tse4.mm.bing.net/th?id=OIP.1bAcrQ2qC82OeD-jWzmxGQHaE6&pid=Api" alt="Discover Mikumi National Park">
+                        <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
                     </div>
                 </div>            
             </div>
@@ -60,12 +38,12 @@
         </div>
 
         <div class="row mb-4">
-            <div class="col-lg-8 col-sm-12 h2">
+            <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
                 <i class="fa fa-list me-2"></i>
-                <span class="" style="color: #f1671e">Safari Itinerary</span>
+                <span class="">Safari Itinerary</span>
             </div>
             <div class="col-lg-4 col-sm-12">
-                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
                     Book Now
                     <i class="fa fa-arrow-right ms-3"></i>
                 </a>

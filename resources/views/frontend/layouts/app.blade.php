@@ -7,16 +7,13 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>{{ !empty($page_title && $meta_title) ? Str::upper($meta_title.' | '.$page_title) : "" }}</title>
     <link href="{{ asset('assets/frontend/img/logo/favicon.png') }}" rel="icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"rel="stylesheet"/>
+    {{-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=sans-serif:wght@500;700&display=swap"rel="stylesheet"/> --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
-    
-    {{-- <link href="{{ asset('assets/frontend/lib/animate/animate.min.css') }}" rel="stylesheet" /> --}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> 
     <link href="{{ asset('assets/frontend/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/css/owl.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet" />
-    {{-- <link href="{{ asset('assets/frontend/css/aos.css') }}" rel="stylesheet" /> --}}
     <link href="{{ asset('assets/frontend/css/bootstrap.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" />
     <script>
@@ -83,7 +80,7 @@
                                 <img src="{{ asset('assets/backend/loader.svg') }}" alt="Loading...">
                             </div>
                             <div class="modal-footer">
-                                <button type="button" onclick="closeModel()" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" onclick="closeModel()" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
                                 <button type="submit" class="btn btn-outline-primary save-btn">Submit</button>
                             </div>
                         </div>
@@ -110,6 +107,65 @@
             count_visitor();
             closeModel();
         });
+
+
+        /*====== TEXT AUTO WRITER ======*/
+        var TxtType = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+            }
+
+            setTimeout(function() {
+            that.tick();
+            }, delta);
+        };
+        window.onload = function() {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i=0; i<elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
+
 
 
         /*====== START OF (Tawk.to) SCRIPT ======*/

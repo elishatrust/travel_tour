@@ -3,44 +3,56 @@
 
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row mb-5">
             <div class="col-lg-12 col-sm-12">
                 <h1 class="h2 mb-3">{{ $page_title }}</h1>
                 <hr>
             </div>
-            <div class="col-lg-9 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
+            <div class="col-lg-12 col-sm-12 mb-4">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/2a.jpeg') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt=" Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
+                    </div>
+                </div>            
+            </div>
+            <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
                 <h4 class="mb-3" style="color:#f1671e">Trekking Overview</h4>
-                <p class="">
+                <p class="" style="text-align: justify">
                     The Marangu Route, known as the "Coca-Cola Route," is the oldest and 
                     most popular trail on Mount Kilimanjaro. With its gradual ascent and 
                     dormitory-style hut accommodations, it is considered the easiest and 
                     most comfortable route. However, it is also the most crowded, as both 
                     ascent and descent follow the same path.
-                </p>
-                <p class=""> 
                     An additional acclimatization day is highly recommended to increase summit success. While the route 
                     is less scenic compared to others, it is a good choice during the rainy season due to the sheltered huts.
                 </p>
             </div>
-            <div class="col-lg-3 col-sm-12">
-                <div class="start-cost py-4">
-                    <h6 class="my-3 text-primary">Starting from</h6>
-                    <p class="h3 animated-underline">$1000.00</p>
-                </div>
-                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
+        </div>
+
+
+        <div class="row mb-4">
+            <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
+                <i class="fa fa-walking me-2"></i>
+                <span class="" style="color: #f1671e">Trekking Itinerary</span>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
                     Book Now
                     <i class="fa fa-arrow-right ms-3"></i>
                 </a>
             </div>
         </div>
 
-
-        <h4 class="mt-5 mb-3 h2">
-            <i class="fa fa-list me-2"></i>
-            <span class="" style="color: #f1671e">Trekking Itinerary</span>
-        </h4>
-
-        <div class="row">
+        <div class="row g-4">
             <div class="col-lg-8 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">

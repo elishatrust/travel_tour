@@ -3,43 +3,55 @@
 
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-lg-12 col-sm-12">
                 <h1 class="h2 mb-3">{{ $page_title }}</h1>
                 <hr>
             </div>
-            <div class="col-lg-9 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
+            <div class="col-lg-12 col-sm-12 mb-4">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/2a.jpeg') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt=" Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
+                    </div>
+                </div>            
+            </div>
+            <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
                 <h4 class="mb-3" style="color:#f1671e">Trekking Overview</h4>
-                <p class="">
+                <p class="" style="text-align: justify">
                     The Umbwe Route is the shortest and steepest path to the 
                     summit of Mount Kilimanjaro (5,895m / 19,341ft). Known 
                     for its challenging terrain and rapid ascent, 
                     it is best suited for experienced trekkers who are comfortable 
                     with high-altitude hiking. 
-                </p>
-                <p class=""> 
                     Due to its steep slopes and limited acclimatization time, 
                     the success rate for reaching Uhuru Peak on this route is 
                     lower than others like Machame or Lemosho. However, Umbwe 
                     is one of the most scenic and least crowded trails on Kilimanjaro.
                 </p>
             </div>
-            <div class="col-lg-3 col-sm-12">
-                <div class="start-cost py-4">
-                    <h6 class="my-3 text-primary">Starting from</h6>
-                    <p class="h3 animated-underline">$1000.00</p>
-                </div>
-                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
+                <i class="fa fa-list me-2"></i>
+                <span class="" style="color: #f1671e">Trekking Itinerary</span>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
                     Book Now
                     <i class="fa fa-arrow-right ms-3"></i>
                 </a>
             </div>
         </div>
-
-        <h4 class="mt-5 mb-3 h2">
-            <i class="fa fa-list me-2"></i>
-            <span class="" style="color: #f1671e">Trekking Itinerary</span>
-        </h4>
 
         <div class="row g-4">
             <div class="col-lg-8 col-sm-12">

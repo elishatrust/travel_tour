@@ -36,7 +36,7 @@
                     </div>
                     <div class="item">
                         <a href="{{ route('arusha-national-park') }}">
-                            <img src="{{ asset('assets/frontend/img/a1.webp') }}" style="width: 100%;height:250px;border-radius:10px"  alt="#UpzoneSafaris">
+                            <img src="{{ asset('assets/frontend/img/park/a4.jpg') }}" style="width: 100%;height:250px;border-radius:10px"  alt="#UpzoneSafaris">
                             <div class="down-content">
                                 <h4 class="text-center">Arusha National Park</h4>
                                 <div class="info">
@@ -83,6 +83,30 @@
                         </a>
                     </div>
                     <div class="item">
+                        <a href="{{ route('tarangire-national-park') }}">
+                            <img src="{{ asset('assets/frontend/img/wildlife/kangaroo.webp') }}" style="width: 100%;height:250px;border-radius:10px"  alt="#UpzoneSafaris">
+                            <div class="down-content">
+                                <h4 class="text-center">Tarangire National Park</h4>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <ul>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star" style="color: black!important"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                        <span>2700</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
                         <a href="{{ route('mount-kilimanjaro') }}">
                             <img src="{{ asset('assets/frontend/img/safari/49.jpg') }}" style="width: 100%;height:250px;border-radius:10px"  alt="#UpzoneSafaris">
                             <div class="down-content">
@@ -108,7 +132,7 @@
                     </div>
                     <div class="item">
                         <a href="{{ route('serengeti-national-park') }}">
-                            <img src="{{ asset('assets/frontend/img/wildlife/wild-2a.webp') }}" style="width:100%;height:250px;border-radius:10px"  alt="#UpzoneSafaris">
+                            <img src="{{ asset('assets/frontend/img/wildlife/7.webp') }}" style="width:100%;height:250px;border-radius:10px"  alt="#UpzoneSafaris">
                             <div class="down-content">
                                 <h4 class="text-center">Serengeti National Park</h4>
                                 <div class="info">
@@ -124,30 +148,6 @@
                                         </div>
                                         <div class="col-4">
                                             <span>2500</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="{{ route('tarangire-national-park') }}">
-                            <img src="{{ asset('assets/frontend/img/t2.webp') }}" style="width: 100%;height:250px;border-radius:10px"  alt="#UpzoneSafaris">
-                            <div class="down-content">
-                                <h4 class="text-center">Tarangire National Park</h4>
-                                <div class="info">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <ul>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star"></i></li>
-                                                <li><i class="fa fa-star" style="color: black!important"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4">
-                                        <span>2700</span>
                                         </div>
                                     </div>
                                 </div>

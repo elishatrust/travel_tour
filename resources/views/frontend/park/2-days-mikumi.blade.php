@@ -1,26 +1,4 @@
 @extends('frontend.layouts.app') 
-<style>
-    /* body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        background-color: #f4f4f4;
-        text-align: center;
-    } */
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 20px;
-    }
-    .gallery-item {
-        background: white;
-        border-radius: 10px;
-    }
-    .gallery img {
-        width: 100%;
-        height: 100%;
-        border-radius: 8px;
-    }
-</style>
 @section('content')
 
 <div class="container-xxl py-5">
@@ -33,16 +11,16 @@
             <div class="col-lg-12 col-sm-12 mb-4">
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="https://tse2.mm.bing.net/th?id=OIP.o2jmc_FtGC80RFY_ERnuKQHaFj&pid=Api" alt="Visit Mikumi National Park">
+                        <img src="{{ asset('assets/frontend/img/park/2a.jpeg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.qbNfHE1IGOYJkvYkwElrYgHaE8&pid=Api" alt="Mikumi National Park">
+                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://tse4.mm.bing.net/th?id=OIP.H8ZrdFGq-H5QLqHpEjimiQHaE6&pid=Api" alt="Best Time to Visit Mikumi National Park">
+                        <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt=" Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://tse4.mm.bing.net/th?id=OIP.1bAcrQ2qC82OeD-jWzmxGQHaE6&pid=Api" alt="Discover Mikumi National Park">
+                        <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
                     </div>
                 </div>            
             </div>
@@ -54,18 +32,22 @@
                     Established in 1964, Mikumi is the country's fourth-largest national park, 
                     encompassing approximately 3,230 square kilometers. It shares its southern 
                     boundary with the Selous Game Reserve, contributing to a unique and expansive ecosystem.
-                    Mikumi's landscape is often likened to the Serengeti, characterized by vast savannahs dotted with acacia, baobab, and tamarind trees. The park is home to a variety of wildlife, including elephants, zebras, giraffes, buffaloes, wildebeests, and various antelope species. Predators such as lions and wild dogs also inhabit the area. Bird enthusiasts can delight in over 400 bird species recorded within the park.
+                    <span class="text-uppercase">Wildlife and Scenery: </span>
+                    Mikumi's landscape is often likened to the Serengeti, characterized by vast savannahs dotted with acacia, 
+                    baobab, and tamarind trees. The park is home to a variety of wildlife, including elephants, zebras, giraffes, 
+                    buffaloes, wildebeests, and various antelope species. Predators such as lions and wild dogs also inhabit the area. 
+                    Bird enthusiasts can delight in over 400 bird species recorded within the park.
                 </p>
             </div>
         </div>
 
         <div class="row mb-4">
-            <div class="col-lg-8 col-sm-12 h2">
+            <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
                 <i class="fa fa-list me-2"></i>
                 <span class="" style="color: #f1671e">Safari Itinerary</span>
             </div>
             <div class="col-lg-4 col-sm-12">
-                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
                     Book Now
                     <i class="fa fa-arrow-right ms-3"></i>
                 </a>
@@ -96,7 +78,21 @@
                                 After an early breakfast, you will depart the lodge for a captivating sunrise game drive in Mikumi National Park. The park’s landscape is varied, consisting of woodlands, wetlands, and expansive grasslands, with two notable waterholes, Mkata and Chamgore, which attract a variety of wildlife. In addition to observing bird species like the saddle-billed stork, hammerkop, and malachite kingfisher, you may also encounter monitor lizards and the elusive python, which are often found in the shallow waters. In the afternoon, you will begin your return journey to Dar es Salaam, with a break for lunch in Morogoro Town. Afterward, you will continue your journey to the designated drop-off point in Dar es Salaam, marking the conclusion of your safari experience.
                             </p>
                         </div>
-                    </div>       
+                    </div>   
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        <div class="best-time mt-4">
+                            <div class="">
+                                <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Travel</h5>
+                                <div class="">
+                                    <p  style="text-align: justify">
+                                        The dry season (June–October and January–February) offers clear skies and is ideal for wildlife viewing as animals gather around water sources.
+                                        Avoid the rainy season (March–May and November–December).
+                                    </p> 
+                                    <p class="">Ensure you're fully equipped for the adventure. Key items include:</p>
+                                </div>
+                            </div>
+                        </div>                   
+                    </div>             
                 </div>
             </div>
             <div class="col-lg-4 col-sm-12 pl-5">
@@ -180,19 +176,7 @@
                             Sunscreen, first-aid kit, snacks.
                         </li>                      
                     </div>
-                </div>   
-                <div class="best-time mb-4">
-                    <div class="">
-                        <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Trek</h5>
-                        <div class="">
-                            <p  style="text-align: justify">
-                                The dry season (June–October and January–February) offers clear skies and is ideal for wildlife viewing as animals gather around water sources.
-                                Avoid the rainy season (March–May and November–December).
-                            </p> 
-                            <p class="">Ensure you're fully equipped for the adventure. Key items include:</p>
-                        </div>
-                    </div>
-                </div>                
+                </div>     
             </div>
         </div>
     </div>
