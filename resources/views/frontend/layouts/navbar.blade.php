@@ -1,7 +1,7 @@
 <nav class="navbar card shadow navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5">
     <div class="container">
         <a href="{{ route('welcome') }}" class="navbar-brand p-0" title="UpzoneSafari Co Ltd.">
-            <img class="img-fluid me-3" src="{{ asset('assets/frontend/img/more/logo2.png') }}" alt="UpzoneSafari" />
+            <img class="img-fluid me-3" src="{{ asset('assets/frontend/img/logo/logo2.png') }}" alt="UpzoneSafari" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

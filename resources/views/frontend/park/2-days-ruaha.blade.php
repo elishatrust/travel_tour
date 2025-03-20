@@ -42,8 +42,11 @@
 
         <div class="row mb-4">
             <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
-                <i class="fa fa-list me-2"></i>
-                <span class="">Safari Itinerary</span>
+                <i class="fa fa-walking me-2"></i>
+                <span class="">
+                    <i class="fa fa-walking me-2"></i>
+                    Safari Itinerary
+                </span>
             </div>
             <div class="col-lg-4 col-sm-12">
                 <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">

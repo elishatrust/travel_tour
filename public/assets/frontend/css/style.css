@@ -258,24 +258,67 @@ body{
 --------------------------------------------------------------*/
 .hero {
     padding: 0;
-  }
-  
-  .hero .carousel {
+}
+
+.hero .carousel {
     width: 100%;
     min-height: 70vh;
     padding: 0;
     margin: 0;
     position: relative;
-  }
+}
+
+.focus{
+    padding: 30px;
+    margin: 0;
+}
+.focus .inner-focus{
+    padding: 20px;
+}
   
- @media (max-height: 500px),
-  (max-width: 580px) {
-    .hero .carousel {
-      min-height: 100vh;
+@media (max-width: 768px) {
+    .hero .carousel-item p {
+      font-size: 25px;
     }
     .hero .container-fluid {
+        padding: 15px 15px 15px;
+        margin-bottom: 50px;
         margin-right: 0;
-        width: 90%;
+        width: 70%;
+    }
+    .focus{
+        padding: 15px;
+        margin: 0;
+    }
+    .focus .inner-focus{
+        padding: 10px;
+    }
+    .focus .container{
+        padding: 25px;
+    }
+    .focus .container .inner-focus h2 {
+        font-size: 17px;
+    }
+}
+  
+ @media (max-width: 580px) {
+    .hero .carousel {
+        min-height: 50vh;
+    }
+    .hero .carousel-item p {
+        font-size: 20px;
+    }
+    .hero .container-fluid {
+        padding: 10px 10px 10px;
+        margin-bottom: 23px;
+        margin-right: 0;
+        width: 80%;
+    }
+    .focus .container{
+        padding: 0px;
+    }
+    .focus .container .inner-focus h2 {
+        font-size: 17px;
     }
 }
   
@@ -308,30 +351,12 @@ body{
     text-align: center;
     padding: 20px 20px 0px;
     /* padding-bottom: 30px; */
-    margin-bottom: 100px;
+    margin-bottom: 90px;
     margin-right: 0;
     border-left: 5px solid var(--primary);
-    width: 50%;
+    width: 70%;
     z-index: 3;
   }
-  
-@media (max-width: 768px) {
-    .hero .carousel-item p {
-      font-size: 25px;
-    }
-    .hero .container-fluid {
-        padding: 10px 10px 10px;
-        margin-bottom: 100px;
-        margin-right: 0;
-        width: 70%;
-    }
-    .focus .container{
-        padding: 25px;
-    }
-    .focus .container .inner-focus h2{
-        font-size: 20px;
-    }
-}
   
   .hero .btn-get-started {
     font-weight: 400;
@@ -446,25 +471,6 @@ body{
     }
 }
 
-
-/*======  Text Typewriter  ======*/
-.typewrite {
-    font-size: 25px;
-    color: var(--dark)!important;
-    margin-top: 10px;
-    float: left;
-    width: 100%;
-    text-align: center;
-    text-shadow: 4px 3px 0 rgba(0,0,0,0.0);
-    letter-spacing: -1px;
-    font-weight: 400;
-}
-@media (min-width:992px) and (max-width:1000px) {
-    /* .typewrite {font-size: 45px;}	 */
-}
-@media (max-width:767px) {
-    /* .typewrite {font-size: 28px;} */
-}
 /*======  Template CSS  ======*/
 :root {
     /* --primary: #2EB872; */
@@ -501,6 +507,7 @@ body{
 .preloader .preloader-circle {
     width: 50px;
     height: 50px;
+    padding: 5px;
     position: relative;
     border-style: solid;
     border-width: 3px;
@@ -535,7 +542,7 @@ body{
 }
 
 .preloader .preloader-img img {
-    max-width: 55px;
+    max-width: 30px;
 }
 
 .preloader .pere-text strong {
@@ -835,14 +842,11 @@ body{
     height: 100%;
     border-radius: 8px;
 }
-@media (max-width: 576px) {
+@media (max-width: 760px) {
     .gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(170px, 2fr));
         gap: 10px;
-    }
-    .gallery-item {
-        border-radius: 7px;
     }
 } 
 

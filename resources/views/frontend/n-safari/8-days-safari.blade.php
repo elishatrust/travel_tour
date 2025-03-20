@@ -34,7 +34,7 @@
 
         <div class="row mb-4">
             <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
-                <i class="fa fa-list me-2"></i>
+                <i class="fa fa-walking me-2"></i>
                 <span class="" style="color: #f1671e">Safari Itinerary</span>
             </div>
             <div class="col-lg-4 col-sm-12">

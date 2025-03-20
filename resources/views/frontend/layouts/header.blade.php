@@ -31,9 +31,9 @@
     </div>
 </div> 
     
-<div class="container-fluid p-5 m-0 focus" style="background: #e4e4e4;"> 
+<div class="container-fluid focus" style="background: #e4e4e4;"> 
     <div class="container">
-        <div class="row g-4">
+        <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="inner-focus">
                     <h2 class="h5 text-center text-uppercase">

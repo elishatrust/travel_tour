@@ -34,7 +34,7 @@
 
         <div class="row mb-4">
             <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
-                <i class="fa fa-list me-2"></i>
+                <i class="fa fa-walking me-2"></i>
                 <span class="" style="color: #f1671e">Safari Itinerary</span>
             </div>
             <div class="col-lg-4 col-sm-12">
@@ -51,7 +51,8 @@
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                              <i class="fa fa-calendar-day me-2"></i>Day 1: Arusha/Moshi – Tarangire National Park
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 1: Arusha/Moshi – Tarangire National Park
                             </h5>
                             <div class="">
                                 <li class="mb-2">
@@ -84,7 +85,8 @@
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                              <i class="fa fa-calendar-day me-2"></i>Day 2: Ngorongoro Crater – Arusha/Moshi
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 2: Ngorongoro Crater – Arusha/Moshi
                             </h5>
                             <div class="">
                                 <li class="mb-2">

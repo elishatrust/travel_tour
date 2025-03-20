@@ -42,7 +42,7 @@
 
         <div class="row mb-4">
             <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
-                <i class="fa fa-list me-2"></i>
+                <i class="fa fa-walking me-2"></i>
                 <span class="" style="color: #f1671e">Trekking Itinerary</span>
             </div>
             <div class="col-lg-4 col-sm-12">
@@ -162,6 +162,7 @@
                         {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/49.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
+                                <i class="fa fa-calendar-day me-2"></i>
                                 Day 6: Mweka Camp to Mweka Gate to Moshi
                             </h5>
                             <span style="text-align: justify">

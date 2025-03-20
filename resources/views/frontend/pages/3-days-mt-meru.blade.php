@@ -92,7 +92,10 @@
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
                         {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/Mt-Meru.jpg') }}" alt="me-2" /> --}}
                         <div>
-                            <h5 class="mb-3 h4" style="color:#f1671e!important"><i class="fa fa-calendar-day me-2"></i>Day 3: Saddle Hut to Summit and Descent</h5>
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                                <i class="fa fa-calendar-day me-2"></i>
+                                Day 3: Saddle Hut to Summit and Descent
+                            </h5>
                             <span style="text-align: justify">
                                 Start early for Rhino Point and continue to Mount Meru’s summit. 
                                 Descend to Momella Gate and transfer back to your hotel for dinner and rest.
