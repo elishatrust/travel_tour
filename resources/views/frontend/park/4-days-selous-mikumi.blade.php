@@ -11,28 +11,25 @@
             <div class="col-lg-12 col-sm-12 mb-4">
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2a.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/mikumi6.jpg') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/bird4.webp') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/2a.jpeg') }}" alt=" Image">
                     </div>
                     <div class="gallery-item">
                         <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt="Image">
                     </div>
-                    <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt=" Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
-                    </div>
                 </div>            
             </div>
             <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
-                <h4 class="mb-3" style="color: #f1671e">Trekking Overview</h4>
+                <h4 class="mb-3" style="color: #f1671e">Safari Overview</h4>
                 <p style="text-align: justify">
-                    A 2-day safari in Mikumi National Park offers a concise yet 
-                    immersive experience into Tanzania's rich wildlife and diverse ecosystems. 
-                    Established in 1964, Mikumi is the country's fourth-largest national park, 
-                    encompassing approximately 3,230 square kilometers. It shares its southern 
-                    boundary with the Selous Game Reserve, contributing to a unique and expansive ecosystem.
-                    Mikumi's landscape is often likened to the Serengeti, characterized by vast savannahs dotted with acacia, baobab, and tamarind trees. The park is home to a variety of wildlife, including elephants, zebras, giraffes, buffaloes, wildebeests, and various antelope species. Predators such as lions and wild dogs also inhabit the area. Bird enthusiasts can delight in over 400 bird species recorded within the park.
+                    This 4-day safari adventure offers an exciting journey through two of Tanzania’s most remarkable wildlife destinations—Selous Game Reserve and Mikumi National Park. It is an excellent choice for those seeking a blend of water-based and land-based safari experiences in a short but thrilling itinerary.
+                    You will explore Selous Game Reserve, one of Africa’s largest and most remote wildlife sanctuaries, famous for its river safaris, diverse ecosystems, and large populations of elephants, lions, hippos, crocodiles, and wild dogs. In Mikumi National Park, often referred to as a "mini Serengeti," you will witness large herds of zebras, giraffes, elephants, and an abundance of predators like lions and leopards.
+                    This safari is ideal for nature enthusiasts, photographers, and adventure seekers looking for an off-the-beaten-path experience in Tanzania’s untamed wilderness.
                 </p>
             </div>
         </div>
@@ -57,10 +54,14 @@
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>
-                                Day 1: Dar es Salaam – Mikumi National Park
+                                Day 1: Dar es Salaam → Selous Game Reserve (Boat Safari)
                             </h5>
                             <p style="text-align: justify">
-                                After enjoying a hearty breakfast, you will be collected from your hotel or the airport in Dar es Salaam, and embark on your journey to Mikumi National Park. You are expected to arrive in time for lunch. Following your meal, you will embark on your first exciting game drive through the park, which is home to a diverse array of wildlife, including elephants, lions, wild dogs, zebras, hyenas, buffaloes, wildebeests, elands, hartebeests, crocodiles, and various species of lizards. The park is also renowned for its rich birdlife, with over 300 species recorded within its boundaries. Later in the evening, you will enjoy dinner and retire for the night at the Lodge.
+                                Early morning pick-up from your hotel or the airport in Dar es Salaam.
+                                Depart for Selous Game Reserve, a 6-hour scenic drive through Tanzania’s countryside.
+                                Arrive at your lodge/camp in time for lunch and enjoy some relaxation.
+                                In the late afternoon, embark on a boat safari on the Rufiji River, where you will spot hippos, crocodiles, and various bird species.
+                                Return to your lodge for dinner and an overnight stay.
                             </p>
                         </div>
                     </div>
@@ -68,13 +69,74 @@
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>
-                                Day 2: Mikumi – Dar es Salaam
+                                Day 2: Full-Day Game Drive in Selous Game Reserve
                             </h5>
                             <p style="text-align: justify">
-                                After an early breakfast, you will depart the lodge for a captivating sunrise game drive in Mikumi National Park. The park’s landscape is varied, consisting of woodlands, wetlands, and expansive grasslands, with two notable waterholes, Mkata and Chamgore, which attract a variety of wildlife. In addition to observing bird species like the saddle-billed stork, hammerkop, and malachite kingfisher, you may also encounter monitor lizards and the elusive python, which are often found in the shallow waters. In the afternoon, you will begin your return journey to Dar es Salaam, with a break for lunch in Morogoro Town. Afterward, you will continue your journey to the designated drop-off point in Dar es Salaam, marking the conclusion of your safari experience.
+                                Start your day with an early morning breakfast before heading out for a full-day game drive.
+                                Selous is home to large elephant herds, prides of lions, giraffes, zebras, buffaloes, and the rare African wild dogs.
+                                Stop for a picnic lunch inside the park, surrounded by breathtaking scenery.
+                                Continue your afternoon game drive, maximizing your chances of spotting wildlife.
+                                Return to the lodge in the evening for dinner and overnight stay.
                             </p>
                         </div>
-                    </div>       
+                    </div>   
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        <div>
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                                <i class="fa fa-calendar-day me-2"></i>
+                                Day 3: Selous → Mikumi National Park (Game Drive En Route)
+                            </h5>
+                            <p style="text-align: justify">
+                                Early morning breakfast, followed by departure to Mikumi National Park (a 6-7 hour drive).
+                                Enjoy game viewing en route, passing through beautiful landscapes and local villages.
+                                Stop for lunch at a restaurant in Morogoro town.
+                                Arrive in Mikumi National Park in the late afternoon and check into your lodge.
+                                If time allows, embark on a sunset game drive before dinner.
+                                Dinner and overnight stay at your lodge/camp inside Mikumi.
+                            </p>
+                        </div>
+                    </div>   
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        <div>
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                                <i class="fa fa-calendar-day me-2"></i>
+                                Day 4: Morning Game Drive in Mikumi → Return to Dar es Salaam
+                            </h5>
+                            <p style="text-align: justify">
+                                Early morning game drive in Mikumi to witness the majestic African sunrise and spot wildlife in the cooler hours of the day.
+                                Visit the Mkata Floodplain, an area known for large herds of elephants, buffaloes, zebras, and giraffes.
+                                Return to the lodge for breakfast, then start your journey back to Dar es Salaam.
+                                Arrive in Dar es Salaam in the late afternoon, marking the end of an unforgettable safari experience.
+                            </p>
+                        </div>
+                    </div>        
+                    <div class="col-lg-12 col-sm-12 p-4">
+                        <div class="Acclimatization-list">
+                            <div class="">
+                                <h5 class="h6 text-muted py-3 text-uppercase">Why Choose This Safari?</h5>
+                            </div>
+                            <div class="">
+                                <p>
+                                    ✅ Diverse Destinations – Explore a mix of savannah, wetlands, and tropical rainforests.
+                                </p>      
+                                <p>
+                                    ✅ Exclusive Wildlife Experiences – Visit less crowded parks with abundant game.
+                                </p>      
+                                <p>
+                                    ✅ Variety of Activities – Enjoy game drives, boat safaris, walking safaris, and trekking.
+                                </p>      
+                                <p>
+                                    ✅ Breathtaking Scenery – Experience open plains, river systems, and mountain landscapes.
+                                </p> 
+                            </div>
+                            <br>
+                            <p>
+                                <i>
+                                    This itinerary offers an authentic and immersive Tanzanian safari, perfect for wildlife lovers, adventure seekers, and those looking to explore off-the-beaten-path destinations.
+                                </i>
+                            </p>
+                        </div>  
+                    </div>   
                 </div>
             </div>
             <div class="col-lg-4 col-sm-12 pl-5">
@@ -151,14 +213,33 @@
                         </li>                   
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
-                            Headlamp, trekking poles, hydration system.
+                            Headlamp, Safari poles, hydration system.
                         </li>                     
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
                             Sunscreen, first-aid kit, snacks.
                         </li>                      
                     </div>
-                </div>   
+                </div>     
+                <div class="safari-activities mb-4">
+                    <div class="">
+                        <h5 class="h6 text-muted py-3 text-uppercase">Safari Activities</h5>
+                    </div>
+                    <div class="">
+                        <li class="mb-2">
+                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            Game Drives – Explore vast landscapes teeming with wildlife.
+                        </li>                   
+                        <li class="mb-2">
+                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            Boat Safari – Cruise along the Rufiji River, spotting hippos, crocodiles, and aquatic birds.
+                        </li>                     
+                        <li class="mb-2">
+                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            Walking Safari – Experience nature up close with expert guides.
+                        </li>                      
+                    </div>
+                </div>
                 <div class="best-time mb-4">
                     <div class="">
                         <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Trek</h5>

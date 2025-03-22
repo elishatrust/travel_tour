@@ -11,16 +11,16 @@
             <div class="col-lg-12 col-sm-12 mb-4">
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2a.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/safari/0028.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/safari/0037.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt=" Image">
+                        <img src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/more/Mt-Meru.jpg') }}" alt=" Image">
                     </div>
                 </div>            
             </div>
@@ -56,7 +56,6 @@
             <div class="col-lg-8 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0028.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important"><i class="fa fa-calendar-day me-2"></i>Day 1: Momella Gate to Miriakamba Hut</h5>
                             <span style="text-align: justify">
@@ -73,7 +72,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important"><i class="fa fa-calendar-day me-2"></i>Day 2: Miriakamba Hut to Saddle Hut</h5>
                             <span style="text-align: justify">
@@ -90,7 +88,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/Mt-Meru.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>
@@ -213,7 +210,6 @@
     </div>
 </div>
 
-<!-- Destination -->
 @include('frontend.layouts.destinations')
 
 @endsection

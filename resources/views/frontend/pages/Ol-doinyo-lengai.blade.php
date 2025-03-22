@@ -3,32 +3,34 @@
 
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row mb-5">
             <div class="col-lg-12 col-sm-12">
                 <h1 class="h2 mb-3">{{ $page_title }}</h1>
                 <hr>
             </div>
-            <div class="col-lg-9 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
+            <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
                 <h4 class="mb-3" style="color: #f1671e">Tour Overview</h4>
-                <p class="">
+                <p style="text-align: justify">
                     Ol Doinyo Lengai, meaning the “Mountain of God” in the Maasai language, is an active volcano situated in the eastern Rift Valley. It is the only volcano in the world that produces Natrocarbonatite lava, a unique and rare type of lava.
-                </p>
-                <p class="">
                     Located approximately four hours’ drive from Arusha, Ol Doinyo Lengai rises dramatically from the dry Rift Valley floor to an elevation of 2,886 meters (9,469 feet). The climb to the summit begins around midnight, allowing hikers to reach the crater rim in time for a breathtaking sunrise view. After exploring the crater, the descent back to the base takes about four hours, concluding this adventurous hike.
                 </p>
             </div>
-            <div class="col-lg-3 col-sm-12 py-4">
-                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
+                <span class="" style="color: #f1671e">
+                    <i class="fa fa-walking me-2"></i>
+                    Tour Itinerary
+                </span>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
                     Book Now
                     <i class="fa fa-arrow-right ms-3"></i>
                 </a>
             </div>
         </div>
-
-        <h4 class="mt-5 mb-3 h2">
-            <i class="fa fa-list me-2"></i>
-            <span class="" style="color: #f1671e">Tour Itinerary</span>
-        </h4>
 
         <div class="row">
             <div class="col-lg-6 col-sm-12 shadow-sm p-4">

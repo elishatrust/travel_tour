@@ -11,28 +11,24 @@
             <div class="col-lg-12 col-sm-12 mb-4">
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2a.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/ruaha1.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/ruaha2.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt=" Image">
+                        <img src="{{ asset('assets/frontend/img/park/ruaha3.jpg') }}" alt=" Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/ruaha4.jpg') }}" alt="Image">
                     </div>
                 </div>            
             </div>
             <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
-                <h4 class="mb-3" style="color: #f1671e">Trekking Overview</h4>
+                <h4 class="mb-3" style="color: #f1671e">Safari Overview</h4>
                 <p style="text-align: justify">
-                    A 2-day safari in Mikumi National Park offers a concise yet 
-                    immersive experience into Tanzania's rich wildlife and diverse ecosystems. 
-                    Established in 1964, Mikumi is the country's fourth-largest national park, 
-                    encompassing approximately 3,230 square kilometers. It shares its southern 
-                    boundary with the Selous Game Reserve, contributing to a unique and expansive ecosystem.
-                    Mikumi's landscape is often likened to the Serengeti, characterized by vast savannahs dotted with acacia, baobab, and tamarind trees. The park is home to a variety of wildlife, including elephants, zebras, giraffes, buffaloes, wildebeests, and various antelope species. Predators such as lions and wild dogs also inhabit the area. Bird enthusiasts can delight in over 400 bird species recorded within the park.
+                    Embark on an unforgettable 3-day safari adventure in Ruaha National Park, Tanzania’s largest national park and one of Africa’s hidden gems. Spanning over 20,000 square kilometers, Ruaha is renowned for its vast wilderness, dramatic landscapes, and rich biodiversity. The park is home to one of the largest elephant populations in East Africa, as well as lions, leopards, cheetahs, wild dogs, giraffes, and over 570 bird species.
+                    This carefully crafted short safari is designed to provide an immersive experience with exciting game drives, breathtaking scenery, and up-close encounters with some of Africa’s most iconic wildlife.
                 </p>
             </div>
         </div>
@@ -57,10 +53,15 @@
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>
-                                Day 1: Dar es Salaam – Mikumi National Park
+                                Day 1: Iringa → Ruaha National Park (Afternoon Game Drive)
                             </h5>
                             <p style="text-align: justify">
-                                After enjoying a hearty breakfast, you will be collected from your hotel or the airport in Dar es Salaam, and embark on your journey to Mikumi National Park. You are expected to arrive in time for lunch. Following your meal, you will embark on your first exciting game drive through the park, which is home to a diverse array of wildlife, including elephants, lions, wild dogs, zebras, hyenas, buffaloes, wildebeests, elands, hartebeests, crocodiles, and various species of lizards. The park is also renowned for its rich birdlife, with over 300 species recorded within its boundaries. Later in the evening, you will enjoy dinner and retire for the night at the Lodge.
+                                Morning departure from Iringa (approx. 2.5-hour drive to Ruaha).
+                                Arrive at your safari lodge/camp in time for lunch.
+                                After some relaxation, embark on your first game drive in Ruaha National Park.
+                                Spot elephants, lions, giraffes, buffalo, zebras, and antelopes.
+                                Explore the Ruaha River, a lifeline for wildlife, offering excellent sightings of hippos and crocodiles.
+                                Return to the lodge for dinner and an overnight stay.
                             </p>
                         </div>
                     </div>
@@ -68,13 +69,59 @@
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>
-                                Day 2: Mikumi – Dar es Salaam
+                                Day 2: Full-Day Game Drive in Ruaha National Park
                             </h5>
                             <p style="text-align: justify">
-                                After an early breakfast, you will depart the lodge for a captivating sunrise game drive in Mikumi National Park. The park’s landscape is varied, consisting of woodlands, wetlands, and expansive grasslands, with two notable waterholes, Mkata and Chamgore, which attract a variety of wildlife. In addition to observing bird species like the saddle-billed stork, hammerkop, and malachite kingfisher, you may also encounter monitor lizards and the elusive python, which are often found in the shallow waters. In the afternoon, you will begin your return journey to Dar es Salaam, with a break for lunch in Morogoro Town. Afterward, you will continue your journey to the designated drop-off point in Dar es Salaam, marking the conclusion of your safari experience.
+                                Begin your day with an early morning game drive, the best time for spotting predators on the hunt.
+                                Explore different ecosystems within Ruaha, including open savannah, woodlands, and rocky hills.
+                                Enjoy a picnic lunch in the bush, surrounded by nature.
+                                Continue your afternoon game drive, maximizing opportunities to see cheetahs, wild dogs, and rare antelope species like kudu and sable.
+                                Return to the lodge for dinner and an overnight stay.
                             </p>
                         </div>
-                    </div>       
+                    </div> 
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        <div>
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                                <i class="fa fa-calendar-day me-2"></i>
+                                Day 3: Walking Safari → Return to Iringa
+                            </h5>
+                            <p style="text-align: justify">
+                                Start the day with an early morning walking safari, guided by experienced rangers.
+                                Learn about animal tracks, plants, and the smaller creatures often missed on game drives.
+                                Get up close to giraffes, impalas, and other wildlife in their natural habitat.
+                                Return to the lodge for breakfast and check out.
+                                Depart for Iringa, arriving by midday.
+                            </p>
+                        </div>
+                    </div>         
+                    <div class="col-lg-12 col-sm-12 p-4">
+                        <div class="Acclimatization-list">
+                            <div class="">
+                                <h5 class="h6 text-muted py-3 text-uppercase">Why Choose This Safari?</h5>
+                            </div>
+                            <div class="">
+                                <p>
+                                    ✅ Ideal for a Short Getaway – Perfect for those seeking an immersive safari experience within a limited time.
+                                </p>      
+                                <p>
+                                    ✅ Diverse Wildlife – Home to Tanzania’s largest elephant population, big cats, and rare antelope species.
+                                </p>      
+                                <p>
+                                    ✅ Scenic Landscapes – Ruaha’s rugged terrain, baobab-studded plains, and winding rivers make for breathtaking scenery.
+                                </p>      
+                                <p>
+                                    ✅ Authentic & Less Crowded – Enjoy a more exclusive safari experience away from the crowds of Serengeti & Ngorongoro.
+                                </p> 
+                            </div>
+                            <br>
+                            <p>
+                                <i>
+                                    This itinerary offers an authentic and immersive Tanzanian safari, perfect for wildlife lovers, adventure seekers, and those looking to explore off-the-beaten-path destinations.
+                                </i>
+                            </p>
+                        </div>  
+                    </div>     
                 </div>
             </div>
             <div class="col-lg-4 col-sm-12 pl-5">
@@ -151,7 +198,7 @@
                         </li>                   
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
-                            Headlamp, trekking poles, hydration system.
+                            Headlamp, Safari poles, hydration system.
                         </li>                     
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
@@ -159,6 +206,25 @@
                         </li>                      
                     </div>
                 </div>   
+                <div class="safari-activities mb-4">
+                    <div class="">
+                        <h5 class="h6 text-muted py-3 text-uppercase">Safari Activities</h5>
+                    </div>
+                    <div class="">
+                        <li class="mb-2">
+                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            Game Drives – Explore vast landscapes teeming with wildlife.
+                        </li>                   
+                        <li class="mb-2">
+                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            Boat Safari – Cruise along the Rufiji River, spotting hippos, crocodiles, and aquatic birds.
+                        </li>                     
+                        <li class="mb-2">
+                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            Walking Safari – Experience nature up close with expert guides.
+                        </li>                      
+                    </div>
+                </div>
                 <div class="best-time mb-4">
                     <div class="">
                         <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Trek</h5>
@@ -170,7 +236,7 @@
                             <p class="">Ensure you're fully equipped for the adventure. Key items include:</p>
                         </div>
                     </div>
-                </div>                
+                </div>               
             </div>
         </div>
     </div>

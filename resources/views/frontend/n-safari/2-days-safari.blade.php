@@ -27,7 +27,8 @@
             <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
                 <h4 class="mb-3" style="color: #f1671e">Safari Overview</h4>
                 <p class="" style="text-align: justify">
-                    A 2-day wildlife safari in Tanzania is a perfect short adventure for those with limited time but still wanting to experience Africa’s stunning wildlife. This type of safari typically covers two national parks in Northern Tanzania—such as Tarangire National Park, Lake Manyara National Park, and Ngorongoro Crater.
+                    Embark on an exciting 2-day adventure through Tanzania’s Northern Safari Circuit, home to some of Africa’s most famous wildlife destinations. This short yet thrilling safari offers an incredible opportunity to witness the Big Five—lions, elephants, leopards, buffalo, and rhinos—while exploring breathtaking landscapes.
+                    This tour is ideal for travelers with limited time but eager to experience Tanzania’s diverse ecosystems, abundant wildlife, and stunning scenery. You will visit Tarangire National Park or Lake Manyara National Park on the first day and then head to Ngorongoro Crater, one of the world’s most spectacular natural wonders, on the second day.
                 </p>
             </div>
         </div>
@@ -111,7 +112,34 @@
                                 </li>  
                             </div>
                         </div>
-                    </div>       
+                    </div>        
+                    <div class="col-lg-12 col-sm-12 p-4">
+                        <div class="Acclimatization-list">
+                            <div class="">
+                                <h5 class="h6 text-muted py-3 text-uppercase">Why Choose This Safari?</h5>
+                            </div>
+                            <div class="">
+                                <p>
+                                    ✅ Diverse Destinations – Explore a mix of savannah, wetlands, and tropical rainforests.
+                                </p>      
+                                <p>
+                                    ✅ Exclusive Wildlife Experiences – Visit less crowded parks with abundant game.
+                                </p>      
+                                <p>
+                                    ✅ Variety of Activities – Enjoy game drives, boat safaris, walking safaris, and trekking.
+                                </p>      
+                                <p>
+                                    ✅ Breathtaking Scenery – Experience open plains, river systems, and mountain landscapes.
+                                </p> 
+                            </div>
+                            <br>
+                            <p>
+                                <i>
+                                    This itinerary offers an authentic and immersive Tanzanian safari, perfect for wildlife lovers, adventure seekers, and those looking to explore off-the-beaten-path destinations.
+                                </i>
+                            </p>
+                        </div>  
+                    </div>      
                 </div>
             </div>
             <div class="col-lg-5 col-sm-12">
@@ -208,7 +236,7 @@
                               Dry Season (June–October): Best for game viewing, animals gather around water sources.
                             </p>
                             <p  style="text-align: justify">
-                              Wet Season (November–May): Lush landscapes, best for birdwatching, and fewer crowds.
+                              Wet Season or Green Season (November – March) : Lush landscapes, best for birdwatching, and fewer crowds.
                             </p>
                         </div>
                     </div>
@@ -218,7 +246,7 @@
     </div>
 </div>
 
-<!-- Destination -->
+
 @include('frontend.layouts.destinations')
 
 @endsection

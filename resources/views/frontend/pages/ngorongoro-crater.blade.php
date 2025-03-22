@@ -11,10 +11,10 @@
         </div>
 
         <div class="row g-4">
-          <div class="col-lg-5 col-sm-12">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/services/b.jpg') }}" alt="me-2" />
-          </div>
           <div class="col-lg-7 col-sm-12">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/Ngorongoro.jpg') }}" alt="me-2" />
+          </div>
+          <div class="col-lg-5 col-sm-12">
               <div class="tour-hightligh mb-4">
                   <div class="">
                       <h5 class="h6 text-muted py-3 text-uppercase">Overview</h5>

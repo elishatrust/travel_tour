@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app') 
 @section('content')
 
-<div class="container-xxl py-5">
+<div class="container-xxl pt-5">
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-12 col-sm-12">
@@ -75,7 +75,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 2: Mti Mkubwa Camp (2,820m) to Shira 2 Camp (3,850m)
@@ -97,7 +96,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 3: Shira 2 Camp (3,850m) to Lava Tower (4,630m) to Barranco Camp (3,976m)
@@ -120,7 +118,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 4: Barranco Camp (3,976m) to Karanga Camp (4,035m)
@@ -142,7 +139,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 5: Karanga Camp (4,035m) to Barafu Camp (4,673m)
@@ -165,7 +161,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 6: Barafu Camp (4,673m) to Uhuru Peak (5,895m) to Mweka Camp (3,100m)
@@ -188,7 +183,6 @@
                         </div>
                     </div>  
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 7: Mweka Camp (3,100m) to Mweka Gate (1,640m) to Moshi

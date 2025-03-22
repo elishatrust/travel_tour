@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app') 
 @section('content')
 
-<div class="container-xxl py-5">
+<div class="container-xxl pt-5">
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-12 col-sm-12">

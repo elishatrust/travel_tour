@@ -11,23 +11,24 @@
             <div class="col-lg-12 col-sm-12 mb-4">
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2a.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/wildlife/wild-2b.webp') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/wildlife/wild-2.webp') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt=" Image">
+                        <img src="{{ asset('assets/frontend/img/park/002.jpg') }}" alt=" Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/003.jpg') }}" alt="Image">
                     </div>
                 </div>            
             </div>
             <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
                 <h4 class="mb-3" style="color: #f1671e">Safari Overview</h4>
                 <p class="" style="text-align: justify">
-                    A 3-day wildlife safari is an excellent option for travelers who want to experience Tanzania’s incredible wildlife in a short amount of time. This safari typically includes game drives in two or three major national parks in Northern Tanzania, such as Serengeti National Park, Ngorongoro Crater, Tarangire National Park, or Lake Manyara National Park.
+                    Embark on an exciting 2-day adventure through Tanzania’s Northern Safari Circuit, home to some of Africa’s most famous wildlife destinations. This short yet thrilling safari offers an incredible opportunity to witness the Big Five—lions, elephants, leopards, buffalo, and rhinos—while exploring breathtaking landscapes.
+                    This tour is ideal for travelers with limited time but eager to experience Tanzania’s diverse ecosystems, abundant wildlife, and stunning scenery. You will visit Tarangire National Park or Lake Manyara National Park on the first day and then head to Ngorongoro Crater, one of the world’s most spectacular natural wonders, on the second day.
                 </p>
             </div>
         </div>
@@ -49,7 +50,6 @@
             <div class="col-lg-7 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/wildlife/wild-2b.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                               <i class="fa fa-calendar-day me-2"></i>
@@ -58,36 +58,36 @@
                             <div class="">
                                 <li class="mb-2">
                                     <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Morning: Depart from Arusha or Moshi and drive to Tarangire National Park (~. 2-3 hours).
+                                    Early Morning: Pick-up from Arusha or Moshi and drive to Tarangire National Park (~ 2-3 hours).
                                 </li>
                                 <li class="mb-2">
                                     <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Game Drive: Explore Tarangire, home to large elephant herds, lions, giraffes, zebras, wildebeests, and antelopes. This park is famous for its massive baobab trees and seasonal Tarangire River, which attracts many animals.
+                                    Morning Game Drive: Spot elephants, giraffes, lions, zebras, wildebeests, and impalas roaming around. Tarangire is famous for its massive elephant herds and iconic baobab trees.
                                 </li>
                                 <li class="mb-2">
                                     <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Lunch: Picnic lunch inside the park.
+                                    Lunch: Picnic lunch inside the park at a scenic spot.
                                 </li> 
                                 <li class="mb-2">
                                     <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Afternoon Game Drive: More wildlife spotting, searching for predators like cheetahs, leopards, and lions.
+                                    Afternoon Game Drive: More wildlife viewing, looking for predators like cheetahs, leopards, and lions.
                                 </li> 
                                 <li class="mb-2">
                                     <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Evening: Drive to Mto wa Mbu or Karatu for dinner and overnight stay in a safari lodge or tented camp.
+                                    Evening: Drive to Karatu or Mto wa Mbu for dinner and overnight stay at a safari lodge or tented camp.
                                 </li> 
                                 <li class="mb-2">
                                     <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Alternative Option: Visit Lake Manyara National Park instead of Tarangire if you prefer birdwatching and diverse landscapes. Lake Manyara is famous for tree-climbing lions and flamingos.
+                                    Alternative Option: Visit Lake Manyara National Park instead of Tarangire if you prefer a mix of wildlife and birdwatching, including tree-climbing lions and flamingos.
                                 </li> 
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/wildlife/wild-2.webp') }}" alt="me-2" />
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                              <i class="fa fa-calendar-day me-2"></i>Day 2: Ngorongoro Crater – Arusha/Moshi
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 2: Ngorongoro Crater – Arusha/Moshi
                             </h5>
                             <div class="">
                                 <li class="mb-2">
@@ -112,7 +112,34 @@
                                 </li>  
                             </div>
                         </div>
-                    </div>       
+                    </div>        
+                    <div class="col-lg-12 col-sm-12 p-4">
+                        <div class="Acclimatization-list">
+                            <div class="">
+                                <h5 class="h6 text-muted py-3 text-uppercase">Why Choose This Safari?</h5>
+                            </div>
+                            <div class="">
+                                <p>
+                                    ✅ Diverse Destinations – Explore a mix of savannah, wetlands, and tropical rainforests.
+                                </p>      
+                                <p>
+                                    ✅ Exclusive Wildlife Experiences – Visit less crowded parks with abundant game.
+                                </p>      
+                                <p>
+                                    ✅ Variety of Activities – Enjoy game drives, boat safaris, walking safaris, and trekking.
+                                </p>      
+                                <p>
+                                    ✅ Breathtaking Scenery – Experience open plains, river systems, and mountain landscapes.
+                                </p> 
+                            </div>
+                            <br>
+                            <p>
+                                <i>
+                                    This itinerary offers an authentic and immersive Tanzanian safari, perfect for wildlife lovers, adventure seekers, and those looking to explore off-the-beaten-path destinations.
+                                </i>
+                            </p>
+                        </div>  
+                    </div>      
                 </div>
             </div>
             <div class="col-lg-5 col-sm-12">
@@ -209,7 +236,7 @@
                               Dry Season (June–October): Best for game viewing, animals gather around water sources.
                             </p>
                             <p  style="text-align: justify">
-                              Wet Season (November–May): Lush landscapes, best for birdwatching, and fewer crowds.
+                              Wet Season or Green Season (November – March) : Lush landscapes, best for birdwatching, and fewer crowds.
                             </p>
                         </div>
                     </div>
@@ -219,7 +246,7 @@
     </div>
 </div>
 
-<!-- Destination -->
+
 @include('frontend.layouts.destinations')
 
 @endsection

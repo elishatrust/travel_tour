@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app') 
 @section('content')
 
-<div class="container-xxl py-5">
+<div class="container-xxl pt-5">
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-12 col-sm-12">
@@ -11,16 +11,16 @@
             <div class="col-lg-12 col-sm-12 mb-4">
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2a.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt=" Image">
+                        <img src="{{ asset('assets/frontend/img/safari/meru1.webp') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/safari/meru2.webp') }}" alt=" Image">
                     </div>
                 </div>            
             </div>

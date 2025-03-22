@@ -14,10 +14,10 @@
                         <img src="{{ asset('assets/frontend/img/park/2a.jpeg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt=" Image">
+                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt=" Image">
                     </div>
                     <div class="gallery-item">
                         <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
@@ -25,7 +25,7 @@
                 </div>            
             </div>
             <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
-                <h4 class="mb-3" style="color: #f1671e">Trekking Overview</h4>
+                <h4 class="mb-3" style="color: #f1671e">Safari Overview</h4>
                 <p style="text-align: justify">
                     A 2-day safari in Mikumi National Park offers a concise yet 
                     immersive experience into Tanzania's rich wildlife and diverse ecosystems. 
@@ -43,9 +43,8 @@
 
         <div class="row mb-4">
             <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
-                <i class="fa fa-walking me-2"></i>
                 <span class="" style="color: #f1671e">
-                    <i class="fa fa-calendar-day me-2"></i>
+                    <i class="fa fa-walking me-2"></i>
                     Safari Itinerary
                 </span>
             </div>
@@ -81,21 +80,34 @@
                                 After an early breakfast, you will depart the lodge for a captivating sunrise game drive in Mikumi National Park. The park’s landscape is varied, consisting of woodlands, wetlands, and expansive grasslands, with two notable waterholes, Mkata and Chamgore, which attract a variety of wildlife. In addition to observing bird species like the saddle-billed stork, hammerkop, and malachite kingfisher, you may also encounter monitor lizards and the elusive python, which are often found in the shallow waters. In the afternoon, you will begin your return journey to Dar es Salaam, with a break for lunch in Morogoro Town. Afterward, you will continue your journey to the designated drop-off point in Dar es Salaam, marking the conclusion of your safari experience.
                             </p>
                         </div>
-                    </div>   
-                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        <div class="best-time mt-4">
+                    </div>      
+                    <div class="col-lg-12 col-sm-12 p-4">
+                        <div class="Acclimatization-list">
                             <div class="">
-                                <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Travel</h5>
-                                <div class="">
-                                    <p  style="text-align: justify">
-                                        The dry season (June–October and January–February) offers clear skies and is ideal for wildlife viewing as animals gather around water sources.
-                                        Avoid the rainy season (March–May and November–December).
-                                    </p> 
-                                    <p class="">Ensure you're fully equipped for the adventure. Key items include:</p>
-                                </div>
+                                <h5 class="h6 text-muted py-3 text-uppercase">Why Choose This Safari?</h5>
                             </div>
-                        </div>                   
-                    </div>             
+                            <div class="">
+                                <p>
+                                    ✅ Exclusive Wildlife Encounters – Ruaha has one of the highest lion densities in Africa and a thriving population of elephants and rare antelopes.
+                                </p>      
+                                <p>
+                                    ✅ Remote & Untouched Wilderness – Experience a true safari without crowds, making it one of the best places for an authentic African adventure.
+                                </p>      
+                                <p>
+                                    ✅ Stunning Scenery & Varied Ecosystems – From Baobab-studded plains to rocky escarpments and river valleys, Ruaha offers breathtaking landscapes.
+                                </p>      
+                                <p>
+                                    ✅  Combination of Game Drives & Walking Safaris – Enjoy both classic game viewing and a unique walking safari experience.
+                                </p> 
+                            </div>
+                            <br>
+                            <p>
+                                <i>
+                                    This itinerary offers an authentic and immersive Tanzanian safari, perfect for wildlife lovers, adventure seekers, and those looking to explore off-the-beaten-path destinations.
+                                </i>
+                            </p>
+                        </div>  
+                    </div>            
                 </div>
             </div>
             <div class="col-lg-4 col-sm-12 pl-5">
@@ -172,7 +184,7 @@
                         </li>                   
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
-                            Headlamp, trekking poles, hydration system.
+                            Headlamp, Safari poles, hydration system.
                         </li>                     
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
@@ -180,6 +192,37 @@
                         </li>                      
                     </div>
                 </div>     
+                <div class="safari-activities mb-4">
+                    <div class="">
+                        <h5 class="h6 text-muted py-3 text-uppercase">Safari Activities</h5>
+                    </div>
+                    <div class="">
+                        <li class="mb-2">
+                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            Game Drives – Explore vast landscapes teeming with wildlife.
+                        </li>                   
+                        <li class="mb-2">
+                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            Boat Safari – Cruise along the Rufiji River, spotting hippos, crocodiles, and aquatic birds.
+                        </li>                     
+                        <li class="mb-2">
+                            <i class="far fa-check-circle text-primary me-1"></i> 
+                            Walking Safari – Experience nature up close with expert guides.
+                        </li>                      
+                    </div>
+                </div>
+                <div class="best-time mb-4">
+                    <div class="">
+                        <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Trek</h5>
+                        <div class="">
+                            <p  style="text-align: justify">
+                                The dry season (June–October and January–February) offers clear skies and is ideal for wildlife viewing as animals gather around water sources.
+                                Avoid the rainy season (March–May and November–December).
+                            </p> 
+                            <p class="">Ensure you're fully equipped for the adventure. Key items include:</p>
+                        </div>
+                    </div>
+                </div>   
             </div>
         </div>
     </div>
