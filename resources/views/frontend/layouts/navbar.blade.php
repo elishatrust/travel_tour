@@ -23,21 +23,13 @@
                             <div class="col-lg-4 col-sm-12">
                                 <h6 class="dropdown-header text-uppercase">Northern Circuit</h6>
                                 <a class="dropdown-item wide-item" href="{{ route('2-days-safari') }}">2 Days Wildlife Safari</a>
-                                <a class="dropdown-item wide-item" href="3#">3 Days Wildlife Safari</a>
-                                <a class="dropdown-item wide-item" href="4#">4 Days Wildlife Safari</a>
-                                <a class="dropdown-item wide-item" href="5#">5 Days Wildlife Safari</a>
-                                <a class="dropdown-item wide-item" href="6#">6 Days Wildlife Safari</a>
-                                <a class="dropdown-item wide-item" href="7#">7 Days Wildlife Safari</a>
-                                <a class="dropdown-item wide-item" href="8#">8 Days Wildlife Safari</a>
-                                <a class="dropdown-item wide-item" href="9#">9 Days Wildlife Safari</a>
-
-                                {{-- <a class="dropdown-item wide-item" href="{{ route('3-days-safari') }}">3 Days Wildlife Safari</a>
+                                <a class="dropdown-item wide-item" href="{{ route('3-days-safari') }}">3 Days Wildlife Safari</a>
                                 <a class="dropdown-item wide-item" href="{{ route('4-days-safari') }}">4 Days Wildlife Safari</a>
                                 <a class="dropdown-item wide-item" href="{{ route('5-days-safari') }}">5 Days Wildlife Safari</a>
                                 <a class="dropdown-item wide-item" href="{{ route('6-days-safari') }}">6 Days Wildlife Safari</a>
                                 <a class="dropdown-item wide-item" href="{{ route('7-days-safari') }}">7 Days Wildlife Safari</a>
                                 <a class="dropdown-item wide-item" href="{{ route('8-days-safari') }}">8 Days Wildlife Safari</a>
-                                <a class="dropdown-item wide-item" href="{{ route('9-days-safari') }}">9 Days Wildlife Safari</a> --}}
+                                <a class="dropdown-item wide-item" href="{{ route('9-days-safari') }}">9 Days Wildlife Safari</a>
                             </div>
                             <div class="col-lg-4 col-sm-12">
                                 <h6 class="dropdown-header text-uppercase">Southern Circuit</h6>
@@ -54,7 +46,7 @@
                                 <a class="dropdown-item wide-item" href="{{ route('14-days-ruaha-national-park') }}">14 Days Ruaha National Park</a>
                             </div>
                             <div class="col-lg-4 col-sm-12">
-                                <h6 class="dropdown-header text-uppercase">Destinations</h6>
+                                <h6 class="dropdown-header text-uppercase"> Safari Destinations</h6>
                                 <a class="dropdown-item wide-item" href="{{ route('mount-meru') }}">Mount Meru</a>
                                 <a class="dropdown-item wide-item" href="{{ route('mount-kilimanjaro') }}">Moun Kilimanjaro</a>
                                 <a class="dropdown-item wide-item" href="{{ route('arusha-national-park') }}">Arusha National Park</a>
@@ -71,7 +63,7 @@
                     </a>
                     <div class="dropdown-menu mega-menu container">
                         <div class="row g-3">
-                            <div class="col-lg-4 col-md-6">
+                            <div class="col-lg-4 col-sm-12">
                                 <h6 class="dropdown-header text-uppercase">Mount Kilimanjaro-Short Trek</h6>
                                 <a class="dropdown-item wide-item" href="{{ route('5-days-umbwe-trek') }}">5 Days Umbwe Route</a>
                                 <a class="dropdown-item wide-item" href="{{ route('6-days-umbwe-trek') }}">6 Days Umbwe Route</a>
@@ -80,7 +72,7 @@
                                 <a class="dropdown-item wide-item" href="{{ route('6-days-machame-trek') }}">6 Days Machame Route</a>
                                 <a class="dropdown-item wide-item" href="{{ route('6-days-rongai-trek') }}">6 Days Rongai Route</a>
                             </div>
-                            <div class="col-lg-4 col-md-6">
+                            <div class="col-lg-4 col-sm-12">
                                 <h6 class="dropdown-header text-uppercase">Mount Kilimanjaro-Long Trek</h6>
                                 <a class="dropdown-item wide-item" href="{{ route('7-days-machame-trek') }}">7 Days Machame Route</a>
                                 <a class="dropdown-item wide-item" href="{{ route('7-days-rongai-trek') }}">7 Days Rongai Route</a>
@@ -89,7 +81,7 @@
                                 <a class="dropdown-item wide-item" href="{{ route('8-days-northern-circuit-trek') }}">8 Days Northern Circuit Route</a>
                                 <a class="dropdown-item wide-item" href="{{ route('9-days-northern-circuit-trek') }}">9 Days Northern Circuit Route</a>
                             </div>
-                            <div class="col-lg-4 col-md-6">
+                            <div class="col-lg-4 col-sm-12">
                                 <h6 class="dropdown-header text-uppercase">Mount Meru Trek</h6>
                                 <a class="dropdown-item wide-item" href="{{ route('3-days-mount-meru-trek') }}">3 Days Mount Meru</a>
                                 <a class="dropdown-item wide-item" href="{{ route('4-days-mount-meru-trek') }}">4 Days Mount Meru</a>
@@ -97,15 +89,16 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item dropdown position-static123">
+                <li class="nav-item dropdown position-static">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Day Tour
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <div class="row g-3">
                             <div class="col-md-12 col-sm-12">                                
-                                <a class="dropdown-item" href="{{ route('day-tour') }}">Day Trip  Packages</a>
                                 <a class="dropdown-item" href="{{ route('cultural-tour') }}">Cultural Tour</a>
+                                <a class="dropdown-item" href="{{ route('day-tour') }}">Day Trip  Packages</a>
+                                <a class="dropdown-item" href="{{ route('best-time-for-safari') }}">Best Time For Safari</a>
                             </div>
                         </div>
                     </div>
@@ -116,8 +109,8 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <div class="row g-3">
-                            <div class="col-md-12 col-sm-12">                                
-                                <a class="dropdown-item" href="{{ route('culture') }}">Culture</a>
+                            <div class="col-lg-12 col-sm-12">                                
+                                <a class="dropdown-item" href="{{ route('culture') }}">Culture Experience</a>
                                 <a class="dropdown-item" href="{{ route('terms-and-conditions') }}">Terms & Conditions</a>
                                 <a class="dropdown-item" href="{{ route('faqs') }}">FAQs</a>
                             </div>

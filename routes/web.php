@@ -19,7 +19,7 @@ Route::get('/', [FrontendController::class, 'index'])->name('welcome');
 Route::get('/about-us', [FrontendController::class, 'about'])->name('about');
 Route::get('/our-services', [FrontendController::class, 'services'])->name('services');
 Route::get('/culture-experience', [FrontendController::class, 'culture_experience'])->name('culture');
-Route::get('/mtk', [FrontendController::class, 'mt_kili_trek'])->name('mtk');
+Route::get('/best-time-for-safari', [FrontendController::class, 'best_time_safari'])->name('best-time-for-safari');
 Route::get('/trekking', [FrontendController::class, 'trekking'])->name('trekking');
 Route::get('/latest-news', [FrontendController::class, 'latest_news'])->name('latest-news');
 Route::get('/read-more-news/{id}', [FrontendController::class, 'read_more_news'])->name('read-more-news');
@@ -27,11 +27,13 @@ Route::get('/contact-us', [FrontendController::class, 'contact'])->name('contact
 Route::get('/terms-and-conditions', [FrontendController::class, 'terms_and_conditions'])->name('terms-and-conditions');
 Route::get('/frequently-asked-questions', [FrontendController::class, 'faqs'])->name('faqs');
 Route::post('/get-package', [FrontendController::class, 'get_package'])->name('get-package');
-Route::get('/book-trip', [FrontendController::class, 'book_trip'])->name('book-trip');
+// Route::get('/book-trip', [FrontendController::class, 'book_trip'])->name('book-trip');
+Route::get('/contact.store', [FrontendController::class, 'book_trip'])->name('contact.store');
 // Route::post('/save-bookings', [FrontendController::class, 'save_bookings'])->name('save-bookings');
 
 Route::post('/save-booking', [FrontendController::class, 'save_bookings'])->name('booking.store');
-Route::post('/save-trip', [FrontendController::class, 'save_trip'])->name('save-trip');
+Route::post('/save-contact', [FrontendController::class, 'save_contact'])->name('contact.store');
+// Route::post('/save-trip', [FrontendController::class, 'save_trip'])->name('save-trip');
 Route::post('/log-visit', [FrontendController::class, 'log_visit'])->name('log-visit');
 Route::get('/visitor-count', [FrontendController::class, 'count_visitor'])->name('visitor-count');
 

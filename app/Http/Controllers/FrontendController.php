@@ -152,7 +152,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.n-safari.2-days-safari', $data );
+            return view('frontend.a-safari.2-days-safari', $data );
 
         }else{
             abort(404);
@@ -167,7 +167,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.n-safari.3-days-safari', $data );
+            return view('frontend.a-safari.3-days-safari', $data );
 
         }else{
             abort(404);
@@ -182,7 +182,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.n-safari.4-days-safari', $data );
+            return view('frontend.a-safari.4-days-safari', $data );
 
         }else{
             abort(404);
@@ -197,7 +197,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.n-safari.5-days-safari', $data );
+            return view('frontend.a-safari.5-days-safari', $data );
 
         }else{
             abort(404);
@@ -212,7 +212,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.n-safari.6-days-safari', $data );
+            return view('frontend.a-safari.6-days-safari', $data );
 
         }else{
             abort(404);
@@ -227,7 +227,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.n-safari.7-days-safari', $data );
+            return view('frontend.a-safari.7-days-safari', $data );
 
         }else{
             abort(404);
@@ -242,7 +242,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.n-safari.8-days-safari', $data );
+            return view('frontend.a-safari.8-days-safari', $data );
 
         }else{
             abort(404);
@@ -257,7 +257,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.s-safari.2-days-mikumi', $data );
+            return view('frontend.b-safari.2-days-mikumi', $data );
 
         }else{
             abort(404);
@@ -272,7 +272,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.s-safari.2-days-ruaha', $data );
+            return view('frontend.b-safari.2-days-ruaha', $data );
 
         }else{
             abort(404);
@@ -287,7 +287,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.s-safari.3-days-mikumi', $data );
+            return view('frontend.b-safari.3-days-mikumi', $data );
 
         }else{
             abort(404);
@@ -302,7 +302,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.s-safari.3-days-ruaha', $data );
+            return view('frontend.b-safari.3-days-ruaha', $data );
 
         }else{
             abort(404);
@@ -317,7 +317,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.s-safari.3-days-selous-game', $data );
+            return view('frontend.b-safari.3-days-selous-game', $data );
 
         }else{
             abort(404);
@@ -332,7 +332,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.s-safari.3-days-udzungwa-mikumi', $data );
+            return view('frontend.b-safari.3-days-udzungwa-mikumi', $data );
 
         }else{
             abort(404);
@@ -347,7 +347,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.s-safari.4-days-selous-mikumi', $data );
+            return view('frontend.b-safari.4-days-selous-mikumi', $data );
 
         }else{
             abort(404);
@@ -362,7 +362,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.s-safari.5-days-mikumi-ruaha', $data );
+            return view('frontend.b-safari.5-days-mikumi-ruaha', $data );
 
         }else{
             abort(404);
@@ -377,7 +377,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.s-safari.6-days-selous-mikumi-ruaha', $data );
+            return view('frontend.b-safari.6-days-selous-mikumi-ruaha', $data );
 
         }else{
             abort(404);
@@ -392,7 +392,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.s-safari.10-days-selous-mikumi-ruaha-udzungwa', $data );
+            return view('frontend.b-safari.10-days-selous-mikumi-ruaha-udzungwa', $data );
 
         }else{
             abort(404);
@@ -407,7 +407,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.s-safari.14-days-ruaha', $data );
+            return view('frontend.b-safari.14-days-ruaha', $data );
 
         }else{
             abort(404);
@@ -423,7 +423,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.n-safari.9-days-safari', $data );
+            return view('frontend.a-safari.9-days-safari', $data );
 
         }else{
             abort(404);
@@ -534,7 +534,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.3-days-mt-meru', $data );
+            return view('frontend.trek.3-days-mt-meru', $data );
 
         }else{
             abort(404);
@@ -550,7 +550,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.4-days-mt-meru', $data );
+            return view('frontend.trek.4-days-mt-meru', $data );
 
         }else{
             abort(404);
@@ -566,7 +566,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.5-days-marangu', $data );
+            return view('frontend.trek.5-days-marangu', $data );
 
         }else{
             abort(404);
@@ -582,7 +582,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.6-days-marangu', $data );
+            return view('frontend.trek.6-days-marangu', $data );
 
         }else{
             abort(404);
@@ -598,7 +598,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.5-days-umbwe', $data );
+            return view('frontend.trek.5-days-umbwe', $data );
 
         }else{
             abort(404);
@@ -614,7 +614,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.6-days-umbwe', $data );
+            return view('frontend.trek.6-days-umbwe', $data );
 
         }else{
             abort(404);
@@ -630,7 +630,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.6-days-machame', $data );
+            return view('frontend.trek.6-days-machame', $data );
 
         }else{
             abort(404);
@@ -646,7 +646,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.7-days-machame', $data );
+            return view('frontend.trek.7-days-machame', $data );
 
         }else{
             abort(404);
@@ -662,7 +662,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.6-days-rongai', $data );
+            return view('frontend.trek.6-days-rongai', $data );
 
         }else{
             abort(404);
@@ -678,7 +678,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.7-days-rongai', $data );
+            return view('frontend.trek.7-days-rongai', $data );
 
         }else{
             abort(404);
@@ -694,7 +694,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.7-days-lemosho', $data );
+            return view('frontend.trek.7-days-lemosho', $data );
 
         }else{
             abort(404);
@@ -710,7 +710,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.8-days-lemosho', $data );
+            return view('frontend.trek.8-days-lemosho', $data );
 
         }else{
             abort(404);
@@ -726,7 +726,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.8-days-northern-circuit', $data );
+            return view('frontend.trek.8-days-northern-circuit', $data );
 
         }else{
             abort(404);
@@ -742,23 +742,23 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.9-days-northern-circuit', $data );
+            return view('frontend.trek.9-days-northern-circuit', $data );
 
         }else{
             abort(404);
         }
     }
 
-    public function mt_kili_trek()
+    public function best_time_safari()
     {
         $meta_title = 'Upzone Safaris';
-        $page_title = 'Mount Kilimanjaro';
+        $page_title = 'Best Time For Safari';
 
         if(!empty($meta_title && $page_title))
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.mt-kili-trek', $data );
+            return view('frontend.pages.best-time-safari', $data );
 
         }else{
             abort(404);
@@ -894,75 +894,43 @@ class frontendController extends Controller
         }
 
     }
-    
-    public function save_trip(Request $request)
+    public function save_contact(Request $request)
     {
         try {
             DB::beginTransaction();
 
-            $validator = Validator::make($request->all(), [
+            $request->validate([
                 'fullname' => 'required|string|max:255',
                 'phone' => 'required|string|max:20',
-                'email' => 'required|email',
-                'arrival_date' => 'required|date',
-                'departure_date' => 'required|date|after_or_equal:arrival_date',
-                'adults' => 'required|integer|min:1',
-                'children' => 'required|integer|min:0',
-                'accommodation' => 'required|string',
-                'package' => 'required|integer',
-                'cost' => 'required|numeric',
-                'agree' => 'required|in:on',
+                'email' => 'required|email|max:255',
+                'subject' => 'required|string',
+                'message' => 'nullable|string',
             ]);
 
-            if ($validator->fails()) {
-                return response()->json([
-                    'status' => 500,
-                    'message' => 'Error validation occurred. Please fix them',
-                    'errors' => $validator->errors()
-                ], 500);
-            }
-
-            $hidden_id = $request->input('hidden_id');
-
             $saveData = [
-                'name' => $request->input('fullname'),
+                'fullname' => $request->input('fullname'),
                 'phone' => $request->input('phone'),
                 'email' => $request->input('email'),
-                'arrival_date' => $request->input('arrival_date'),
-                'departure_date' => $request->input('departure_date'),
-                'adults' => $request->input('adults'),
-                'children' => $request->input('children'),
-                'accommodation' => $request->input('accommodation'),
-                'package_id' => $request->input('package'),
-                'cost' => $request->input('cost'),
-                'tokens' => rand(1,9999999999),
-                'status' => 'pending',
+                'subject' => $request->input('subject'),
+                'message' => $request->input('message'),
+                'status' => 0,
                 'archive' => 0,
-                'updated_by' => Auth::user()->id,
-                'created_by' => Auth::user()->id,
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
-            ## If hidden_id exists, update the record
-            if ($hidden_id) {               
-                DB::table('book_trip')->where('id', $hidden_id)->update($saveData);
-                $message = 'Trip updated successfully';
-            } else {
-                ## Otherwise, create a new record
-                DB::table('book_trip')->insertGetId($saveData);
-                $message = 'Your trip saved successfully';
-            }
-
-            DB::commit();
+            DB::table('contacts')->insertGetId($saveData);
             
-            return response()->json(['status' => 200, 'message' => $message]);
+            DB::commit();
+
+            return response()->json(['success' => true, 'message' => 'Message sent successfully!']);
 
         } catch (\Exception $e) {
             DB::rollBack();
 
             return response()->json(['status' => 500, 'message' => 'Error: ' . $e->getMessage()]);
         }
+
     }
 
     public function read_more_news($id)

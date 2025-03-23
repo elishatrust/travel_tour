@@ -78,8 +78,9 @@
                 <textarea class="form-control bg-light py-2" placeholder="Leave a message here"id="message" name="message" style="height: 100px"></textarea>
                 </div>
             </div>
+            <div class="col-lg-12 col-sm-12" id="loader"></div>
             <div class="col-md-12 col-sm-12">
-                <button class="btn btn-outline-primary text-uppercase w-100 py-2" type="submit">
+                <button class="btn btn-outline-primary text-uppercase w-100 py-3" type="submit">
                     Send Message
                 </button>
             </div>

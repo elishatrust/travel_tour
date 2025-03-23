@@ -323,6 +323,32 @@
                 }
             });
         });
+
+
+        /*====== Save Contacts  ======*/
+        $("#form").on("submit", function(e) {
+            e.preventDefault();
+            let formData = new FormData(this);
+
+            $.ajax({
+                url: "{{ route('contact.store') }}",
+                type: "POST",
+                data: formData,
+                processData: false,
+                contentType: false,
+                headers: { "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content") },
+                beforeSend: function() {
+                    $("#loader").html('Saving...').show();
+                },
+                success: function(response) {
+                    $("#loader").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>"+response.message+"</div>").delay(3000).fadeOut("slow"); 
+                    $("#form")[0].reset();
+                },
+                error: function(response) {
+                    $("#loader").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>Something went wrong. Please check your input.</div>").delay(3000).fadeOut("slow"); 
+                }
+            });
+        });
      
         /*====== Whatsapp chat widget ======*/
         var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?21528';
