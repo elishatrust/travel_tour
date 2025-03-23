@@ -5,7 +5,7 @@
 
 
 <div class="container-xxl py-5">
-    <div class="container pt-5">
+    <div class="container">
         <div class="row g-5">
             <div class="col-lg-6 col-sm-12">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Our Background</p>
@@ -48,8 +48,7 @@
     </div>
 </div>
 
-
-<div class="container section-top-border"><br>
+<div class="container">
     <h3 class="mb-30">Innovation and Growth</h3>
     <div class="row">
         <div class="col-lg-12 p-3">
@@ -65,7 +64,6 @@
 </div>
 
 
-<!-- DNA -->
 <div class="container-xxl pb-5">
     <div class="container">
         <div class="row g-5">

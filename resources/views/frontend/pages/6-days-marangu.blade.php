@@ -10,19 +10,17 @@
             </div>
             <div class="col-lg-12 col-sm-12 mb-4">
                 <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2a.jpeg') }}" alt="Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt="Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt=" Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
-                    </div>
-                </div>            
+                    <img src="{{ asset('assets/frontend/img/safari/50.jpg') }}" alt="Image">
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ asset('assets/frontend/img/safari/42.jpg') }}" alt=" Image">
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ asset('assets/frontend/img/safari/41.jpg') }}" alt="Image">
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ asset('assets/frontend/img/safari/29.jpg') }}" alt="Image">
+                </div>          
             </div>
             <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
                 <h4 class="mb-3" style="color: #f1671e">Trekking Overview</h4>

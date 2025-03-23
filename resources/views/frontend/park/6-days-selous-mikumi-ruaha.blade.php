@@ -266,7 +266,7 @@
                 </div>
                 <div class="best-time mb-4">
                     <div class="">
-                        <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Trek</h5>
+                        <h5 class="h6 text-muted py-3 text-uppercase">Best Time For Safari</h5>
                         <div class="">
                             <p  style="text-align: justify">
                                 The dry season (June–October and January–February) offers clear skies and is ideal for wildlife viewing as animals gather around water sources.

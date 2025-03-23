@@ -11,34 +11,33 @@
             <div class="col-lg-12 col-sm-12 mb-4">
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/wildlife/wild-2b.webp') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/new3.webp') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/wildlife/wild-2.webp') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/rhino2.webp') }}" alt=" Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/002.jpg') }}" alt=" Image">
+                        <img src="{{ asset('assets/frontend/img/park/mo2.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/003.jpg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/1003.jpg') }}" alt="Image">
                     </div>
                 </div>            
             </div>
             <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
                 <h4 class="mb-3" style="color: #f1671e">Safari Overview</h4>
                 <p class="" style="text-align: justify">
-                    Embark on an exciting 2-day adventure through Tanzania’s Northern Safari Circuit, home to some of Africa’s most famous wildlife destinations. This short yet thrilling safari offers an incredible opportunity to witness the Big Five—lions, elephants, leopards, buffalo, and rhinos—while exploring breathtaking landscapes.
-                    This tour is ideal for travelers with limited time but eager to experience Tanzania’s diverse ecosystems, abundant wildlife, and stunning scenery. You will visit Tarangire National Park or Lake Manyara National Park on the first day and then head to Ngorongoro Crater, one of the world’s most spectacular natural wonders, on the second day.
+                    Embark on an unforgettable 8-day wildlife safari through Tanzania’s Northern Circuit, exploring its most iconic national parks and breathtaking landscapes. This well-crafted itinerary takes you on a journey through Tarangire National Park, Serengeti National Park, Ngorongoro Crater, Lake Manyara National Park, and Arusha National Park, offering exceptional game-viewing opportunities, diverse ecosystems, and cultural experiences. Witness the Big Five, observe the Great Migration (seasonal), and immerse yourself in the raw beauty of Tanzania’s wilderness. With expert guides, comfortable accommodations, and thrilling game drives, this safari promises an adventure of a lifetime.
                 </p>
             </div>
         </div>
 
         <div class="row mb-4">
-            <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
+            <div class="col-lg-7 col-sm-12 h2" style="color: #f1671e">
                 <i class="fa fa-walking me-2"></i>
                 <span class="" style="color: #f1671e">Safari Itinerary</span>
             </div>
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-5 col-sm-12">
                 <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
                     Book Now
                     <i class="fa fa-arrow-right ms-3"></i>
@@ -53,66 +52,90 @@
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                               <i class="fa fa-calendar-day me-2"></i>
-                              Day 1: Arusha/Moshi – Tarangire National Park
+                              Day 1: Arrival in Arusha – Welcome & Cultural Experience
                             </h5>
-                            <div class="">
-                                <li class="mb-2">
-                                    <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Early Morning: Pick-up from Arusha or Moshi and drive to Tarangire National Park (~ 2-3 hours).
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Morning Game Drive: Spot elephants, giraffes, lions, zebras, wildebeests, and impalas roaming around. Tarangire is famous for its massive elephant herds and iconic baobab trees.
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Lunch: Picnic lunch inside the park at a scenic spot.
-                                </li> 
-                                <li class="mb-2">
-                                    <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Afternoon Game Drive: More wildlife viewing, looking for predators like cheetahs, leopards, and lions.
-                                </li> 
-                                <li class="mb-2">
-                                    <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Evening: Drive to Karatu or Mto wa Mbu for dinner and overnight stay at a safari lodge or tented camp.
-                                </li> 
-                                <li class="mb-2">
-                                    <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Alternative Option: Visit Lake Manyara National Park instead of Tarangire if you prefer a mix of wildlife and birdwatching, including tree-climbing lions and flamingos.
-                                </li> 
-                            </div>
+                            <p style="text-align: justify">
+                                Your adventure begins with your arrival in Arusha, Tanzania’s safari hub. Upon landing, you’ll be greeted by your safari guide and transferred to your hotel for check-in and a short briefing about the upcoming safari. If time allows, you can explore Arusha National Park, where you can enjoy a short walking safari or a game drive. Alternatively, you may choose to visit a local Maasai village or a cultural heritage center to learn about Tanzania’s rich traditions. Relax and enjoy a welcome dinner at your lodge before resting for the night.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                               <i class="fa fa-calendar-day me-2"></i>
-                              Day 2: Ngorongoro Crater – Arusha/Moshi
+                              Day 2: Arusha → Tarangire National Park (Elephants & Game Drive)
                             </h5>
-                            <div class="">
-                                <li class="mb-2">
-                                    <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Early Morning: Breakfast and drive to Ngorongoro Crater (~1 hour).
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Game Drive in the Crater: Descend into the world’s largest unbroken volcanic caldera. This is one of the best places in Africa to see the Big Five (especially black rhinos).
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Lunch: Picnic lunch near Hippo Pool while watching hippos in the water.
-                                </li> 
-                                <li class="mb-2">
-                                    <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Afternoon: More wildlife viewing and then start the drive back to Arusha or Moshi.
-                                </li> 
-                                <li class="mb-2">
-                                    <i class="fa fa-arrow-right text-primary me-1"></i> 
-                                    Evening: Arrive back at your hotel or drop-off at the airport (if needed).
-                                </li>  
-                            </div>
+                            <p style="text-align: justify">
+                                After an early breakfast, set off for Tarangire National Park, a two-hour scenic drive from Arusha. This park is renowned for its large elephant herds, towering baobab trees, and diverse wildlife, including lions, leopards, cheetahs, giraffes, zebras, and numerous antelope species. Enjoy a game drive along the Tarangire River, where wildlife gathers for water. After a picnic lunch in the park, continue exploring before heading to your lodge or tented camp for dinner and an overnight stay.
+                            </p>
                         </div>
-                    </div>        
+                    </div>   
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        <div>
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 3: Tarangire → Serengeti National Park (Scenic Drive & Afternoon Game Drive)
+                            </h5>
+                            <p style="text-align: justify">
+                                After breakfast, journey towards Serengeti National Park, passing through the Ngorongoro Conservation Area. Stop at the Ngorongoro Crater rim viewpoint for panoramic views before continuing into the endless plains of the Serengeti. Upon arrival, embark on an afternoon game drive, where you may encounter lions, leopards, cheetahs, elephants, and massive herds of wildebeest and zebras. As the sun sets over the savannah, check into your luxury lodge or tented camp for a relaxing evening under the stars.
+                            </p>
+                        </div>
+                    </div>  
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        <div>
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 4: Full-Day Game Drive in Serengeti (Big Cats & Great Migration Experience)
+                            </h5>
+                            <p style="text-align: justify">
+                                Rise early for a sunrise game drive, the best time to witness predators in action. Depending on the season, you may witness the Great Migration, where thousands of wildebeests and zebras traverse the plains in search of fresh grazing. Throughout the day, explore different regions of the park, spotting elephants, buffalo, giraffes, and various bird species. After a picnic lunch, continue your safari adventure before returning to your accommodation for dinner and rest.
+                            </p>
+                        </div>
+                    </div>  
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        <div>
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 5: Serengeti → Ngorongoro Crater (Big Five & Unique Ecosystem)
+                            </h5>
+                            <p style="text-align: justify">
+                                After an early breakfast, enjoy a final morning game drive in the Serengeti before departing for Ngorongoro Conservation Area. Descend into the Ngorongoro Crater, a UNESCO World Heritage Site and one of Africa’s most wildlife-rich areas. This ancient volcanic caldera is home to rhinos, large lion prides, elephants, hippos, and numerous other species. Enjoy a picnic lunch near a hippo pool, then continue your exploration before heading to your lodge on the crater rim for dinner and an overnight stay.
+                            </p>
+                        </div>
+                    </div>  
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        <div>
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 6: Ngorongoro → Lake Manyara National Park (Tree-Climbing Lions & Birdlife)
+                            </h5>
+                            <p style="text-align: justify">
+                                Depart for Lake Manyara National Park, a lush wildlife sanctuary located along the Great Rift Valley escarpment. This park is famous for its tree-climbing lions, which can often be seen resting on acacia branches. The lake itself is home to thousands of flamingos, pelicans, and other migratory birds. During your game drive, spot elephants, hippos, giraffes, zebras, and large troops of baboons. After an eventful day, check into your lodge or tented camp for an overnight stay.
+                            </p>
+                        </div>
+                    </div>       
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        <div>
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                              <i class="fa fa-calendar-day me-2"></i>
+                                Day 7: Lake Manyara → Arusha National Park (Walking Safari & Wildlife Viewing)
+                            </h5>
+                            <p style="text-align: justify">
+                                After breakfast, return to Arusha National Park, a diverse park known for its lush rainforests, Momella Lakes, and Mount Meru’s scenic landscapes. Here, you will enjoy a guided walking safari, allowing you to get closer to wildlife, including giraffes, buffalo, warthogs, and various primates. This is a unique experience that complements traditional game drives. Enjoy lunch at a scenic location before transferring to your hotel in Arusha for a farewell dinner.
+                            </p>
+                        </div>
+                    </div>       
+                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
+                        <div>
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 8: Departure from Arusha – End of Safari
+                            </h5>
+                            <p style="text-align: justify">
+                                After breakfast, enjoy some leisure time in Arusha, where you can visit local markets or relax at your hotel before being transferred to Kilimanjaro International Airport for your onward flight. This marks the end of your incredible 8-day Northern Circuit Safari.
+                            </p>
+                        </div>
+                    </div>      
                     <div class="col-lg-12 col-sm-12 p-4">
                         <div class="Acclimatization-list">
                             <div class="">
@@ -120,16 +143,16 @@
                             </div>
                             <div class="">
                                 <p>
-                                    ✅ Diverse Destinations – Explore a mix of savannah, wetlands, and tropical rainforests.
+                                    ✅ Covers Four Iconic Parks – Experience Tarangire, Ngorongoro, Serengeti, and Lake Manyara in just four days
                                 </p>      
                                 <p>
-                                    ✅ Exclusive Wildlife Experiences – Visit less crowded parks with abundant game.
+                                    ✅ High Wildlife Density – Ngorongoro and Serengeti offer some of the best game-viewing opportunities in Africa.                    
                                 </p>      
                                 <p>
-                                    ✅ Variety of Activities – Enjoy game drives, boat safaris, walking safaris, and trekking.
+                                    ✅ Diverse Landscapes – From savannas and volcanic craters to forests and soda lakes, witness Tanzania’s natural beauty.
                                 </p>      
                                 <p>
-                                    ✅ Breathtaking Scenery – Experience open plains, river systems, and mountain landscapes.
+                                    ✅ Perfect for First-Time Safari Travelers – A well-balanced itinerary that includes game drives, cultural experiences, and relaxation.
                                 </p> 
                             </div>
                             <br>
@@ -230,7 +253,7 @@
                 </div>   
                 <div class="best-time mb-4">
                     <div class="">
-                        <h5 class="h6 text-muted py-3 text-uppercase"> Best Time for a 2-Day Safari</h5>
+                        <h5 class="h6 text-muted py-3 text-uppercase"> Best Time for Safari</h5>
                         <div class="">
                             <p  style="text-align: justify">
                               Dry Season (June–October): Best for game viewing, animals gather around water sources.

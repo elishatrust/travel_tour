@@ -11,16 +11,19 @@
             <div class="col-lg-12 col-sm-12 mb-4">
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/safari/41.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
                         <img src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/safari/meru1.webp') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/safari/52.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/safari/meru2.webp') }}" alt=" Image">
+                        <img src="{{ asset('assets/frontend/img/safari/31.jpg') }}" alt=" Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/safari/29.jpg') }}" alt="Image">
                     </div>
                 </div>            
             </div>
@@ -56,7 +59,6 @@
             <div class="col-lg-8 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/52.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 1: Marangu Gate to Mandara Hut
@@ -75,7 +77,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 2: Mandara Hut to Horombo Hut
@@ -96,7 +97,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/41.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 3: Horombo Hut to Kibo Hut
@@ -117,7 +117,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/31.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 4: Kibo Hut to Uhuru Peak and Back to Horombo Hut
@@ -137,7 +136,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/49.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 5: Horombo Hut to Marangu Gate

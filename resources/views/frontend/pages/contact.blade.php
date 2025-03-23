@@ -4,7 +4,7 @@
 
 
 <div class="container-xxl py-5">
-  <div class="container py-5">
+  <div class="container">
     <p style="color: #f1671e;" class="text-uppercase text-center"><span class="text-primary me-2">#</span>Get In Touch!</p>
     <div class="row g-5">
       <div class="col-lg-5 col-md-7 col-sm-12 ">

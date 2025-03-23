@@ -17,7 +17,7 @@
                         <img src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/safari/meru1.webp') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/safari/0037.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
                         <img src="{{ asset('assets/frontend/img/safari/meru2.webp') }}" alt=" Image">

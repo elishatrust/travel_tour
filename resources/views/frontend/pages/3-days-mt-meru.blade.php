@@ -14,10 +14,10 @@
                         <img src="{{ asset('assets/frontend/img/safari/0028.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/safari/0037.jpg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/safari/meru2.webp') }}" alt=" Image">
                     </div>
                     <div class="gallery-item">
                         <img src="{{ asset('assets/frontend/img/more/Mt-Meru.jpg') }}" alt=" Image">
@@ -106,8 +106,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        <div class="p-5">
+                    <div class="col-lg-12 col-sm-12 p-4">
+                        <div class="">
                             <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Trek</h5>
                             <div class="">
                                 <p  style="text-align: justify">

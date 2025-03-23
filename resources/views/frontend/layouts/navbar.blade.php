@@ -126,7 +126,6 @@
                     <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                 </li>
             </ul>
-            <a href="{{ route('plan-trip') }}" class="btn btn-outline-primary text-uppercase">Plan a Trip</a>
         </div>
     </div>
 </nav>

@@ -11,16 +11,16 @@
             <div class="col-lg-12 col-sm-12 mb-4">
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/wildlife/wild-2b.webp') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/106.jpg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/wildlife/wild-2.webp') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/106.webp') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
                         <img src="{{ asset('assets/frontend/img/park/002.jpg') }}" alt=" Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/003.jpg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/1003.jpg') }}" alt="Image">
                     </div>
                 </div>            
             </div>
@@ -34,11 +34,11 @@
         </div>
 
         <div class="row mb-4">
-            <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
+            <div class="col-lg-7 col-sm-12 h2" style="color: #f1671e">
                 <i class="fa fa-walking me-2"></i>
                 <span class="" style="color: #f1671e">Safari Itinerary</span>
             </div>
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-5 col-sm-12">
                 <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
                     Book Now
                     <i class="fa fa-arrow-right ms-3"></i>
@@ -120,16 +120,16 @@
                             </div>
                             <div class="">
                                 <p>
-                                    ✅ Diverse Destinations – Explore a mix of savannah, wetlands, and tropical rainforests.
+                                    ✅ Perfect for Short Trips – Ideal for travelers with limited time who want to experience Tanzania’s incredible wildlife.
                                 </p>      
                                 <p>
-                                    ✅ Exclusive Wildlife Experiences – Visit less crowded parks with abundant game.
+                                    ✅ High Chances of Spotting the Big Five – Ngorongoro Crater offers one of the best opportunities to see the Big Five in one day.
                                 </p>      
                                 <p>
-                                    ✅ Variety of Activities – Enjoy game drives, boat safaris, walking safaris, and trekking.
+                                    ✅ Stunning Landscapes & Unique Ecosystems – From baobab-studded savannas to the lush crater floor, this tour offers breathtaking scenery.
                                 </p>      
                                 <p>
-                                    ✅ Breathtaking Scenery – Experience open plains, river systems, and mountain landscapes.
+                                    ✅  Great Combination of Parks – Tarangire/Lake Manyara + Ngorongoro ensures a diverse safari experience.
                                 </p> 
                             </div>
                             <br>
@@ -230,7 +230,7 @@
                 </div>   
                 <div class="best-time mb-4">
                     <div class="">
-                        <h5 class="h6 text-muted py-3 text-uppercase"> Best Time for a 2-Day Safari</h5>
+                        <h5 class="h6 text-muted py-3 text-uppercase"> Best Time for Safari</h5>
                         <div class="">
                             <p  style="text-align: justify">
                               Dry Season (June–October): Best for game viewing, animals gather around water sources.

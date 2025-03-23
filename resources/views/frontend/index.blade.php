@@ -5,7 +5,7 @@
 
 <!-- WELCOME -->
 <div class="container-xxl py-5">
-    <div class="container py-5">
+    <div class="container">
         <div class="row g-5">
             <div class="col-lg-6 col-sm-12">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Welcome</p>
@@ -96,7 +96,7 @@
 
 <!-- Facts -->
 <div class="container-xxl123 py-5 bg-primary facts">
-    <div class="container py-5">
+    <div class="container">
         <div class="row g-4">
             <div class="col-lg-3 col-md-6 col-sm-12 text-center"
                >
@@ -138,7 +138,7 @@
 
 <!-- Proudness -->
 <div class="container-xxl py-5">
-    <div class="container py-5">
+    <div class="container">
         <div class="row g-5">
             <div class="col-lg-5 col-sm-12">
                 <div class="img-border123 h-100">
@@ -181,7 +181,7 @@
 
 <!-- Testimonial -->
 <div class="container-xxl py-5">
-    <div class="container py-5">
+    <div class="container">
         <div class="row g-5 align-items-end">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Testimonial</p>

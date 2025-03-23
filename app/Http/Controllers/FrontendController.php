@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\BlogModel;
+use App\Models\BookingModel;
 use App\Models\PackageModel;
 use App\Models\SiteVisitorModel;
 use App\Models\TripModel;
@@ -256,7 +257,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.park.2-days-mikumi', $data );
+            return view('frontend.s-safari.2-days-mikumi', $data );
 
         }else{
             abort(404);
@@ -271,7 +272,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.park.2-days-ruaha', $data );
+            return view('frontend.s-safari.2-days-ruaha', $data );
 
         }else{
             abort(404);
@@ -286,7 +287,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.park.3-days-mikumi', $data );
+            return view('frontend.s-safari.3-days-mikumi', $data );
 
         }else{
             abort(404);
@@ -301,7 +302,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.park.3-days-ruaha', $data );
+            return view('frontend.s-safari.3-days-ruaha', $data );
 
         }else{
             abort(404);
@@ -316,7 +317,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.park.3-days-selous-game', $data );
+            return view('frontend.s-safari.3-days-selous-game', $data );
 
         }else{
             abort(404);
@@ -331,7 +332,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.park.3-days-udzungwa-mikumi', $data );
+            return view('frontend.s-safari.3-days-udzungwa-mikumi', $data );
 
         }else{
             abort(404);
@@ -346,7 +347,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.park.4-days-selous-mikumi', $data );
+            return view('frontend.s-safari.4-days-selous-mikumi', $data );
 
         }else{
             abort(404);
@@ -361,7 +362,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.park.5-days-mikumi-ruaha', $data );
+            return view('frontend.s-safari.5-days-mikumi-ruaha', $data );
 
         }else{
             abort(404);
@@ -376,7 +377,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.park.6-days-selous-mikumi-ruaha', $data );
+            return view('frontend.s-safari.6-days-selous-mikumi-ruaha', $data );
 
         }else{
             abort(404);
@@ -391,7 +392,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.park.10-days-selous-mikumi-ruaha-udzungwa', $data );
+            return view('frontend.s-safari.10-days-selous-mikumi-ruaha-udzungwa', $data );
 
         }else{
             abort(404);
@@ -406,7 +407,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.park.14-days-ruaha', $data );
+            return view('frontend.s-safari.14-days-ruaha', $data );
 
         }else{
             abort(404);
@@ -819,7 +820,7 @@ class frontendController extends Controller
         return response()->json($package);
     }
 
-    public function plan_trip()
+    public function book_trip()
     {
         $meta_title = 'Upzone Safaris';
         $page_title = 'Plan Your Trip Today';
@@ -842,52 +843,49 @@ class frontendController extends Controller
         try {
             DB::beginTransaction();
 
-            $validator = Validator::make($request->all(), [
+            $request->validate([
                 'fullname' => 'required|string|max:255',
+                'nationality' => 'required|string|max:255',
                 'phone' => 'required|string|max:20',
-                'email' => 'required|email',
+                'email' => 'required|email|max:255',
                 'arrival_date' => 'required|date',
-                'booking_tour' => 'required|string|max:255',
-                'number_travelers' => 'required|integer|min:1',
-                'message' => 'required|text',
-                ]);
-
-            if ($validator->fails()) {
-                return response()->json([
-                    'status' => 500,
-                    'message' => 'Error validation occurred. Please fix them',
-                    'errors' => $validator->errors()
-                ], 500);
-            }
+                'departure_date' => 'required|date|after_or_equal:arrival_date',
+                'adults' => 'required|integer|min:1',
+                'children' => 'required|integer|min:0',
+                'accommodation' => 'required|string',
+                'package_id' => 'required|integer',
+                // 'cost' => 'required',
+                'message' => 'nullable|string',
+                'agree' => 'accepted',
+            ]);
 
             $saveData = [
                 'name' => $request->input('fullname'),
                 'phone' => $request->input('phone'),
                 'email' => $request->input('email'),
+                'nationality' => $request->input('nationality'),
                 'arrival_date' => $request->input('arrival_date'),
-                'adults' => $request->input('number_travelers'),
+                'adults' => $request->input('adults'),
                 'message' => $request->input('message'),
-                'departure_date' => null,
-                'children' => 0,
-                'accommodation' => null,
-                'package_id' => null,
-                'cost' => 0,
+                'departure_date' => $request->input('departure_date'),
+                'children' => $request->input('children'),
+                'accommodation' => $request->input('accommodation'),
+                'package_id' => $request->input('package_id'),
+                // 'cost' => $request->input('cost'),
                 'tokens' => rand(1,9999999999),
                 'status' => 'pending',
                 'archive' => 0,
-                'updated_by' => Auth::user()->id,
-                'created_by' => Auth::user()->id,
+                'updated_by' => 1,
+                'created_by' => 1,
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
-                
-            # Create a new record
-            DB::table('book_trip')->insertGetId($saveData);
-            $message = 'Your trip saved successfully';
 
-            DB::commit();
+            DB::table('book_trip')->insertGetId($saveData);
             
-            return response()->json(['status' => 200, 'message' => $message]);
+            DB::commit();
+
+            return response()->json(['success' => true, 'message' => 'Booking saved successfully!']);
 
         } catch (\Exception $e) {
             DB::rollBack();

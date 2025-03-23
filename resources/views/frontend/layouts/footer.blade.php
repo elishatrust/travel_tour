@@ -1,5 +1,5 @@
 <div class="container-fluid bg-dark text-light footer py-5">
-<div class="container py-5">
+<div class="container">
   <div class="row g-5">
     <div class="col-lg-3 col-md-6">
       <h5 class="text-light mb-4">Address</h5>
