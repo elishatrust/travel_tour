@@ -11,10 +11,10 @@
             <div class="col-lg-12 col-sm-12 mb-4">
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/ruaha.webp') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt=" Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/mikumi9.jpg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/ruaha.webp') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
                         <img src="{{ asset('assets/frontend/img/park/ruaha5.jpg') }}" alt=" Image">

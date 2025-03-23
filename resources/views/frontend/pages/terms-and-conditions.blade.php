@@ -12,8 +12,8 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-10 col-sm-12 justify-content-center">              
-                <div class="terms-container">
+            <div class="col-lg-12 col-sm-12 justify-content-center">              
+                <div class="terms-container shadow-sm">
 
                     <p class="mb-3"><strong>Last Updated:</strong> [{{ date('Y') }}]</p>
 

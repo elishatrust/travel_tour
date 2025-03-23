@@ -16,7 +16,7 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-10 col-sm-12 justify-content-center">                
+            <div class="col-lg-12 col-sm-12 justify-content-center">                
                 <div class="faq-container">
                     
                     <div class="faq-item">

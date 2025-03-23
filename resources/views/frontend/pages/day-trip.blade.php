@@ -33,8 +33,8 @@
 
 
       <div class="row g-4">
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/kilimanjaro-rongai.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/kilimanjaro-rongai.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -50,8 +50,8 @@
                     </ul>
                </div>
           </div>
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/materuni.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/materuni.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -66,8 +66,8 @@
                     </ul>
                </div>
           </div>
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/moshi-tower.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/moshi-tower.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -81,8 +81,8 @@
                     </ul>
                </div>
           </div>
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/marangu-waterfalls.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/marangu-waterfalls.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -97,8 +97,8 @@
                     </ul>
                </div>
           </div>
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/Maasai.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/Maasai.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -113,8 +113,8 @@
                     </ul>
                </div>
           </div>
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/arusha-national-park.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/arusha-national-park.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -130,8 +130,8 @@
                     </ul>
                </div>
           </div>  
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/moshi-forest.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/moshi-forest.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -145,8 +145,8 @@
                     </ul>
                </div>
           </div>  
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/cofee-tour.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/cofee-tour.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -161,8 +161,8 @@
                     </ul>
                </div>
           </div>  
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/chemka.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/chemka.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -177,8 +177,8 @@
                     </ul>
                </div>
           </div>  
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/lake-chala.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/lake-chala.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -194,7 +194,7 @@
                     </ul>
                </div>
           </div>  
-          <div class="col-lg-12 col-sm-12 p-4 mt-4">
+          <div class="col-lg-8 col-sm-12 p-4">
               <div class="Acclimatization-list mb-4">
                   <div class="">
                       <h5 class="h6 text-muted py-3 text-uppercase">Why Choose These Day Trips?</h5>
@@ -219,6 +219,100 @@
     </div>
 </div>
 
+
+<div class="container-xxl">
+     <div class="container py-5">
+         <div class="row g-5">
+             <div class="col-md-12 col-sm-12 justify-center">
+                 <ul class="list-group">
+                     <li class="list-group-item bg-light text-start h4 py-3" aria-current="true">
+                         Summary of Routes
+                     </li>
+                     <li class="list-group-item">
+                         <div class="table-responsive">
+                             <table class="table table-striped table-bordered">
+                                 <thead>
+                                     <tr>
+                                         <th>Route Name</th>
+                                         <th>Descriptions</th>
+                                         <th>Duration</th>
+                                         <th>Distance</th>
+                                         <th>Descent Route</th>
+                                     </tr>
+                                 </thead>
+                                 <tbody>
+                                     <tr>
+                                         <td>Rongai Route</td>
+                                         <td>
+                                             Long access drive, remote, less frequented, some fine, wild, least scenic,
+                                             Good for acclimatization.
+                                         </td>
+                                         <td>5-6 days</td>
+                                         <td>65 Km (40 mi)</td>
+                                         <td>Mweka</td>
+                                     </tr>
+                                     <tr>
+                                         <td>Shira Route</td>
+                                         <td>
+                                             This route has the highest starting elevation. 
+                                             It begins on the western slope and then skirts around the south of Kibo Peak. 
+                                         </td>
+                                         <td>6 days</td>
+                                         <td>56 Km (47 mi)</td>
+                                         <td>Mweka</td>
+                                     </tr>
+                                     <tr>
+                                         <td>Northern Circuit Route</td>
+                                         <td>
+                                             Newest route on Kilimanjaro. Very low traffic due to very long time on the mountain, 
+                                             traverses nearly the entire mountain including the north side. 
+                                             Long route with great views.
+                                         </td>
+                                         <td>9 days</td>
+                                         <td>90 Km (56 mi)</td>
+                                         <td>Mweka</td>
+                                     </tr>
+                                     <tr>
+                                         <td>Machame Route</td>
+                                         <td>
+                                             Second most popular route. Forested traverse to Barafu.
+                                             This route has the highest starting elevation. 
+                                             It begins on the western slope and then skirts around the south of Kibo Peak. 
+                                         </td>
+                                         <td>7 days</td>
+                                         <td>49 Km (30 mi)</td>
+                                         <td>Mweka</td>
+                                     </tr>
+                                     <tr>
+                                         <td>Lemosho Route</td>
+                                         <td>
+                                             Long access drive, remote, less frequented, fine, wild, least scenic,
+                                             Good for acclimatization.
+                                         </td>
+                                         <td>5-6 days</td>
+                                         <td>65 Km (40 mi)</td>
+                                         <td>Mweka</td>
+                                     </tr>
+                                     <tr>
+                                         <td>Umbwe Route</td>
+                                         <td>
+                                             Shortest and steepest route, 
+                                             very physically taxing and requires serious endurance. Dangerous route.
+                                         </td>
+                                         <td>6 days</td>
+                                         <td>37 Km (23 mi)</td>
+                                         <td>Mweka</td>
+                                     </tr>
+                                 </tbody>
+                             </table>
+                         </div>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+ </div>
+ 
 
 @include('frontend.layouts.destinations')
 

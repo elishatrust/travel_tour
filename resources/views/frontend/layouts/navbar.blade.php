@@ -46,7 +46,7 @@
                                 <a class="dropdown-item wide-item" href="{{ route('14-days-ruaha-national-park') }}">14 Days Ruaha National Park</a>
                             </div>
                             <div class="col-lg-4 col-sm-12">
-                                <h6 class="dropdown-header text-uppercase">Destinations</h6>
+                                <h6 class="dropdown-header text-uppercase">Safari Destinations</h6>
                                 <a class="dropdown-item wide-item" href="{{ route('mount-meru') }}">Mount Meru</a>
                                 <a class="dropdown-item wide-item" href="{{ route('mount-kilimanjaro') }}">Moun Kilimanjaro</a>
                                 <a class="dropdown-item wide-item" href="{{ route('arusha-national-park') }}">Arusha National Park</a>
@@ -109,7 +109,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <div class="row g-3">
                             <div class="col-md-12 col-sm-12">                                
-                                <a class="dropdown-item" href="{{ route('culture') }}">Culture</a>
+                                <a class="dropdown-item" href="{{ route('culture') }}">Cultural Experience</a>
                                 <a class="dropdown-item" href="{{ route('terms-and-conditions') }}">Terms & Conditions</a>
                                 <a class="dropdown-item" href="{{ route('faqs') }}">FAQs</a>
                             </div>

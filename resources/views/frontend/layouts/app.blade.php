@@ -43,7 +43,7 @@
             <div class="modal-content p-2 booking-modal">
                 <div class="modal-header">
                     <h3 class="modal-title text-dark text-uppercase" id="bookingModalLabel">
-                        Plan Your Journey
+                        Plan Your Trip Today!
                     </h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
