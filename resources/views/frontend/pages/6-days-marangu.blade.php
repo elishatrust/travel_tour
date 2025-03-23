@@ -1,40 +1,50 @@
 @extends('frontend.layouts.app') 
 @section('content')
 
-<div class="container-xxl py-5">
+<div class="container-xxl pt-5">
     <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-lg-12 col-sm-12">
                 <h1 class="h2 mb-3">{{ $page_title }}</h1>
                 <hr>
             </div>
-            <div class="col-lg-9 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
+            <div class="col-lg-12 col-sm-12 mb-4">
+                <div class="gallery">
+                    <img src="{{ asset('assets/frontend/img/safari/50.jpg') }}" alt="Image">
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ asset('assets/frontend/img/safari/42.jpg') }}" alt=" Image">
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ asset('assets/frontend/img/safari/41.jpg') }}" alt="Image">
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ asset('assets/frontend/img/safari/29.jpg') }}" alt="Image">
+                </div>          
+            </div>
+            <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
                 <h4 class="mb-3" style="color: #f1671e">Trekking Overview</h4>
-                <p class="">
+                <p class="" style="text-align: justify">
                     The Marangu Route, also known as the “Coca-Cola Route,” is the easiest and most popular path to Mount Kilimanjaro's summit. It is the only route featuring comfortable mountain huts equipped with solar lighting and beds, offering a more convenient and social trekking experience. The shared dining huts foster an engaging atmosphere among climbers from around the world.
-                </p>
-                <p class="">
                     While typically completed in five days, an extra day is recommended for better acclimatization, increasing summit success rates. The route is also the most budget-friendly option and provides access to basic amenities, including running water and latrines at lower camps.
                 </p>
             </div>
-            <div class="col-lg-3 col-sm-12">
-                <div class="start-cost py-4">
-                    <h6 class="my-3 text-primary">Starting from</h6>
-                    <p class="h3 animated-underline">$900.00</p>
-                </div>
-                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
+                <i class="fa fa-walking me-2"></i>
+                <span class="" style="color: #f1671e">Trekking Itinerary</span>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
                     Book Now
                     <i class="fa fa-arrow-right ms-3"></i>
                 </a>
             </div>
         </div>
 
-        <h4 class="mt-5 mb-3 h2">
-            <i class="fa fa-list me-2"></i>
-            <span class="" style="color: #f1671e">Trekking Itinerary</span>
-        </h4>
-
-        <div class="row g-5">
+        <div class="row g-4">
             <div class="col-lg-8 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">

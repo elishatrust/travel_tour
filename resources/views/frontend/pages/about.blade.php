@@ -5,19 +5,19 @@
 
 
 <div class="container-xxl py-5">
-    <div class="container pt-5">
+    <div class="container">
         <div class="row g-5">
             <div class="col-lg-6 col-sm-12">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Our Background</p>
                 <h1 class="display-5123 h2 mb-5">We are Holiday Destination Support Company</h1>
-                <p class="mb-4 text-justify-all">
+                <p class="mb-4" style="text-align: justify">
                     At UpzoneSafaris, we believe that travel is more than just visiting new places it's 
                     about creating stories, connecting with different cultures, and discovering the wonders 
                     of the world with fresh eyes. Since our inception in 2000, we have been dedicated to turning 
                     travel and tour dreams into reality by offering a wide array of personalized and high-quality 
                     travel services.
                 </p>
-                <p class="mb-4 text-justify-all">
+                <p class="mb-4" style="text-align: justify">
                     The company founded by a group of passionate travelers who wanted to share their love for 
                     exploration with the world. Starting as a small local operator, we grew through our unwavering 
                     commitment to customer satisfaction and our innovative approach to travel planning. 
@@ -48,12 +48,11 @@
     </div>
 </div>
 
-
-<div class="container section-top-border"><br>
+<div class="container">
     <h3 class="mb-30">Innovation and Growth</h3>
     <div class="row">
         <div class="col-lg-12 p-3">
-            <blockquote class="generic-blockquote">
+            <blockquote class="generic-blockquote" style="text-align: justify">
                 "Recently, We continually invest in new technologies and innovative travel solutions to 
                 enhance our service offerings. By embracing the latest trends and listening to 
                 customer feedback, we adapt and evolve to meet the changing needs of modern travelers. 
@@ -65,7 +64,6 @@
 </div>
 
 
-<!-- DNA -->
 <div class="container-xxl pb-5">
     <div class="container">
         <div class="row g-5">

@@ -1,46 +1,61 @@
-<div class="container-fluid bg-dark hero-header">
-    <div class="container py-5">
-        <div class="row g-5 align-items-center g-0 flex-column-reverse flex-lg-row">
-            <div class="col-lg-7 col-sm-12">
-                <h4 class="mb-4 text-primary text-uppercase">100% Travel & Tour</h4>
-                <h1 class="mb-5 display-3 text-light text-start">Experience Mountain Trekking & Safaris Adventures</h1>
-                {{-- <h1 class="mb-5 display-3 text-light text-start">Explore the Beauty of the Beautiful World</h1> --}}
-                <div class="position-relative mx-auto mt-4">
-                    <a href="{{ route('about') }}" class="btn btn-outline-primary py-sm-3 px-3 px-sm-5 me-5">Explore More</a>
+<div id="hero" class="container-fluid bg-dark hero ">
+    <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-item active">
+            <img src="{{ asset('assets/frontend/img/park/102.jpg') }}" alt="">
+            <div class="container-fluid">
+            <p class="h4 fw-bold">Experience Mountain Trekking & Safari Adventures</p>
+            <a href="{{ route('about') }}" class="btn btn-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{{ asset('assets/frontend/img/park/100.jpg') }}" alt="">
+            <div class="container-fluid">
+            <p class="h4 fw-bold">Unforgettable Tanzanian Safaris & Tours</p>
+            <a href="{{ route('about') }}" class="btn btn-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{{ asset('assets/frontend/img/park/101.jpg') }}" alt="">
+            <div class="container-fluid">
+            <p class="h4 fw-bold">Explore the Beauty of the Beautiful World</p>
+            <a href="{{ route('about') }}" class="btn btn-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+        <ol class="carousel-indicators"><li data-bs-target="#hero-carousel" data-bs-slide-to="0" class=""></li><li data-bs-target="#hero-carousel" data-bs-slide-to="1" class=""></li><li data-bs-target="#hero-carousel" data-bs-slide-to="2" class="active" aria-current="true"></li></ol>
+    </div>
+</div> 
+    
+<div class="container-fluid focus"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="inner-focus">
+                    <h2 class="h5 text-center text-uppercase">
+                        <i class="fa fa-walking me-2 fw-bold" style="font-size: 30px;"></i>
+                        MOUNTAIN TREKKING
+                    </h2>
                 </div>
             </div>
-            <div class="col-lg-5 col-sm-12">
-                <div id="carouselId" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active rounded" style="border-radius: 10px !important">
-                            <img src="{{ asset('assets/frontend/img/services/a.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
-                            {{-- <a href="#" class="btn px-4 py-2 text-white rounded">Travel</a> --}}
-                        </div>
-                        <div class="carousel-item rounded" style="border-radius: 10px !important">
-                            <img src="{{ asset('assets/frontend/img/services/b.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 rounded" alt="Second slide">
-                            {{-- <a href="#" class="btn px-4 py-2 text-white rounded">Tour</a> --}}
-                        </div>
-                        <div class="carousel-item rounded" style="border-radius: 10px !important">
-                            <img src="{{ asset('assets/frontend/img/services/c.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 rounded" alt="Second slide">
-                            {{-- <a href="#" class="btn px-4 py-2 text-white rounded">Enjoy</a> --}}
-                        </div>
-                        <div class="carousel-item rounded" style="border-radius: 10px !important">
-                            <img src="{{ asset('assets/frontend/img/services/d.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 rounded" alt="Second slide">
-                            {{-- <a href="#" class="btn px-4 py-2 text-white rounded">Enjoy</a> --}}
-                        </div>
-                        {{-- <div class="carousel-item rounded" style="border-radius: 10px !important"> --}}
-                            {{-- <img src="{{ asset('assets/frontend/img/services/e.jpg') }}" style="border-radius: 10px !important" class="img-fluid w-100 h-100 rounded" alt="Second slide"> --}}
-                            {{-- <a href="#" class="btn px-4 py-2 text-white rounded">Enjoy</a> --}}
-                        {{-- </div> --}}
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="inner-focus">
+                    <h2 class="h5 text-center text-uppercase">
+                        <i class="fa fa-tree me-2 fw-bold" style="font-size: 30px;"></i>
+                        WILDLIFE SAFARIS
+                    </h2>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="inner-focus">
+                    <h2 class="h5 text-center text-uppercase">
+                        <i class="fa fa-umbrella-beach me-2 fw-bold" style="font-size: 30px;"></i>
+                        BEACH HOLIDAYS
+                    </h2>
                 </div>
             </div>
         </div>

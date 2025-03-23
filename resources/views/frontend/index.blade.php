@@ -5,17 +5,17 @@
 
 <!-- WELCOME -->
 <div class="container-xxl py-5">
-    <div class="container py-5">
+    <div class="container">
         <div class="row g-5">
             <div class="col-lg-6 col-sm-12">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Welcome</p>
                 <h1 class="display-5123 h2 mb-5">Experience The Best Safari</h1>
-                <p class="mb-222 text-justify-all">
+                <p style="text-align: justify">
                     At UpzoneSafaris, we are passionate about creating unforgettable travel experiences that inspire, 
                     relax, and rejuvenate. Founded in 2000, our journey began with a vision to make travel accessible, 
                     affordable, and extraordinary for everyone.
                 </p>
-                <p class="mb-4 text-justify-all">
+                <p class="mb-4" style="text-align: justify">
                     At the heart of our business the company is accessible, enriching, 
                     and above all, a joyful experience. We strive to offer more than just trips; we curate experiences 
                     that resonate on a personal level. Whether it’s a serene escape to a tropical paradise, a thrilling 
@@ -34,7 +34,7 @@
             </div>
             <div class="col-lg-6 col-sm-12">
                 <div class="img-border123 h-100 mt-4">
-                    <img class="img-fluid w-100" style="border-radius:10px; width:100%;" src="{{ asset('assets/frontend/img/safari/42.jpg') }}" alt="#About" />
+                    <img class="img-fluid w-100" style="border-radius:10px; width:100%;" src="{{ asset('assets/frontend/img/safari/1008.jpg') }}" alt="#About" />
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@
 
 <!-- Facts -->
 <div class="container-xxl123 py-5 bg-primary facts">
-    <div class="container py-5">
+    <div class="container">
         <div class="row g-4">
             <div class="col-lg-3 col-md-6 col-sm-12 text-center"
                >
@@ -138,11 +138,11 @@
 
 <!-- Proudness -->
 <div class="container-xxl py-5">
-    <div class="container py-5">
+    <div class="container">
         <div class="row g-5">
             <div class="col-lg-5 col-sm-12">
                 <div class="img-border123 h-100">
-                    <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:100%;" src="{{ asset('assets/frontend/img/safari/1008.jpg') }}" alt="" />
+                    <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/safari/27.jpg') }}" alt="" />
                 </div>
             </div>
             <div class="col-lg-7 col-sm-12">
@@ -150,27 +150,27 @@
                 <h1 class="display-5123 h2 mb-5">Why Trek With Us!</h1>
                 <p class="mb-3">
                     <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Personalized Services: </span>
-                    We tailor your travel experiences based on your preferences.
+                    <br>We tailor your travel experiences based on your preferences.
                 </p>
                 <p class="mb-3">
                     <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Expert Guidance: </span>
-                    Our experienced team offers insights and advice for the perfect trip.
+                    <br>Our experienced team offers insights and advice for the perfect trip.
                 </p>
                 <p class="mb-3">
                     <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>24/7 Support: </span>
-                    We provide around-the-clock customer support, ensuring a worry-free experience.
+                    <br>We provide around-the-clock customer support, ensuring a worry-free experience.
                 </p>
                 <p class="mb-3">
                     <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Sustainable Travel: </span>
-                    We promote eco-friendly tourism that respects the environment and local cultures.
+                    <br>We promote eco-friendly tourism that respects the environment and local cultures.
                 </p>
                 <p class="mb-3">
                     <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Customized Packages for Every Traveler: </span>
-                    Whether you’re traveling solo, with a partner, or in a group, we offer flexible packages that cater to all types of travelers. 
+                    <br>Whether you’re traveling solo, with a partner, or in a group, we offer flexible packages that cater to all types of travelers. 
                 </p>
                 <p class="mb-3">
                     <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>We Use Top-Notch Equipments: </span>
-                    Expedition grade alpine sleeping tents Stand-up dining tents with durable tables and chairs Hygienic private toilets Four-season, warm, cozy sleeping bags
+                    <br>Expedition grade alpine sleeping tents Stand-up dining tents with durable tables and chairs Hygienic private toilets Four-season, warm, cozy sleeping bags
                 </p>                
             </div>
         </div>
@@ -181,7 +181,7 @@
 
 <!-- Testimonial -->
 <div class="container-xxl py-5">
-    <div class="container py-5">
+    <div class="container">
         <div class="row g-5 align-items-end">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Testimonial</p>

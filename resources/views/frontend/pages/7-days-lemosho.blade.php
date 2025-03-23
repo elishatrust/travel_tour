@@ -1,40 +1,52 @@
 @extends('frontend.layouts.app') 
 @section('content')
 
-<div class="container-xxl py-5">
+<div class="container-xxl pt-5">
     <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-lg-12 col-sm-12">
                 <h1 class="h2 mb-3">{{ $page_title }}</h1>
                 <hr>
             </div>
-            <div class="col-lg-9 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
+            <div class="col-lg-12 col-sm-12 mb-4">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/safari/0037.jpg') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/safari/29.jpg') }}" alt="Image">
+                    </div>
+                </div>            
+            </div>
+            <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
                 <h4 class="mb-3" style="color: #f1671e">Trekking Overview</h4>
-                <p class="">
+                <p class="" style="text-align: justify">
                     The Lemosho Route is one of the most scenic and successful routes to the summit of Mount Kilimanjaro. It offers stunning landscapes, diverse ecosystems, and excellent acclimatization opportunities, making it a preferred route for climbers. The 7-day version of the trek provides a slightly faster ascent than the 8-day option, but still allows for proper acclimatization, which increases summit success rates.
-                </p>
-                <p class="">
                     This trek crosses dense rainforests, open moorlands, volcanic ridges, and glaciers, with breathtaking panoramic views throughout.
                 </p>
             </div>
-            <div class="col-lg-3 col-sm-12">
-                <div class="start-cost py-4">
-                    <h6 class="my-3 text-primary">Starting from</h6>
-                    <p class="h3 animated-underline">$900.00</p>
-                </div>
-                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
+                <i class="fa fa-walking me-2"></i>
+                <span class="" style="color: #f1671e">Trekking Itinerary</span>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
                     Book Now
                     <i class="fa fa-arrow-right ms-3"></i>
                 </a>
             </div>
         </div>
 
-        <h4 class="mt-5 mb-3 h2">
-            <i class="fa fa-list me-2"></i>
-            <span class="" style="color: #f1671e">Trekking Itinerary</span>
-        </h4>
-
-        <div class="row g-5">
+        <div class="row g-4">
             <div class="col-lg-8 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
@@ -63,7 +75,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 2: Mti Mkubwa Camp (2,820m) to Shira 2 Camp (3,850m)
@@ -85,7 +96,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 3: Shira 2 Camp (3,850m) to Lava Tower (4,630m) to Barranco Camp (3,976m)
@@ -108,7 +118,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 4: Barranco Camp (3,976m) to Karanga Camp (4,035m)
@@ -130,7 +139,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 5: Karanga Camp (4,035m) to Barafu Camp (4,673m)
@@ -153,7 +161,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 6: Barafu Camp (4,673m) to Uhuru Peak (5,895m) to Mweka Camp (3,100m)
@@ -176,7 +183,6 @@
                         </div>
                     </div>  
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3" style="color:#f1671e!important">
                                 <i class="fa fa-calendar-day me-2"></i>Day 7: Mweka Camp (3,100m) to Mweka Gate (1,640m) to Moshi

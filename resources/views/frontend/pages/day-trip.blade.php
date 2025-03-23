@@ -2,32 +2,37 @@
 @section('content')
 
 <div class="container-xxl py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-sm-12">
-                <h1 class="h2 mb-3">{{ $page_title }}</h1>
-                <hr>
-            </div>
-            <div class="col-lg-9 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
+     <div class="container">
+         <div class="row mb-5">
+             <div class="col-lg-12 col-sm-12">
+                 <h1 class="h2 mb-3">{{ $page_title }}</h1>
+                 <hr>
+             </div>
+            <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
                 <h4 class="mb-3" style="color: #f1671e">Tour Overview</h4>
-                <p class="">
+                <p style="text-align: justify">
                     Tanzania offers a variety of captivating day trips that allow visitors to explore its rich culture, breathtaking landscapes, and abundant wildlife. From climbing the lower slopes of Mount Kilimanjaro to experiencing local traditions, these excursions provide unforgettable experiences. Below is a detailed description of some of the best day trips in Northern Tanzania.
                </p>
             </div>
-            <div class="col-lg-3 col-sm-12 py-4">
-                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
-                    Book Now
-                    <i class="fa fa-arrow-right ms-3"></i>
-                </a>
-            </div>
         </div>
 
-        <h4 class="mt-5 mb-3">
-            <i class="fa fa-list me-2"></i>
-            <span class="" style="color: #f1671e">Day Tour</span>
-        </h4>
+        <div class="row mb-4">
+          <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
+              <span class="" style="color: #f1671e">
+                  <i class="fa fa-walking me-2"></i>
+                  Day Tour
+              </span>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+              <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                  Book Now
+                  <i class="fa fa-arrow-right ms-3"></i>
+              </a>
+          </div>
+      </div>
 
-        <div class="row">
+
+      <div class="row g-4">
           <div class="col-lg-6 col-sm-12 shadow-sm p-4">
                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/kilimanjaro-rongai.webp') }}" alt="me-2" />
                <div>

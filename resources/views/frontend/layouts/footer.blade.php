@@ -1,5 +1,5 @@
 <div class="container-fluid bg-dark text-light footer py-5">
-<div class="container py-5">
+<div class="container">
   <div class="row g-5">
     <div class="col-lg-3 col-md-6">
       <h5 class="text-light mb-4">Address</h5>
@@ -44,7 +44,7 @@
       <form action="#" method="post">
         <div class="position-relative mx-auto" style="max-width:100%;">
             <input class="form-control w-100 py-3 ps-4 pe-5" style="border-radius: 10px;border: 1px solid var(--dark);" type="email" placeholder="Enter your email" required/>
-            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Send</button>
+            <button type="submit" class="btn btn-outline-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Send</button>
         </div>
       </form>
       <p class="text-uppercase text-white mt-4">Number of Visitors  :  (<span id="visit_no"></span>)</p>

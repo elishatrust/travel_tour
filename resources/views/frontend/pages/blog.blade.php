@@ -4,8 +4,8 @@
 @include('frontend.layouts.inc_blog')
 
 <div class="container-xxl py-5 blog">
-    <div class="container py-5">
-        <div class="row g-5Up">
+    <div class="container">
+        <div class="row g-4">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase">
                     <span class="text-primary me-2">#</span>Latest News
@@ -16,7 +16,7 @@
         <div class="row">
 
             @foreach ($blogs as $blog)
-                <div class="col-lg-6 col-sm-12 shadow-sm p-4">
+                <div class="col-lg-4 col-sm-12 shadow-sm p-4">
                     @if ($blog->file_path)
                         <img src="{{ asset('storage/'.$blog->file_path) }}" class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:350px; object-fit:cover;"  alt="Blog Image">
                     @else

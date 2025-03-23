@@ -3,19 +3,33 @@
 
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row mb-5">
             <div class="col-lg-12 col-sm-12">
                 <h1 class="h2 mb-3">{{ $page_title }}</h1>
                 <hr>
             </div>
-            <div class="col-lg-9 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
+            <div class="col-lg-12 col-sm-12 mb-4">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/safari/0028.jpg') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/safari/meru2.webp') }}" alt=" Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/more/Mt-Meru.jpg') }}" alt=" Image">
+                    </div>
+                </div>            
+            </div>
+            <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
                 <h4 class="mb-3" style="color: #f1671e">Trekking Overview</h4>
-                <p class="">
+                <p class="" style="text-align: justify">
                     Mount Meru is the highest peak in Tanzania, It stands tall at an elevation of 4,966 meters 
                     (15,505 feet) above sea level, making it the highest peak in Africa and the highest single 
                     free-standing mountain above sea level in the world. 
-                </p>
-                <p class="">
                     Around 500,000 years ago, a massive eruption reshaped Mount Meru, 
                     destroying its original cone and creating a horseshoe-shaped crater 
                     with its eastern side blown away. The mountain’s summit now lies on 
@@ -23,28 +37,25 @@
                     making them among the tallest cliffs in Africa.
                 </p>
             </div>
-            <div class="col-lg-3 col-sm-12">
-                <div class="start-cost py-4">
-                    <h6 class="my-3 text-primary">Starting from</h6>
-                    <p class="h3 animated-underline">$700.00</p>
-                </div>
-                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-lg-8 col-sm-12 h2" style="color: #f1671e">
+                <i class="fa fa-walking me-2"></i>
+                <span class="" style="color: #f1671e">Trekking Itinerary</span>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
                     Book Now
                     <i class="fa fa-arrow-right ms-3"></i>
                 </a>
             </div>
         </div>
 
-        <h4 class="mt-5 mb-3 h2">
-            <i class="fa fa-list me-2"></i>
-            <span class="" style="color: #f1671e">Trekking Itinerary</span>
-        </h4>
-
-        <div class="row">
+        <div class="row g-4">
             <div class="col-lg-8 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0028.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important"><i class="fa fa-calendar-day me-2"></i>Day 1: Momella Gate to Miriakamba Hut</h5>
                             <span style="text-align: justify">
@@ -61,7 +72,6 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important"><i class="fa fa-calendar-day me-2"></i>Day 2: Miriakamba Hut to Saddle Hut</h5>
                             <span style="text-align: justify">
@@ -78,9 +88,11 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/Mt-Meru.jpg') }}" alt="me-2" /> --}}
                         <div>
-                            <h5 class="mb-3 h4" style="color:#f1671e!important"><i class="fa fa-calendar-day me-2"></i>Day 3: Saddle Hut to Summit and Descent</h5>
+                            <h5 class="mb-3 h4" style="color:#f1671e!important">
+                                <i class="fa fa-calendar-day me-2"></i>
+                                Day 3: Saddle Hut to Summit and Descent
+                            </h5>
                             <span style="text-align: justify">
                                 Start early for Rhino Point and continue to Mount Meru’s summit. 
                                 Descend to Momella Gate and transfer back to your hotel for dinner and rest.
@@ -94,8 +106,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        <div class="p-5">
+                    <div class="col-lg-12 col-sm-12 p-4">
+                        <div class="">
                             <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Trek</h5>
                             <div class="">
                                 <p  style="text-align: justify">
@@ -198,7 +210,6 @@
     </div>
 </div>
 
-<!-- Destination -->
 @include('frontend.layouts.destinations')
 
 @endsection

@@ -3,247 +3,231 @@
 
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-lg-12 col-sm-12">
                 <h1 class="h2 mb-3">{{ $page_title }}</h1>
                 <hr>
             </div>
-            <div class="col-lg-9 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
-                <h4 class="mb-3" style="color: #f1671e">Trekking Overview</h4>
-                <p class="">
-                    The Machame Route, also known as the “Whiskey Route”, is one of the most scenic and popular paths to Mount Kilimanjaro’s summit. It offers a gradual acclimatization process, diverse landscapes, and stunning views. The 6-day trek is physically demanding, but it provides excellent acclimatization opportunities through its climb high, sleep low strategy. Unlike the Marangu Route, this trek requires camping, making it a more immersive wilderness experience.
-                </p>
-                <p class="">
-                    
+            <div class="col-lg-12 col-sm-12 mb-4">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/109.webp') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/119.jpg') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/117.jpg') }}" alt=" Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/1001.jpg') }}" alt="Image">
+                    </div>
+                </div>            
+            </div>
+            <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
+                <h4 class="mb-3" style="color: #f1671e">Safari Overview</h4>
+                <p class="" style="text-align: justify">
+                    Embark on an unforgettable 5-day adventure through Tanzania’s Northern Circuit, a region renowned for its diverse ecosystems, breathtaking landscapes, and exceptional wildlife experiences. This well-curated itinerary takes you through Tarangire National Park, Serengeti National Park, the Ngorongoro Crater, and Lake Manyara National Park. Witness massive elephant herds in Tarangire, experience the thrill of the Great Migration in Serengeti, marvel at the rich wildlife concentration within the Ngorongoro Crater, and admire the tree-climbing lions of Lake Manyara. Whether you are a seasoned safari enthusiast or a first-time traveler, this safari offers an incredible opportunity to see the Big Five and other iconic African wildlife in their natural habitat.
                 </p>
             </div>
-            <div class="col-lg-3 col-sm-12">
-                <div class="start-cost py-4">
-                    <h6 class="my-3 text-primary">Starting from</h6>
-                    <p class="h3 animated-underline">$900.00</p>
-                </div>
-                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-lg-7 col-sm-12 h2" style="color: #f1671e">
+                <i class="fa fa-walking me-2"></i>
+                <span class="" style="color: #f1671e">Safari Itinerary</span>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
                     Book Now
                     <i class="fa fa-arrow-right ms-3"></i>
                 </a>
             </div>
         </div>
 
-        <h4 class="mt-5 mb-3 h2">
-            <i class="fa fa-list me-2"></i>
-            <span class="" style="color: #f1671e">Trekking Itinerary</span>
-        </h4>
-
         <div class="row g-4">
-            <div class="col-lg-8 col-sm-12">
+            <div class="col-lg-7 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/0030.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                                Day 1: Machame Gate to Machame Camp
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 1: Arusha → Tarangire National Park (Full-Day Game Drive)
                             </h5>
-                            <span style="text-align: justify">
-                                The trek begins at Machame Gate (1,800m), where registration is completed before entering Kilimanjaro National Park. The trail starts with a gradual ascent through the dense rainforest, where trekkers may encounter blue monkeys and colobus monkeys. The path can be muddy and slippery, so trekking poles and proper footwear are recommended. After 5 to 7 hours of trekking, climbers arrive at Machame Camp (2,835m) for the first night in tents.
-                            </span>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~11 km (~6.8 mi)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 5–7 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 1,035m (3,396 ft)</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Rainforest zone, lush vegetation, wildlife.</li>
-                                <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
-                            </ul>
+                            <p style="text-align: justify">
+                                Your safari adventure begins with a morning departure from Arusha, heading south toward Tarangire National Park, a scenic two-hour drive. Known as the "Land of Giants" due to its massive elephant herds and ancient baobab trees, Tarangire is a prime wildlife destination. Upon arrival, embark on an exciting game drive, exploring the park’s diverse landscapes, seasonal swamps, and open savannas. Expect to see elephants, lions, leopards, giraffes, zebras, wildebeests, and an abundance of birdlife. The Tarangire River, the park’s lifeline, attracts animals throughout the year, providing excellent opportunities for predator sightings. After a picnic lunch in the wilderness, continue your exploration before driving to your lodge or tented camp in Karatu for a delicious dinner and overnight stay.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/safari/51.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                                Day 2: Miriakamba Huts to Saddle Hut
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 2: Tarangire → Serengeti National Park (Scenic Drive & Afternoon Game Drive)
                             </h5>
-                            <span style="text-align: justify">
-                                The day begins with a steep ascent as the rainforest transitions into the moorland zone, where the vegetation becomes more sparse. Trekkers climb over rocky ridges and volcanic formations, offering spectacular views of Mount Meru and the Shira Plateau. By midday, the group reaches Shira Camp (3,750m), an open space with breathtaking views of Kilimanjaro’s peaks. The afternoon is spent resting and acclimatizing to the higher altitude.
-                            </span>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~5 km (~3.1 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 4–6 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 915m (3,002 ft)</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Moorland zone, scenic views of Shira Plateau</li>
-                                <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
-                            </ul>
+                            <p style="text-align: justify">
+                                After breakfast, set off for the Serengeti National Park, a journey that takes you through the scenic landscapes of the Great Rift Valley and the Ngorongoro Conservation Area. Enjoy a brief stop at the Ngorongoro viewpoint, where you can admire the vast crater from above before continuing to the Serengeti. Upon arrival, enjoy an afternoon game drive in the Seronera region, famous for its diverse wildlife, big cats, and open plains that stretch as far as the eye can see. Depending on the season, you may witness the Great Migration as thousands of wildebeests and zebras traverse the Serengeti in search of fresh grazing lands. As the sun sets, head to your lodge or tented camp in the heart of the Serengeti for dinner and an overnight stay.
+                            </p>
                         </div>
-                    </div>
+                    </div>   
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/more/6.jpg') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                                Day 3: Shira Camp to Lava Tower, then to Barranco Camp
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 3: Serengeti National Park (Full-Day Game Drive & Big Cat Sightings)
                             </h5>
-                            <span style="text-align: justify">
-                                This day follows the “climb high, sleep low” acclimatization strategy. The trail ascends towards Lava Tower (4,630m), a volcanic rock formation where trekkers rest and enjoy lunch. This high-altitude exposure helps the body adjust to lower oxygen levels. After spending time at Lava Tower, the trail descends into the beautiful Barranco Valley (3,900m), passing through unique Senecio plants. Trekkers arrive at Barranco Camp, known for its stunning sunset views and towering cliffs.
-                            </span>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~10 km (~8 miles)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 6–8 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong>  12,500ft → 13,000ft (with a climb to 15,190ft at Lava Tower)</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Semi-Desert.</li>
-                                <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
-                        <div>
-                            <h5 class="mb-3 h4" style="color:#f1671e!important">
-                                Day 4: From Barranco Camp to Karanga Camp to Barafu Camp
-                            </h5>
-                            <span style="text-align: justify">
-                                After breakfast, the journey begins with a steep climb up the Barranco Wall, requiring some light rock scrambling. The trail continues through the Karanga Valley, where a short break is taken. Moving onward, the trek connects with the Mweka Trail and ascends towards Barafu Camp (15,000ft). This marks the completion of the Southern Circuit, providing panoramic views of Mawenzi and Kibo Peaks. At Barafu, climbers rest, eat, and prepare for the final summit attempt.
-                            </span>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~9 km (5.6 mi)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 8–10 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 773m (2,537 ft)</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Alpine Desert.</li>
-                                <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
-                            </ul>
+                            <p style="text-align: justify">
+                                Begin your day with an early morning game drive, a prime time for spotting predators in action as lions, cheetahs, and leopards take advantage of the cooler temperatures to hunt. The Serengeti is home to an astonishing variety of wildlife, including elephants, giraffes, buffalos, hippos, and crocodiles along the rivers. Enjoy a picnic breakfast in the bush, surrounded by the sounds of the African wilderness. Continue exploring different regions of the park, depending on wildlife movements and seasonal highlights. After a picnic lunch, embark on another game drive, capturing the magic of the Serengeti before returning to your lodge or camp in the evening for a relaxing dinner and overnight stay.
+                            </p>
                         </div>
                     </div>  
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                                Day 5: Barafu Camp to Uhuru Peak, then down to Mweka Camp
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 4: Serengeti → Ngorongoro Crater (Big Five Safari & Scenic Views)
                             </h5>
-                            <span style="text-align: justify">
-                                This is the most challenging and rewarding day of the trek. The summit push begins at midnight, climbing in the dark under freezing temperatures. The trail passes Stella Point (5,756m) before reaching Uhuru Peak (5,895m), the highest point in Africa. Witnessing the sunrise over the glaciers is a truly unforgettable moment. After celebrating and taking photos, trekkers descend to Barafu Camp for a short rest before continuing down to Mweka Camp (3,100m) for the night.
-                            </span>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~17 km (~10.6 mi)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> 12–16 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 2,795m (9,169 ft)</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Summit sunrise, glaciers, breathtaking views.</li>
-                                <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch & Dinner Included.</li>
-                            </ul>
+                            <p style="text-align: justify">
+                                After an early breakfast, embark on a final morning game drive in the Serengeti before heading toward the Ngorongoro Conservation Area, one of Africa’s most breathtaking natural wonders. Upon arrival, descend 600 meters into the Ngorongoro Crater, a vast caldera teeming with diverse wildlife. This natural enclosure supports an incredible concentration of animals, including lions, elephants, buffalos, hippos, cheetahs, hyenas, and the rare black rhino. The crater floor’s varied landscapes—grasslands, swamps, and lakes—provide excellent game viewing throughout the day. Enjoy a picnic lunch near a hippo pool, taking in the stunning scenery before ascending from the crater and driving to your lodge or camp for dinner and overnight accommodation.
+                            </p>
                         </div>
                     </div>  
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        {{-- <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/MtMeru.webp') }}" alt="me-2" /> --}}
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                                Day 6: Mweka Camp to Mweka Gate
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 5: Lake Manyara National Park (Final Game Drive) → Return to Arusha
                             </h5>
-                            <span style="text-align: justify">
-                                The final day is a gradual descent through the tropical rainforest, where trekkers may spot colobus monkeys and exotic birds. Upon reaching Mweka Gate (1,640m), climbers receive summit certificates before being transported back to Moshi, where they can enjoy a hot shower and well-deserved rest.
-                            </span>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fa fa-route me-2"></i><strong>Distance:</strong> ~10 km (~6.2 mi)</li>
-                                <li><i class="fa fa-clock me-2"></i><strong>Time:</strong> ~5 Hours</li>
-                                <li><i class="fa fa-mountain me-2"></i><strong>Elevation:</strong> 1,460m (4,790 ft)</li>
-                                <li><i class="fa fa-star me-2"></i><strong>Highlights:</strong> Lush rainforest, Kilimanjaro National Park exit.</li>
-                                <li><i class="fa fa-coffee me-2"></i><strong>Meals:</strong> Breakfast, Lunch.</li>
-                            </ul>
+                            <p style="text-align: justify">
+                                On the final day, depart early for Lake Manyara National Park, a compact yet diverse park nestled at the base of the Great Rift Valley escarpment. Famous for its tree-climbing lions, Lake Manyara also boasts lush forests, open savannas, and a shallow soda lake that attracts thousands of flamingos and other bird species. Enjoy a half-day game drive, spotting elephants, giraffes, hippos, buffalos, and troops of baboons. Stop for a scenic picnic lunch, enjoying the panoramic views before making your way back to Arusha, marking the end of an incredible 5-day Northern Circuit safari.
+                            </p>
                         </div>
-                    </div>        
+                    </div>       
+                    <div class="col-lg-12 col-sm-12 p-4">
+                        <div class="Acclimatization-list">
+                            <div class="">
+                                <h5 class="h6 text-muted py-3 text-uppercase">Why Choose This Safari?</h5>
+                            </div>
+                            <div class="">
+                                <p>
+                                    ✅ Covers Four Iconic Parks – Experience Tarangire, Ngorongoro, Serengeti, and Lake Manyara in just four days
+                                </p>      
+                                <p>
+                                    ✅ High Wildlife Density – Ngorongoro and Serengeti offer some of the best game-viewing opportunities in Africa.                    
+                                </p>      
+                                <p>
+                                    ✅ Diverse Landscapes – From savannas and volcanic craters to forests and soda lakes, witness Tanzania’s natural beauty.
+                                </p>      
+                                <p>
+                                    ✅ Perfect for First-Time Safari Travelers – A well-balanced itinerary that includes game drives, cultural experiences, and relaxation.
+                                </p> 
+                            </div>
+                            <br>
+                            <p>
+                                <i>
+                                    This itinerary offers an authentic and immersive Tanzanian safari, perfect for wildlife lovers, adventure seekers, and those looking to explore off-the-beaten-path destinations.
+                                </i>
+                            </p>
+                        </div>  
+                    </div>      
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12 pl-5">
+            <div class="col-lg-5 col-sm-12">
                 <div class="tour-hightligh mb-4">
                     <div class="">
-                        <h5 class="h6 text-muted py-3 text-uppercase">Trek Highlights</h5>
+                        <h5 class="h6 text-muted py-3 text-uppercase">Safari Highlights</h5>
                     </div>
-                    <div class="">
-                        <li class="mb-2"><strong>Day 0 :</strong> Arrival (Pick up) from Kilimanjaro International Airport → Moshi.</li>
-                        <li class="mb-2"><strong>Day 1 :</strong> Moshi → Machame Gate to Machame Camp</li>
-                        <li class="mb-2"><strong>Day 2 :</strong> Machame Camp to Shira Camp</li>
-                        <li class="mb-2"><strong>Day 3 :</strong> Shira Camp to Lava Tower, then to Barranco Camp</li>                      
-                        <li class="mb-2"><strong>Day 4 :</strong> Barranco Camp to Barafu Camp</li>                      
-                        <li class="mb-2"><strong>Day 5 :</strong> Barafu Camp to Uhuru Peak, then down to Mweka Camp</li>                      
-                        <li class="mb-2"><strong>Day 6 :</strong> Mweka Camp to Mweka Gate</li>                      
+                    <div class="">                              
+                         <li><i class="far fa-check-circle text-primary me-1"></i>See the Big Five (Lion, Elephant, Buffalo, Leopard, Rhino)</li>
+                         <li><i class="far fa-check-circle text-primary me-1"></i>Explore Tanzania’s top wildlife parks in a short time </li>
+                         <li><i class="far fa-check-circle text-primary me-1"></i>Enjoy scenic landscapes, including savannas, lakes, and craters</li>
+                         <li><i class="far fa-check-circle text-primary me-1"></i>Perfect for those arriving in Arusha or Moshi with limited time</li>
+                         <li><i class="far fa-check-circle text-primary me-1"></i>Opportunities for cultural experiences (Maasai Villages)</li> 
                     </div>
                 </div>
                 <div class="include-pack mb-4">
                     <div class="">
-                        <h5 class="h6 text-muted py-3 text-uppercase">Included Packages</h5>
+                        <h5 class="h6 text-muted py-3 text-uppercase">Safari Inclusions</h5>
                     </div>
                     <div class="">
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
-                            Transportation to & from the mountain gate
+                            Transportation in a 4x4 safari vehicle
                         </li>
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
-                            Professional guides, cooks and porters
+                            Park entry fees
                         </li>
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
-                            Pre & Post Trek accommodation
+                            Professional English-speaking guide
                         </li> 
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
-                            Park fees, camping fees & rescue fees
+                            Meals (Breakfast, Lunch, Dinner)
                         </li> 
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
-                            3 meals daily while on the mountain
+                            Bottled water
                         </li> 
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
-                            Portable toilets and toilets tents
-                        </li> 
-                        <li class="mb-2">
-                            <i class="far fa-check-circle text-primary me-1"></i> 
-                            Fair wages for the mountain crew
+                            Game drives
                         </li> 
                     </div>
                 </div>
                 <div class="exclude-packs mb-4">
                     <div class="">
-                        <h5 class="h6 text-muted py-3 text-uppercase">Excluded Packages</h5>
+                        <h5 class="h6 text-muted py-3 text-uppercase">Safari Exclusions</h5>
                     </div>
                     <div class="">
                         <li class="mb-2">
                             <i class="far fa-times-circle text-primary me-1"></i> 
-                            International flights
+                            Flights to/from Tanzania
                         </li>                   
                         <li class="mb-2">
                             <i class="far fa-times-circle text-primary me-1"></i> 
-                            Insurance fees
+                            Personal expenses & tips
                         </li>                     
                         <li class="mb-2">
                             <i class="far fa-times-circle text-primary me-1"></i> 
-                            Cost of Visas.
+                            Travel insurance
+                        </li>                     
+                        <li class="mb-2">
+                            <i class="far fa-times-circle text-primary me-1"></i> 
+                            Alcoholic drinks
                         </li>                      
                     </div>
                 </div>
                 <div class="packing-list mb-4">
                     <div class="">
-                        <h5 class="h6 text-muted py-3 text-uppercase">Packing List</h5>
+                        <h5 class="h6 text-muted py-3 text-uppercase">Who is This Safari For?</h5>
                     </div>
                     <div class="">
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
-                            Waterproof jacket, warm layers, hiking boots.
+                            First-time safari travelers who want a short but immersive experience
                         </li>                   
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
-                            Headlamp, trekking poles, hydration system.
+                            Business travelers or visitors with a limited schedule
                         </li>                     
                         <li class="mb-2">
                             <i class="far fa-check-circle text-primary me-1"></i> 
-                            Sunscreen, first-aid kit, snacks.
+                            Families, couples, and solo travelers looking for an affordable adventure
                         </li>                      
                     </div>
                 </div>   
                 <div class="best-time mb-4">
                     <div class="">
-                        <h5 class="h6 text-muted py-3 text-uppercase">Best Time to Trek</h5>
+                        <h5 class="h6 text-muted py-3 text-uppercase"> Best Time for Safari</h5>
                         <div class="">
                             <p  style="text-align: justify">
-                                The dry season (June–October and January–February) offers clear skies and stable weather, making it the best time to hike.
-                                Avoid the rainy season (March–May and November–December).
-                            </p> 
-                            <p class="">Ensure you're fully equipped for the adventure. Key items include:</p>
+                              Dry Season (June–October): Best for game viewing, animals gather around water sources.
+                            </p>
+                            <p  style="text-align: justify">
+                              Wet Season or Green Season (November – March) : Lush landscapes, best for birdwatching, and fewer crowds.
+                            </p>
                         </div>
                     </div>
                 </div>                
@@ -252,7 +236,7 @@
     </div>
 </div>
 
-<!-- Destination -->
+
 @include('frontend.layouts.destinations')
 
 @endsection

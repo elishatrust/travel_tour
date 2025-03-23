@@ -3,42 +3,57 @@
 
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-lg-12 col-sm-12">
                 <h1 class="h2 mb-3">{{ $page_title }}</h1>
                 <hr>
             </div>
-            <div class="col-lg-9 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
+            <div class="col-lg-12 col-sm-12 mb-4">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/106.jpg') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/106.webp') }}" alt="Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/002.jpg') }}" alt=" Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ asset('assets/frontend/img/park/1003.jpg') }}" alt="Image">
+                    </div>
+                </div>            
+            </div>
+            <div class="col-lg-12 col-sm-12 p-4" style="background: #f3f4f5!important; border-radius:5px;">  
                 <h4 class="mb-3" style="color: #f1671e">Safari Overview</h4>
-                <p class="">
-                    A 2-day wildlife safari in Tanzania is a perfect short adventure for those with limited time but still wanting to experience Africa’s stunning wildlife. This type of safari typically covers two national parks in Northern Tanzania—such as Tarangire National Park, Lake Manyara National Park, and Ngorongoro Crater.
+                <p class="" style="text-align: justify">
+                    Embark on an exciting 2-day adventure through Tanzania’s Northern Safari Circuit, home to some of Africa’s most famous wildlife destinations. This short yet thrilling safari offers an incredible opportunity to witness the Big Five—lions, elephants, leopards, buffalo, and rhinos—while exploring breathtaking landscapes.
+                    This tour is ideal for travelers with limited time but eager to experience Tanzania’s diverse ecosystems, abundant wildlife, and stunning scenery. You will visit Tarangire National Park or Lake Manyara National Park on the first day and then head to Ngorongoro Crater, one of the world’s most spectacular natural wonders, on the second day.
                 </p>
             </div>
-            <div class="col-lg-3 col-sm-12">
-                <div class="start-cost py-4">
-                    <h6 class="my-3 text-primary">Starting from</h6>
-                    <p class="h3 animated-underline">$350.00</p>
-                </div>
-                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase" data-bs-toggle="modal" data-bs-target="#bookingModal">
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-lg-7 col-sm-12 h2" style="color: #f1671e">
+                <i class="fa fa-walking me-2"></i>
+                <span class="" style="color: #f1671e">Safari Itinerary</span>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+                <a href="#bookingModal" class="btn btn-outline-primary px-5 text-uppercase fw-bold" data-bs-toggle="modal" data-bs-target="#bookingModal">
                     Book Now
                     <i class="fa fa-arrow-right ms-3"></i>
                 </a>
             </div>
         </div>
 
-        <h4 class="mt-5 mb-3 h2">
-            <i class="fa fa-list me-2"></i>
-            <span class="" style="color: #f1671e">Safari Itinerary</span>
-        </h4>
-
         <div class="row g-4">
             <div class="col-lg-7 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/wildlife/wild-2b.webp') }}" alt="me-2" />
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                              <i class="fa fa-calendar-day me-2"></i>Day 1: Arusha/Moshi – Tarangire National Park
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 1: Arusha/Moshi – Tarangire National Park
                             </h5>
                             <div class="">
                                 <li class="mb-2">
@@ -69,10 +84,10 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 shadow-sm p-4">
-                        <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/wildlife/wild-2.webp') }}" alt="me-2" />
                         <div>
                             <h5 class="mb-3 h4" style="color:#f1671e!important">
-                              <i class="fa fa-calendar-day me-2"></i>Day 2: Ngorongoro Crater – Arusha/Moshi
+                              <i class="fa fa-calendar-day me-2"></i>
+                              Day 2: Ngorongoro Crater – Arusha/Moshi
                             </h5>
                             <div class="">
                                 <li class="mb-2">
@@ -97,7 +112,34 @@
                                 </li>  
                             </div>
                         </div>
-                    </div>       
+                    </div>        
+                    <div class="col-lg-12 col-sm-12 p-4">
+                        <div class="Acclimatization-list">
+                            <div class="">
+                                <h5 class="h6 text-muted py-3 text-uppercase">Why Choose This Safari?</h5>
+                            </div>
+                            <div class="">
+                                <p>
+                                    ✅ Perfect for Short Trips – Ideal for travelers with limited time who want to experience Tanzania’s incredible wildlife.
+                                </p>      
+                                <p>
+                                    ✅ High Chances of Spotting the Big Five – Ngorongoro Crater offers one of the best opportunities to see the Big Five in one day.
+                                </p>      
+                                <p>
+                                    ✅ Stunning Landscapes & Unique Ecosystems – From baobab-studded savannas to the lush crater floor, this tour offers breathtaking scenery.
+                                </p>      
+                                <p>
+                                    ✅  Great Combination of Parks – Tarangire/Lake Manyara + Ngorongoro ensures a diverse safari experience.
+                                </p> 
+                            </div>
+                            <br>
+                            <p>
+                                <i>
+                                    This itinerary offers an authentic and immersive Tanzanian safari, perfect for wildlife lovers, adventure seekers, and those looking to explore off-the-beaten-path destinations.
+                                </i>
+                            </p>
+                        </div>  
+                    </div>      
                 </div>
             </div>
             <div class="col-lg-5 col-sm-12">
@@ -188,13 +230,13 @@
                 </div>   
                 <div class="best-time mb-4">
                     <div class="">
-                        <h5 class="h6 text-muted py-3 text-uppercase"> Best Time for a 2-Day Safari</h5>
+                        <h5 class="h6 text-muted py-3 text-uppercase"> Best Time for Safari</h5>
                         <div class="">
                             <p  style="text-align: justify">
                               Dry Season (June–October): Best for game viewing, animals gather around water sources.
                             </p>
                             <p  style="text-align: justify">
-                              Wet Season (November–May): Lush landscapes, best for birdwatching, and fewer crowds.
+                              Wet Season or Green Season (November – March) : Lush landscapes, best for birdwatching, and fewer crowds.
                             </p>
                         </div>
                     </div>
@@ -204,7 +246,7 @@
     </div>
 </div>
 
-<!-- Destination -->
+
 @include('frontend.layouts.destinations')
 
 @endsection

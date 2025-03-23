@@ -1,6 +1,6 @@
 
-<div class="container-xxl py-3">
-     <div class="container py-3">
+<div class="container-xxl py-5">
+     <div class="container">
          <div class="row g-5">       
              <div class="col-lg-4 col-sm-12">
                  <div class="img-border123 h-100">
