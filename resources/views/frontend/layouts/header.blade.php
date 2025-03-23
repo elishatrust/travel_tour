@@ -1,21 +1,21 @@
 <div id="hero" class="container-fluid bg-dark hero ">
     <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-item active">
-            <img src="{{ asset('assets/frontend/img/park/102.jpg') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/park/b.jpeg') }}" alt="">
             <div class="container-fluid">
             <p class="h4 fw-bold">Experience Mountain Trekking & Safari Adventures</p>
             <a href="{{ route('about') }}" class="btn btn-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('assets/frontend/img/park/100.jpg') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/park/h.jpg') }}" alt="">
             <div class="container-fluid">
             <p class="h4 fw-bold">Unforgettable Tanzanian Safaris & Tours</p>
             <a href="{{ route('about') }}" class="btn btn-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('assets/frontend/img/park/101.jpg') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/park/c.jpg') }}" alt="">
             <div class="container-fluid">
             <p class="h4 fw-bold">Explore the Beauty of the Beautiful World</p>
             <a href="{{ route('about') }}" class="btn btn-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
@@ -31,31 +31,31 @@
     </div>
 </div> 
     
-<div class="container-fluid focus"> 
+<div class="container-fluid below-slides"> 
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="inner-focus">
-                    <h2 class="h5 text-center text-uppercase">
-                        <i class="fa fa-walking me-2 fw-bold" style="font-size: 30px;"></i>
+                    <h4 class="text-center text-uppercase">
+                        <i class="fa fa-walking me-2 fw-bold"></i>
                         MOUNTAIN TREKKING
-                    </h2>
+                    </h4>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="inner-focus">
-                    <h2 class="h5 text-center text-uppercase">
-                        <i class="fa fa-tree me-2 fw-bold" style="font-size: 30px;"></i>
+                    <h4 class="text-center text-uppercase">
+                        <i class="fa fa-tree me-2 fw-bold"></i>
                         WILDLIFE SAFARIS
-                    </h2>
+                    </h4>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="inner-focus">
-                    <h2 class="h5 text-center text-uppercase">
-                        <i class="fa fa-umbrella-beach me-2 fw-bold" style="font-size: 30px;"></i>
+                    <h4 class="text-center text-uppercase">
+                        <i class="fa fa-umbrella-beach me-2 fw-bold"></i>
                         BEACH HOLIDAYS
-                    </h2>
+                    </h4>
                 </div>
             </div>
         </div>

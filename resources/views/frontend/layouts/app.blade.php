@@ -149,39 +149,39 @@
 
 
         /*====== CONTENT PROTECTED ======*/
-        function showAlert(message) {
-            var alertBox = document.getElementById("customAlert");
-            alertBox.textContent = message;
-            alertBox.style.display = "block";
-            alertBox.style.opacity = "1";
+        // function showAlert(message) {
+        //     var alertBox = document.getElementById("customAlert");
+        //     alertBox.textContent = message;
+        //     alertBox.style.display = "block";
+        //     alertBox.style.opacity = "1";
         
-            setTimeout(function() {
-                alertBox.style.opacity = "0";
-                setTimeout(() => {
-                    alertBox.style.display = "none";
-                }, 1000);
-            }, 1500);
-        }
+        //     setTimeout(function() {
+        //         alertBox.style.opacity = "0";
+        //         setTimeout(() => {
+        //             alertBox.style.display = "none";
+        //         }, 1000);
+        //     }, 1500);
+        // }
         
-        document.addEventListener("contextmenu", function(event) {
-            event.preventDefault();
-            showAlert("Content is protected!");
-        });
+        // document.addEventListener("contextmenu", function(event) {
+        //     event.preventDefault();
+        //     showAlert("Content is protected!");
+        // });
         
-        document.addEventListener("keydown", function(event) {
-            if (
-                event.ctrlKey && 
-                (event.key === "c" || event.key === "x" || event.key === "u" || event.key === "Shift" || event.key === "i")
-            ) {
-                event.preventDefault();
-                showAlert("Content is protected!");
-            }
-        });
+        // document.addEventListener("keydown", function(event) {
+        //     if (
+        //         event.ctrlKey && 
+        //         (event.key === "c" || event.key === "x" || event.key === "u" || event.key === "Shift" || event.key === "i")
+        //     ) {
+        //         event.preventDefault();
+        //         showAlert("Content is protected!");
+        //     }
+        // });
         
-        document.addEventListener("selectstart", function(event) {
-            event.preventDefault();
-            showAlert("Content is protected!");
-        });
+        // document.addEventListener("selectstart", function(event) {
+        //     event.preventDefault();
+        //     showAlert("Content is protected!");
+        // });
 
         /*====== TEXT AUTO WRITER ======*/
         var TxtType = function(el, toRotate, period) {
