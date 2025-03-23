@@ -279,19 +279,19 @@
 
 .hero .carousel {
     width: 100%;
-    min-height: 70vh;
+    min-height: 80vh;
     padding: 0;
     margin: 0;
     position: relative;
 }
 
-.focus{
+.below-slides{
     background: #e4e4e4!important;
-    padding: 30px;
+    padding: 20px;
     margin: 0;
 }
-.focus .inner-focus{
-    padding: 20px;
+.below-slides .inner-focus{
+    padding: 15px;
 }
     
 .hero img {
@@ -347,17 +347,17 @@
     .hero .carousel-item a{
         margin-bottom: -20px;
     }
-    .focus{
+    .below-slides{
         padding: 15px;
     }
-    .focus .inner-focus{
+    .below-slides .inner-focus{
         padding: 10px;
     }
-    .focus .container{
+    .below-slides .container{
         padding: 25px;
     }
-    .focus .container .inner-focus h2 {
-        font-size: 17px;
+    .below-slides .container .inner-focus h4 {
+        font-size: 20px;
     }
     .hero .carousel {
         min-height: 50vh;
@@ -365,11 +365,8 @@
     .hero .carousel-item p {
         font-size: 20px;
     }
-    .focus .container{
+    .below-slides .container{
         padding: 0px;
-    }
-    .focus .container .inner-focus h2 {
-        font-size: 17px;
     }
     .our-courses .item img {
         height:300px;
