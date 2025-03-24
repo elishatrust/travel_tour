@@ -17,10 +17,10 @@
                         <img src="{{ asset('assets/frontend/img/park/2c.jpeg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2b.jpeg') }}" alt=" Image">
+                        <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="{{ asset('assets/frontend/img/park/2d.jpeg') }}" alt="Image">
+                        <img src="{{ asset('assets/frontend/img/park/mikumi9.jpg') }}" alt="Image">
                     </div>
                 </div>            
             </div>

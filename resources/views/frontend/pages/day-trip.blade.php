@@ -33,8 +33,8 @@
 
 
       <div class="row g-4">
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/kilimanjaro-rongai.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/kilimanjaro-rongai.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -50,8 +50,8 @@
                     </ul>
                </div>
           </div>
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/materuni.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/materuni.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -66,8 +66,8 @@
                     </ul>
                </div>
           </div>
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/moshi-tower.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/moshi-tower.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -81,8 +81,8 @@
                     </ul>
                </div>
           </div>
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/marangu-waterfalls.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/marangu-waterfalls.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -97,8 +97,8 @@
                     </ul>
                </div>
           </div>
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/Maasai.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/Maasai.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -113,8 +113,8 @@
                     </ul>
                </div>
           </div>
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/arusha-national-park.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/arusha-national-park.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -130,8 +130,8 @@
                     </ul>
                </div>
           </div>  
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/moshi-forest.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/moshi-forest.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -145,8 +145,8 @@
                     </ul>
                </div>
           </div>  
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/cofee-tour.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/cofee-tour.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -161,8 +161,8 @@
                     </ul>
                </div>
           </div>  
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/chemka.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/chemka.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -177,8 +177,8 @@
                     </ul>
                </div>
           </div>  
-          <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-               <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/lake-chala.webp') }}" alt="me-2" />
+          <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-4">
+               <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:250px;" src="{{ asset('assets/frontend/img/tour/lake-chala.webp') }}" alt="me-2" />
                <div>
                     <h5 class="mb-3 text-uppercase" style="color:#f1671e!important">
                          <i class="fa fa-angle-double-right me-2"></i>
@@ -194,7 +194,7 @@
                     </ul>
                </div>
           </div>  
-          <div class="col-lg-12 col-sm-12 p-4 mt-4">
+          <div class="col-lg-8 col-sm-12 p-4">
               <div class="Acclimatization-list mb-4">
                   <div class="">
                       <h5 class="h6 text-muted py-3 text-uppercase">Why Choose These Day Trips?</h5>
@@ -218,7 +218,6 @@
         </div>
     </div>
 </div>
-
 
 @include('frontend.layouts.destinations')
 

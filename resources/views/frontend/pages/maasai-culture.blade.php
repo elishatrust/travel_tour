@@ -46,4 +46,6 @@
 </div>
 
 
+@include('frontend.layouts.destinations')
+
 @endsection
