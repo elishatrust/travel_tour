@@ -153,37 +153,4 @@ Short Safaris:
 3 Days Tanzania Safari in Tarangire, Ngorongoro and lake Manyara
 Combo Safaris:
 14 Days Kilimanjaro Trekking and Tanzania wildlife safaris
-
-1. Safari - Wanyama tu, 
-2. Trek - Milima, Watu
-
-Northern Circuit
-2 Days Wildlife Safaris
-3 Days Wildlife Safari
-4 Days Wildlife Safaris
-5 Days Wildlife Safaris
-6 Days Wildlife Safaris
-7 Days Wildlife Safari
-8 Days Wildlife Safari
-9 Days Wildlife Safari
-
-Southern Circuit
-2 Days Mikumi National Park
-2 Days Ruaha National Park
-3 Days Mikumi National Park
-3 Days Ruaha National Park
-3 Days Udzungwa and Mikumi National Park
-3 Days Selous Game Reserve
-4 Days Selous & Mikumi National Park
-5 Days Mikumi & Ruaha National Park
-6 Days Selous, Mikumi & Ruaha National Park
-10 Days Selous, Mikumi, Ruaha & Udzungwa
-14 Days Ruaha National Park
-
-Ngorongoro Conservation Area
-Lake Manyara National Park
-Tarangire National Park
-Arusha National Park
-Ruaha National Park
-Selous Game Reserve
 --}}
