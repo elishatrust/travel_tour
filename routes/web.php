@@ -147,7 +147,9 @@ Route::middleware(['auth'])->group(function(){
         #  Contacts
         Route::get('/contacts', [ContactsController::class, 'list'])->name('contacts');
         Route::get('/contacts-view', [ContactsController::class, 'listView'])->name('contacts-view');
-        Route::get('/contacts-delete/{id}', [ContactsController::class, 'deleteContacts']);
+        Route::post('/contacts-save', [ContactsController::class, 'saveContact'])->name('contacts-save');
+        Route::get('/contacts-edit/{id}', [ContactsController::class, 'editContact']);
+        Route::get('/contacts-delete/{id}', [ContactsController::class, 'deleteContact']);
 
         #  Settings
         Route::get('/settings', [UserController::class,'index'])->name('settings');

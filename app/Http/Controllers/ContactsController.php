@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ContactsModel;
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Http\Request;
 
 class ContactsController extends Controller
@@ -21,6 +22,11 @@ class ContactsController extends Controller
     {
         $data = ContactsModel::getContacts();
         return view('backend.contacts.list_view', compact('data'));
+    }
+    public function editUser($id)
+    {
+        $data = ContactsModel::findContact($id);
+        return response()->json(['data'=>$data, 'id'=>Crypt::encrypt($id)]);
     }
 
     public function deleteContacts($id)

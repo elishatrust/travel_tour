@@ -1,5 +1,4 @@
 
-
 @extends('backend.layouts.app')
 <link rel="stylesheet" href="{{ asset('assets/plugins/jquery-datatable/dataTables.bootstrap4.min.css')}}">
 @section('content')
@@ -25,7 +24,7 @@
     </div>
 </section>
 
-<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+{{-- <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -95,7 +94,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 
 <script>
@@ -116,7 +115,7 @@ $("#show_hide_pwd input").on('click', function (event) {
 function getView() {
     jQuery.ajax({
         type: "GET",
-        url: "{{ route('user-view') }}",
+        url: "{{ route('contacts-view') }}",
         dataType: 'html',
         cache: false,
         success: function (data) {
@@ -135,15 +134,15 @@ function closeModel(){
     $('#largeModal').modal('hide');
 }
 
-function deleteUser(id){
-    var conf = confirm("Are you Sure you want to DELETE ?");
+function deleteContact(id){
+    var conf = confirm("Are you Sure you want to delete ?");
     if (!conf) {
         return;
     }
 
     jQuery.ajax({
         type: "GET",
-        url: "/admin/user-delete/"+id,
+        url: "/admin/contacts-delete/"+id,
         dataType: 'json',
         success: function (data) {
             if (data.status == 200) {
@@ -159,7 +158,7 @@ function deleteUser(id){
     });
 }
 
-function editUser(id){
+function editContact(id){
     document.getElementById('form').reset();
     $("#hidden_id").val("")
 
@@ -169,7 +168,7 @@ function editUser(id){
 
     jQuery.ajax({
         type: "GET",
-        url: "/admin/user-edit/"+id,
+        url: "/admin/contacts-edit/"+id,
         dataType: 'json',
         success: function (data) {
             $("#hidden_id").val(data.id)
@@ -196,7 +195,7 @@ function save(e) {
 
     jQuery.ajax({
         type: "POST",
-        url: "{{ route('user-save') }}",
+        url: "{{ route('contacts-save') }}",
         data: formData,
         dataType: 'json',
         processData: false,

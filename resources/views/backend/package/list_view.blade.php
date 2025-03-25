@@ -8,6 +8,7 @@
                 <th style="width: 10px;">Cost($)</th>
                 <th style="width: 35px;">Travelers</th>
                 <th style="width: 15px;">Extra</th>
+                <th style="width: 15px;">Order No.</th>
                 <th style="width: 10px;">Status</th>
                 <th style="width: 5px;">Action</th>
             </tr>
@@ -24,13 +25,13 @@
                     <span>Child : {{ $item->child ? $item->child : '0' }}</span>                  
                 </td>
                 <td>{{ $item->more }}</td>
+                <td>{{ $item->order_number }}</td>
                 <td>
                     @if (!empty($item->status==0))
                     <span class="badge badge-success m-l-10 hidden-sm-down">Active</span>
                     @else
                     <span class="badge badge-warning m-l-10 hidden-sm-down">Inactive</span>
                     @endif
-                    <br><span>Order : {{ $item->order_number }}</span>
                 </td>
                 <td>
                     <button title="Edit Action"  onclick="editPackage({{$item->id}})" class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-edit"></i></button>

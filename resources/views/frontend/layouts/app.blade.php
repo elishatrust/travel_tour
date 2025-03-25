@@ -16,13 +16,11 @@
     <link href="{{ asset('assets/frontend/css/owl.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/frontend/css/bootstrap.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" />
-    
-    
+    <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" />  
 </head>
 <body>
 
-    @include('frontend.layouts.spinner')
+    {{-- @include('frontend.layouts.spinner') --}}
 
     @include('frontend.layouts.topbar')
 
@@ -31,7 +29,6 @@
     @yield('content')
 
     @include('frontend.layouts.footer')
-
 
     @php
     use App\Models\PackageModel;
@@ -48,7 +45,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="form" id="form" action="javascript:void(0)"  enctype="multipart/form-data">
+                    <form class="bookingForm" id="form" action="javascript:void(0)"  enctype="multipart/form-data">
                         @csrf
                         <input type="hidden" class="form-control" id="hidden_id" name="hidden_id" >
                         <div class="row">
@@ -125,7 +122,7 @@
                             <div class="col-lg-12 col-sm-12" id="loader"></div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-outline-dark text-uppercase" onclick="closeModel()" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-outline-primary text-uppercase">Save</button>
+                                <button type="submit" class="btn btn-outline-primary text-uppercase saveBtn">Save</button>
                             </div>
                         </div>
                     </form>
@@ -149,98 +146,39 @@
 
 
         /*====== CONTENT PROTECTED ======*/
-        // function showAlert(message) {
-        //     var alertBox = document.getElementById("customAlert");
-        //     alertBox.textContent = message;
-        //     alertBox.style.display = "block";
-        //     alertBox.style.opacity = "1";
+        function showAlert(message) {
+            var alertBox = document.getElementById("customAlert");
+            alertBox.textContent = message;
+            alertBox.style.display = "block";
+            alertBox.style.opacity = "1";
         
-        //     setTimeout(function() {
-        //         alertBox.style.opacity = "0";
-        //         setTimeout(() => {
-        //             alertBox.style.display = "none";
-        //         }, 1000);
-        //     }, 1500);
-        // }
-        
-        // document.addEventListener("contextmenu", function(event) {
-        //     event.preventDefault();
-        //     showAlert("Content is protected!");
-        // });
-        
-        // document.addEventListener("keydown", function(event) {
-        //     if (
-        //         event.ctrlKey && 
-        //         (event.key === "c" || event.key === "x" || event.key === "u" || event.key === "Shift" || event.key === "i")
-        //     ) {
-        //         event.preventDefault();
-        //         showAlert("Content is protected!");
-        //     }
-        // });
-        
-        // document.addEventListener("selectstart", function(event) {
-        //     event.preventDefault();
-        //     showAlert("Content is protected!");
-        // });
-
-        /*====== TEXT AUTO WRITER ======*/
-        var TxtType = function(el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
-
-        TxtType.prototype.tick = function() {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-            var that = this;
-            var delta = 200 - Math.random() * 100;
-
-            if (this.isDeleting) { delta /= 2; }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-            this.isDeleting = false;
-            this.loopNum++;
-            delta = 500;
-            }
-
             setTimeout(function() {
-            that.tick();
-            }, delta);
-        };
-        window.onload = function() {
-            var elements = document.getElementsByClassName('typewrite');
-            for (var i=0; i<elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-type');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                new TxtType(elements[i], JSON.parse(toRotate), period);
-                }
+                alertBox.style.opacity = "0";
+                setTimeout(() => {
+                    alertBox.style.display = "none";
+                }, 1000);
+            }, 1500);
+        }
+        
+        document.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+            showAlert("Content is protected!");
+        });
+        
+        document.addEventListener("keydown", function(event) {
+            if (
+                event.ctrlKey && 
+                (event.key === "c" || event.key === "x" || event.key === "u" || event.key === "Shift" || event.key === "i")
+            ) {
+                event.preventDefault();
+                showAlert("Content is protected!");
             }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-            document.body.appendChild(css);
-        };
-
-
+        });
+        
+        document.addEventListener("selectstart", function(event) {
+            event.preventDefault();
+            showAlert("Content is protected!");
+        });
 
         /*====== START OF (Tawk.to) SCRIPT ======*/
         // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -298,9 +236,14 @@
             $('#bookingModal').modal('hide');
         }
 
+        /*====== Date Picker ======*/
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('arrival_date').setAttribute('min', today);
+        document.getElementById('departure_date').setAttribute('min', today);
+        $('.saveBtn').prop('disabled', false);
 
         /*====== Save Booking  ======*/
-        $("#form").on("submit", function(e) {
+        $(".bookingForm").on("submit", function(e) {
             e.preventDefault();
             let formData = new FormData(this);
 
@@ -316,7 +259,7 @@
                 },
                 success: function(response) {
                     $("#loader").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>"+response.message+"</div>").delay(3000).fadeOut("slow"); 
-                    $("#form")[0].reset();
+                    $(".bookingForm")[0].reset();
                 },
                 error: function(response) {
                     $("#loader").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>Something went wrong. Please check your input.</div>").delay(3000).fadeOut("slow"); 
@@ -326,7 +269,7 @@
 
 
         /*====== Save Contacts  ======*/
-        $("#form").on("submit", function(e) {
+        $(".contactForm").on("submit", function(e) {
             e.preventDefault();
             let formData = new FormData(this);
 
@@ -338,14 +281,14 @@
                 contentType: false,
                 headers: { "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content") },
                 beforeSend: function() {
-                    $("#loader").html('Saving...').show();
+                    $("#Loader2").html('Saving...').show();
                 },
                 success: function(response) {
-                    $("#loader").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>"+response.message+"</div>").delay(3000).fadeOut("slow"); 
-                    $("#form")[0].reset();
+                    $("#Loader2").fadeIn().html("<div class='alert alert-success text-center alert-dismissable w-100'>"+response.message+"</div>").delay(3000).fadeOut("slow"); 
+                    $(".contactForm")[0].reset();
                 },
                 error: function(response) {
-                    $("#loader").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>Something went wrong. Please check your input.</div>").delay(3000).fadeOut("slow"); 
+                    $("#Loader2").fadeIn().html("<div class='alert alert-danger text-center alert-dismissable w-100'>Something went wrong. Please check your input.</div>").delay(3000).fadeOut("slow"); 
                 }
             });
         });

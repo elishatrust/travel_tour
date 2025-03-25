@@ -46,39 +46,39 @@
       </div>
       <div class="col-lg-7 col-md-5 col-sm-12 ">
         <p class="display-512 mb-3">Do you have anything to us?</p>
-        <form class="form" id="form">
+        <form class="contactForm" id="form">
           <div class="row g-3">
             <div class="col-md-6 col-sm-12">
-              <div class="form-floating123 mb-2">
-                {{-- <label for="name">Name <span class="text-danger">*</span></label> --}}
-                <input type="text" class="form-control bg-light py-2" id="fullname" name="fullname" placeholder="Your Name" required/>
+              <div class="form-group mb-2">
+                <label for="name">Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control bg-light py-2" id="fullname" name="fullname" placeholder="Michael Denis" required/>
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
-              <div class="form-floating123 mb-2">
-                {{-- <label for="email">Email <span class="text-danger">*</span></label> --}}
-                <input type="email" class="form-control bg-light py-2" id="email" name="email" placeholder="Your Email" required/>
+              <div class="form-group mb-2">
+                <label for="email">Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control bg-light py-2" id="email" name="email" placeholder="michaeldenis@gmail.com" required/>
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
-              <div class="form-floating123 mb-2123">
-                {{-- <label for="phone">Phone <span class="text-danger">*</span></label> --}}
-                <input type="number" class="form-control bg-light py-2 "id="phone" name="phone" min="0" placeholder="Phone number" required/>
+              <div class="form-group mb-2123">
+                <label for="phone">Phone <span class="text-danger">*</span></label>
+                <input type="number" class="form-control bg-light py-2 "id="phone" name="phone" min="0" placeholder="0789000555" required/>
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
-              <div class="form-floating123 mb-2">
-                {{-- <label for="subject">Subject <span class="text-danger">*</span></label> --}}
+              <div class="form-group mb-2">
+                <label for="subject">Subject <span class="text-danger">*</span></label>
                 <input type="text" class="form-control bg-light py-2 "id="subject" name="subject" placeholder="Subject" required/>
               </div>
             </div>
             <div class="col-md-12 col-sm-12">
-                <div class="form-floating123 mb-2">
-                {{-- <label for="message">Message <span class="text-danger">*</span></label> --}}
+                <div class="form-group mb-2">
+                <label for="message">Message <span class="text-danger">*</span></label>
                 <textarea class="form-control bg-light py-2" placeholder="Leave a message here"id="message" name="message" style="height: 100px"></textarea>
                 </div>
             </div>
-            <div class="col-lg-12 col-sm-12" id="loader"></div>
+            <div class="col-lg-12 col-sm-12" id="Loader2"></div>
             <div class="col-md-12 col-sm-12">
                 <button class="btn btn-outline-primary text-uppercase w-100 py-3" type="submit">
                     Send Message

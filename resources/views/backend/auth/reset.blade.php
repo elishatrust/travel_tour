@@ -7,12 +7,8 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="description" content="">
     <title>{{ !empty(strtoupper($data['header']).' | '.strtoupper($data['title'])) ? strtoupper($data['header']).' | '.strtoupper($data['title']) : ''}}</title>
-
-    <!-- Favicon-->
-    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+    <link href="{{ asset('assets/frontend/img/logo/giraffe-128.gif') }}" rel="icon" />
     <link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}">
-
-    <!-- Custom Css -->
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/flash.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/color_skins.css') }}">
@@ -48,7 +44,7 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="company_detail">
                         <h4 class="logo mb-4" style="text-align: center">
-                            <img src="{{ asset('assets/frontend/img/more/logo2.png')}}" alt="#" style="width: 200px; border-radius: 30px; border-bottom: 2px solid wheat;">
+                            <img src="{{ asset('assets/frontend/img/logo/logo2.png')}}" alt="UpzoneSafari" style="width:200px;height:auto;border-radius: 30px; border-bottom: 2px solid wheat;">
                         </h4>
                         <h5 style="text-align: center">{{ Str::upper($data['title']) }}</h5>
                         <p style="text-align: center"><span>Welcome to Your Account</span></p>

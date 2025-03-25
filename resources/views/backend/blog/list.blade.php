@@ -59,7 +59,7 @@
                         <div class="col-md-6 col-sm-12">
                             <label for="">Status <span class="text-danger">*</span></label>
                             <select name="aStatus" id="aStatus" class="form-control show-tick" required>
-                                <option>Select--</option>
+                                <option>~Select~</option>
                                 <option value="0">Active</option>
                                 <option value="1">Inactive</option>
                             </select>

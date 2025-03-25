@@ -17,12 +17,11 @@
 
             @foreach ($blogs as $blog)
                 <div class="col-lg-4 col-sm-12 shadow-sm p-4">
-                    @if ($blog->file_path)
-                        <img src="{{ asset('storage/'.$blog->file_path) }}" class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:350px; object-fit:cover;"  alt="Blog Image">
+                    @if ($blog->file_path && file_exists(public_path($blog->file_path)))
+                        <img src="{{ asset($blog->file_path) }}" class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:350px; object-fit:cover;"  alt="Blog Image">
                     @else
                         <img src="{{ asset('assets/frontend/img/safari/12.jpg') }}" class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:350px; object-fit:cover;"  alt="Fallback Image">
                     @endif
-
                     <div>
                         <h5 class="mb-3 text-muted">
                             {{ $blog->title }}
@@ -56,13 +55,7 @@
 </div>
 
 
-<!-- Media Start -->
-{{-- @include('frontend.layouts.social-media') --}}
-<!--- Media End -->
-
-<!-- Destination -->
 @include('frontend.layouts.destinations')
-
 
 @endsection
 

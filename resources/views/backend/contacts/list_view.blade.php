@@ -4,10 +4,11 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th>Names</th>
+                <th>Name</th>
                 <th>Phone</th>
                 <th>Email</th>
-                <th>Address</th>
+                <th>Subject</th>
+                <th>Message</th>
                 <th>Status</th>
                 <th>Created On</th>
                 <th>Action</th>
@@ -18,23 +19,24 @@
             @foreach ($data as $item)
             <tr>
                 <td>{{ $n }}</td>
-                <td>{{ $item->name }}</td>
+                <td>{{ $item->fullname }}</td>
                 <td><a href="tel:{{ $item->phone }}">{{ $item->phone }}</a></td>
                 <td><a href="mailto:{{ $item->email }}">{{ $item->email }}</a></td>
-                <td>{{ $item->address }}</td>
+                <td>{{ $item->subject }}</td>
+                <td>{{ $item->message }}</td>
                 <td>
                     @if (!empty($item->status==0))
-                    <span class="badge badge-success m-l-10 hidden-sm-down">Active</span>
+                    <span class="badge badge-success m-l-10 hidden-sm-down">New</span>
                     @else
-                    <span class="badge badge-default m-l-10 hidden-sm-down">Inactive</span>
+                    <span class="badge badge-default m-l-10 hidden-sm-down"></span>
                     @endif
                 </td>
                 <td>
                     <p class="mt-2">{{ \Carbon\Carbon::parse($item->created_at)->format('d/m/Y | H:m') }}</p>
                 </td>
                 <td>
-                    <button title="Edit Action"  onclick="editUser({{$item->id}})" class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-edit"></i></button>
-                    <button title="Delete Action" onclick="deleteUser({{$item->id}})"  class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-delete"></i></button>
+                    <button title="Edit Action"  onclick="editContact({{$item->id}})" class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-edit"></i></button>
+                    <button title="Delete Action" onclick="deleteContact({{$item->id}})"  class="btn btn-icon btn-neutral btn-icon-mini"><i class="zmdi zmdi-delete"></i></button>
                 </td>
             </tr>
             @php $n++; @endphp

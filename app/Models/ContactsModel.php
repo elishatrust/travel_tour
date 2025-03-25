@@ -17,6 +17,11 @@ class ContactsModel extends Model
         return DB::table('contacts')->where(['archive' => 0])->orderBy('id', 'desc')->get();
     }
 
+    static public function findContact($id)
+    {
+        return DB::table('contacts')->where('id', '=', $id)->first();
+    }
+
     static public function updateContacts($id)
     {
         return DB::table('contacts')->where(['id' => $id])->update(['archive' => 1]);

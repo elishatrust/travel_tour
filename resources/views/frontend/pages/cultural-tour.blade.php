@@ -33,8 +33,8 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/natron3.webp') }}" alt="me-2" />
+            <div class="col-lg-4 col-sm-12 shadow-sm p-4">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:300px;" src="{{ asset('assets/frontend/img/tour/natron3.webp') }}" alt="me-2" />
                 <div>
                     <h5 class="mb-3 h4" style="color:#f1671e!important"><i class="fa fa-calendar-day me-2"></i>Day 1: Arusha/Moshi – Lake Natron (Ol Doinyo Lengai Hike)</h5>
                     <p style="text-align: justify">
@@ -45,8 +45,8 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/natron2.webp') }}" alt="me-2" />
+            <div class="col-lg-4 col-sm-12 shadow-sm p-4">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:300px;" src="{{ asset('assets/frontend/img/tour/natron2.webp') }}" alt="me-2" />
                 <div>
                     <h5 class="mb-3 h4" style="color:#f1671e!important"><i class="fa fa-calendar-day me-2"></i>Day 2: Lake Natron Exploration</h5>
                     <p style="text-align: justify">
@@ -57,8 +57,8 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12 shadow-sm p-4">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:370px;" src="{{ asset('assets/frontend/img/tour/natron1.webp') }}" alt="me-2" />
+            <div class="col-lg-4 col-sm-12 shadow-sm p-4">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px;width:100%;height:300px;" src="{{ asset('assets/frontend/img/tour/natron1.webp') }}" alt="me-2" />
                 <div>
                     <h5 class="mb-3 h4" style="color:#f1671e!important"><i class="fa fa-calendar-day me-2"></i>Day 3: Lake Natron – Arusha/Moshi</h5>
                     <p style="text-align: justify">
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="col-lg-12 col-sm-12 p-4">
-                <div class="p-5">
+                <div class="">
                     <h5 class="h6 text-muted py-3 text-uppercase">Why Choose Ol Doinyo Lengai Trek?</h5>
                     <div class="">
                         <p  style="text-align: justify">

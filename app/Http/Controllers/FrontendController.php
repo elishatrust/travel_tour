@@ -136,7 +136,7 @@ class frontendController extends Controller
         {
             $data['meta_title'] = $meta_title;
             $data['page_title'] = $page_title;
-            return view('frontend.pages.Ol-doinyo-lengai', $data );
+            return view('frontend.pages.cultural-tour', $data );
 
         }else{
             abort(404);
