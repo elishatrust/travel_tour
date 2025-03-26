@@ -745,11 +745,11 @@
     padding: 0.5rem 0xp;
 }
 
-.dropdown-hover:hover>.dropdown-menu {
+.dropdown-hover:hover > .dropdown-menu {
     display: block;
 }
 
-.dropdown-hover>.dropdown-toggle:active {
+.dropdown-hover > .dropdown-toggle:active {
     pointer-events: none;
     color: var(--primary)!important;
 }

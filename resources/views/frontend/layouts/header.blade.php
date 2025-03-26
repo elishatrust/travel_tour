@@ -4,21 +4,21 @@
             <img src="{{ asset('assets/frontend/img/park/b.jpeg') }}" alt="">
             <div class="container-fluid">
                 <p class="h4 fw-bold">Experience Mountain Trekking & Safari Adventures</p>
-                <a href="{{ route('about') }}" class="btn btn-outline-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
+                <a href="{{ route('about') }}" class="btn btn-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
             </div>
         </div>
         <div class="carousel-item">
             <img src="{{ asset('assets/frontend/img/park/h.jpg') }}" alt="">
             <div class="container-fluid">
                 <p class="h4 fw-bold">Unforgettable Tanzanian Safaris & Tours</p>
-                <a href="{{ route('about') }}" class="btn btn-outline-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
+                <a href="{{ route('about') }}" class="btn btn-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
             </div>
         </div>
         <div class="carousel-item">
             <img src="{{ asset('assets/frontend/img/park/c.jpg') }}" alt="">
             <div class="container-fluid">
                 <p class="h4 fw-bold">Explore the Beauty of the Beautiful World</p>
-                <a href="{{ route('about') }}" class="btn btn-outline-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
+                <a href="{{ route('about') }}" class="btn btn-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
             </div>
         </div>
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
