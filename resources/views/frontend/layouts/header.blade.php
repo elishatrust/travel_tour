@@ -1,24 +1,24 @@
 <div id="hero" class="container-fluid bg-dark hero ">
     <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-item active">
-            <img src="{{ asset('assets/frontend/img/park/b.jpeg') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/img/img2.webp') }}" alt="Start-Little">
             <div class="container-fluid">
-                <p class="h4 fw-bold">Experience Mountain Trekking & Safari Adventures</p>
-                <a href="{{ route('about') }}" class="btn btn-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
+                <p class="h4 fw-bold">Growing Agriculture, Growing Tanzania</p>
+                <a href="{{ route('about') }}" class="btn btn-outline-primary">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('assets/frontend/img/park/h.jpg') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/img/img1.webp') }}" alt="Start-Little">
             <div class="container-fluid">
-                <p class="h4 fw-bold">Unforgettable Tanzanian Safaris & Tours</p>
-                <a href="{{ route('about') }}" class="btn btn-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
+                <p class="h4 fw-bold">Modern Farming for a Sustainable Future</p>
+                <a href="{{ route('about') }}" class="btn btn-outline-primary">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('assets/frontend/img/park/c.jpg') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/img/img2.webp') }}" alt="Start-Little">
             <div class="container-fluid">
-                <p class="h4 fw-bold">Explore the Beauty of the Beautiful World</p>
-                <a href="{{ route('about') }}" class="btn btn-primary text-light">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
+                <p class="h4 fw-bold">Empowering Farmers, Transforming Lives</p>
+                <a href="{{ route('about') }}" class="btn btn-outline-primary">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
             </div>
         </div>
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
@@ -30,7 +30,7 @@
         <ol class="carousel-indicators"><li data-bs-target="#hero-carousel" data-bs-slide-to="0" class=""></li><li data-bs-target="#hero-carousel" data-bs-slide-to="1" class=""></li><li data-bs-target="#hero-carousel" data-bs-slide-to="2" class="active" aria-current="true"></li></ol>
     </div>
 </div> 
-    
+{{--     
 <div class="container-fluid below-slides"> 
     <div class="container">
         <div class="row">
@@ -60,4 +60,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}

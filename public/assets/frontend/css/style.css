@@ -324,7 +324,7 @@
     padding: 20px 20px 0px;
     margin-bottom: 90px;
     margin-right: 0;
-    border-left: 5px solid var(--primary);
+    border-left: 10px solid var(--primary);
     width: 40%;
     z-index: 3;
 }
@@ -655,9 +655,9 @@
 .navbar .navbar-brand img {
     margin-bottom:5px;
     border-radius: 30px; 
-    height: 70px!important;
-    width: 170px!important; 
-    border-bottom: 5px solid var(--primary); 
+    height: 100px!important;
+    width: 200px!important; 
+    /* border-bottom: 5px solid var(--primary);  */
 }
 
 .mega-menu {
@@ -973,62 +973,13 @@
     
 
 /*======  Header  ======*/
-.inc_about {
+.include {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
-        url('../img/more/00.jpg') center center no-repeat;
+        url('../img/more/0011.jpg') center center no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
 }
-
-.inc_contact {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
-        url('../img/more/3a.jpg') center center no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-}
-
-.inc_mt_kili {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), 
-        url("../img/more/bg-top-.png") center center no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-}
-
-.inc_service {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
-        url("../img/homepage_safari_lions.webp") center center no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-}
-
-.inc_blog {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), 
-        url("../img/safari/29.jpg") center center no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-}    
-
-.inc_mt_meru {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
-        url("../img/MtMeru.webp") center center no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-}
-
-.inc_terms_condition {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
-        url("../img/more/21.jpg") center center no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-}
-
 
 .header-carousel .owl-nav {
     position: absolute;
@@ -1216,11 +1167,130 @@ th {
     background: #e4e4e4!important; 
     border-radius:5px;
 }
+/*====== Team  ======*/
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    max-height: 300px;
+}
+
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.pastor-social li
+{
+margin-right:10px !important;
+}
+
+.pastor-social .fa
+{
+font-size:20px !important;
+}
+.pastor_image
+{
+height:350px;
+object-fit:cover;
+width:100%;
+}
+.pastor-desc
+{
+background:#EBEBEB;
+text-align:center;
+padding:10px;
+}
+.pastor-desc p
+{
+text-align:center;
+}
+.pastor-desc img
+{
+width:40px;
+height:40px;
+}
 /*======  Facts & Visiting Hours  ======*/
 .facts {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/safari_lion.webp");
+    /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url("../img/img/Tractor2.jpg"); */
     background-position: center;
-    background-attachment: scroll;
+    background: #d5f1e4;
+    background-attachment: fixed;
     background-size: cover;
     width: 100%;
 }
@@ -1400,7 +1470,7 @@ th {
 /*======  Footer  ======*/
 .footer {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-        url("../img/Lion_Serengeti.webp") center center no-repeat;
+        url("../img/img/img3.jpeg") center center no-repeat;
     background-size: cover;
 }
 

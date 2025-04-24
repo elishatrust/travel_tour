@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @section('content')
-@include('frontend.layouts.inc_contact')
+@include('frontend.layouts.include')
 
 
 <div class="container-xxl py-5">

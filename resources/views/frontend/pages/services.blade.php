@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 @section('content')
 
-@include('frontend.layouts.inc_service')
+@include('frontend.layouts.include')
 
 
 <!-- Service -->
@@ -9,86 +9,117 @@
     <div class="container">
         <div class="row g-5 mb-5">
             <div class="col-lg-12 col-sm-12 text-center">
-                <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>What We Do</p>
-                <h1 class="display-5123 h2 mb-3" style="">Your Special Services </h1>
+                {{-- <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Services</p> --}}
+                <h1 class="display-5123 h2 mb-3" style="">Our Special Products & Services</h1>
             </div>
         </div>
-        <div class="row gy-5 gx-4">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <h4 class="text-start">1. Agricultural Products </h4>
+                <hr class=" border-bottom border-primary">
+            </div>
             <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/5.jpg') }}" alt="Icon" />
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/img/seeds.jpg') }}" alt="Icon" />
                 <div>
-                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Guide Services</h5>
+                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Crops & Seeds</h5>
                     <span style="text-align: justify">
-                        Offering professional guide services to ensure travelers have knowledgeable
-                        experts to help them explore destinations.
+                        We offer a wide variety of high-quality seeds for fruits, vegetables, grains, and pulses, ensuring that farmers have access to the best options for their land.
                     </span>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/1.jpg') }}" alt="Icon" />
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/img/fertilizers.jpeg') }}" alt="Icon" />
                 <div>
-                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Group Tours</h5>
+                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Fertilizers</h5>
                     <span style="text-align: justify">
-                        Organized group tours for families, friends, and special interest groups
+                        Our premium fertilizers are tailored for various soil types and crops to ensure high yields and long-term soil fertility.
                     </span>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/2.jpg') }}" alt="Icon" />
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/img/livestock.jpg') }}" alt="Icon" />
                 <div>
-                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Animal Photos</h5>
+                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Livestock Products</h5>
                     <span style="text-align: justify">
-                        Capture beautiful memories with wildlife through professional 
-                        animal photography services.
+                        We provide healthy livestock, breeding services, and animal feed to support the growth of the livestock industry in Tanzania.
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-12 col-sm-12">
+                <h4 class="text-start">2. Farm Management Services </h4>
+                <hr class=" border-bottom border-primary">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 shadow-sm p-3">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/img/consulting.jpg') }}" alt="Icon" />
+                <div>
+                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Consulting</h5>
+                    <span style="text-align: justify">
+                        Our team of experts provides tailored consulting services to farmers, helping them optimize their farm operations and increase productivity.
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 shadow-sm p-3">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/img/training.jpg') }}" alt="Icon" />
+                <div>
+                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Training</h5>
+                    <span style="text-align: justify">
+                        We offer training programs for farmers, focusing on best practices in crop production, livestock management, and sustainable farming.
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 shadow-sm p-3">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/img/Research.jpg') }}" alt="Icon" />
+                <div>
+                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Research</h5>
+                    <span style="text-align: justify">
+                        We invest in agricultural research to develop better seeds, farming techniques, sustainable practices, climate change-related technologies, communication technologies, and other cutting-edge innovations.
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 shadow-sm p-3">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/img/supply-chain-soln.jpg') }}" alt="Icon" />
+                <div>
+                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Supply Chain Solutions</h5>
+                    <span style="text-align: justify">
+                        From procurement to distribution, we provide integrated solutions for the agricultural supply chain, ensuring timely delivery and quality assurance.
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-lg-12 col-sm-12">
+                <h4 class="text-start">3. Equipment and Machinery </h4>
+                <hr class=" border-bottom border-primary">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/img/Tools.jpg') }}" alt="Icon" />
+                <div>
+                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Agricultural Tools</h5>
+                    <span style="text-align: justify">
+                        We supply a range of tools, equipment and services for small to large-scale farming operations, including plows, harrows, and planters.
                     </span>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/6.jpg') }}" alt="Icon" />
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/img/Equipment.webp') }}" alt="Icon" />
                 <div>
-                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Free High Speed Wi-Fi</h5>
+                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Tractors</h5>
                     <span style="text-align: justify">
-                        Ensuring that travelers stay connected with free, high-speed Wi-Fi at hotels, 
-                        rest houses, and tour vehicles.
+                        Our fleet of tractors and other farm machinery are available for sale and lease, designed to meet the needs of all types of agricultural operations.
                     </span>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/7.jpg') }}" alt="Icon" />
+                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/img/Irrigation.jpg') }}" alt="Icon" />
                 <div>
-                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Food & Beverages</h5>
+                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Irrigation Systems</h5>
                     <span style="text-align: justify">
-                        Variety of food and beverage options for travelers, including local delicacies, 
-                        snacks, and drinks at tour destinations.
-                    </span>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/11.jpg') }}" alt="Icon" />
-                <div>
-                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Zoo Shopping</h5>
-                    <span style="text-align: justify">
-                        Offering gift shops and souvenir outlets at zoo and wildlife locations, allowing 
-                        visitors to purchase animal-themed products and local crafts.
-                    </span>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/8.jpg') }}" alt="Icon" />
-                <div class="p-3">
-                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Rest House</h5>
-                    <span style="text-align: justify">
-                        Booking accommodations ranging from budget hotels to luxury resorts worldwide.
-                    </span>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 shadow-sm p-3">
-                <img class="img-fluid mb-3 w-100" style="border-radius:10px; width:100%;height:250px;" src="{{ asset('assets/frontend/img/services/9.jpg') }}" alt="Icon" />
-                <div>
-                    <h5 class="mb-3 text-center" style="color:#f1671e!important">Playground Facilities</h5>
-                    <span style="text-align: justify">
-                        Safe and fun playground areas for children at select destinations, 
-                        ensuring that families with young kids have a space for play and relaxation.
+                        We provide modern irrigation solutions that help conserve water while maximizing crop output, ensuring sustainable farming practices.
                     </span>
                 </div>
             </div>

@@ -1,20 +1,20 @@
 <nav class="navbar card shadow navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5">
     <div class="container">
-        <a href="{{ route('welcome') }}" class="navbar-brand p-0" title="UpzoneSafari Co Ltd.">
-            <img class="img-fluid me-3" src="{{ asset('assets/frontend/img/logo/logo2.png') }}" alt="UpzoneSafari" />
+        <a href="{{ route('welcome') }}" class="navbar-brand p-0" title="DarkLand Co Ltd.">
+            <img class="img-fluid me-3" src="{{ asset('assets/frontend/img/logo/logo.png') }}" alt="DarkLand" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('welcome') }}">Home</a>
-                </li> --}}
-                {{-- <li class="nav-item">
+                </li> 
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('services') }}">Services</a>
-                </li> --}}
-                <li class="nav-item dropdown position-static">
+                </li> 
+                {{-- <li class="nav-item dropdown position-static">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Safari
                     </a>
@@ -102,7 +102,7 @@
                             </div>
                         </div>
                     </div>
-                </li> 
+                </li>  --}}
                 <li class="nav-item dropdown position-static123">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Features
@@ -130,27 +130,3 @@
         </div>
     </div>
 </nav>
-
-
-{{-- 
-Lodging Safari:
-4 Days Tanzania Big Five Safari
-4 Days Wildebeest Migration safari
-4 Days Tanzania Safari
-5 Days Tanzania Safari
-7 Days Tanzania Safari
-
-Camping Safaris:
-4 Days Tanzania Big Five Safari
-4 Days Serengeti Ngorongoro Wildebeest migration safari
-4 Days Tanzania Safari In Serengeti tarangire and Ngorongoro
-5 Days Ngorongoro crater, Empakai crater,accacia camp and Lake Natron
-6 Days Lake Manyara, Serengeti,Ngorongoro crater and Tarangire
-Short Safaris:
-2 Days Tanzania Lake Manyara and Tarangire budget wildlife safari
-2 Days Tanzania Budget Safari in Tarangire and Ngorongoro crater
-3 Days Serengeti Ngorongoro Migration Safari
-3 Days Tanzania Safari in Tarangire, Ngorongoro and lake Manyara
-Combo Safaris:
-14 Days Kilimanjaro Trekking and Tanzania wildlife safaris
---}}

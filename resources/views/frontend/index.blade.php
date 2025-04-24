@@ -1,40 +1,161 @@
 @extends('frontend.layouts.app')
 @section('content')
+<style>
+    /*--------------------------------------------------------------
+# Features Cards Section
+--------------------------------------------------------------*/
+.features-cards {
+  --default-color: #555;
+  --heading-color: #333;
+}
+
+.features-cards .feature-box {
+  height: 100%;
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+
+.features-cards .feature-box i {
+  font-size: 44px;
+  display: inline-block;
+  line-height: 0;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.features-cards .feature-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.features-cards .feature-box p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.features-cards .feature-box.orange {
+  background-color: #fff3e2;
+}
+
+.features-cards .feature-box.orange i {
+  color: #edb86e;
+}
+
+.features-cards .feature-box.blue {
+  background-color: #deedfd;
+}
+
+.features-cards .feature-box.blue i {
+  color: #20a5f8;
+}
+
+.features-cards .feature-box.green {
+  background-color: #d5f1e4;
+}
+
+.features-cards .feature-box.green i {
+  color: #48c88a;
+}
+
+.features-cards .feature-box.red {
+  background-color: #fdeded;
+}
+
+.features-cards .feature-box.red i {
+  color: #f28484;
+}
+
+ .experience-badge {
+  /* position: absolute; */
+  bottom: 5%;
+  right: 5%;
+  background-color: #d5f1e4;
+  color: black;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  min-width: 200px;
+  animation: experience-float 3s ease-in-out infinite;
+}
+
+@media (max-width: 992px) {
+   .experience-badge {
+    position: static;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+ .experience-badge h3 {
+  color: #48c88a;
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 0.5;
+}
+
+ .experience-badge h3 span {
+  font-size: 1rem;
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+ .experience-badge p {
+  margin: 0.5rem 0 0;
+  font-size: 0.875rem;
+}
+
+@keyframes experience-float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+</style>
 
 @include('frontend.layouts.header')
 
 <!-- WELCOME -->
 <div class="container-xxl py-5">
-    <div class="container">
+    <div class="container py-3">
         <div class="row g-5">
             <div class="col-lg-6 col-sm-12">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Welcome</p>
-                <h1 class="display-5123 h2 mb-5">Experience The Best Safari</h1>
+                <h1 class="display-5123 h2 mb-5">Empowering Agriculture, Enriching Lives</h1>
                 <p style="text-align: justify">
-                    At UpzoneSafaris, we are passionate about creating unforgettable travel experiences that inspire, 
-                    relax, and rejuvenate. Founded in 2000, our journey began with a vision to make travel accessible, 
-                    affordable, and extraordinary for everyone.
+                    Welcome to Darkland Company Limited, a leading player in the agricultural, horticultural, and farming sectors in Tanzania. We are dedicated to improving the agricultural landscape by offering innovative solutions for farming, crop production, livestock management and farm machinery. With a focus on sustainability and efficiency, we deliver high-quality products and services aimed at boosting agricultural productivity and ensuring the growth and success of our partners.
                 </p>
-                <p class="mb-4" style="text-align: justify">
-                    At the heart of our business the company is accessible, enriching, 
-                    and above all, a joyful experience. We strive to offer more than just trips; we curate experiences 
-                    that resonate on a personal level. Whether it’s a serene escape to a tropical paradise, a thrilling 
-                    adventure in the mountains, or an immersive cultural journey, our goal is to craft memories that last a lifetime.
+                <p style="text-align: justify">
+                    From day one, our focus was clear: support Tanzanian farmers with the tools, knowledge, and resources they need to thrive. We started with basic crop support and quickly evolved, recognizing the critical need for locally produced, high-quality seeds, farm machinery, and modern agricultural techniques. That journey led us to expand into:
                 </p>
                 <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>World Best Animals
+                    <i class="far fa-check-circle text-primary me-3"></i>Increase Agricultural Productivity
                 </h5>
                 <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>Natural Environment
+                    <i class="far fa-check-circle text-primary me-3"></i>Access to Knowledge & Training
                 </h5>
                 <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>Professional Guide & Security
+                    <i class="far fa-check-circle text-primary me-3"></i>Market Access & Linkages
                 </h5>
                 <a class="text-primary py-5" href="{{ route('about') }}">Read More..</a>
             </div>
             <div class="col-lg-6 col-sm-12">
                 <div class="img-border123 h-100 mt-4">
-                    <img class="img-fluid w-100" style="border-radius:10px; width:100%;" src="{{ asset('assets/frontend/img/safari/1008.jpg') }}" alt="#About" />
+                    <img class="img-fluid w-100 mb-5" style="border-radius:10px; width:100%;" src="{{ asset('assets/frontend/img/img/supply-chain-soln.jpg') }}" alt="#About" />
+
+                    <div class="experience-badge floating">
+                        <h3>15+ <span>Years</span></h3>
+                        <p>Of experience in Agricultural Sector</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -42,88 +163,302 @@
 </div>
 
 <!-- Facts -->
-<div class="container-xxl123 py-5 bg-primary facts">
+<div id="features-cards" class="features-cards section">
     <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center"
-               >
-                <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                <h1 class="text-white mb-2" data-toggle="counter-up">450</h1>
-                <p class="text-white text-uppercase mb-0">Daily Vigitors</p>
-                <hr class=" border-bottom border-primary ">
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center"
-               >
-                <i class="fa fa-certificate fa-3x text-primary mb-3"></i>
-                <h1 class="text-white mb-2" data-toggle="counter-up">12000</h1>
-                <p class="text-white text-uppercase mb-0">Total Membership</p>
-                <hr class=" border-bottom border-primary ">
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
-                <h1 class="text-white mb-2" data-toggle="counter-up">200000</h1>
-                <p class="text-white text-uppercase mb-0">Save Wild Life</p>
-                <hr class=" border-bottom border-primary ">
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center"
-               >
-                <i class="fa fa-trophy fa-3x text-primary mb-3"></i>
-                <h1 class="text-white mb-2" data-toggle="counter-up">45</h1>
-                <p class="text-white text-uppercase mb-0">Awards Achieved</p>
-                <hr class=" border-bottom border-primary ">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="feature-box green">
+              <i class="fas fa-seedling fa-3x"></i>
+              <h1 class="text-dark mb-2" data-toggle="counter-up">10</h1>
+              <p class="text-dark text-uppercase mb-0">Total Crops</p>
+              <hr class=" border-bottom border-primary ">
             </div>
         </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="feature-box blue">
+            <i class="fa fa-users fa-3x"></i> 
+            <h1 class="text-dark mb-2" data-toggle="counter-up">12000</h1>
+            <p class="text-dark text-uppercase mb-0">Total Clients</p>
+            <hr class=" border-bottom border-primary ">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="feature-box red">
+              <i class="fa fa-cogs fa-3x"></i> 
+              <h1 class="text-dark mb-2" data-toggle="counter-up">500</h1>
+              <p class="text-dark text-uppercase mb-0">Strategic Partnerships</p>
+              <hr class=" border-bottom border-primary ">
+            </div>
+        </div>  
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="feature-box orange">
+            <i class="fa fa-award fa-3x"></i>
+            <h1 class="text-dark mb-2" data-toggle="counter-up">45</h1>
+            <p class="text-dark text-uppercase mb-0">Awards Achieved</p>
+            <hr class=" border-bottom border-primary ">
+          </div>
+        </div>      
+      </div>
     </div>
 </div>
 
 <!-- Packages -->
-@include('frontend.layouts.packages')
+{{-- @include('frontend.layouts.packages') --}}
 
 <!-- Destination -->
-@include('frontend.layouts.destinations')
+{{-- @include('frontend.layouts.destinations') --}}
 
 <!-- Proudness -->
-<div class="container-xxl py-5">
-    <div class="container">
+<div class="container-xxl123 py-5 our-courses123">
+    <div class="container py-3">
         <div class="row g-5">
             <div class="col-lg-5 col-sm-12">
                 <div class="img-border123 h-100">
-                    <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:auto;" src="{{ asset('assets/frontend/img/safari/27.jpg') }}" alt="" />
+                    <img class="img-fluid w-100" style="border-radius:10px; width:100%;height:100%;" src="{{ asset('assets/frontend/img/img/Research.jpg') }}" alt="" />
                 </div>
-            </div>
+            </div>     
             <div class="col-lg-7 col-sm-12">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Our Proudness</p>
-                <h1 class="display-5123 h2 mb-5">Why Trek With Us!</h1>
+                <h1 class="display-5123 h2 mb-5">Why Choose Us!</h1>
                 <p class="mb-3">
-                    <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Personalized Services: </span>
-                    <br>We tailor your travel experiences based on your preferences.
+                    <span class="fw-bold">🌍 Local Expertise, Global Standards: </span>
+                    <br>We blend local knowledge with international best practices.
                 </p>
                 <p class="mb-3">
-                    <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Expert Guidance: </span>
-                    <br>Our experienced team offers insights and advice for the perfect trip.
+                    <span class="fw-bold">🌱 Commitment to Sustainability: </span>
+                    <br>We prioritize eco-friendly and responsible farming.
                 </p>
                 <p class="mb-3">
-                    <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>24/7 Support: </span>
-                    <br>We provide around-the-clock customer support, ensuring a worry-free experience.
+                    <span class="fw-bold">🤝 Client-Centered Approach: </span>
+                    <br>Your success is our mission. We tailor every solution to your needs.
                 </p>
                 <p class="mb-3">
-                    <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Sustainable Travel: </span>
-                    <br>We promote eco-friendly tourism that respects the environment and local cultures.
+                    <span class="fw-bold">📈 Proven Track Record: </span>
+                    <br>Trusted by hundreds of farmers, organizations, and partners across Tanzania.
                 </p>
                 <p class="mb-3">
-                    <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>Customized Packages for Every Traveler: </span>
-                    <br>Whether you’re traveling solo, with a partner, or in a group, we offer flexible packages that cater to all types of travelers. 
-                </p>
-                <p class="mb-3">
-                    <span class="fw-bold"><i class="far fa-check-circle text-primary me-3"></i>We Use Top-Notch Equipments: </span>
-                    <br>Expedition grade alpine sleeping tents Stand-up dining tents with durable tables and chairs Hygienic private toilets Four-season, warm, cozy sleeping bags
-                </p>                
+                    <span class="fw-bold">🔬 Innovation-Led Growth: </span>
+                    <br>We invest in the latest technologies to stay ahead. 
+                </p>               
             </div>
         </div>
     </div>
 </div>
 
-<div class="container section-top-border"></div>
+
+<!-- Team -->
+<div class="container-xxl py-5" id="team">
+    <div class="container py-3">
+        <div class="row g-5 align-items-end">
+            <div class="col-lg-12 col-sm-12 text-center">
+                <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Team</p>
+                <h1 class="display-5123 h2 mb-5">Key Executives and Founders</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 li-item">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div align="center">
+                                        <img class="img-fluid" src="{{ asset('assets/frontend/img/img/avatar.png') }}" alt="Profile">
+                                    </div>
+                                    <h4 class="h4 mt-2 text-color">Martin Mchembe</h4>
+                                    <em>Founder & CEO</em>
+                                    <p class="card-text fs16 text-dark lh22">
+                                        Bringing a wealth of experience in the agriculture and farming sectors. With a passion for innovation and sustainability.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4><a href="#" class="h4 mt-2 link-color" title="Martin Mchembe">Martin Mchembe</a></h4>
+                                <p class="card-text fs16 text-dark lh22">
+                                    Mchembe focuses on enhancing agricultural practices that benefit both the environment and the farmers. His leadership aims to drive growth, improve productivity, and create lasting positive change within the industry.
+                                </p>
+                                <ul class="list-inline pastor-social">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="https://facebook.com/">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                                                        
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                                                        
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="https://google.com/">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>	
+
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 li-item">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div align="center">
+                                        <img class="img-fluid" src="{{ asset('assets/frontend/img/img/avatar.png') }}" alt="Profile">
+                                    </div>
+                                    <h4 class="h4 mt-2 text-color">Masoud Sultan</h4>
+                                    <em>Founder & CEO</em>
+                                    <p class="card-text fs16 text-dark lh22">
+                                        The visionary founder and CEO of Darkland Company Limited, Salehe, has over 20 years of experience in agriculture and farming.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4><a href="#" class="h4 mt-2 link-color" title="Masoud Sultan">Masoud Sultan</a></h4>
+                                <p class="card-text fs16 text-dark lh22">
+                                    He is dedicated to creating sustainable and profitable farming systems that improve the livelihoods of farmers and contribute to the agricultural sector's overall growth.
+                                </p>
+                                <ul class="list-inline pastor-social">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="https://facebook.com/">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                                                        
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                                                        
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="https://google.com/">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>	
+
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 li-item">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div align="center">
+                                        <img class="img-fluid" src="{{ asset('assets/frontend/img/img/avatar.png') }}" alt="Profile">
+                                    </div>
+                                    <h4 class="h4 mt-2 text-color">Mhoja Chalula</h4>
+                                    <em>Chief Operations Officer</em>
+                                    <p class="card-text fs16 text-dark lh22">
+                                        Is responsible for overseeing the day-to-day operations of the company, ensuring that all services are delivered to the highest standards. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4><a href="#" class="h4 mt-2 link-color" title="Mhoja Chalula">Mhoja Chalula</a></h4>
+                                <p class="card-text fs16 text-dark lh22">
+                                    With extensive experience in farm management and agricultural supply chains, Chalula plays a crucial role in driving operational excellence and efficiency.
+                                </p>
+                                <ul class="list-inline pastor-social">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="https://facebook.com/">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                                                        
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                                                        
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="https://google.com/">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>	
+
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 li-item">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div align="center">
+                                        <img class="img-fluid" src="{{ asset('assets/frontend/img/img/avatar.png') }}" alt="Profile">
+                                    </div>
+                                    <h4 class="h4 mt-2 text-color">Beatrice Moris JOAN</h4>
+                                    <em>Chief Financial Officer</em>
+                                    <p class="card-text fs16 text-dark lh22">
+                                        Manages the financial health of Darkland Company Limited, ensuring strategic investments and sustainable growth. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4><a href="#" class="h4 mt-2 link-color" title="Beatrice Moris JOAN">Beatrice Moris JOAN</a></h4>
+                                <p class="card-text fs16 text-dark lh22">
+                                    She has a solid background in corporate finance and risk management and plays a key role in guiding the company's long-term financial strategy.
+                                </p>
+                                <ul class="list-inline pastor-social">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="https://facebook.com/">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                                                        
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                                                        
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="https://google.com/">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>	
+
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>	   
+    </div>
+</div>
 
 <!-- Testimonial -->
 <div class="container-xxl py-5">
@@ -131,46 +466,44 @@
         <div class="row g-5 align-items-end">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Testimonial</p>
-                <h1 class="display-5123 h2 mb-5 text-center">Our Travelers Say! </h1>
+                <h1 class="display-5123 h2 mb-5 text-center">Our Clients Say! </h1>
             </div>
         </div>
         <div class="owl-carousel testimonial-carousel">
             <div class="testimonial-item text-center">
-                <img class="img-fluid rounded-circle border border-2 p-1 mx-auto mb-2" src="{{ asset('assets/backend/avatar2.png') }}" style="width: 50px; height: 50px;border:2px solid #f1671e!important;"/>
+                <img class="img-fluid rounded-circle border border-2 p-1 mx-auto mb-2" src="{{ asset('assets/frontend/img/img/avatar.png') }}" style="width: 50px; height: 50px;border:2px solid #f1671e!important;"/>
                 <div class="testimonial-text rounded text-center p-4">
                     <p>
-                        "The Company planned the perfect honeymoon for us. 
-                        We loved every moment and appreciated their attention to detail."
+                        "Darkland completely transformed how we manage our farm. From the training to the equipment — they helped us double our yields in just one season."
                     </p>
-                    <h5 class="mb-1">Justine & Caro</h5>
-                    <span class="fst-italic">Paris, FRANCE</span>
+                    <h5 class="mb-1">James M. Ngussa — Farmer</h5>
+                    <span class="fst-italic">Iringa, Tanzania</span>
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="img-fluid rounded-circle border border-2 p-1 mx-auto mb-2" src="{{ asset('assets/backend/avatar2.png') }}" style="width: 50px; height: 50px;border:2px solid #f1671e!important;"/>
+                <img class="img-fluid rounded-circle border border-2 p-1 mx-auto mb-2" src="{{ asset('assets/frontend/img/img/avatar.png') }}" style="width: 50px; height: 50px;border:2px solid #f1671e!important;"/>
                 <div class="testimonial-text rounded text-center p-4">
                     <p>
-                        "We had the best safari experience, thanks to their knowledgeable 
-                        guides and well-organized itinerary. Highly recommend them!"
+                        “The livestock breeding program is a game changer. Healthy animals, better productivity, and constant support.”
                     </p>
-                    <h5 class="mb-1">Victoria Paul</h5>
-                    <span class="fst-italic">New York, USA</span>
+                    <h5 class="mb-1">Victoria Paul — Livestock Owner</h5>
+                    <span class="fst-italic">Dodoma, Tanzania</span>
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="img-fluid rounded-circle border border-2 p-1 mx-auto mb-2" src="{{ asset('assets/backend/avatar2.png') }}" style="width: 50px; height: 50px;border:2px solid #f1671e!important;"/>
+                <img class="img-fluid rounded-circle border border-2 p-1 mx-auto mb-2" src="{{ asset('assets/frontend/img/img/avatar.png') }}" style="width: 50px; height: 50px;border:2px solid #f1671e!important;"/>
                 <div class="testimonial-text rounded text-center p-4">
                     <p>
-                        "I’ve been booking my corporate travels with them for the past five years. 
-                        They handle everything professionally and efficiently."
+                        “Professional, knowledgeable, and dedicated. They are a true partner in every sense.”
                     </p>
-                    <h5 class="mb-1">Adam Kwasa</h5>
-                    <span class="fst-italic">Cairo, EGYPT</span>
+                    <h5 class="mb-1">Dr. Selemani Adam — Agricultural Researcher</h5>
+                    <span class="fst-italic">Nairobi, Kenya</span>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 {{-- @include('frontend.layouts.social-media') --}}
 
