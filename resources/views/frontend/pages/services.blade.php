@@ -127,8 +127,8 @@
     </div>
 </div>
 
-<!-- Destination -->
-@include('frontend.layouts.destinations')
+<!-- Crop -->
+@include('frontend.layouts.crops')
 
 
 @endsection

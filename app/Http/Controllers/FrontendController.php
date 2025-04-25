@@ -18,7 +18,7 @@ class frontendController extends Controller
 {
     public function index()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Welcome';
 
         if(!empty($meta_title && $page_title))
@@ -35,7 +35,7 @@ class frontendController extends Controller
 
     public function about()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'About';
 
         if(!empty($meta_title && $page_title))
@@ -51,7 +51,7 @@ class frontendController extends Controller
 
     public function services()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Services';
 
         if(!empty($meta_title && $page_title))
@@ -67,7 +67,7 @@ class frontendController extends Controller
 
     public function faqs()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Frequently Asked Questions';
 
         if(!empty($meta_title && $page_title))
@@ -82,7 +82,7 @@ class frontendController extends Controller
     }
     public function trekking()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Trekking';
 
         if(!empty($meta_title && $page_title))
@@ -98,7 +98,7 @@ class frontendController extends Controller
 
     public function culture_experience()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Cultural Experience';
 
         if(!empty($meta_title && $page_title))
@@ -114,7 +114,7 @@ class frontendController extends Controller
 
     public function day_trip_tour()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Day Trips in Northern Tanzania';
 
         if(!empty($meta_title && $page_title))
@@ -129,7 +129,7 @@ class frontendController extends Controller
     }
     public function cultural_tour()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Tanzania Cultural Tour';
 
         if(!empty($meta_title && $page_title))
@@ -145,7 +145,7 @@ class frontendController extends Controller
     
     public function _2_days_safari_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '2 Days Wildlife Safari in Tanzania';
 
         if(!empty($meta_title && $page_title))
@@ -160,7 +160,7 @@ class frontendController extends Controller
     }
     public function _3_days_safari_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '3 Days Wildlife Safari in Tanzania';
 
         if(!empty($meta_title && $page_title))
@@ -175,7 +175,7 @@ class frontendController extends Controller
     }
     public function _4_days_safari_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '4 Days Wildlife Safari in Tanzania';
 
         if(!empty($meta_title && $page_title))
@@ -190,7 +190,7 @@ class frontendController extends Controller
     }
     public function _5_days_safari_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '5 Days Wildlife Safari in Tanzania';
 
         if(!empty($meta_title && $page_title))
@@ -205,7 +205,7 @@ class frontendController extends Controller
     }
     public function _6_days_safari_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '6 Days Wildlife Safari in Tanzania';
 
         if(!empty($meta_title && $page_title))
@@ -220,7 +220,7 @@ class frontendController extends Controller
     }
     public function _7_days_safari_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '7 Days Wildlife Safari in Tanzania';
 
         if(!empty($meta_title && $page_title))
@@ -235,7 +235,7 @@ class frontendController extends Controller
     }
     public function _8_days_safari_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '8 Days Wildlife Safari in Tanzania';
 
         if(!empty($meta_title && $page_title))
@@ -250,7 +250,7 @@ class frontendController extends Controller
     }
     public function _2_days_mikumi_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '2 Days Mikumi National Park';
 
         if(!empty($meta_title && $page_title))
@@ -265,7 +265,7 @@ class frontendController extends Controller
     }
     public function _2_days_ruaha_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '2 Days Ruaha National Park';
 
         if(!empty($meta_title && $page_title))
@@ -280,7 +280,7 @@ class frontendController extends Controller
     }
     public function _3_days_mikumi_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '3 Days Mikumi National Park';
 
         if(!empty($meta_title && $page_title))
@@ -295,7 +295,7 @@ class frontendController extends Controller
     }
     public function _3_days_ruaha_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '3 Days Ruaha National Park';
 
         if(!empty($meta_title && $page_title))
@@ -310,7 +310,7 @@ class frontendController extends Controller
     }
     public function _3_days_selous_game_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '3 Days Selous Game Reserve';
 
         if(!empty($meta_title && $page_title))
@@ -325,7 +325,7 @@ class frontendController extends Controller
     }
     public function _3_days_udzungwa_mikumi_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '3 Days Udzungwa & Mikumi National Park';
 
         if(!empty($meta_title && $page_title))
@@ -340,7 +340,7 @@ class frontendController extends Controller
     }
     public function _4_days_selous_mikumi_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '4 Days Selous & Mikumi National Park';
 
         if(!empty($meta_title && $page_title))
@@ -355,7 +355,7 @@ class frontendController extends Controller
     }
     public function _5_days_mikumi_ruaha_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '5 Days Mikumi & Ruaha National Park';
 
         if(!empty($meta_title && $page_title))
@@ -370,7 +370,7 @@ class frontendController extends Controller
     }
     public function _6_days_selous_mikumi_ruaha_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '6 Days Selous, Mikumi & Ruaha National Park';
 
         if(!empty($meta_title && $page_title))
@@ -385,7 +385,7 @@ class frontendController extends Controller
     }
     public function _10_days_selous_mikumi_ruaha_udzungwa()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '10 Days Selous, Mikumi, Ruaha & Udzungwa National Park';
 
         if(!empty($meta_title && $page_title))
@@ -400,7 +400,7 @@ class frontendController extends Controller
     }
     public function _14_days_ruaha_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '14 Days Ruaha National Park';
 
         if(!empty($meta_title && $page_title))
@@ -416,7 +416,7 @@ class frontendController extends Controller
 
     public function _9_days_safari_()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '9 Days Wildlife Safari in Tanzania';
 
         if(!empty($meta_title && $page_title))
@@ -431,7 +431,7 @@ class frontendController extends Controller
     }
     public function mount_meru()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Mount Meru';
 
         if(!empty($meta_title && $page_title))
@@ -447,7 +447,7 @@ class frontendController extends Controller
 
     public function mount_kilimanjaro()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Mount Kilimanjaro';
 
         if(!empty($meta_title && $page_title))
@@ -463,7 +463,7 @@ class frontendController extends Controller
 
     public function arusha_national_park()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Arusha National Park';
 
         if(!empty($meta_title && $page_title))
@@ -479,7 +479,7 @@ class frontendController extends Controller
 
     public function serengeti_national_park()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Serengeti National Park';
 
         if(!empty($meta_title && $page_title))
@@ -495,7 +495,7 @@ class frontendController extends Controller
 
     public function tarangire_national_park()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Tarangire National Park';
 
         if(!empty($meta_title && $page_title))
@@ -511,7 +511,7 @@ class frontendController extends Controller
 
     public function ngorongoro_crater()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Ngorongoro Crater';
 
         if(!empty($meta_title && $page_title))
@@ -527,7 +527,7 @@ class frontendController extends Controller
     
     public function _3_days_mt_meru()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '3 Days Mount Meru Trek';
 
         if(!empty($meta_title && $page_title))
@@ -543,7 +543,7 @@ class frontendController extends Controller
 
     public function _4_days_mt_meru()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '4 Days Mount Meru Trek';
 
         if(!empty($meta_title && $page_title))
@@ -559,7 +559,7 @@ class frontendController extends Controller
 
     public function _5_days_marangu()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '5 Days Marangu Trek';
 
         if(!empty($meta_title && $page_title))
@@ -575,7 +575,7 @@ class frontendController extends Controller
 
     public function _6_days_marangu()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '6 Days Marangu Trek';
 
         if(!empty($meta_title && $page_title))
@@ -591,7 +591,7 @@ class frontendController extends Controller
 
     public function _5_days_umbwe()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '5 Days Umbwe Trek';
 
         if(!empty($meta_title && $page_title))
@@ -607,7 +607,7 @@ class frontendController extends Controller
 
     public function _6_days_umbwe()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '6 Days Umbwe Trek';
 
         if(!empty($meta_title && $page_title))
@@ -623,7 +623,7 @@ class frontendController extends Controller
 
     public function _6_days_machame()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '6 Days Machame Trek';
 
         if(!empty($meta_title && $page_title))
@@ -639,7 +639,7 @@ class frontendController extends Controller
 
     public function _7_days_machame()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '7 Ddays Machame Trek';
 
         if(!empty($meta_title && $page_title))
@@ -655,7 +655,7 @@ class frontendController extends Controller
 
     public function _6_days_rongai()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '6 Days Rongai Trek';
 
         if(!empty($meta_title && $page_title))
@@ -671,7 +671,7 @@ class frontendController extends Controller
 
     public function _7_days_rongai()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '7 Days Rongai Trek';
 
         if(!empty($meta_title && $page_title))
@@ -687,7 +687,7 @@ class frontendController extends Controller
 
     public function _7_days_lemosho()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '7 Days Lemosho Trek';
 
         if(!empty($meta_title && $page_title))
@@ -703,7 +703,7 @@ class frontendController extends Controller
 
     public function _8_days_lemosho()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '8 Days Lemosho Trek';
 
         if(!empty($meta_title && $page_title))
@@ -719,7 +719,7 @@ class frontendController extends Controller
 
     public function _8_days_northern_circuit()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '8 Days Northern Circuit Trek';
 
         if(!empty($meta_title && $page_title))
@@ -735,7 +735,7 @@ class frontendController extends Controller
 
     public function _9_days_northern_circuit()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = '9 Days Northern Circuit Trek';
 
         if(!empty($meta_title && $page_title))
@@ -751,7 +751,7 @@ class frontendController extends Controller
 
     public function best_time_safari()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Best Time For Safari';
 
         if(!empty($meta_title && $page_title))
@@ -767,7 +767,7 @@ class frontendController extends Controller
 
     public function contact()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = "Let's Talk";
 
         if(!empty($meta_title && $page_title))
@@ -783,7 +783,7 @@ class frontendController extends Controller
 
     public function latest_news()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Blog';
 
         if(!empty($meta_title && $page_title))
@@ -800,7 +800,7 @@ class frontendController extends Controller
 
     public function terms_and_conditions()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Terms & Conditions';
 
         if(!empty($meta_title && $page_title))
@@ -822,7 +822,7 @@ class frontendController extends Controller
 
     public function book_trip()
     {
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Plan Your Trip Today';
 
         if(!empty($meta_title && $page_title))
@@ -943,7 +943,7 @@ class frontendController extends Controller
 
         $decryptId = Crypt::decrypt($id);
 
-        $meta_title = 'Upzone Safaris';
+        $meta_title = 'DarkLand';
         $page_title = 'Latest News';                  
         
         if(!empty($meta_title && $page_title))

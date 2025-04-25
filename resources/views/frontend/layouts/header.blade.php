@@ -1,9 +1,16 @@
 <div id="hero" class="container-fluid bg-dark hero ">
     <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-item active">
-            <img src="{{ asset('assets/frontend/img/img/img2.webp') }}" alt="Start-Little">
+            <img src="{{ asset('assets/frontend/img/img/img3.jpeg') }}" alt="Start-Little">
             <div class="container-fluid">
                 <p class="h4 fw-bold">Growing Agriculture, Growing Tanzania</p>
+                <a href="{{ route('about') }}" class="btn btn-outline-primary">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{{ asset('assets/frontend/img/img/livestock.jpg') }}" alt="Start-Little">
+            <div class="container-fluid">
+                <p class="h4 fw-bold">Empowering Farmers, Transforming Lives</p>
                 <a href="{{ route('about') }}" class="btn btn-outline-primary">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
             </div>
         </div>
@@ -11,13 +18,6 @@
             <img src="{{ asset('assets/frontend/img/img/img1.webp') }}" alt="Start-Little">
             <div class="container-fluid">
                 <p class="h4 fw-bold">Modern Farming for a Sustainable Future</p>
-                <a href="{{ route('about') }}" class="btn btn-outline-primary">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="{{ asset('assets/frontend/img/img/img2.webp') }}" alt="Start-Little">
-            <div class="container-fluid">
-                <p class="h4 fw-bold">Empowering Farmers, Transforming Lives</p>
                 <a href="{{ route('about') }}" class="btn btn-outline-primary">Explore More <i class="fa fa-arrow-right ms-1"></i></a>
             </div>
         </div>

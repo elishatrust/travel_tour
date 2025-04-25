@@ -1,127 +1,5 @@
 @extends('frontend.layouts.app')
 @section('content')
-<style>
-    /*--------------------------------------------------------------
-# Features Cards Section
---------------------------------------------------------------*/
-.features-cards {
-  --default-color: #555;
-  --heading-color: #333;
-}
-
-.features-cards .feature-box {
-  height: 100%;
-  padding: 40px 30px;
-  border-radius: 10px;
-}
-
-.features-cards .feature-box i {
-  font-size: 44px;
-  display: inline-block;
-  line-height: 0;
-  color: var(--accent-color);
-  margin-bottom: 20px;
-}
-
-.features-cards .feature-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 10px 0;
-}
-
-.features-cards .feature-box p {
-  font-size: 15px;
-  margin-bottom: 0;
-}
-
-.features-cards .feature-box.orange {
-  background-color: #fff3e2;
-}
-
-.features-cards .feature-box.orange i {
-  color: #edb86e;
-}
-
-.features-cards .feature-box.blue {
-  background-color: #deedfd;
-}
-
-.features-cards .feature-box.blue i {
-  color: #20a5f8;
-}
-
-.features-cards .feature-box.green {
-  background-color: #d5f1e4;
-}
-
-.features-cards .feature-box.green i {
-  color: #48c88a;
-}
-
-.features-cards .feature-box.red {
-  background-color: #fdeded;
-}
-
-.features-cards .feature-box.red i {
-  color: #f28484;
-}
-
- .experience-badge {
-  /* position: absolute; */
-  bottom: 5%;
-  right: 5%;
-  background-color: #d5f1e4;
-  color: black;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  text-align: center;
-  min-width: 200px;
-  animation: experience-float 3s ease-in-out infinite;
-}
-
-@media (max-width: 992px) {
-   .experience-badge {
-    position: static;
-    width: fit-content;
-    margin: 0 auto;
-  }
-}
-
- .experience-badge h3 {
-  color: #48c88a;
-  font-size: 2.5rem;
-  margin: 0;
-  line-height: 0.5;
-}
-
- .experience-badge h3 span {
-  font-size: 1rem;
-  display: inline-block;
-  margin-left: 0.25rem;
-}
-
- .experience-badge p {
-  margin: 0.5rem 0 0;
-  font-size: 0.875rem;
-}
-
-@keyframes experience-float {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-</style>
-
 @include('frontend.layouts.header')
 
 <!-- WELCOME -->
@@ -164,7 +42,7 @@
 
 <!-- Facts -->
 <div id="features-cards" class="features-cards section">
-    <div class="container">
+    <div class="container py-3">
       <div class="row g-4">
         <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="feature-box green">
@@ -201,12 +79,6 @@
       </div>
     </div>
 </div>
-
-<!-- Packages -->
-{{-- @include('frontend.layouts.packages') --}}
-
-<!-- Destination -->
-{{-- @include('frontend.layouts.destinations') --}}
 
 <!-- Proudness -->
 <div class="container-xxl123 py-5 our-courses123">
@@ -245,6 +117,8 @@
     </div>
 </div>
 
+<!-- Crops -->
+@include('frontend.layouts.crops')
 
 <!-- Team -->
 <div class="container-xxl py-5" id="team">
@@ -282,20 +156,20 @@
                                 </p>
                                 <ul class="list-inline pastor-social">
                                     <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://facebook.com/">
-                                            <i class="fa fa-facebook"></i>
+                                        <a class="social-icon text-xs-center" title="Facebook" target="_blank" href="#">
+                                            <i class="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
                                                                         
                                     <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/">
-                                            <i class="fa fa-twitter"></i>
+                                        <a class="social-icon text-xs-center" title="Instagram" target="_blank" href="#">
+                                            <i class="fab fa-instagram"></i>
                                         </a>
                                     </li>
                                                                         
                                     <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://google.com/">
-                                            <i class="fa fa-google-plus"></i>
+                                        <a class="social-icon text-xs-center" title="Linkedin" target="_blank" href="#">
+                                            <i class="fab fa-linkedin-in"></i>
                                         </a>
                                     </li>	
 
@@ -332,20 +206,20 @@
                                 </p>
                                 <ul class="list-inline pastor-social">
                                     <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://facebook.com/">
-                                            <i class="fa fa-facebook"></i>
+                                        <a class="social-icon text-xs-center" title="Facebook" target="_blank" href="#">
+                                            <i class="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
                                                                         
                                     <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/">
-                                            <i class="fa fa-twitter"></i>
+                                        <a class="social-icon text-xs-center" title="Instagram" target="_blank" href="#">
+                                            <i class="fab fa-instagram"></i>
                                         </a>
                                     </li>
                                                                         
                                     <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://google.com/">
-                                            <i class="fa fa-google-plus"></i>
+                                        <a class="social-icon text-xs-center" title="Linkedin" target="_blank" href="#">
+                                            <i class="fab fa-linkedin-in"></i>
                                         </a>
                                     </li>	
 
@@ -382,20 +256,20 @@
                                 </p>
                                 <ul class="list-inline pastor-social">
                                     <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://facebook.com/">
-                                            <i class="fa fa-facebook"></i>
+                                        <a class="social-icon text-xs-center" title="Facebook" target="_blank" href="#">
+                                            <i class="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
                                                                         
                                     <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/">
-                                            <i class="fa fa-twitter"></i>
+                                        <a class="social-icon text-xs-center" title="Instagram" target="_blank" href="#">
+                                            <i class="fab fa-instagram"></i>
                                         </a>
                                     </li>
                                                                         
                                     <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://google.com/">
-                                            <i class="fa fa-google-plus"></i>
+                                        <a class="social-icon text-xs-center" title="Linkedin" target="_blank" href="#">
+                                            <i class="fab fa-linkedin-in"></i>
                                         </a>
                                     </li>	
 
@@ -432,20 +306,20 @@
                                 </p>
                                 <ul class="list-inline pastor-social">
                                     <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://facebook.com/">
-                                            <i class="fa fa-facebook"></i>
+                                        <a class="social-icon text-xs-center" title="Facebook" target="_blank" href="#">
+                                            <i class="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
                                                                         
                                     <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/">
-                                            <i class="fa fa-twitter"></i>
+                                        <a class="social-icon text-xs-center" title="Instagram" target="_blank" href="#">
+                                            <i class="fab fa-instagram"></i>
                                         </a>
                                     </li>
                                                                         
                                     <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://google.com/">
-                                            <i class="fa fa-google-plus"></i>
+                                        <a class="social-icon text-xs-center" title="Linkedin" target="_blank" href="#">
+                                            <i class="fab fa-linkedin-in"></i>
                                         </a>
                                     </li>	
 

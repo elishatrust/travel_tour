@@ -42,53 +42,6 @@
             count_visitor();
         });
 
-
-        /*====== CONTENT PROTECTED ======*/
-        // function showAlert(message) {
-        //     var alertBox = document.getElementById("customAlert");
-        //     alertBox.textContent = message;
-        //     alertBox.style.display = "block";
-        //     alertBox.style.opacity = "1";
-        
-        //     setTimeout(function() {
-        //         alertBox.style.opacity = "0";
-        //         setTimeout(() => {
-        //             alertBox.style.display = "none";
-        //         }, 1000);
-        //     }, 1500);
-        // }
-        
-        // document.addEventListener("contextmenu", function(event) {
-        //     event.preventDefault();
-        //     showAlert("Content is protected!");
-        // });
-        
-        // document.addEventListener("keydown", function(event) {
-        //     if (
-        //         event.ctrlKey && 
-        //         (event.key === "c" || event.key === "x" || event.key === "u" || event.key === "Shift" || event.key === "i")
-        //     ) {
-        //         event.preventDefault();
-        //         showAlert("Content is protected!");
-        //     }
-        // });
-        
-        // document.addEventListener("selectstart", function(event) {
-        //     event.preventDefault();
-        //     showAlert("Content is protected!");
-        // });
-
-        /*====== START OF (Tawk.to) SCRIPT ======*/
-        // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        // (function(){
-        //     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        //     s1.async=true;
-        //     s1.src='https://embed.tawk.to/66cdfec550c10f7a00a0fa80/1i6aamdk7';
-        //     s1.charset='UTF-8';
-        //     s1.setAttribute('crossorigin','*');
-        //     s0.parentNode.insertBefore(s1,s0);
-        // })();
-
         /*====== Countdown Timer ======*/
         function log_visitor(){            
             $.ajax({
@@ -136,7 +89,7 @@
                 "position":"left",
             },
             "brandSetting":{
-                "brandName":"DarkLand",
+                "brandName":"DarkLand Co. Ltd",
                 "brandSubTitle":"Typically replies within a day",
                 "brandImg":"{{ asset('assets/frontend/img/logo/logo.png') }}",
                 "welcomeText":"Hi there!\nWelcome to DarkLand.\nHow can I help you?",
