@@ -1,9 +1,3 @@
-{{-- <div class="container-fluid include py-5">
-    <div class="container">
-        <h1 class="display-4 h3 text-center text-white mb-3">{{ $page_title }}</h1>
-    </div>
-</div> --}}
-
 
 <div class="uni-banner-default uni-background-1">
     <div class="container">

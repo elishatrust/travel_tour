@@ -28,7 +28,7 @@
       <a class="btn btn-link" href="{{ route('about') }}">About Us</a>
       <a class="btn btn-link" href="{{ route('contact') }}">Contact Us</a>
       <a class="btn btn-link" href="{{ route('services') }}">Our Services</a>
-      <a class="btn btn-link" href="#">Latest News</a>
+      {{-- <a class="btn btn-link" href="#">Latest News</a> --}}
     </div>
     <div class="col-lg-3 col-md-6">
       <h5 class="text-light mb-4">Newsletter</h5>
@@ -50,7 +50,7 @@
         <a class="border-bottom" href="{{ route('welcome') }}">DarkLand</a> &copy; {{ date('Y') }}, All Right Reserved.
       </div>
       <div class="col-md-6 text-center text-md-end">Designed By
-        <a class="border-bottom" href="https://elishatrust.github.io/mysite/" target="_blank">ELISHATRUST</a>
+        <a class="border-bottom" href="https://elishatrust.github.io/mycv/" target="_blank">ELIDEV</a>
       </div>
     </div>
   </div>

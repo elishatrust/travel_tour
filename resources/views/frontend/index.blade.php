@@ -379,6 +379,6 @@
 </div>
 
 
-{{-- @include('frontend.layouts.social-media') --}}
+@include('frontend.layouts.social-media')
 
 @endsection

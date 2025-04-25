@@ -55,37 +55,44 @@
 </div>
 
 
-<div class="container-xxl pb-5">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-4 col-sm-12">
-                <div class="card-card123 p-4 shadow-sm w-100 h-100" style="background: #f3f4f5!important; border-bottom:5px solid red; border-radius:5px;">
-                    <h5 class="mb-3 text-center text-uppercase animated-underline123">Vision</h5>
-                    <span style="text-align: justify">
-                        To be the leading provider of innovative agricultural solutions in Tanzania, driving sustainable growth and supporting farmers and agricultural businesses through cutting-edge technology, education, and expertise.
-                    </span>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <div class="card-card123 p-4 shadow-sm w-100 h-100" style="background: #f3f4f5!important; border-bottom:5px solid blue; border-radius:5px;">
-                    <h5 class="mb-3 text-center text-uppercase animated-underline123">Mission</h5>
-                    <span style="text-align: justify">
-                        To improve the agricultural sector by providing top-quality products and services that promote sustainable farming, enhance productivity, and support economic growth.
-                    </span>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <div class="card-card123 p-4 shadow-sm w-100 h-100" style="background: #f3f4f5!important; border-bottom:5px solid green; border-radius:5px;">
-                    <h5 class="mb-3 text-center text-uppercase animated-underline123">Core Value</h5>
-                    <span style="text-align: justify">
-                        Our work is rooted in strong values that guide every decision, partnership, and service we offer. These values shape our identity and define the way we serve farmers, communities, and the agricultural industry at large.
-                    </span>
-                </div>
+<div id="features-cards" class="features-cards section ">
+    <div class="container py-3">
+      <div class="row g-5">
+        <div class="col-lg-4 col-sm-12">
+            <div class="feature-box green">
+              <i class="fa fa-crosshairs fa-3x"></i>
+              <h4 class="text-dark mt-2">Vision</h4>
+              <hr class=" border-bottom border-primary ">
+              <p style="text-align: justify">
+                To be the leading provider of innovative agricultural solutions in Tanzania, driving sustainable growth and supporting farmers and agricultural businesses through cutting-edge technology, education, and expertise.
+              </p>
             </div>
         </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="feature-box blue">
+            <i class="fa fa-binoculars fa-3x"></i>
+            <h4 class="text-dark mt-2">Mission</h4>
+            <hr class=" border-bottom border-primary ">
+            <p style="text-align: justify">
+                To improve the agricultural sector by providing top-quality products and services that promote sustainable farming, enhance productivity, and support economic growth.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <div class="feature-box red">
+              <i class="fa fa-balance-scale fa-3x"></i>
+              <h4 class="text-dark mt-2">Core Value</h4>
+              <hr class=" border-bottom border-primary">
+              <p style="text-align: justify">
+                Our work is rooted in strong values that guide every decision, partnership, and service we offer. These values shape our identity and define the way we serve farmers, communities, and the agricultural industry at large.
+              </p>
+            </div>
+        </div>     
+      </div>
     </div>
 </div>
 
-{{-- @include('frontend.layouts.destinations') --}}
+
+@include('frontend.layouts.crops')
 
 @endsection
