@@ -4,7 +4,7 @@
         <div class="row g-5 align-items-end">
             <div class="col-lg-12 col-sm-12 text-center">
                 <p style="color: #f1671e;" class="text-uppercase"><span class="text-primary me-2">#</span>Focus</p>
-                <h1 class="display-5123 h2 mb-5">Our Focusing Area</h1>
+                <h1 class="display-5123 h2 mb-5">Agricultural products & Live stock keeping</h1>
             </div>
         </div>
         <div class="row">
