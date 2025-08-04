@@ -58,7 +58,7 @@
         <a class="border-bottom" href="{{ route('welcome') }}">UpzoneSafaris</a> &copy; {{ date('Y') }}, All Right Reserved.
       </div>
       <div class="col-md-6 text-center text-md-end">Designed By
-        <a class="border-bottom" href="https://elishatrust.github.io/mysite/" target="_blank">ELISHATRUST</a>
+        <a class="border-bottom" href="https://elishatrust.github.io/mycv/" target="_blank">ELISHATRUST</a>
       </div>
     </div>
   </div>

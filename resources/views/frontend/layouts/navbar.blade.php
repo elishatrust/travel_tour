@@ -1,20 +1,20 @@
 <nav class="navbar card shadow navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5">
     <div class="container">
-        <a href="{{ route('welcome') }}" class="navbar-brand p-0" title="UpzoneSafari Co Ltd.">
-            <img class="img-fluid me-3" src="{{ asset('assets/frontend/img/logo/logo2.png') }}" alt="UpzoneSafari" />
+        <a href="{{ route('welcome') }}" class="navbar-brand p-0" title="DarkLand Co Ltd.">
+            <img class="img-fluid me-3" src="{{ asset('assets/frontend/img/logo/logo.png') }}" alt="DarkLand" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('welcome') }}">Home</a>
-                </li> --}}
-                {{-- <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('services') }}">Services</a>
-                </li> --}}
-                <li class="nav-item dropdown position-static">
+                </li>
+                {{-- <li class="nav-item dropdown position-static">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Safari
                     </a>
@@ -102,7 +102,7 @@
                             </div>
                         </div>
                     </div>
-                </li> 
+                </li>  --}}
                 <li class="nav-item dropdown position-static123">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Features

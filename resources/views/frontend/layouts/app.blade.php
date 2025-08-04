@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>{{ !empty($page_title && $meta_title) ? Str::upper($meta_title.' | '.$page_title) : "" }}</title>
-    <link href="{{ asset('assets/frontend/img/logo/giraffe-128.gif') }}" rel="icon" />
+    <link href="{{ asset('assets/frontend/img/logo/logo.png') }}" rel="icon" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"rel="stylesheet"/>
     {{-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Roboto:wght@300;500;600&family=Georgia&display=swap" rel="stylesheet"/> --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
@@ -20,11 +20,11 @@
 </head>
 <body>
 
-    {{-- @include('frontend.layouts.spinner') --}}
+    @include('frontend.layouts.spinner')
 
-    @include('frontend.layouts.topbar')
+    {{-- @include('frontend.layouts.topbar') --}}
 
-    @include('frontend.layouts.navbar')
+    {{-- @include('frontend.layouts.navbar') --}}
     
     @yield('content')
 
@@ -146,39 +146,39 @@
 
 
         /*====== CONTENT PROTECTED ======*/
-        function showAlert(message) {
-            var alertBox = document.getElementById("customAlert");
-            alertBox.textContent = message;
-            alertBox.style.display = "block";
-            alertBox.style.opacity = "1";
+        // function showAlert(message) {
+        //     var alertBox = document.getElementById("customAlert");
+        //     alertBox.textContent = message;
+        //     alertBox.style.display = "block";
+        //     alertBox.style.opacity = "1";
         
-            setTimeout(function() {
-                alertBox.style.opacity = "0";
-                setTimeout(() => {
-                    alertBox.style.display = "none";
-                }, 1000);
-            }, 1500);
-        }
+        //     setTimeout(function() {
+        //         alertBox.style.opacity = "0";
+        //         setTimeout(() => {
+        //             alertBox.style.display = "none";
+        //         }, 1000);
+        //     }, 1500);
+        // }
         
-        document.addEventListener("contextmenu", function(event) {
-            event.preventDefault();
-            showAlert("Content is protected!");
-        });
+        // document.addEventListener("contextmenu", function(event) {
+        //     event.preventDefault();
+        //     showAlert("Content is protected!");
+        // });
         
-        document.addEventListener("keydown", function(event) {
-            if (
-                event.ctrlKey && 
-                (event.key === "c" || event.key === "x" || event.key === "u" || event.key === "Shift" || event.key === "i")
-            ) {
-                event.preventDefault();
-                showAlert("Content is protected!");
-            }
-        });
+        // document.addEventListener("keydown", function(event) {
+        //     if (
+        //         event.ctrlKey && 
+        //         (event.key === "c" || event.key === "x" || event.key === "u" || event.key === "Shift" || event.key === "i")
+        //     ) {
+        //         event.preventDefault();
+        //         showAlert("Content is protected!");
+        //     }
+        // });
         
-        document.addEventListener("selectstart", function(event) {
-            event.preventDefault();
-            showAlert("Content is protected!");
-        });
+        // document.addEventListener("selectstart", function(event) {
+        //     event.preventDefault();
+        //     showAlert("Content is protected!");
+        // });
 
         /*====== START OF (Tawk.to) SCRIPT ======*/
         // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -311,16 +311,16 @@
                 "position":"left",
             },
             "brandSetting":{
-                "brandName":"UpzoneSafaris",
+                "brandName":"DarkLand",
                 "brandSubTitle":"Typically replies within a day",
-                "brandImg":"{{ asset('assets/frontend/img/more/20a.jpg') }}",
-                "welcomeText":"Hi there!\nWelcome to UpzoneSafaris.\nHow can I help you?",
-                "messageText":"Hello UpzoneSafaris,%0A I have a question about services",
+                "brandImg":"{{ asset('assets/frontend/img/logo/logo.png') }}",
+                "welcomeText":"Hi there!\nWelcome to DarkLand.\nHow can I help you?",
+                "messageText":"Hello DarkLand,%0A I have a question about services",
                 "backgroundColor":"#0a5f54",
                 "ctaText":"Start Chat",
                 "borderRadius":"25",
                 "autoShow":false,
-                "phoneNumber":"255672331239"
+                "phoneNumber":"255695731886"
             }
         };
         s.onload = function() {
